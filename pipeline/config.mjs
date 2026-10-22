@@ -45,4 +45,5 @@ export const THESPORTSDB = {
 
 export const CANDIDATES_FILE = "pipeline/state/new-match-candidates.json";
 export const DISMISSED_FILE = "pipeline/config/dismissed-candidates.json";
+export const ADDITIONS_FILE = "pipeline/config/ledger-additions.json";
 export const REPORT_DIR = "reports/pipeline"; // git-ignored (reports/ is in .gitignore)

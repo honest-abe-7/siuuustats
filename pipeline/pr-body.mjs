@@ -44,8 +44,20 @@ export function renderBody({ refresh, detect, ingest = "skipped", ingestClub = "
   else {
     L.push("| Date | Match | Score | Competition | Found via | New? | Hint |", "|---|---|---|---|---|---|---|");
     for (const c of cands)
-      L.push(`| ${c.date} | ${esc(c.home_team)} vs ${esc(c.away_team)} | ${c.score ?? "?"} | ${esc(c.competition)} | ${c.sources.join(", ")} | ${detect.new_candidates?.includes(c.key) ? "🆕" : ""} | ${esc(detect.hints?.[c.key] ?? "")} |`);
+      L.push(`| ${c.date} | ${esc(c.home_team)} vs ${esc(c.away_team)} | ${c.score ?? "?"} | ${esc(c.competition)} | ${c.sources.join(", ")} | ${detect.new_candidates?.includes(c.key) ? "🆕" : ""} | ${esc(c.ledger_action ? `reviewed: ${c.ledger_action} (see below)` : detect.hints?.[c.key] ?? "")} |`);
     L.push("", "Check each one: was Ronaldo in the squad / did he play? Then add it through the ingest with citations, or dismiss it in `pipeline/config/dismissed-candidates.json`.", "");
+  }
+  const adds = detect?.ledger_additions ?? [];
+  if (adds.length) {
+    L.push("### Reviewed: add to the ledger (data owner action)", "");
+    L.push("These were reviewed by a human and should become rows in `data/matches.csv`. The pipeline does not edit `data/`; the data owner adds them through `data/manual` + the ingest.", "");
+    for (const a of adds) {
+      L.push(`- **${esc(a.match)}**: \`${a.action}\` (appeared=${a.suggested_row?.appeared}). ${esc(a.reason)}`);
+      for (const e of a.evidence ?? []) L.push(`  - ${esc(e.publisher)}, [${esc(e.title)}](${e.url}) (${e.published})`);
+      if (a.owner_todo) L.push(`  - To do: ${esc(a.owner_todo)}`);
+      if (a.suggested_csv) L.push("", "  ```csv", `  ${a.suggested_csv}`, "  ```");
+    }
+    L.push("");
   }
   for (const n of detect?.notes ?? []) L.push(`- note: ${n}`);
   for (const e of detect?.errors ?? []) L.push(`- detect error: ${e.source} ${e.url ?? ""} — ${e.error}`);
@@ -53,7 +65,7 @@ export function renderBody({ refresh, detect, ingest = "skipped", ingestClub = "
 
   L.push("### Ledger checks (run in the scheduled job)", "");
   L.push(`- \`npm run ingest:intl\`: ${ICON[ingest] ?? ""} ${ingest}`);
-  L.push(`- \`node scripts/ingest/club.mjs\`: ${ICON[ingestClub] ?? ""} ${ingestClub}`);
+  L.push(`- \`npm run ingest:club\`: ${ICON[ingestClub] ?? ""} ${ingestClub}`);
   L.push(`- \`npm run check\`: ${ICON[check] ?? ""} ${check}`, "");
   if (ingest === "failure" && ingestLog) L.push("<details><summary>ingest output (tail)</summary>", "", "```", tail(ingestLog), "```", "</details>", "");
   if (ingestClub === "failure" && ingestClubLog) L.push("<details><summary>club ingest output (tail)</summary>", "", "```", tail(ingestClubLog), "```", "</details>", "");

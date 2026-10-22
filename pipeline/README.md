@@ -9,7 +9,7 @@ The pipeline writes to `data/` only through the ingest scripts, and only inside 
 | File | Trigger | What it does | Token permissions |
 |---|---|---|---|
 | `ci.yml` | every PR, push to `main`, manual | `npm ci`, `npm run check`, then the pipeline unit tests (Node 24, npm cache) | `contents: read` |
-| `daily-refresh.yml` | daily 06:17 UTC, manual | backs up `data/raw`, runs `npm run snapshots:refresh -- --only=intl` and `-- --only=club`, validates with `snapshot-guard.mjs`, detects new matches, re-runs `ingest:intl` / `scripts/ingest/club.mjs` and `check` for changed groups, then opens or updates **one** review PR (`automation/daily-refresh`) | `contents: write`, `pull-requests: write`, `issues: write` (refresh job only) |
+| `daily-refresh.yml` | daily 06:17 UTC, manual | backs up `data/raw`, runs `npm run snapshots:refresh -- --only=intl` and `-- --only=club`, validates with `snapshot-guard.mjs`, detects new matches, re-runs `npm run ingest:intl` / `npm run ingest:club` and `check` for changed groups, then opens or updates **one** review PR (`automation/daily-refresh`) | `contents: write`, `pull-requests: write`, `issues: write` (refresh job only) |
 | | weekly, Monday 07:41 UTC | keepalive: `PUT /actions/workflows/daily-refresh.yml/enable`, which resets GitHub's 60-day inactivity timer without a commit | `actions: write` (keepalive job only) |
 | `deploy.yml` | push to `main` (merging a PR), manual | `npm run check`, `npm run build --if-present`, then `wrangler pages deploy dist --project-name=siuuustats --branch=main` | `contents: read` |
 
@@ -59,10 +59,14 @@ Politeness for snapshot fetching (User-Agent, pauses) is part of `fetch-snapshot
 - Candidates stay in `pipeline/state/new-match-candidates.json` until the match appears in the ledger, or until a human adds the key to `pipeline/config/dismissed-candidates.json` with a reason and evidence.
 - **Free-tier limits** (from TheSportsDB's docs): `eventslast` and `eventsnext` return only **1 home event**, and `eventsday` returns at most **3 events**. Away matches are only caught by the day scan and can be missed on busy days, which the PR notes. Treat TheSportsDB as a hint. The club snapshots (eswiki list, enwiki career table and season articles) are the authoritative signal for club matches.
 - Ledger team ids: `al-nassr` and `portugal` (CONTRACTS §9).
-- **Dismissed so far** (owner review, 2026-10-22; BBC, AFP and Al Jazeera match reports):
-  - 2026-09-27 Norway 1-2 Portugal: unused substitute
-  - 2026-10-01 Denmark 2-4 Portugal: left the camp
-  - 2026-10-04 Portugal 2-1 Norway: absent
+- **Reviewed queue** (`pipeline/config/`), from the owner's review on 2026-10-22:
+  - **`ledger-additions.json`**: matches that should become ledger rows, which the pipeline must not write itself. Detection keeps each one in the queue, marked with its action, and the PR body shows a section "Reviewed: add to the ledger" with the evidence and a ready-made `data/matches.csv` line. The entry disappears once the row exists.
+    - 2026-09-27 Norway 1-2 Portugal: **unused substitute**, to be added as an `appeared=false` row with no cap. Evidence: two BBC Sport articles.
+  - **`dismissed-candidates.json`**: matches where he was not in the squad. These are never flagged again.
+    - 2026-10-01 Denmark 2-4 Portugal: left the camp (BBC Sport live match coverage; Al Jazeera pre-match explainer)
+    - 2026-10-04 Portugal 2-1 Norway: absent (Al Jazeera match report; BBC Sport post-match article)
+
+  Every evidence entry carries a verified article URL.
 
 ### TheSportsDB IDs (verified 2026-10-22)
 

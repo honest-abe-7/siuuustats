@@ -94,7 +94,7 @@ jobs:
         continue-on-error: true
         run: |
           set -o pipefail
-          node scripts/ingest/club.mjs 2>&1 | tee reports/pipeline/ingest-club.log
+          npm run ingest:club 2>&1 | tee reports/pipeline/ingest-club.log
 
       - name: npm run check
         id: check

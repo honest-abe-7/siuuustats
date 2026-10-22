@@ -15,6 +15,7 @@ export function tempRoot() {
   mkdirSync(join(root, "data"), { recursive: true });
   cpSync(join(REPO, "data/raw"), join(root, "data/raw"), { recursive: true });
   cpSync(join(REPO, "data/matches.csv"), join(root, "data/matches.csv"));
+  cpSync(join(REPO, "data/teams.csv"), join(root, "data/teams.csv"));
   return root;
 }
 

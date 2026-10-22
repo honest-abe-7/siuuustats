@@ -46,6 +46,9 @@ test("daily refresh delegates fetching to npm run snapshots:refresh (flags exist
   // backup before, verify after
   assert.ok(t.indexOf("snapshot-guard.mjs save") < t.indexOf("--only=intl"));
   assert.ok(t.indexOf("--only=club") < t.indexOf("snapshot-guard.mjs verify"));
+  assert.match(t, /npm run ingest:club 2>&1/);
+  assert.doesNotMatch(t, /node scripts\/ingest\/club\.mjs/);
+  assert.equal(pkg.scripts["ingest:club"], "node scripts/ingest/club.mjs");
   // the pipeline no longer fetches snapshots itself
   assert.doesNotMatch(t, /refresh-snapshots\.mjs/);
 });
