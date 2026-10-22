@@ -1,1 +1,83 @@
 award_id,name,awarding_body,year_or_season,placing,source_ids,notes
+ballon-dor-2008,Ballon d'Or,France Football,2008,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+ballon-dor-2016,Ballon d'Or,France Football,2016,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+ballon-dor-2017,Ballon d'Or,France Football,2017,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifa-ballon-dor-2013,FIFA Ballon d'Or,FIFA / France Football,2013,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,Merged FIFA Ballon d'Or (2010-2015).
+fifa-ballon-dor-2014,FIFA Ballon d'Or,FIFA / France Football,2014,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,Merged FIFA Ballon d'Or (2010-2015).
+ballon-dor-2007-2,Ballon d'Or,France Football,2007,2,messivsronaldo-app-individual-awards,Runner-up.
+ballon-dor-2009-2,Ballon d'Or,France Football,2009,2,messivsronaldo-app-individual-awards,Runner-up.
+ballon-dor-2018-2,Ballon d'Or,France Football,2018,2,messivsronaldo-app-individual-awards,Runner-up.
+fifa-ballon-dor-2011-2,FIFA Ballon d'Or,FIFA / France Football,2011,2,messivsronaldo-app-individual-awards,Runner-up.
+fifa-ballon-dor-2012-2,FIFA Ballon d'Or,FIFA / France Football,2012,2,messivsronaldo-app-individual-awards,Runner-up.
+fifa-ballon-dor-2015-2,FIFA Ballon d'Or,FIFA / France Football,2015,2,messivsronaldo-app-individual-awards,Runner-up.
+ballon-dor-2019-3,Ballon d'Or,France Football,2019,3,messivsronaldo-app-individual-awards,Third place.
+fifa-world-player-of-the-year-2008,FIFA World Player of the Year,FIFA,2008,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+the-best-fifa-mens-player-2016,The Best FIFA Men's Player,FIFA,2016,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+the-best-fifa-mens-player-2017,The Best FIFA Men's Player,FIFA,2017,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+the-best-fifa-special-award-2021,The Best FIFA Special Award for Outstanding Career Achievement,FIFA,2021,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,For the men's international goals record.
+uefa-club-footballer-of-the-year-2007-08,UEFA Club Footballer of the Year,UEFA,2007-08,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+uefa-mens-player-of-the-year-2013-14,UEFA Men's Player of the Year,UEFA,2013-14,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+uefa-mens-player-of-the-year-2015-16,UEFA Men's Player of the Year,UEFA,2015-16,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+uefa-mens-player-of-the-year-2016-17,UEFA Men's Player of the Year,UEFA,2016-17,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+ucl-all-time-top-scorer-award-2024,UEFA Champions League All-Time Top Scorer special award,UEFA,2024,1,wikipedia-cristiano-ronaldo,
+fifa-puskas-award-2009,FIFA Puskás Award,FIFA,2009,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,"Goal v Porto, 15 Apr 2009."
+fifa-club-world-cup-golden-ball-2016,FIFA Club World Cup Golden Ball,FIFA,2016,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+ucl-top-scorer-2007-08,UEFA Champions League top scorer,UEFA,2007-08,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,
+ucl-top-scorer-2012-13,UEFA Champions League top scorer,UEFA,2012-13,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,
+ucl-top-scorer-2013-14,UEFA Champions League top scorer,UEFA,2013-14,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,
+ucl-top-scorer-2014-15,UEFA Champions League top scorer,UEFA,2014-15,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,Shared with Messi and Neymar (10 each).
+ucl-top-scorer-2015-16,UEFA Champions League top scorer,UEFA,2015-16,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,
+ucl-top-scorer-2016-17,UEFA Champions League top scorer,UEFA,2016-17,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,
+ucl-top-scorer-2017-18,UEFA Champions League top scorer,UEFA,2017-18,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-ucl-all-time-top-scorers,
+european-golden-shoe-2007-08,European Golden Shoe,European Sports Media,2007-08,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,31 league goals.
+european-golden-shoe-2010-11,European Golden Shoe,European Sports Media,2010-11,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,40 league goals.
+european-golden-shoe-2013-14,European Golden Shoe,European Sports Media,2013-14,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,31 league goals. Shared with Luis Suárez.
+european-golden-shoe-2014-15,European Golden Shoe,European Sports Media,2014-15,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,48 league goals.
+euro-all-time-xi-2016,UEFA European Championship All-Time XI,UEFA,2016,1,wikipedia-cristiano-ronaldo,
+euro-golden-boot-2020,UEFA European Championship Golden Boot,UEFA,2020,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,"UEFA Euro 2020, played in 2021 (messivsronaldo.app labels it 2021). 5 goals, won on assists over Schick."
+unl-finals-top-scorer-2019,UEFA Nations League Finals top scorer,UEFA,2019,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards;uefa-com-2025-unl-top-scorer,3 goals.
+unl-finals-top-scorer-2025,UEFA Nations League Finals top scorer,UEFA,2025,1,wikipedia-cristiano-ronaldo;uefa-com-2025-unl-top-scorer,Shared with Mbappé and Lamine Yamal (2 goals each). messivsronaldo.app lists only 2019; UEFA.com confirms 2025. The whole-season 2024/25 Nations League top scorer award went to Gyökeres (9) ahead of Ronaldo (8).
+premier-league-player-of-the-season-2006-07,Premier League Player of the Season,Premier League,2006-07,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+premier-league-player-of-the-season-2007-08,Premier League Player of the Season,Premier League,2007-08,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+la-liga-best-player-2013-14,La Liga Best Player,LFP,2013-14,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+serie-a-footballer-of-the-year-2019,Serie A Footballer of the Year,Lega Serie A / AIC,2019,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,For 2018-19.
+serie-a-footballer-of-the-year-2020,Serie A Footballer of the Year,Lega Serie A / AIC,2020,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,For 2019-20.
+premier-league-golden-boot-2007-08,Premier League Golden Boot,Premier League,2007-08,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,31 goals.
+pichichi-trophy-2010-11,Pichichi Trophy,Marca,2010-11,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+pichichi-trophy-2013-14,Pichichi Trophy,Marca,2013-14,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+pichichi-trophy-2014-15,Pichichi Trophy,Marca,2014-15,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+capocannoniere-2020-21,Capocannoniere,Lega Serie A,2020-21,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,29 goals.
+saudi-pro-league-golden-boot-2023-24,Saudi Pro League Golden Boot,Saudi Pro League,2023-24,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+saudi-pro-league-golden-boot-2024-25,Saudi Pro League Golden Boot,Saudi Pro League,2024-25,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+golden-foot-2020,Golden Foot,Golden Foot (Monaco),2020,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+globe-soccer-player-of-the-century-2020,Globe Soccer Best Player of the Century,Globe Soccer Awards,2020,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,21st Century Awards (2001-2020).
+primeira-liga-best-player-of-all-time-2025,Primeira Liga Best Player of All Time,Liga Portugal,2025,1,wikipedia-cristiano-ronaldo,
+ballon-dor-dream-team-2020,Ballon d'Or Dream Team,France Football,2020,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2007,FIFA FIFPRO World 11,FIFA / FIFPRO,2007,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2008,FIFA FIFPRO World 11,FIFA / FIFPRO,2008,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2009,FIFA FIFPRO World 11,FIFA / FIFPRO,2009,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2010,FIFA FIFPRO World 11,FIFA / FIFPRO,2010,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2011,FIFA FIFPRO World 11,FIFA / FIFPRO,2011,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2012,FIFA FIFPRO World 11,FIFA / FIFPRO,2012,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2013,FIFA FIFPRO World 11,FIFA / FIFPRO,2013,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2014,FIFA FIFPRO World 11,FIFA / FIFPRO,2014,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2015,FIFA FIFPRO World 11,FIFA / FIFPRO,2015,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2016,FIFA FIFPRO World 11,FIFA / FIFPRO,2016,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2017,FIFA FIFPRO World 11,FIFA / FIFPRO,2017,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2018,FIFA FIFPRO World 11,FIFA / FIFPRO,2018,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2019,FIFA FIFPRO World 11,FIFA / FIFPRO,2019,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2020,FIFA FIFPRO World 11,FIFA / FIFPRO,2020,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fifpro-world-11-2021,FIFA FIFPRO World 11,FIFA / FIFPRO,2021,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+portuguese-sportsman-of-the-year-2011,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2011,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2012,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2012,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2014,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2014,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2015,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2015,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2016,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2016,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2017,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2017,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2018,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2018,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+portuguese-sportsman-of-the-year-2019,Portuguese Sportsman of the Year (Globo de Ouro),SIC / Caras,2019,1,wikipedia-cristiano-ronaldo,"Wikipedia lists 8 wins; messivsronaldo.app lists 11 (adds 2007, 2008, 2009). Only the 8 Wikipedia years are recorded until a primary source settles 2007-2009."
+fpf-player-of-the-year-2015,FPF Portuguese Player of the Year (Quinas de Ouro),Portuguese Football Federation,2015,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fpf-player-of-the-year-2016,FPF Portuguese Player of the Year (Quinas de Ouro),Portuguese Football Federation,2016,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fpf-player-of-the-year-2017,FPF Portuguese Player of the Year (Quinas de Ouro),Portuguese Football Federation,2017,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fpf-player-of-the-year-2018,FPF Portuguese Player of the Year (Quinas de Ouro),Portuguese Football Federation,2018,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,
+fpf-player-of-the-year-2019,FPF Portuguese Player of the Year (Quinas de Ouro),Portuguese Football Federation,2019,1,wikipedia-cristiano-ronaldo;messivsronaldo-app-individual-awards,

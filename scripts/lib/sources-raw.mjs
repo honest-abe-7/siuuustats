@@ -293,3 +293,30 @@ export function loadKaggleGoals(root = ROOT) {
 export function loadClubSeasonSnippets(root = ROOT) {
   return JSON.parse(read(RAW.wikiClubSeasons, root)).pages;
 }
+
+/** Wikipedia article "Honours" section: team honours per club/country and individual awards (display labels). */
+export function parseWikiHonours(root = ROOT) {
+  const json = JSON.parse(read(RAW.wikiArticle, root));
+  const text = json.query.pages[0].revisions[0].slots.main.content;
+  const start = text.search(/==\s*Honours\s*==/);
+  if (start < 0) throw new Error("Wikipedia article: no Honours section");
+  const rest = text.slice(start + 5);
+  const section = rest.slice(0, rest.search(/\n==[^=]/)).replace(/<ref[^>]*\/>|<ref[^>]*>[\s\S]*?<\/ref>|<!--[\s\S]*?-->/g, "");
+  const label = (s) => s.replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1").trim();
+  const team = [];
+  const individual = [];
+  let heading = null;
+  for (const line of section.split("\n")) {
+    const h = line.match(/^'''(.+?)'''\s*$/);
+    if (h) {
+      heading = h[1];
+      continue;
+    }
+    const m = line.match(/^\*\s*(.+?):\s*(.+)$/);
+    if (!m || !heading || heading === "Orders") continue;
+    const editions = label(m[2]).replace(/\(shared\)/, "").split(",").map((x) => x.trim().replace(/–/g, "-")).filter(Boolean);
+    const item = { heading, name: label(m[1]), editions };
+    (heading === "Individual" ? individual : team).push(item);
+  }
+  return { team, individual };
+}

@@ -3,6 +3,7 @@
 //   - RSSSF cap list               -> one match per cap (date, opponent, score, competition, shootout)
 //   - martj42 results.csv (CC0)    -> canonical team names, venue (home/away/neutral), city, tournament
 //   - data/manual/international-appearances-extra.csv -> documented caps missing from RSSSF
+//   - data/manual/international-unused-squad.csv -> matchday-squad matches he did not play (appeared=false, no cap number)
 //   - Wikipedia goals list (CC BY-SA) -> one goal per row (cap, date, score after goal, penalty flag)
 //   - martj42 goalscorers.csv (CC0)  -> minute, penalty flag and assister for competitive goals
 // Offline: reads data/raw/ only. Refresh snapshots first with `npm run snapshots:refresh`.
@@ -154,7 +155,50 @@ for (const c of capInputs) {
     _rsssfGoals: c.origin === "rsssf" ? c.goals : null,
   });
 }
-const matchByCap = new Map(matches.map((m) => [m.cap_number, m]));
+// ---- unused squad (appeared=false, never a cap) ------------------------------
+const unused = existsSync(join(ROOT, "data/manual/international-unused-squad.csv")) ? readCsv(join(ROOT, "data/manual/international-unused-squad.csv")).rows : [];
+for (const u of unused) {
+  const r = m42Match(u.date, u.opponent);
+  if (!r) {
+    issue("unused-squad-match-not-in-martj42", { date: u.date, opponent: u.opponent });
+    continue;
+  }
+  if (matches.some((m) => m.date === u.date)) {
+    issue("unused-squad-date-is-a-cap", { date: u.date });
+    continue;
+  }
+  const home = r.home_team === "Portugal";
+  const opponent = home ? r.away_team : r.home_team;
+  const opponent_id = slug(opponent);
+  teamNames.set(opponent_id, opponent);
+  const competition_id = M42_TOURNAMENT[r.tournament];
+  if (!competition_id) issue("unknown-tournament", { date: u.date, tournament: r.tournament });
+  matches.push({
+    match_id: `${u.date}-${TEAM}-${opponent_id}`,
+    date: u.date,
+    season: u.date.slice(0, 4),
+    competition_id,
+    stage: null,
+    team_id: TEAM,
+    opponent_id,
+    venue: r.neutral === "TRUE" ? "neutral" : home ? "home" : "away",
+    city: r.city || null,
+    country: r.country || null,
+    score_for: Number(home ? r.home_score : r.away_score),
+    score_against: Number(home ? r.away_score : r.home_score),
+    extra_time: null,
+    shootout: null,
+    appeared: false,
+    started: false,
+    minutes: null,
+    captain: null,
+    cap_number: null,
+    source_ids: [...new Set([...u.source_ids.split(";"), "martj42-results"])],
+    notes: u.note || null,
+    _rsssfGoals: null,
+  });
+}
+const matchByCap = new Map(matches.filter((m) => m.cap_number !== null).map((m) => [m.cap_number, m]));
 
 // ---- goals -----------------------------------------------------------------
 const goals = [];

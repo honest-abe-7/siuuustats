@@ -181,8 +181,10 @@ export const goalsFromAge = (ledger, age = 30) => goalsWithMatch(ledger).filter(
 export function clubSummary(ledger) {
   const goals = clubGoals(ledger);
   const apps = clubApps(ledger);
+  const teamName = new Map((ledger.tables.teams ?? []).map((t) => [t.team_id, t.name]));
   const perClub = CLUB_TEAMS.map((team_id) => ({
     team_id,
+    name: teamName.get(team_id) ?? null,
     apps: appearances(ledger, (m) => m.team_id === team_id).length,
     goals: goalsForClub(ledger, team_id),
     first_match: appearances(ledger, (m) => m.team_id === team_id).map((m) => m.date).sort()[0] ?? null,
@@ -212,9 +214,11 @@ export function clubSummary(ledger) {
 export function careerSummary(ledger) {
   const goals = careerGoals(ledger);
   const nonFifa = goalsWithMatch(ledger).filter((g) => g.match && NON_FIFA_COMPETITIONS.includes(g.match.competition_id)).length;
+  const apps = careerApps(ledger);
   return {
-    apps: careerApps(ledger),
+    apps,
     goals,
+    goals_per_game: Math.round((goals / apps) * 100) / 100,
     goals_excluding_non_fifa: goals - nonFifa,
     non_fifa_competitions: NON_FIFA_COMPETITIONS,
     penalty_goals: careerPenaltyGoals(ledger),
@@ -284,11 +288,319 @@ export function stageClass(stage) {
   return "other";
 }
 
+/** Stage class of a match for big-game splits: one-off and two-legged super cups count as finals. */
+export const bigGameClass = (m) => (/super-?cup|supercop|shield/.test(m.competition_id) && /^(|1st leg|2nd leg)$/.test(m.stage ?? "") ? "final" : stageClass(m.stage));
+
+/** Per club season (club × season) totals with enwiki-category splits. */
+export function clubSeasonTotals(ledger) {
+  const cat = new Map(ledger.tables.competitions.map((c) => [c.competition_id, c.wikipedia_category]));
+  const rows = new Map();
+  const goalsBy = new Map();
+  for (const g of ledger.tables.goals) goalsBy.set(g.match_id, (goalsBy.get(g.match_id) ?? 0) + 1);
+  for (const m of appearances(ledger, isClub)) {
+    const k = `${m.season}|${m.team_id}`;
+    if (!rows.has(k)) rows.set(k, { season: m.season, team_id: m.team_id, apps: 0, goals: 0, by_category: {} });
+    const r = rows.get(k);
+    const c = cat.get(m.competition_id) ?? "other";
+    r.by_category[c] ??= { apps: 0, goals: 0 };
+    const n = goalsBy.get(m.match_id) ?? 0;
+    r.apps++;
+    r.goals += n;
+    r.by_category[c].apps++;
+    r.by_category[c].goals += n;
+  }
+  return [...rows.values()]
+    .map((r) => ({ ...r, goals_per_game: Math.round((r.goals / r.apps) * 100) / 100 }))
+    .sort((a, b) => a.season.localeCompare(b.season) || a.team_id.localeCompare(b.team_id));
+}
+
 /** Apps and goals by stage class and scope (finals, semi-finals, ...). One-off super cups and two-legged super cups count as finals.
  *  International stage is not yet populated, so international rows are "unknown". */
 export function bigGameSplits(ledger) {
   const out = [];
   for (const [scope, pred] of [["club", isClub], ["international", isIntl]])
-    for (const r of splitBy(ledger, (m) => (/super-?cup|supercop|shield/.test(m.competition_id) && /^(|1st leg|2nd leg)$/.test(m.stage ?? "") ? "final" : stageClass(m.stage)), pred)) out.push({ scope, stage_class: r.key, apps: r.apps, goals: r.goals });
+    for (const r of splitBy(ledger, bigGameClass, pred)) {
+      const g = goalsWithMatch(ledger).filter((x) => x.match && pred(x.match) && bigGameClass(x.match) === r.key);
+      out.push({ scope, stage_class: r.key, apps: r.apps, goals: r.goals, matches_scored_in: new Set(g.map((x) => x.match_id)).size, penalties: g.filter((x) => x.method === "penalty").length });
+    }
+  return out;
+}
+
+/**
+ * Team trophies and individual awards headline counts.
+ * major_trophies = rows with counted_in_total (Wikipedia's Honours list: won while in the squad);
+ * trophies_incl_not_in_squad adds titles his team won while he was not in the matchday squad (messivsronaldo.app's 37).
+ */
+export function honoursSummary(ledger) {
+  const trophies = ledger.tables.trophies ?? [];
+  const awards = ledger.tables.awards ?? [];
+  const wins = (prefix) => awards.filter((a) => a.placing === 1 && prefix.some((p) => a.award_id.startsWith(p))).length;
+  const byTeam = {};
+  for (const t of trophies.filter((x) => x.counted_in_total)) byTeam[t.team_id] = (byTeam[t.team_id] ?? 0) + 1;
+  const byParticipation = {};
+  for (const t of trophies) byParticipation[t.participation] = (byParticipation[t.participation] ?? 0) + 1;
+  return {
+    major_trophies: trophies.filter((t) => t.counted_in_total).length,
+    trophies_incl_not_in_squad: trophies.length,
+    trophies_by_team: byTeam,
+    trophies_by_participation: byParticipation,
+    champions_league_titles: trophies.filter((t) => t.counted_in_total && t.competition_id === "uefa-champions-league").length,
+    league_titles: trophies.filter((t) => t.counted_in_total && ["primeira-liga", "premier-league", "la-liga", "serie-a", "saudi-pro-league"].includes(t.competition_id)).length,
+    ballon_dor: awards.filter((a) => a.placing === 1 && ["Ballon d'Or", "FIFA Ballon d'Or"].includes(a.name)).length,
+    fifa_best: wins(["the-best-fifa-mens-player-"]),
+    european_golden_shoes: wins(["european-golden-shoe-"]),
+    ucl_top_scorer_seasons: wins(["ucl-top-scorer-"]),
+    league_top_scorer_awards: wins(["premier-league-golden-boot-", "pichichi-trophy-", "capocannoniere-", "saudi-pro-league-golden-boot-"]),
+    individual_awards: awards.filter((a) => a.placing === 1).length,
+  };
+}
+
+// ---- M3b content splits (figures the docs/content write-ups state) -----------------------------
+
+const SCOPES = { career: () => true, club: (m) => isClub(m), international: (m) => isIntl(m) };
+const isQual = (m) => stageClass(m.stage) === "qualifying";
+const round2 = (x) => Math.round(x * 100) / 100;
+const gpg = (goals, apps) => (apps ? round2(goals / apps) : null);
+const scoredMatches = (goals) => new Set(goals.map((g) => g.match_id)).size;
+
+/** Champions League: main competition by stage class, knockout and final totals, penalties; qualifiers separate. */
+export function championsLeagueSplits(ledger) {
+  const main = (m) => m.competition_id === UCL && !isQual(m);
+  const goals = goalsWithMatch(ledger).filter((g) => g.match && main(g.match));
+  const apps = appearances(ledger, main);
+  const STAGES = ["group_or_league", "round_of_16", "quarter_final", "semi_final", "final"];
+  const by_stage = STAGES.map((stage_class) => {
+    const a = apps.filter((m) => stageClass(m.stage) === stage_class);
+    const g = goals.filter((x) => stageClass(x.match.stage) === stage_class);
+    return { stage_class, apps: a.length, goals: g.length, penalties: g.filter((x) => x.method === "penalty").length, matches_scored_in: scoredMatches(g) };
+  });
+  const other = apps.filter((m) => !STAGES.includes(stageClass(m.stage)));
+  const ko = by_stage.filter((s) => s.stage_class !== "group_or_league");
+  const qual = appearances(ledger, (m) => m.competition_id === UCL && isQual(m));
+  const qualGoals = goalsWithMatch(ledger).filter((g) => g.match?.competition_id === UCL && isQual(g.match)).length;
+  return {
+    apps: apps.length,
+    goals: goals.length,
+    penalty_goals: goals.filter((g) => g.method === "penalty").length,
+    non_penalty_goals: goals.filter((g) => g.method !== "penalty").length,
+    by_stage,
+    unclassified_apps: other.length,
+    knockout: { apps: ko.reduce((n, s) => n + s.apps, 0), goals: ko.reduce((n, s) => n + s.goals, 0), penalties: ko.reduce((n, s) => n + s.penalties, 0) },
+    finals: { ...by_stage.find((s) => s.stage_class === "final") },
+    qualifying: { apps: qual.length, goals: qualGoals },
+    incl_qualifying: { apps: apps.length + qual.length, goals: goals.length + qualGoals },
+    hat_tricks: multiGoalMatches(ledger, 3, main).length,
+  };
+}
+
+const minuteOf = (g) => (g.minute === null || g.minute === undefined || g.minute === "" ? null : Number(g.minute));
+
+/** Winning goals, equalisers, one-goal wins and late goals per scope (career / club / international / each club). */
+export function clutchSplits(ledger) {
+  const scopes = [...Object.entries(SCOPES), ...CLUB_TEAMS.map((t) => [t, (m) => m.team_id === t])];
+  return scopes.map(([scope, pred]) => {
+    const goals = goalsWithMatch(ledger).filter((g) => g.match && pred(g.match));
+    const winners = winningGoals(ledger, pred);
+    const oneGoal = (m) => !isAwarded(m) && m.score_for - m.score_against === 1;
+    const withMinute = goals.filter((g) => minuteOf(g) !== null);
+    const oneGoalWins = appearances(ledger, (m) => pred(m) && oneGoal(m));
+    const scoredIn = new Set(goals.map((g) => g.match_id));
+    return {
+      scope,
+      apps: appearances(ledger, pred).length,
+      goals: goals.length,
+      winning_goals: winners.length,
+      winning_goals_in_one_goal_wins: winners.filter((g) => oneGoal(g.match)).length,
+      winning_goals_penalties: winners.filter((g) => g.method === "penalty").length,
+      equalisers: equalisers(ledger, pred).length,
+      equalisers_penalties: equalisers(ledger, pred).filter((g) => g.method === "penalty").length,
+      one_goal_wins: oneGoalWins.length,
+      one_goal_wins_scored_in: oneGoalWins.filter((m) => scoredIn.has(m.match_id)).length,
+      goals_with_minute: withMinute.length,
+      goals_80_plus: withMinute.filter((g) => minuteOf(g) >= 80).length,
+      goals_90_plus: withMinute.filter((g) => minuteOf(g) >= 90).length,
+    };
+  });
+}
+
+/** Per-goal flags used by goals.json. */
+export function goalFlags(ledger) {
+  const w = new Set(winningGoals(ledger).map((g) => g.goal_id));
+  const e = new Set(equalisers(ledger).map((g) => g.goal_id));
+  return (goalId) => ({ winning_goal: w.has(goalId), equaliser: e.has(goalId) });
+}
+
+export const AGE_BANDS = [
+  { band: "under_25", from: 0, to: 24 },
+  { band: "25_29", from: 25, to: 29 },
+  { band: "30_34", from: 30, to: 34 },
+  { band: "35_plus", from: 35, to: 99 },
+];
+export const AGE_THRESHOLDS = [30, 35, 38, 40];
+
+/** Apps and goals per age band and from threshold ages, per scope. min_age/max_age are the ages actually played. */
+export function ageBands(ledger) {
+  const bands = [];
+  const thresholds = [];
+  for (const [scope, pred] of Object.entries(SCOPES)) {
+    const apps = appearances(ledger, pred);
+    const goals = goalsWithMatch(ledger).filter((g) => g.match && pred(g.match));
+    for (const b of AGE_BANDS) {
+      const inB = (m) => ageOn(m.date) >= b.from && ageOn(m.date) <= b.to;
+      const a = apps.filter(inB);
+      const g = goals.filter((x) => inB(x.match));
+      const ages = a.map((m) => ageOn(m.date));
+      bands.push({ scope, band: b.band, min_age: Math.min(...ages), max_age: Math.max(...ages), apps: a.length, goals: g.length, goals_per_game: gpg(g.length, a.length) });
+    }
+    for (const t of AGE_THRESHOLDS) {
+      const a = apps.filter((m) => ageOn(m.date) >= t).length;
+      const g = goals.filter((x) => ageOn(x.match.date) >= t).length;
+      thresholds.push({ scope, from_age: t, apps: a, goals: g, goals_before: goals.length - g, goals_per_game: gpg(g, a) });
+    }
+  }
+  return { bands, thresholds };
+}
+
+/** Club-style season (Jul-Jun) for any date. */
+export const seasonOf = (date) => {
+  const y = Number(date.slice(0, 4));
+  const start = Number(date.slice(5, 7)) >= 7 ? y : y - 1;
+  return `${start}-${String((start + 1) % 100).padStart(2, "0")}`;
+};
+
+const longestRun = (years) => {
+  const ys = [...new Set(years)].map(Number).sort((a, b) => a - b);
+  let best = { from: null, to: null, years: 0 };
+  let s = 0;
+  for (let i = 0; i < ys.length; i++) {
+    if (i > 0 && ys[i] !== ys[i - 1] + 1) s = i;
+    if (i - s + 1 > best.years) best = { from: ys[s], to: ys[i], years: i - s + 1 };
+  }
+  return best;
+};
+
+/** All-competition totals (club + international) per calendar year and per Jul-Jun season, with scoring-year runs. */
+export function seasonTotals(ledger) {
+  const row = (keyFn) => {
+    const out = new Map();
+    for (const m of appearances(ledger)) {
+      const k = keyFn(m);
+      if (!out.has(k)) out.set(k, { apps: 0, goals: 0, club_apps: 0, club_goals: 0, international_apps: 0, international_goals: 0 });
+      const r = out.get(k);
+      r.apps++;
+      r[isIntl(m) ? "international_apps" : "club_apps"]++;
+    }
+    for (const g of goalsWithMatch(ledger)) {
+      if (!g.match) continue;
+      const r = out.get(keyFn(g.match));
+      r.goals++;
+      r[isIntl(g.match) ? "international_goals" : "club_goals"]++;
+    }
+    return [...out.entries()].map(([k, r]) => ({ key: k, ...r, goals_per_game: gpg(r.goals, r.apps) })).sort((a, b) => a.key.localeCompare(b.key));
+  };
+  const by_year = row((m) => m.date.slice(0, 4)).map(({ key, ...r }) => ({ year: key, ...r }));
+  const by_season = row((m) => (isIntl(m) ? seasonOf(m.date) : m.season)).map(({ key, ...r }) => ({ season: key, ...r }));
+  return {
+    by_year,
+    by_season,
+    scoring_years: {
+      career: longestRun(by_year.filter((r) => r.goals > 0).map((r) => r.year)),
+      club: longestRun(by_year.filter((r) => r.club_goals > 0).map((r) => r.year)),
+      international: longestRun(by_year.filter((r) => r.international_goals > 0).map((r) => r.year)),
+    },
+  };
+}
+
+/** National teams: every opponent faced, with caps, goals and first goal; count scored against. */
+export function nationalTeamOpponents(ledger) {
+  const teamName = new Map((ledger.tables.teams ?? []).map((t) => [t.team_id, t.name]));
+  const first = new Map(opponentsScoredAgainst(ledger, isIntl).map((o) => [o.opponent_id, o.first_goal]));
+  const rows = splitBy(ledger, (m) => m.opponent_id, isIntl).map((r) => ({
+    opponent_id: r.key,
+    name: teamName.get(r.key) ?? r.key,
+    caps: r.apps,
+    goals: r.goals,
+    first_goal: first.get(r.key) ?? null,
+  }));
+  const scored = rows.filter((r) => r.goals > 0).sort((a, b) => a.first_goal.localeCompare(b.first_goal)).map((r, i) => ({ n: i + 1, ...r }));
+  return { scored_against: scored.length, faced: rows.length, scored, never_scored: rows.filter((r) => r.goals === 0).sort((a, b) => b.caps - a.caps || a.name.localeCompare(b.name)) };
+}
+
+/** Club opponent splits: El Clásico, Madrid derby, Champions League opponents, top opponents overall and per club. */
+export function clubOpponentSplits(ledger, top = 5) {
+  const teamName = new Map((ledger.tables.teams ?? []).map((t) => [t.team_id, t.name]));
+  const named = (r) => ({ opponent_id: r.key, name: teamName.get(r.key) ?? r.key, apps: r.apps, goals: r.goals });
+  const vs = (opp, label) => {
+    const byClub = splitBy(ledger, (m) => m.team_id, (m) => isClub(m) && m.opponent_id === opp).map((r) => ({ team_id: r.key, apps: r.apps, goals: r.goals }));
+    const rm = byClub.find((r) => r.team_id === "real-madrid") ?? { apps: 0, goals: 0 };
+    const all = byClub.reduce((a, r) => ({ apps: a.apps + r.apps, goals: a.goals + r.goals }), { apps: 0, goals: 0 });
+    const pens = penaltyGoals(ledger, (m) => isClub(m) && m.opponent_id === opp && m.team_id !== "real-madrid");
+    return { opponent_id: opp, label, for_real_madrid: { apps: rm.apps, goals: rm.goals }, all_clubs: all, by_club: byClub, penalties_for_other_clubs: pens };
+  };
+  const ucl = (m) => m.competition_id === UCL && !isQual(m);
+  return {
+    el_clasico: vs("barcelona", "El Clásico (Real Madrid v Barcelona)"),
+    madrid_derby: vs("atletico-madrid", "Madrid derby (Real Madrid v Atlético Madrid)"),
+    champions_league_opponents: splitBy(ledger, (m) => m.opponent_id, ucl).map(named),
+    top_club_opponents: splitBy(ledger, (m) => m.opponent_id, isClub).slice(0, 10).map(named),
+    top_opponents_by_club: CLUB_TEAMS.map((team_id) => ({ team_id, opponents: splitBy(ledger, (m) => m.opponent_id, (m) => m.team_id === team_id).slice(0, top).map(named) })),
+  };
+}
+
+/** Body-part counts per scope; unknown = no body part recorded (all international goals for now). */
+export function bodyParts(ledger) {
+  return Object.entries(SCOPES).map(([scope, pred]) => {
+    const goals = goalsWithMatch(ledger).filter((g) => g.match && pred(g.match));
+    const c = (v) => goals.filter((g) => g.body_part === v).length;
+    const right = c("right_foot"), left = c("left_foot"), head = c("head");
+    const known = goals.filter((g) => g.body_part).length;
+    return { scope, goals: goals.length, right_foot: right, left_foot: left, head, other: known - right - left - head, unknown: goals.length - known, known };
+  });
+}
+
+/** World Cup / Euro / Confederations Cup finals tournaments: apps and goals per edition (edition = calendar year played). */
+export function tournamentEditions(ledger) {
+  const T = ["fifa-world-cup", "uefa-euro", "fifa-confederations-cup"];
+  return splitBy(ledger, (m) => `${m.competition_id}|${m.date.slice(0, 4)}`, (m) => isIntl(m) && T.includes(m.competition_id))
+    .map((r) => {
+      const [competition_id, year] = r.key.split("|");
+      return { competition_id, year, apps: r.apps, goals: r.goals };
+    })
+    .sort((a, b) => a.competition_id.localeCompare(b.competition_id) || a.year.localeCompare(b.year));
+}
+
+/** Dated milestones derived from the ledger (first/latest, every 100th goal, competition milestones the write-ups cite). */
+export function milestones(ledger) {
+  const teamName = new Map((ledger.tables.teams ?? []).map((t) => [t.team_id, t.name]));
+  const apps = appearances(ledger).sort((a, b) => a.date.localeCompare(b.date));
+  const goals = goalsWithMatch(ledger).filter((g) => g.match).sort((a, b) => a.match.date.localeCompare(b.match.date) || (Number(a.minute) || 0) - (Number(b.minute) || 0));
+  const out = [];
+  const fromMatch = (key, label, m, extra = {}) => m && out.push({ key, label, date: m.date, match_id: m.match_id, team_id: m.team_id, opponent_id: m.opponent_id, opponent: teamName.get(m.opponent_id) ?? m.opponent_id, competition_id: m.competition_id, age: ageOn(m.date), ...extra });
+  const nth = (key, label, list, n, appsPred) => {
+    const g = list[n - 1];
+    if (!g) return;
+    fromMatch(key, label, g.match, { goal_id: g.goal_id, minute: g.minute ?? null, value: n, ...(appsPred ? { apps_to_date: appearances(ledger, (m) => appsPred(m) && m.date <= g.match.date).length } : {}) });
+  };
+  fromMatch("first-senior-match", "First official senior match", apps[0]);
+  for (const t of CLUB_TEAMS) fromMatch(`first-match-${t}`, `First match for ${teamName.get(t) ?? t}`, apps.find((m) => m.team_id === t));
+  fromMatch("first-cap", "First cap for Portugal", apps.find(isIntl));
+  fromMatch("latest-match", "Latest appearance", apps.at(-1));
+  nth("first-goal", "First official senior goal", goals, 1);
+  nth("first-international-goal", "First goal for Portugal", goals.filter((g) => isIntl(g.match)), 1);
+  const latest = goals.at(-1);
+  fromMatch("latest-goal", "Latest goal", latest.match, { goal_id: latest.goal_id, minute: latest.minute ?? null, value: goals.length });
+  const li = goals.filter((g) => isIntl(g.match)).at(-1);
+  fromMatch("latest-international-goal", "Latest goal for Portugal", li.match, { goal_id: li.goal_id, minute: li.minute ?? null, value: goals.filter((g) => isIntl(g.match)).length });
+  for (let n = 100; n <= goals.length; n += 100) nth(`career-goal-${n}`, `Career goal ${n}`, goals, n, () => true);
+  const uclMain = (m) => m.competition_id === UCL && !isQual(m);
+  nth("ucl-goal-100", "100th Champions League goal (main competition)", goals.filter((g) => uclMain(g.match)), 100, uclMain);
+  const liga = (m) => m.competition_id === "la-liga";
+  nth("la-liga-goal-300", "300th La Liga goal", goals.filter((g) => liga(g.match)), 300, liga);
+  const after30 = goals.filter((g) => ageOn(g.match.date) >= 30);
+  nth("goals-from-30-500", "500th goal from age 30", after30, 500, (m) => ageOn(m.date) >= 30);
+  for (const t of CLUB_TEAMS) {
+    const list = goals.filter((g) => g.match.team_id === t);
+    if (list.length >= 100) nth(`club-goal-100-${t}`, `100th goal for ${teamName.get(t) ?? t}`, list, 100, (m) => m.team_id === t);
+  }
   return out;
 }

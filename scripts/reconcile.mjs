@@ -7,7 +7,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROOT, loadLedger } from "./lib/ledger.mjs";
 import * as stats from "./lib/stats.mjs";
-import { parseWikiList, parseWikiArticle, parseRsssf, loadMartj42, parseWikiClubTable, loadKaggleGoals } from "./lib/sources-raw.mjs";
+import { parseWikiList, parseWikiArticle, parseRsssf, loadMartj42, parseWikiClubTable, loadKaggleGoals, parseWikiHonours } from "./lib/sources-raw.mjs";
 
 const WIKI_COMP = {
   "UEFA European Championship qualifying": "uefa-euro-qualification",
@@ -143,6 +143,47 @@ export function runReconciliation(root = ROOT, ledger = loadLedger(root)) {
   // Reference figures from outlets that count differently (documented; must stay a known difference)
   add("reference-real-madrid-goals-marca", "skysports-ronaldo-mystery-goal", 451, stats.goalsForClub(ledger, "real-madrid"), "Marca / Real Madrid count of Ronaldo's Real Madrid goals (credits him with Pepe's deflection, 18 Sep 2010)");
   add("reference-ucl-uefa-com-headline", "uefa-com-ucl-all-time-top-scorers", { goals: 140, apps: 183 }, { goals: stats.uclGoalsMain(ledger), apps: stats.uclAppsMain(ledger) }, "UEFA.com headline Champions League goals and appearances (excluding qualifying)");
+  // Honours: every Wikipedia team honour must be a counted trophy row, and vice versa; participation must agree with the ledger.
+  {
+    const HON_TEAM = { "Sporting CP": "sporting-cp", "Manchester United": "manchester-united", "Real Madrid": "real-madrid", Juventus: "juventus", "Al-Nassr": "al-nassr", Portugal: "portugal" };
+    const HON_COMP = {
+      "Supertaça Cândido de Oliveira": "supertaca-candido-de-oliveira", "Premier League": "premier-league", "FA Cup": "fa-cup", "Football League Cup": "efl-cup",
+      "FA Community Shield": "fa-community-shield", "UEFA Champions League": "uefa-champions-league", "FIFA Club World Cup": "fifa-club-world-cup", "La Liga": "la-liga",
+      "Copa del Rey": "copa-del-rey", "Supercopa de España": "supercopa-de-espana", "UEFA Super Cup": "uefa-super-cup", "Serie A": "serie-a", "Coppa Italia": "coppa-italia",
+      "Supercoppa Italiana": "supercoppa-italiana", "Saudi Pro League": "saudi-pro-league", "Arab Club Champions Cup": "arab-club-champions-cup",
+      "UEFA European Championship": "uefa-euro", "UEFA Nations League": "uefa-nations-league",
+    };
+    const hon = parseWikiHonours(root);
+    const trophies = ledger.tables.trophies ?? [];
+    const counted = trophies.filter((t) => t.counted_in_total);
+    const wikiKeys = hon.team.flatMap((h) => h.editions.map((e) => `${HON_TEAM[h.heading] ?? h.heading}|${HON_COMP[h.name] ?? h.name}|${e}`)).sort();
+    const ourKeys = counted.map((t) => `${t.team_id}|${t.competition_id}|${t.season}`).sort();
+    add("honours-count-wikipedia", "wikipedia-cristiano-ronaldo", wikiKeys.length, counted.length, "Major team trophies: Wikipedia Honours section vs trophies with counted_in_total=true");
+    add("honours-items-wikipedia", "wikipedia-cristiano-ronaldo", wikiKeys.filter((k) => !ourKeys.includes(k)), ourKeys.filter((k) => !wikiKeys.includes(k)), "Wikipedia team honours missing from trophies.csv (expected) vs counted trophies not on Wikipedia (actual); both should be empty");
+    add("reference-trophies-messivsronaldo", "messivsronaldo-app-honours", 37, trophies.length, "messivsronaldo.app team trophy count (includes 2 won while not in the squad: 2008 Community Shield, 2016 UEFA Super Cup)");
+    const awards = ledger.tables.awards ?? [];
+    const wikiAwards = hon.individual.reduce((n, h) => n + h.editions.length, 0);
+    add("honours-individual-count-wikipedia", "wikipedia-cristiano-ronaldo", wikiAwards, awards.filter((a) => a.placing === 1 && a.source_ids.includes("wikipedia-cristiano-ronaldo")).length, "Individual honours listed by Wikipedia vs award rows (placing 1) citing it");
+    const inWindow = (t, m) => {
+      if (/^\d{4}-\d{2}$/.test(t.season) && m.team_id !== stats.NATIONAL_TEAM) return m.season === t.season;
+      const y = Number(t.season.slice(0, 4));
+      if (/^\d{4}-\d{2}$/.test(t.season)) return m.date >= `${y}-07-01` && m.date <= `${y + 1}-06-30`;
+      return m.team_id === stats.NATIONAL_TEAM ? m.date.startsWith(t.season) : m.date >= `${y}-01-01` && m.date <= `${y + 1}-01-31`;
+    };
+    // International matches have no stage yet (data request #3), so Portugal's final dates are pinned here
+    // (edition articles linked from the Honours section: Euro 2016 final, 2019 and 2025 Nations League finals).
+    const PORTUGAL_FINALS = { "portugal-uefa-euro-2016": "2016-07-10", "portugal-uefa-nations-league-2018-19": "2019-06-09", "portugal-uefa-nations-league-2024-25": "2025-06-08" };
+    const bad = [];
+    for (const t of trophies) {
+      const apps = ledger.tables.matches.filter((m) => m.appeared && m.team_id === t.team_id && m.competition_id === t.competition_id && inWindow(t, m));
+      const ok =
+        t.participation === "played_final" ? apps.some((m) => stats.bigGameClass(m) === "final" || PORTUGAL_FINALS[t.trophy_id] === m.date) :
+        t.participation === "played" ? apps.length > 0 && (t.competition_id.includes("league") || /liga|serie-a|premier/.test(t.competition_id) || !apps.some((m) => stats.bigGameClass(m) === "final")) :
+        apps.length === 0;
+      if (!ok) bad.push(`${t.trophy_id}:${t.participation}:${apps.length}apps`);
+    }
+    add("honours-participation-vs-ledger", "eswiki-cr7-club-matches", [], bad, "Trophy participation agrees with ledger appearances (played_final needs an appearance in the final; squad_unused/not_in_squad need none)");
+  }
   add("reference-ucl-uefa-incl-qualifying", "uefa-com-ucl-all-time-top-scorers", 141, stats.uclGoalsInclQualifiers(ledger), "UEFA all-time list including qualifying rounds");
 
   // 7. Kaggle per-match coverage (seed source): every Kaggle goal date must carry the same number of ledger goals

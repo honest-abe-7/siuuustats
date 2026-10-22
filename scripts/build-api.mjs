@@ -37,6 +37,7 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
     };
   };
   const goals = stats.goalsWithMatch(ledger);
+  const flags = stats.goalFlags(ledger);
   const goalRows = goals
     .map((g) => ({
       goal_id: g.goal_id,
@@ -58,6 +59,7 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
       assist_player: g.assist_player,
       assist_type: g.assist_type,
       score_after: g.score_after,
+      ...flags(g.goal_id),
       result: `${g.match.score_for}-${g.match.score_against}`,
       age: stats.ageOn(g.match.date),
       intl_goal_no: g.intl_goal_no,
@@ -69,6 +71,18 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
   const out = {};
   const clubMatches = matches.filter((m) => !isPor(m));
   const goalSrc = (pred) => allSrc(goals.filter((g) => g.match && pred(g.match)));
+  // Row-level sources: every source cited by the appearances and goals that make up a row.
+  const goalsByMatch = new Map();
+  for (const g of ledger.tables.goals) (goalsByMatch.get(g.match_id) ?? goalsByMatch.set(g.match_id, []).get(g.match_id)).push(g);
+  const rowSrc = (pred) => {
+    const ids = new Set();
+    for (const m of matches) {
+      if (!m.appeared || !pred(m)) continue;
+      m.source_ids.forEach((x) => ids.add(x));
+      for (const g of goalsByMatch.get(m.match_id) ?? []) g.source_ids.forEach((x) => ids.add(x));
+    }
+    return [...ids].sort();
+  };
   const INTL = ["wikipedia-cristiano-ronaldo", "wikipedia-cr7-intl-goals", "rsssf-cronaldo-intlg", "martj42-results"];
   const CLUB = ["eswiki-cr7-club-matches", "wikipedia-club-season-articles", "wikipedia-cristiano-ronaldo"];
   // Per-number citations (dotted path into data -> source_ids). The envelope attribution still lists every source used.
@@ -89,10 +103,38 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
     "career.penalty_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-club-season-articles", "wikipedia-cr7-intl-goals", "martj42-goalscorers"],
     "career.winning_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-cr7-intl-goals"],
     "career.equalisers": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-cr7-intl-goals"],
+    "career.goals_per_game": [...CLUB, ...INTL],
+    "career.free_kick_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals"],
+    "career.non_penalty_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-club-season-articles", "wikipedia-cr7-intl-goals", "martj42-goalscorers"],
+    "career.hat_tricks": ["eswiki-cr7-club-matches", "wikipedia-cr7-intl-goals"],
+    "career.goals_from_age_30": ["eswiki-cr7-club-matches", "wikipedia-cr7-intl-goals", "wikipedia-cristiano-ronaldo"],
+    "career.goals_excluding_non_fifa": [...CLUB, "wikipedia-cr7-intl-goals"],
+    "career.non_fifa_competitions": ["wikipedia-cristiano-ronaldo", "wikipedia-club-season-articles"],
+    "career.record": ["eswiki-cr7-club-matches", "wikipedia-club-season-articles", "rsssf-cronaldo-intlg", "martj42-results"],
+    "club.goals_per_game": CLUB,
+    "club.goals_excluding_non_fifa": CLUB,
+    "club.hat_tricks": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals"],
+    "international.goals_per_game": INTL,
+    "international.competitive": ["wikipedia-cr7-intl-goals", "martj42-goalscorers", "martj42-results"],
+    "international.friendly": ["wikipedia-cr7-intl-goals", "rsssf-cronaldo-intlg"],
+    "international.first_cap": ["rsssf-cronaldo-intlg", "martj42-results"],
+    "international.last_cap": ["wikipedia-cristiano-ronaldo", "wikipedia-cr7-intl-goals", "martj42-results"],
+    "honours.major_trophies": ["wikipedia-cristiano-ronaldo"],
+    "honours.trophies_incl_not_in_squad": ["messivsronaldo-app-honours", "wikipedia-2008-community-shield", "wikipedia-2016-uefa-super-cup"],
+    "honours.trophies_by_team": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-honours"],
+    "honours.trophies_by_participation": ["eswiki-cr7-club-matches", "wikipedia-2002-supertaca", "wikipedia-2014-copa-del-rey-final", "messivsronaldo-app-honours"],
+    "honours.champions_league_titles": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-honours"],
+    "honours.league_titles": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-honours"],
+    "honours.ballon_dor": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
+    "honours.fifa_best": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
+    "honours.european_golden_shoes": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
+    "honours.ucl_top_scorer_seasons": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards", "uefa-com-ucl-all-time-top-scorers"],
+    "honours.league_top_scorer_awards": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
+    "honours.individual_awards": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
   };
   out["summary.json"] = envelope(
     "summary",
-    { international: stats.internationalSummary(ledger), club: stats.clubSummary(ledger), career: stats.careerSummary(ledger), citations },
+    { international: stats.internationalSummary(ledger), club: stats.clubSummary(ledger), career: stats.careerSummary(ledger), honours: stats.honoursSummary(ledger), citations },
     allSrc(matches).concat(allSrc(ledger.tables.goals))
   );
   out["goals.json"] = envelope("goals", goalRows, allSrc(goalRows));
@@ -115,14 +157,19 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
     everything
   );
   out["goals-by-opponent.json"] = envelope("goals-by-opponent", scoped((m) => m.opponent_id, named(teamName, "opponent_id")), everything);
-  out["goals-by-club.json"] = envelope("goals-by-club", stats.clubSummary(ledger).clubs.map((c) => ({ ...c, name: teamName.get(c.team_id) })), allSrc(clubMatches).concat(goalSrc((m) => !isPor(m))));
+  out["goals-by-club.json"] = envelope("goals-by-club", stats.clubSummary(ledger).clubs.map((c) => ({ ...c, name: teamName.get(c.team_id), source_ids: rowSrc((m) => m.team_id === c.team_id) })), allSrc(clubMatches).concat(goalSrc((m) => !isPor(m))));
+  out["club-season-totals.json"] = envelope(
+    "club-season-totals",
+    stats.clubSeasonTotals(ledger).map((r) => ({ ...r, name: teamName.get(r.team_id), source_ids: rowSrc((m) => m.team_id === r.team_id && m.season === r.season) })),
+    allSrc(clubMatches).concat(goalSrc((m) => !isPor(m)))
+  );
   out["goals-by-season.json"] = envelope(
     "goals-by-season",
     stats
       .splitBy(ledger, (m) => `${m.season}|${m.team_id}|${m.competition_id}`, (m) => !isPor(m))
       .map((r) => {
         const [season, team_id, competition_id] = r.key.split("|");
-        return { season, team_id, competition_id, competition: compName.get(competition_id), wikipedia_category: competitions.find((c) => c.competition_id === competition_id)?.wikipedia_category ?? null, apps: r.apps, goals: r.goals };
+        return { season, team_id, competition_id, competition: compName.get(competition_id), wikipedia_category: competitions.find((c) => c.competition_id === competition_id)?.wikipedia_category ?? null, apps: r.apps, goals: r.goals, source_ids: rowSrc((m) => m.season === season && m.team_id === team_id && m.competition_id === competition_id) };
       })
       .sort((a, b) => a.season.localeCompare(b.season) || a.team_id.localeCompare(b.team_id) || b.apps - a.apps || a.competition_id.localeCompare(b.competition_id)),
     allSrc(clubMatches).concat(goalSrc((m) => !isPor(m)))
@@ -140,11 +187,24 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
   );
   out["goals-by-age.json"] = envelope(
     "goals-by-age",
-    scoped((m) => stats.ageOn(m.date), (r) => ({ age: r.key, apps: r.apps, goals: r.goals })).sort((a, b) => a.scope.localeCompare(b.scope) || a.age - b.age),
+    scoped((m) => stats.ageOn(m.date), (r) => ({ age: r.key, apps: r.apps, goals: r.goals }))
+      .map((r) => ({ ...r, source_ids: rowSrc((m) => scopeOf(m) === r.scope && stats.ageOn(m.date) === r.age) }))
+      .sort((a, b) => a.scope.localeCompare(b.scope) || a.age - b.age),
     everything
   );
-  out["streaks.json"] = envelope("streaks", stats.scoringStreaks(ledger), everything);
-  out["big-games.json"] = envelope("big-games", stats.bigGameSplits(ledger), everything);
+  out["streaks.json"] = envelope(
+    "streaks",
+    stats.scoringStreaks(ledger).map((r) => {
+      const ids = new Set(r.match_ids);
+      return { ...r, source_ids: rowSrc((m) => ids.has(m.match_id)) };
+    }),
+    everything
+  );
+  out["big-games.json"] = envelope(
+    "big-games",
+    stats.bigGameSplits(ledger).map((r) => ({ ...r, source_ids: rowSrc((m) => scopeOf(m) === r.scope && stats.bigGameClass(m) === r.stage_class) })),
+    everything
+  );
   const rec = runReconciliation(ledger.root ?? undefined, ledger);
   out["reconciliation.json"] = envelope(
     "reconciliation",
@@ -165,6 +225,92 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
     },
     corr.flatMap((c) => [c.source_id, ...c.evidence_source_ids.split(";")]).concat(dateChecks.flatMap((d) => d.evidence_source_ids.split(";")))
   );
+  // ---- M3b content splits ----
+  const SCOPE_PRED = { career: () => true, all: () => true, club: (m) => scopeOf(m) === "club", international: (m) => scopeOf(m) === "international" };
+  const scopePred = (scope) => SCOPE_PRED[scope] ?? ((m) => m.team_id === scope);
+  const UCLMAIN = (m) => m.competition_id === "uefa-champions-league" && stats.stageClass(m.stage) !== "qualifying";
+  const ucl = stats.championsLeagueSplits(ledger);
+  out["champions-league.json"] = envelope(
+    "champions-league",
+    {
+      ...ucl,
+      by_stage: ucl.by_stage.map((r) => ({ ...r, source_ids: rowSrc((m) => UCLMAIN(m) && stats.stageClass(m.stage) === r.stage_class) })),
+      note: "Main competition (group/league phase to final), stage from matches.stage via stageClass(). Qualifying rounds are separate; incl_qualifying matches UEFA's all-rounds list.",
+      source_ids: rowSrc(UCLMAIN),
+    },
+    allSrc(matches.filter(UCLMAIN))
+  );
+  out["clutch.json"] = envelope(
+    "clutch",
+    stats.clutchSplits(ledger).map((r) => ({ ...r, source_ids: rowSrc(scopePred(r.scope)) })),
+    everything
+  );
+  const ab = stats.ageBands(ledger);
+  out["goals-by-age-band.json"] = envelope(
+    "goals-by-age-band",
+    {
+      bands: ab.bands.map((r) => {
+        const b = stats.AGE_BANDS.find((x) => x.band === r.band);
+        return { ...r, source_ids: rowSrc((m) => scopePred(r.scope)(m) && stats.ageOn(m.date) >= b.from && stats.ageOn(m.date) <= b.to) };
+      }),
+      thresholds: ab.thresholds.map((r) => ({ ...r, source_ids: rowSrc((m) => scopePred(r.scope)(m) && stats.ageOn(m.date) >= r.from_age) })),
+      birth_date: stats.BIRTH_DATE,
+    },
+    everything.concat(["wikipedia-cristiano-ronaldo"])
+  );
+  const st = stats.seasonTotals(ledger);
+  out["season-totals.json"] = envelope(
+    "season-totals",
+    {
+      by_year: st.by_year.map((r) => ({ ...r, source_ids: rowSrc((m) => m.date.startsWith(r.year)) })),
+      by_season: st.by_season.map((r) => ({ ...r, source_ids: rowSrc((m) => (scopeOf(m) === "international" ? stats.seasonOf(m.date) : m.season) === r.season) })),
+      scoring_years: st.scoring_years,
+      note: "All competitions, club + international. by_season uses the club season; international matches are placed in the July-June season of their date.",
+    },
+    everything
+  );
+  const nto = stats.nationalTeamOpponents(ledger);
+  out["national-teams.json"] = envelope(
+    "national-teams",
+    {
+      ...nto,
+      tournament_editions: stats.tournamentEditions(ledger).map((r) => ({ ...r, source_ids: rowSrc((m) => scopeOf(m) === "international" && m.competition_id === r.competition_id && m.date.startsWith(r.year)) })),
+      scored: nto.scored.map((r) => ({ ...r, source_ids: rowSrc((m) => scopeOf(m) === "international" && m.opponent_id === r.opponent_id) })),
+      never_scored: nto.never_scored.map((r) => ({ ...r, source_ids: rowSrc((m) => scopeOf(m) === "international" && m.opponent_id === r.opponent_id) })),
+    },
+    allSrc(matches.filter((m) => scopeOf(m) === "international")).concat(goalSrc((m) => scopeOf(m) === "international"))
+  );
+  const co = stats.clubOpponentSplits(ledger);
+  const oppRow = (pred) => (r) => ({ ...r, source_ids: rowSrc((m) => pred(m) && m.opponent_id === r.opponent_id) });
+  out["club-opponents.json"] = envelope(
+    "club-opponents",
+    {
+      el_clasico: { ...co.el_clasico, source_ids: rowSrc((m) => scopeOf(m) === "club" && m.opponent_id === "barcelona") },
+      madrid_derby: { ...co.madrid_derby, source_ids: rowSrc((m) => scopeOf(m) === "club" && m.opponent_id === "atletico-madrid") },
+      champions_league_opponents: co.champions_league_opponents.map(oppRow(UCLMAIN)),
+      top_club_opponents: co.top_club_opponents.map(oppRow((m) => scopeOf(m) === "club")),
+      top_opponents_by_club: co.top_opponents_by_club.map((c) => ({ ...c, name: teamName.get(c.team_id), opponents: c.opponents.map(oppRow((m) => m.team_id === c.team_id)) })),
+    },
+    allSrc(clubMatches).concat(goalSrc((m) => !isPor(m)))
+  );
+  out["milestones.json"] = envelope(
+    "milestones",
+    stats.milestones(ledger).map((r) => ({ ...r, source_ids: rowSrc((m) => m.match_id === r.match_id) })),
+    everything
+  );
+  out["body-parts.json"] = envelope(
+    "body-parts",
+    stats.bodyParts(ledger).map((r) => ({ ...r, source_ids: r.scope === "international" ? ["wikipedia-cr7-intl-goals"] : ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals"] })),
+    ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-cr7-intl-goals"]
+  );
+  const trophies = ledger.tables.trophies ?? [];
+  const awards = ledger.tables.awards ?? [];
+  out["trophies.json"] = envelope(
+    "trophies",
+    trophies.map((t) => ({ ...t, competition: compName.get(t.competition_id), team: teamName.get(t.team_id) })),
+    allSrc(trophies)
+  );
+  out["awards.json"] = envelope("awards", awards, allSrc(awards));
   out["records.json"] = envelope(
     "records",
     records.map((r) => ({ ...r, computed_value: r.compute_fn ? String(stats.evaluateComputeFn(ledger, r.compute_fn)) : null })),
