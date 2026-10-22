@@ -604,3 +604,77 @@ export function milestones(ledger) {
   }
   return out;
 }
+
+// ---- M3c derived summary figures ---------------------------------------------------------------
+
+const pct1 = (part, whole) => (whole ? Math.round((part / whole) * 1000) / 10 : null);
+/** Start year of a trophy season: "2006-07" -> 2006, "2008" -> 2008. */
+const trophyStartYear = (season) => Number(String(season).slice(0, 4));
+
+/** Non-penalty goals and their share of the total (percent, 1 dp), for a match predicate. */
+export function nonPenalty(ledger, pred = () => true) {
+  const goals = goalsWithMatch(ledger).filter((g) => g.match && pred(g.match));
+  const np = goals.filter((g) => g.method !== "penalty").length;
+  return { goals: goals.length, non_penalty_goals: np, non_penalty_share_pct: pct1(np, goals.length) };
+}
+
+/** Career goals and apps with one club's matches removed (e.g. "without Al-Nassr"). */
+export function careerExcludingClub(ledger, teamId) {
+  const pred = (m) => m.team_id !== teamId;
+  return { excluded_team_id: teamId, apps: appearances(ledger, pred).length, goals: goalsWithMatch(ledger).filter((g) => g.match && pred(g.match)).length };
+}
+
+/**
+ * Spells at a club: runs of seasons with appearances, split wherever there is a gap of more than one season.
+ * Each spell has apps, goals, a per-season breakdown and the team trophies whose season starts inside the spell
+ * (counted_in_total, plus the not-in-squad ones separately).
+ */
+export function clubSpells(ledger, teamId) {
+  const apps = appearances(ledger, (m) => m.team_id === teamId).sort((a, b) => a.date.localeCompare(b.date));
+  const goalsBy = new Map();
+  for (const g of ledger.tables.goals) goalsBy.set(g.match_id, (goalsBy.get(g.match_id) ?? 0) + 1);
+  const spells = [];
+  for (const m of apps) {
+    const y = trophyStartYear(m.season);
+    let s = spells.at(-1);
+    if (!s || y - s.last_year > 1) spells.push((s = { first_year: y, last_year: y, matches: [] }));
+    s.last_year = y;
+    s.matches.push(m);
+  }
+  const trophies = (ledger.tables.trophies ?? []).filter((t) => t.team_id === teamId);
+  return spells.map((s) => {
+    const seasons = [...new Set(s.matches.map((m) => m.season))];
+    const tr = trophies.filter((t) => trophyStartYear(t.season) >= s.first_year && trophyStartYear(t.season) <= s.last_year);
+    const first = s.matches[0].date, last = s.matches.at(-1).date;
+    return {
+      spell: `${first.slice(0, 4)}-${last.slice(2, 4)}`,
+      from: first,
+      to: last,
+      seasons,
+      apps: s.matches.length,
+      goals: s.matches.reduce((n, m) => n + (goalsBy.get(m.match_id) ?? 0), 0),
+      by_season: seasons.map((season) => {
+        const ms = s.matches.filter((m) => m.season === season);
+        return { season, apps: ms.length, goals: ms.reduce((n, m) => n + (goalsBy.get(m.match_id) ?? 0), 0) };
+      }),
+      trophies: tr.filter((t) => t.counted_in_total).length,
+      trophies_incl_not_in_squad: tr.length,
+      trophy_ids: tr.filter((t) => t.counted_in_total).map((t) => t.trophy_id),
+      not_in_squad_trophy_ids: tr.filter((t) => !t.counted_in_total).map((t) => t.trophy_id),
+      match_ids: s.matches.map((m) => m.match_id),
+    };
+  });
+}
+
+/** League titles (counted_in_total) by the league's country, for every country whose league Ronaldo played in. */
+export function leagueTitlesByCountry(ledger) {
+  const leagues = new Map(ledger.tables.competitions.filter((c) => c.type === "league" && c.country).map((c) => [c.competition_id, c.country]));
+  const played = new Set(appearances(ledger).map((m) => m.competition_id).filter((c) => leagues.has(c)));
+  const out = Object.fromEntries([...played].map((c) => leagues.get(c)).sort().map((c) => [c, 0]));
+  for (const t of (ledger.tables.trophies ?? []).filter((x) => x.counted_in_total && leagues.has(x.competition_id))) out[leagues.get(t.competition_id)] = (out[leagues.get(t.competition_id)] ?? 0) + 1;
+  return out;
+}
+
+/** Titles (counted_in_total) one team won in one competition. */
+export const teamTitles = (ledger, teamId, competitionId) =>
+  (ledger.tables.trophies ?? []).filter((t) => t.counted_in_total && t.team_id === teamId && t.competition_id === competitionId).length;
