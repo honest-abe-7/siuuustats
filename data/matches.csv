@@ -1,0 +1,235 @@
+match_id,date,season,competition_id,stage,team_id,opponent_id,venue,city,country,score_for,score_against,extra_time,shootout,appeared,started,minutes,captain,cap_number,source_ids
+2003-08-20-portugal-kazakhstan,2003-08-20,2003,international-friendly,,portugal,kazakhstan,home,Chaves,Portugal,1,0,false,,true,,,,1,rsssf-cronaldo-intlg;martj42-results
+2003-10-11-portugal-albania,2003-10-11,2003,international-friendly,,portugal,albania,home,Lisbon,Portugal,5,3,false,,true,,,,2,rsssf-cronaldo-intlg;martj42-results
+2004-02-18-portugal-england,2004-02-18,2004,international-friendly,,portugal,england,home,Faro,Portugal,1,1,false,,true,,,,3,rsssf-cronaldo-intlg;martj42-results
+2004-03-31-portugal-italy,2004-03-31,2004,international-friendly,,portugal,italy,home,Braga,Portugal,1,2,false,,true,,,,4,rsssf-cronaldo-intlg;martj42-results
+2004-04-28-portugal-sweden,2004-04-28,2004,international-friendly,,portugal,sweden,home,Coimbra,Portugal,2,2,false,,true,,,,5,rsssf-cronaldo-intlg;martj42-results
+2004-05-29-portugal-luxembourg,2004-05-29,2004,international-friendly,,portugal,luxembourg,home,Águeda,Portugal,3,0,false,,true,,,,6,rsssf-cronaldo-intlg;martj42-results
+2004-06-05-portugal-lithuania,2004-06-05,2004,international-friendly,,portugal,lithuania,home,Setúbal,Portugal,4,1,false,,true,,,,7,rsssf-cronaldo-intlg;martj42-results
+2004-06-12-portugal-greece,2004-06-12,2004,uefa-euro,,portugal,greece,home,Porto,Portugal,1,2,false,,true,,,,8,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2004-06-16-portugal-russia,2004-06-16,2004,uefa-euro,,portugal,russia,home,Lisbon,Portugal,2,0,false,,true,,,,9,rsssf-cronaldo-intlg;martj42-results
+2004-06-20-portugal-spain,2004-06-20,2004,uefa-euro,,portugal,spain,home,Lisbon,Portugal,1,0,false,,true,,,,10,rsssf-cronaldo-intlg;martj42-results
+2004-06-24-portugal-england,2004-06-24,2004,uefa-euro,,portugal,england,home,Lisbon,Portugal,2,2,true,won 6-5,true,,,,11,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2004-06-30-portugal-netherlands,2004-06-30,2004,uefa-euro,,portugal,netherlands,home,Lisbon,Portugal,2,1,false,,true,,,,12,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2004-07-04-portugal-greece,2004-07-04,2004,uefa-euro,,portugal,greece,home,Lisbon,Portugal,0,1,false,,true,,,,13,rsssf-cronaldo-intlg;martj42-results
+2004-09-04-portugal-latvia,2004-09-04,2004,fifa-world-cup-qualification,,portugal,latvia,away,Riga,Latvia,2,0,false,,true,,,,14,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2004-09-08-portugal-estonia,2004-09-08,2004,fifa-world-cup-qualification,,portugal,estonia,home,Leiria,Portugal,4,0,false,,true,,,,15,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2004-10-09-portugal-liechtenstein,2004-10-09,2004,fifa-world-cup-qualification,,portugal,liechtenstein,away,Vaduz,Liechtenstein,2,2,false,,true,,,,16,rsssf-cronaldo-intlg;martj42-results
+2004-10-13-portugal-russia,2004-10-13,2004,fifa-world-cup-qualification,,portugal,russia,home,Lisbon,Portugal,7,1,false,,true,,,,17,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2004-11-17-portugal-luxembourg,2004-11-17,2004,fifa-world-cup-qualification,,portugal,luxembourg,away,Luxembourg,Luxembourg,5,0,false,,true,,,,18,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2005-02-09-portugal-republic-of-ireland,2005-02-09,2005,international-friendly,,portugal,republic-of-ireland,away,Dublin,Republic of Ireland,0,1,false,,true,,,,19,rsssf-cronaldo-intlg;martj42-results
+2005-03-26-portugal-canada,2005-03-26,2005,international-friendly,,portugal,canada,home,Barcelos,Portugal,4,1,false,,true,,,,20,rsssf-cronaldo-intlg;martj42-results
+2005-03-30-portugal-slovakia,2005-03-30,2005,fifa-world-cup-qualification,,portugal,slovakia,away,Bratislava,Slovakia,1,1,false,,true,,,,21,rsssf-cronaldo-intlg;martj42-results
+2005-06-04-portugal-slovakia,2005-06-04,2005,fifa-world-cup-qualification,,portugal,slovakia,home,Lisbon,Portugal,2,0,false,,true,,,,22,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2005-06-08-portugal-estonia,2005-06-08,2005,fifa-world-cup-qualification,,portugal,estonia,away,Tallinn,Estonia,1,0,false,,true,,,,23,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2005-09-03-portugal-luxembourg,2005-09-03,2005,fifa-world-cup-qualification,,portugal,luxembourg,home,Faro,Portugal,6,0,false,,true,,,,24,rsssf-cronaldo-intlg;martj42-results
+2005-09-07-portugal-russia,2005-09-07,2005,fifa-world-cup-qualification,,portugal,russia,away,Moscow,Russia,0,0,false,,true,,,,25,rsssf-cronaldo-intlg;martj42-results
+2005-10-08-portugal-liechtenstein,2005-10-08,2005,fifa-world-cup-qualification,,portugal,liechtenstein,home,Aveiro,Portugal,2,1,false,,true,,,,26,rsssf-cronaldo-intlg;martj42-results
+2005-10-12-portugal-latvia,2005-10-12,2005,fifa-world-cup-qualification,,portugal,latvia,home,Porto,Portugal,3,0,false,,true,,,,27,rsssf-cronaldo-intlg;martj42-results
+2005-11-12-portugal-croatia,2005-11-12,2005,international-friendly,,portugal,croatia,home,Coimbra,Portugal,2,0,false,,true,,,,28,rsssf-cronaldo-intlg;martj42-results
+2005-11-15-portugal-northern-ireland,2005-11-15,2005,international-friendly,,portugal,northern-ireland,away,Belfast,Northern Ireland,1,1,false,,true,,,,29,rsssf-cronaldo-intlg;martj42-results
+2006-03-01-portugal-saudi-arabia,2006-03-01,2006,international-friendly,,portugal,saudi-arabia,neutral,Düsseldorf,Germany,3,0,false,,true,,,,30,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2006-05-27-portugal-cape-verde,2006-05-27,2006,international-friendly,,portugal,cape-verde,home,Évora,Portugal,4,1,false,,true,,,,31,rsssf-cronaldo-intlg;martj42-results
+2006-06-03-portugal-luxembourg,2006-06-03,2006,international-friendly,,portugal,luxembourg,neutral,Metz,France,3,0,false,,true,,,,32,rsssf-cronaldo-intlg;martj42-results
+2006-06-11-portugal-angola,2006-06-11,2006,fifa-world-cup,,portugal,angola,neutral,Cologne,Germany,1,0,false,,true,,,,33,rsssf-cronaldo-intlg;martj42-results
+2006-06-17-portugal-iran,2006-06-17,2006,fifa-world-cup,,portugal,iran,neutral,Frankfurt,Germany,2,0,false,,true,,,,34,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2006-06-25-portugal-netherlands,2006-06-25,2006,fifa-world-cup,,portugal,netherlands,neutral,Nuremberg,Germany,1,0,false,,true,,,,35,rsssf-cronaldo-intlg;martj42-results
+2006-07-01-portugal-england,2006-07-01,2006,fifa-world-cup,,portugal,england,neutral,Gelsenkirchen,Germany,0,0,true,won 3-1,true,,,,36,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2006-07-05-portugal-france,2006-07-05,2006,fifa-world-cup,,portugal,france,neutral,Munich,Germany,0,1,false,,true,,,,37,rsssf-cronaldo-intlg;martj42-results
+2006-07-08-portugal-germany,2006-07-08,2006,fifa-world-cup,,portugal,germany,away,Stuttgart,Germany,1,3,false,,true,,,,38,rsssf-cronaldo-intlg;martj42-results
+2006-09-01-portugal-denmark,2006-09-01,2006,international-friendly,,portugal,denmark,away,Brøndby,Denmark,2,4,false,,true,,,,39,rsssf-cronaldo-intlg;martj42-results
+2006-09-06-portugal-finland,2006-09-06,2006,uefa-euro-qualification,,portugal,finland,away,Helsinki,Finland,1,1,false,,true,,,,40,rsssf-cronaldo-intlg;martj42-results
+2006-10-07-portugal-azerbaijan,2006-10-07,2006,uefa-euro-qualification,,portugal,azerbaijan,home,Porto,Portugal,3,0,false,,true,,,,41,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2006-10-11-portugal-poland,2006-10-11,2006,uefa-euro-qualification,,portugal,poland,away,Chorzów,Poland,1,2,false,,true,,,,42,rsssf-cronaldo-intlg;martj42-results
+2006-11-15-portugal-kazakhstan,2006-11-15,2006,uefa-euro-qualification,,portugal,kazakhstan,home,Coimbra,Portugal,3,0,false,,true,,,,43,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2007-02-06-portugal-brazil,2007-02-06,2007,international-friendly,,portugal,brazil,neutral,London,England,2,0,false,,true,,,,44,rsssf-cronaldo-intlg;martj42-results
+2007-03-24-portugal-belgium,2007-03-24,2007,uefa-euro-qualification,,portugal,belgium,home,Lisbon,Portugal,4,0,false,,true,,,,45,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2007-03-28-portugal-serbia,2007-03-28,2007,uefa-euro-qualification,,portugal,serbia,away,Belgrade,Serbia,1,1,false,,true,,,,46,rsssf-cronaldo-intlg;martj42-results
+2007-08-22-portugal-armenia,2007-08-22,2007,uefa-euro-qualification,,portugal,armenia,away,Yerevan,Armenia,1,1,false,,true,,,,47,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2007-09-08-portugal-poland,2007-09-08,2007,uefa-euro-qualification,,portugal,poland,home,Lisbon,Portugal,2,2,false,,true,,,,48,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2007-09-12-portugal-serbia,2007-09-12,2007,uefa-euro-qualification,,portugal,serbia,home,Lisbon,Portugal,1,1,false,,true,,,,49,rsssf-cronaldo-intlg;martj42-results
+2007-10-13-portugal-azerbaijan,2007-10-13,2007,uefa-euro-qualification,,portugal,azerbaijan,away,Baku,Azerbaijan,2,0,false,,true,,,,50,rsssf-cronaldo-intlg;martj42-results
+2007-10-17-portugal-kazakhstan,2007-10-17,2007,uefa-euro-qualification,,portugal,kazakhstan,away,Almaty,Kazakhstan,2,1,false,,true,,,,51,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2007-11-17-portugal-armenia,2007-11-17,2007,uefa-euro-qualification,,portugal,armenia,home,Leiria,Portugal,1,0,false,,true,,,,52,rsssf-cronaldo-intlg;martj42-results
+2007-11-21-portugal-finland,2007-11-21,2007,uefa-euro-qualification,,portugal,finland,home,Porto,Portugal,0,0,false,,true,,,,53,rsssf-cronaldo-intlg;martj42-results
+2008-02-06-portugal-italy,2008-02-06,2008,international-friendly,,portugal,italy,neutral,Zürich,Switzerland,1,3,false,,true,,,,54,rsssf-cronaldo-intlg;martj42-results
+2008-05-31-portugal-georgia,2008-05-31,2008,international-friendly,,portugal,georgia,home,Viseu,Portugal,2,0,false,,true,,,,55,rsssf-cronaldo-intlg;martj42-results
+2008-06-07-portugal-turkey,2008-06-07,2008,uefa-euro,,portugal,turkey,neutral,Geneva,Switzerland,2,0,false,,true,,,,56,rsssf-cronaldo-intlg;martj42-results
+2008-06-11-portugal-czech-republic,2008-06-11,2008,uefa-euro,,portugal,czech-republic,neutral,Geneva,Switzerland,3,1,false,,true,,,,57,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2008-06-19-portugal-germany,2008-06-19,2008,uefa-euro,,portugal,germany,neutral,Basel,Switzerland,2,3,false,,true,,,,58,rsssf-cronaldo-intlg;martj42-results
+2008-10-11-portugal-sweden,2008-10-11,2008,fifa-world-cup-qualification,,portugal,sweden,away,Solna,Sweden,0,0,false,,true,,,,59,rsssf-cronaldo-intlg;martj42-results
+2008-10-15-portugal-albania,2008-10-15,2008,fifa-world-cup-qualification,,portugal,albania,home,Braga,Portugal,0,0,false,,true,,,,60,rsssf-cronaldo-intlg;martj42-results
+2008-11-19-portugal-brazil,2008-11-19,2008,international-friendly,,portugal,brazil,away,Gama,Brazil,2,6,false,,true,,,,61,rsssf-cronaldo-intlg;martj42-results
+2009-02-11-portugal-finland,2009-02-11,2009,international-friendly,,portugal,finland,home,Faro,Portugal,1,0,false,,true,,,,62,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2009-03-28-portugal-sweden,2009-03-28,2009,fifa-world-cup-qualification,,portugal,sweden,home,Porto,Portugal,0,0,false,,true,,,,63,rsssf-cronaldo-intlg;martj42-results
+2009-03-31-portugal-south-africa,2009-03-31,2009,international-friendly,,portugal,south-africa,neutral,Lausanne,Switzerland,2,0,false,,true,,,,64,rsssf-cronaldo-intlg;martj42-results
+2009-06-06-portugal-albania,2009-06-06,2009,fifa-world-cup-qualification,,portugal,albania,away,Tirana,Albania,2,1,false,,true,,,,65,rsssf-cronaldo-intlg;martj42-results
+2009-09-05-portugal-denmark,2009-09-05,2009,fifa-world-cup-qualification,,portugal,denmark,away,Copenhagen,Denmark,1,1,false,,true,,,,66,rsssf-cronaldo-intlg;martj42-results
+2009-09-09-portugal-hungary,2009-09-09,2009,fifa-world-cup-qualification,,portugal,hungary,away,Budapest,Hungary,1,0,false,,true,,,,67,rsssf-cronaldo-intlg;martj42-results
+2009-10-10-portugal-hungary,2009-10-10,2009,fifa-world-cup-qualification,,portugal,hungary,home,Lisbon,Portugal,3,0,false,,true,,,,68,rsssf-cronaldo-intlg;martj42-results
+2010-03-03-portugal-china,2010-03-03,2010,international-friendly,,portugal,china,home,Coimbra,Portugal,2,0,false,,true,,,,69,rsssf-cronaldo-intlg;martj42-results
+2010-05-24-portugal-cape-verde,2010-05-24,2010,international-friendly,,portugal,cape-verde,home,Covilhã,Portugal,0,0,false,,true,,,,70,rsssf-cronaldo-intlg;martj42-results
+2010-06-01-portugal-cameroon,2010-06-01,2010,international-friendly,,portugal,cameroon,home,Covilhã,Portugal,3,1,false,,true,,,,71,rsssf-cronaldo-intlg;martj42-results
+2010-06-08-portugal-mozambique,2010-06-08,2010,international-friendly,,portugal,mozambique,neutral,Johannesburg,South Africa,3,0,false,,true,,,,72,rsssf-cronaldo-intlg;martj42-results
+2010-06-15-portugal-ivory-coast,2010-06-15,2010,fifa-world-cup,,portugal,ivory-coast,neutral,Port Elizabeth,South Africa,0,0,false,,true,,,,73,rsssf-cronaldo-intlg;martj42-results
+2010-06-21-portugal-north-korea,2010-06-21,2010,fifa-world-cup,,portugal,north-korea,neutral,Cape Town,South Africa,7,0,false,,true,,,,74,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2010-06-25-portugal-brazil,2010-06-25,2010,fifa-world-cup,,portugal,brazil,neutral,Durban,South Africa,0,0,false,,true,,,,75,rsssf-cronaldo-intlg;martj42-results
+2010-06-29-portugal-spain,2010-06-29,2010,fifa-world-cup,,portugal,spain,neutral,Cape Town,South Africa,0,1,false,,true,,,,76,rsssf-cronaldo-intlg;martj42-results
+2010-10-08-portugal-denmark,2010-10-08,2010,uefa-euro-qualification,,portugal,denmark,home,Porto,Portugal,3,1,false,,true,,,,77,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2010-10-12-portugal-iceland,2010-10-12,2010,uefa-euro-qualification,,portugal,iceland,away,Reykjavík,Iceland,3,1,false,,true,,,,78,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2010-11-17-portugal-spain,2010-11-17,2010,international-friendly,,portugal,spain,home,Lisbon,Portugal,4,0,false,,true,,,,79,rsssf-cronaldo-intlg;martj42-results
+2011-02-09-portugal-argentina,2011-02-09,2011,international-friendly,,portugal,argentina,neutral,Geneva,Switzerland,1,2,false,,true,,,,80,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2011-06-04-portugal-norway,2011-06-04,2011,uefa-euro-qualification,,portugal,norway,home,Lisbon,Portugal,1,0,false,,true,,,,81,rsssf-cronaldo-intlg;martj42-results
+2011-08-10-portugal-luxembourg,2011-08-10,2011,international-friendly,,portugal,luxembourg,home,Faro,Portugal,5,0,false,,true,,,,82,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2011-09-02-portugal-cyprus,2011-09-02,2011,uefa-euro-qualification,,portugal,cyprus,away,Nicosia,Cyprus,4,0,false,,true,,,,83,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2011-10-07-portugal-iceland,2011-10-07,2011,uefa-euro-qualification,,portugal,iceland,home,Porto,Portugal,5,3,false,,true,,,,84,rsssf-cronaldo-intlg;martj42-results
+2011-10-11-portugal-denmark,2011-10-11,2011,uefa-euro-qualification,,portugal,denmark,away,Copenhagen,Denmark,1,2,false,,true,,,,85,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2011-11-11-portugal-bosnia-and-herzegovina,2011-11-11,2011,uefa-euro-qualification,,portugal,bosnia-and-herzegovina,away,Zenica,Bosnia and Herzegovina,0,0,false,,true,,,,86,rsssf-cronaldo-intlg;martj42-results
+2011-11-15-portugal-bosnia-and-herzegovina,2011-11-15,2011,uefa-euro-qualification,,portugal,bosnia-and-herzegovina,home,Lisbon,Portugal,6,2,false,,true,,,,87,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2012-02-29-portugal-poland,2012-02-29,2012,international-friendly,,portugal,poland,away,Warsaw,Poland,0,0,false,,true,,,,88,rsssf-cronaldo-intlg;martj42-results
+2012-05-26-portugal-north-macedonia,2012-05-26,2012,international-friendly,,portugal,north-macedonia,home,Leiria,Portugal,0,0,false,,true,,,,89,rsssf-cronaldo-intlg;martj42-results
+2012-06-02-portugal-turkey,2012-06-02,2012,international-friendly,,portugal,turkey,home,Lisbon,Portugal,1,3,false,,true,,,,90,rsssf-cronaldo-intlg;martj42-results
+2012-06-09-portugal-germany,2012-06-09,2012,uefa-euro,,portugal,germany,neutral,Lviv,Ukraine,0,1,false,,true,,,,91,rsssf-cronaldo-intlg;martj42-results
+2012-06-13-portugal-denmark,2012-06-13,2012,uefa-euro,,portugal,denmark,neutral,Lviv,Ukraine,3,2,false,,true,,,,92,rsssf-cronaldo-intlg;martj42-results
+2012-06-17-portugal-netherlands,2012-06-17,2012,uefa-euro,,portugal,netherlands,neutral,Kharkiv,Ukraine,2,1,false,,true,,,,93,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2012-06-21-portugal-czech-republic,2012-06-21,2012,uefa-euro,,portugal,czech-republic,neutral,Warsaw,Poland,1,0,false,,true,,,,94,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2012-06-27-portugal-spain,2012-06-27,2012,uefa-euro,,portugal,spain,neutral,Donetsk,Ukraine,0,0,true,lost 2-4,true,,,,95,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2012-08-15-portugal-panama,2012-08-15,2012,international-friendly,,portugal,panama,home,Faro,Portugal,2,0,false,,true,,,,96,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2012-09-07-portugal-luxembourg,2012-09-07,2012,fifa-world-cup-qualification,,portugal,luxembourg,away,Luxembourg,Luxembourg,2,1,false,,true,,,,97,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2012-09-11-portugal-azerbaijan,2012-09-11,2012,fifa-world-cup-qualification,,portugal,azerbaijan,home,Braga,Portugal,3,0,false,,true,,,,98,rsssf-cronaldo-intlg;martj42-results
+2012-10-12-portugal-russia,2012-10-12,2012,fifa-world-cup-qualification,,portugal,russia,away,Moscow,Russia,0,1,false,,true,,,,99,rsssf-cronaldo-intlg;martj42-results
+2012-10-16-portugal-northern-ireland,2012-10-16,2012,fifa-world-cup-qualification,,portugal,northern-ireland,home,Porto,Portugal,1,1,false,,true,,,,100,rsssf-cronaldo-intlg;martj42-results
+2013-02-06-portugal-ecuador,2013-02-06,2013,international-friendly,,portugal,ecuador,home,Guimarães,Portugal,2,3,false,,true,,,,101,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2013-03-22-portugal-israel,2013-03-22,2013,fifa-world-cup-qualification,,portugal,israel,away,Ramat Gan,Israel,3,3,false,,true,,,,102,rsssf-cronaldo-intlg;martj42-results
+2013-06-07-portugal-russia,2013-06-07,2013,fifa-world-cup-qualification,,portugal,russia,home,Lisbon,Portugal,1,0,false,,true,,,,103,rsssf-cronaldo-intlg;martj42-results
+2013-06-10-portugal-croatia,2013-06-10,2013,international-friendly,,portugal,croatia,neutral,Geneva,Switzerland,1,0,false,,true,,,,104,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2013-08-14-portugal-netherlands,2013-08-14,2013,international-friendly,,portugal,netherlands,home,Faro,Portugal,1,1,false,,true,,,,105,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2013-09-06-portugal-northern-ireland,2013-09-06,2013,fifa-world-cup-qualification,,portugal,northern-ireland,away,Belfast,Northern Ireland,4,2,false,,true,,,,106,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2013-10-11-portugal-israel,2013-10-11,2013,fifa-world-cup-qualification,,portugal,israel,home,Lisbon,Portugal,1,1,false,,true,,,,107,rsssf-cronaldo-intlg;martj42-results
+2013-11-15-portugal-sweden,2013-11-15,2013,fifa-world-cup-qualification,,portugal,sweden,home,Lisbon,Portugal,1,0,false,,true,,,,108,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2013-11-19-portugal-sweden,2013-11-19,2013,fifa-world-cup-qualification,,portugal,sweden,away,Solna,Sweden,3,2,false,,true,,,,109,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2014-03-05-portugal-cameroon,2014-03-05,2014,international-friendly,,portugal,cameroon,home,Leiria,Portugal,5,1,false,,true,,,,110,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2014-06-10-portugal-republic-of-ireland,2014-06-10,2014,international-friendly,,portugal,republic-of-ireland,neutral,East Rutherford,United States,5,1,false,,true,,,,111,rsssf-cronaldo-intlg;martj42-results
+2014-06-16-portugal-germany,2014-06-16,2014,fifa-world-cup,,portugal,germany,neutral,Salvador,Brazil,0,4,false,,true,,,,112,rsssf-cronaldo-intlg;martj42-results
+2014-06-22-portugal-united-states,2014-06-22,2014,fifa-world-cup,,portugal,united-states,neutral,Manaus,Brazil,2,2,false,,true,,,,113,rsssf-cronaldo-intlg;martj42-results
+2014-06-26-portugal-ghana,2014-06-26,2014,fifa-world-cup,,portugal,ghana,neutral,Brasília,Brazil,2,1,false,,true,,,,114,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2014-10-11-portugal-france,2014-10-11,2014,international-friendly,,portugal,france,away,Saint-Denis,France,1,2,false,,true,,,,115,rsssf-cronaldo-intlg;martj42-results
+2014-10-14-portugal-denmark,2014-10-14,2014,uefa-euro-qualification,,portugal,denmark,away,Copenhagen,Denmark,1,0,false,,true,,,,116,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2014-11-14-portugal-armenia,2014-11-14,2014,uefa-euro-qualification,,portugal,armenia,home,Faro,Portugal,1,0,false,,true,,,,117,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2014-11-18-portugal-argentina,2014-11-18,2014,international-friendly,,portugal,argentina,neutral,Manchester,England,1,0,false,,true,,,,118,rsssf-cronaldo-intlg;martj42-results
+2015-03-29-portugal-serbia,2015-03-29,2015,uefa-euro-qualification,,portugal,serbia,home,Lisbon,Portugal,2,1,false,,true,,,,119,rsssf-cronaldo-intlg;martj42-results
+2015-06-13-portugal-armenia,2015-06-13,2015,uefa-euro-qualification,,portugal,armenia,away,Yerevan,Armenia,3,2,false,,true,,,,120,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2015-09-04-portugal-france,2015-09-04,2015,international-friendly,,portugal,france,home,Lisbon,Portugal,0,1,false,,true,,,,121,rsssf-cronaldo-intlg;martj42-results
+2015-09-07-portugal-albania,2015-09-07,2015,uefa-euro-qualification,,portugal,albania,away,Elbasan,Albania,1,0,false,,true,,,,122,rsssf-cronaldo-intlg;martj42-results
+2015-10-08-portugal-denmark,2015-10-08,2015,uefa-euro-qualification,,portugal,denmark,home,Braga,Portugal,1,0,false,,true,,,,123,rsssf-cronaldo-intlg;martj42-results
+2016-03-25-portugal-bulgaria,2016-03-25,2016,international-friendly,,portugal,bulgaria,home,Leiria,Portugal,0,1,false,,true,,,,124,rsssf-cronaldo-intlg;martj42-results
+2016-03-29-portugal-belgium,2016-03-29,2016,international-friendly,,portugal,belgium,home,Leiria,Portugal,2,1,false,,true,,,,125,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2016-06-08-portugal-estonia,2016-06-08,2016,international-friendly,,portugal,estonia,home,Lisbon,Portugal,7,0,false,,true,,,,126,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2016-06-14-portugal-iceland,2016-06-14,2016,uefa-euro,,portugal,iceland,neutral,Saint-Étienne,France,1,1,false,,true,,,,127,rsssf-cronaldo-intlg;martj42-results
+2016-06-18-portugal-austria,2016-06-18,2016,uefa-euro,,portugal,austria,neutral,Lyon,France,0,0,false,,true,,,,128,rsssf-cronaldo-intlg;martj42-results
+2016-06-22-portugal-hungary,2016-06-22,2016,uefa-euro,,portugal,hungary,neutral,Lyon,France,3,3,false,,true,,,,129,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2016-06-25-portugal-croatia,2016-06-25,2016,uefa-euro,,portugal,croatia,neutral,Lens,France,1,0,false,,true,,,,130,rsssf-cronaldo-intlg;martj42-results
+2016-06-30-portugal-poland,2016-06-30,2016,uefa-euro,,portugal,poland,neutral,Marseille,France,1,1,true,won 5-3,true,,,,131,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2016-07-06-portugal-wales,2016-07-06,2016,uefa-euro,,portugal,wales,neutral,Lyon,France,2,0,false,,true,,,,132,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2016-07-10-portugal-france,2016-07-10,2016,uefa-euro,,portugal,france,away,Saint-Denis,France,1,0,false,,true,,,,133,rsssf-cronaldo-intlg;martj42-results
+2016-10-07-portugal-andorra,2016-10-07,2016,fifa-world-cup-qualification,,portugal,andorra,home,Aveiro,Portugal,6,0,false,,true,,,,134,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2016-10-10-portugal-faroe-islands,2016-10-10,2016,fifa-world-cup-qualification,,portugal,faroe-islands,away,Tórshavn,Faroe Islands,6,0,false,,true,,,,135,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2016-11-13-portugal-latvia,2016-11-13,2016,fifa-world-cup-qualification,,portugal,latvia,home,Faro,Portugal,4,1,false,,true,,,,136,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-03-25-portugal-hungary,2017-03-25,2017,fifa-world-cup-qualification,,portugal,hungary,home,Lisbon,Portugal,3,0,false,,true,,,,137,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-03-28-portugal-sweden,2017-03-28,2017,international-friendly,,portugal,sweden,home,Funchal,Portugal,2,3,false,,true,,,,138,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-06-09-portugal-latvia,2017-06-09,2017,fifa-world-cup-qualification,,portugal,latvia,away,Riga,Latvia,3,0,false,,true,,,,139,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-06-18-portugal-mexico,2017-06-18,2017,fifa-confederations-cup,,portugal,mexico,neutral,Kazan,Russia,2,2,false,,true,,,,140,rsssf-cronaldo-intlg;martj42-results
+2017-06-21-portugal-russia,2017-06-21,2017,fifa-confederations-cup,,portugal,russia,away,Moscow,Russia,1,0,false,,true,,,,141,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-06-24-portugal-new-zealand,2017-06-24,2017,fifa-confederations-cup,,portugal,new-zealand,neutral,Saint Petersburg,Russia,4,0,false,,true,,,,142,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-06-28-portugal-chile,2017-06-28,2017,fifa-confederations-cup,,portugal,chile,neutral,Kazan,Russia,0,0,true,lost 0-3,true,,,,143,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2017-08-31-portugal-faroe-islands,2017-08-31,2017,fifa-world-cup-qualification,,portugal,faroe-islands,home,Porto,Portugal,5,1,false,,true,,,,144,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-09-03-portugal-hungary,2017-09-03,2017,fifa-world-cup-qualification,,portugal,hungary,away,Budapest,Hungary,1,0,false,,true,,,,145,rsssf-cronaldo-intlg;martj42-results
+2017-10-07-portugal-andorra,2017-10-07,2017,fifa-world-cup-qualification,,portugal,andorra,away,Sant Julià de Lòria,Andorra,2,0,false,,true,,,,146,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2017-10-10-portugal-switzerland,2017-10-10,2017,fifa-world-cup-qualification,,portugal,switzerland,home,Lisbon,Portugal,2,0,false,,true,,,,147,rsssf-cronaldo-intlg;martj42-results
+2018-03-23-portugal-egypt,2018-03-23,2018,international-friendly,,portugal,egypt,neutral,Zürich,Switzerland,2,1,false,,true,,,,148,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2018-03-26-portugal-netherlands,2018-03-26,2018,international-friendly,,portugal,netherlands,neutral,Geneva,Switzerland,0,3,false,,true,,,,149,rsssf-cronaldo-intlg;martj42-results
+2018-06-07-portugal-algeria,2018-06-07,2018,international-friendly,,portugal,algeria,home,Lisbon,Portugal,3,0,false,,true,,,,150,rsssf-cronaldo-intlg;martj42-results
+2018-06-15-portugal-spain,2018-06-15,2018,fifa-world-cup,,portugal,spain,neutral,Sochi,Russia,3,3,false,,true,,,,151,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2018-06-20-portugal-morocco,2018-06-20,2018,fifa-world-cup,,portugal,morocco,neutral,Moscow,Russia,1,0,false,,true,,,,152,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2018-06-25-portugal-iran,2018-06-25,2018,fifa-world-cup,,portugal,iran,neutral,Saransk,Russia,1,1,false,,true,,,,153,rsssf-cronaldo-intlg;martj42-results
+2018-06-30-portugal-uruguay,2018-06-30,2018,fifa-world-cup,,portugal,uruguay,neutral,Sochi,Russia,1,2,false,,true,,,,154,rsssf-cronaldo-intlg;martj42-results
+2019-03-22-portugal-ukraine,2019-03-22,2019,uefa-euro-qualification,,portugal,ukraine,home,Lisbon,Portugal,0,0,false,,true,,,,155,rsssf-cronaldo-intlg;martj42-results
+2019-03-25-portugal-serbia,2019-03-25,2019,uefa-euro-qualification,,portugal,serbia,home,Lisbon,Portugal,1,1,false,,true,,,,156,rsssf-cronaldo-intlg;martj42-results
+2019-06-05-portugal-switzerland,2019-06-05,2019,uefa-nations-league,,portugal,switzerland,home,Porto,Portugal,3,1,false,,true,,,,157,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2019-06-09-portugal-netherlands,2019-06-09,2019,uefa-nations-league,,portugal,netherlands,home,Porto,Portugal,1,0,false,,true,,,,158,rsssf-cronaldo-intlg;martj42-results
+2019-09-07-portugal-serbia,2019-09-07,2019,uefa-euro-qualification,,portugal,serbia,away,Belgrade,Serbia,4,2,false,,true,,,,159,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2019-09-10-portugal-lithuania,2019-09-10,2019,uefa-euro-qualification,,portugal,lithuania,away,Vilnius,Lithuania,5,1,false,,true,,,,160,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2019-10-11-portugal-luxembourg,2019-10-11,2019,uefa-euro-qualification,,portugal,luxembourg,home,Lisbon,Portugal,3,0,false,,true,,,,161,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2019-10-14-portugal-ukraine,2019-10-14,2019,uefa-euro-qualification,,portugal,ukraine,away,Kyiv,Ukraine,1,2,false,,true,,,,162,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2019-11-14-portugal-lithuania,2019-11-14,2019,uefa-euro-qualification,,portugal,lithuania,home,Faro-Loulé,Portugal,6,0,false,,true,,,,163,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2019-11-17-portugal-luxembourg,2019-11-17,2019,uefa-euro-qualification,,portugal,luxembourg,away,Luxembourg,Luxembourg,2,0,false,,true,,,,164,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2020-09-08-portugal-sweden,2020-09-08,2020,uefa-nations-league,,portugal,sweden,away,Stockholm,Sweden,2,0,false,,true,,,,165,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2020-10-07-portugal-spain,2020-10-07,2020,international-friendly,,portugal,spain,home,Lisbon,Portugal,0,0,false,,true,,,,166,rsssf-cronaldo-intlg;martj42-results
+2020-10-11-portugal-france,2020-10-11,2020,uefa-nations-league,,portugal,france,away,Paris,France,0,0,false,,true,,,,167,rsssf-cronaldo-intlg;martj42-results
+2020-11-11-portugal-andorra,2020-11-11,2020,international-friendly,,portugal,andorra,home,Lisbon,Portugal,7,0,false,,true,,,,168,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2020-11-14-portugal-france,2020-11-14,2020,uefa-nations-league,,portugal,france,home,Lisbon,Portugal,0,1,false,,true,,,,169,rsssf-cronaldo-intlg;martj42-results
+2020-11-17-portugal-croatia,2020-11-17,2020,uefa-nations-league,,portugal,croatia,away,Split,Croatia,3,2,false,,true,,,,170,rsssf-cronaldo-intlg;martj42-results
+2021-03-24-portugal-azerbaijan,2021-03-24,2021,fifa-world-cup-qualification,,portugal,azerbaijan,neutral,Turin,Italy,1,0,false,,true,,,,171,rsssf-cronaldo-intlg;martj42-results
+2021-03-27-portugal-serbia,2021-03-27,2021,fifa-world-cup-qualification,,portugal,serbia,away,Belgrade,Serbia,2,2,false,,true,,,,172,rsssf-cronaldo-intlg;martj42-results
+2021-03-30-portugal-luxembourg,2021-03-30,2021,fifa-world-cup-qualification,,portugal,luxembourg,away,Luxembourg,Luxembourg,3,1,false,,true,,,,173,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-06-04-portugal-spain,2021-06-04,2021,international-friendly,,portugal,spain,away,Madrid,Spain,0,0,false,,true,,,,174,rsssf-cronaldo-intlg;martj42-results
+2021-06-09-portugal-israel,2021-06-09,2021,international-friendly,,portugal,israel,home,Lisbon,Portugal,4,0,false,,true,,,,175,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-06-15-portugal-hungary,2021-06-15,2021,uefa-euro,,portugal,hungary,away,Budapest,Hungary,3,0,false,,true,,,,176,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-06-19-portugal-germany,2021-06-19,2021,uefa-euro,,portugal,germany,away,Munich,Germany,2,4,false,,true,,,,177,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-06-23-portugal-france,2021-06-23,2021,uefa-euro,,portugal,france,neutral,Budapest,Hungary,2,2,false,,true,,,,178,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-06-27-portugal-belgium,2021-06-27,2021,uefa-euro,,portugal,belgium,neutral,Seville,Spain,0,1,false,,true,,,,179,rsssf-cronaldo-intlg;martj42-results
+2021-09-01-portugal-republic-of-ireland,2021-09-01,2021,fifa-world-cup-qualification,,portugal,republic-of-ireland,home,Faro-Loulé,Portugal,2,1,false,,true,,,,180,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-10-09-portugal-qatar,2021-10-09,2021,international-friendly,,portugal,qatar,home,Faro-Loulé,Portugal,3,0,false,,true,,,,181,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-10-12-portugal-luxembourg,2021-10-12,2021,fifa-world-cup-qualification,,portugal,luxembourg,home,Faro-Loulé,Portugal,5,0,false,,true,,,,182,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2021-11-11-portugal-republic-of-ireland,2021-11-11,2021,fifa-world-cup-qualification,,portugal,republic-of-ireland,away,Dublin,Republic of Ireland,0,0,false,,true,,,,183,rsssf-cronaldo-intlg;martj42-results
+2021-11-14-portugal-serbia,2021-11-14,2021,fifa-world-cup-qualification,,portugal,serbia,home,Lisbon,Portugal,1,2,false,,true,,,,184,rsssf-cronaldo-intlg;martj42-results
+2022-03-24-portugal-turkey,2022-03-24,2022,fifa-world-cup-qualification,,portugal,turkey,home,Porto,Portugal,3,1,false,,true,,,,185,rsssf-cronaldo-intlg;martj42-results
+2022-03-29-portugal-north-macedonia,2022-03-29,2022,fifa-world-cup-qualification,,portugal,north-macedonia,home,Porto,Portugal,2,0,false,,true,,,,186,rsssf-cronaldo-intlg;martj42-results
+2022-06-02-portugal-spain,2022-06-02,2022,uefa-nations-league,,portugal,spain,away,Seville,Spain,1,1,false,,true,,,,187,rsssf-cronaldo-intlg;martj42-results
+2022-06-05-portugal-switzerland,2022-06-05,2022,uefa-nations-league,,portugal,switzerland,home,Lisbon,Portugal,4,0,false,,true,,,,188,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2022-06-09-portugal-czech-republic,2022-06-09,2022,uefa-nations-league,,portugal,czech-republic,home,Lisbon,Portugal,2,0,false,,true,,,,189,rsssf-cronaldo-intlg;martj42-results
+2022-09-24-portugal-czech-republic,2022-09-24,2022,uefa-nations-league,,portugal,czech-republic,away,Prague,Czech Republic,4,0,false,,true,,,,190,rsssf-cronaldo-intlg;martj42-results
+2022-09-27-portugal-spain,2022-09-27,2022,uefa-nations-league,,portugal,spain,home,Braga,Portugal,0,1,false,,true,,,,191,rsssf-cronaldo-intlg;martj42-results
+2022-11-24-portugal-ghana,2022-11-24,2022,fifa-world-cup,,portugal,ghana,neutral,Doha,Qatar,3,2,false,,true,,,,192,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2022-11-28-portugal-uruguay,2022-11-28,2022,fifa-world-cup,,portugal,uruguay,neutral,Lusail,Qatar,2,0,false,,true,,,,193,rsssf-cronaldo-intlg;martj42-results
+2022-12-02-portugal-south-korea,2022-12-02,2022,fifa-world-cup,,portugal,south-korea,neutral,Al Rayyan,Qatar,1,2,false,,true,,,,194,rsssf-cronaldo-intlg;martj42-results
+2022-12-06-portugal-switzerland,2022-12-06,2022,fifa-world-cup,,portugal,switzerland,neutral,Lusail,Qatar,6,1,false,,true,,,,195,rsssf-cronaldo-intlg;martj42-results
+2022-12-10-portugal-morocco,2022-12-10,2022,fifa-world-cup,,portugal,morocco,neutral,Doha,Qatar,0,1,false,,true,,,,196,rsssf-cronaldo-intlg;martj42-results
+2023-03-23-portugal-liechtenstein,2023-03-23,2023,uefa-euro-qualification,,portugal,liechtenstein,home,Lisbon,Portugal,4,0,false,,true,,,,197,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2023-03-26-portugal-luxembourg,2023-03-26,2023,uefa-euro-qualification,,portugal,luxembourg,away,Luxembourg,Luxembourg,6,0,false,,true,,,,198,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2023-06-17-portugal-bosnia-and-herzegovina,2023-06-17,2023,uefa-euro-qualification,,portugal,bosnia-and-herzegovina,home,Lisbon,Portugal,3,0,false,,true,,,,199,rsssf-cronaldo-intlg;martj42-results
+2023-06-20-portugal-iceland,2023-06-20,2023,uefa-euro-qualification,,portugal,iceland,away,Reykjavík,Iceland,1,0,false,,true,,,,200,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2023-09-08-portugal-slovakia,2023-09-08,2023,uefa-euro-qualification,,portugal,slovakia,away,Bratislava,Slovakia,1,0,false,,true,,,,201,rsssf-cronaldo-intlg;martj42-results
+2023-10-13-portugal-slovakia,2023-10-13,2023,uefa-euro-qualification,,portugal,slovakia,home,Porto,Portugal,3,2,false,,true,,,,202,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2023-10-16-portugal-bosnia-and-herzegovina,2023-10-16,2023,uefa-euro-qualification,,portugal,bosnia-and-herzegovina,away,Zenica,Bosnia and Herzegovina,5,0,false,,true,,,,203,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2023-11-16-portugal-liechtenstein,2023-11-16,2023,uefa-euro-qualification,,portugal,liechtenstein,away,Vaduz,Liechtenstein,2,0,false,,true,,,,204,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2023-11-19-portugal-iceland,2023-11-19,2023,uefa-euro-qualification,,portugal,iceland,home,Lisbon,Portugal,2,0,false,,true,,,,205,rsssf-cronaldo-intlg;martj42-results
+2024-03-26-portugal-slovenia,2024-03-26,2024,international-friendly,,portugal,slovenia,away,Ljubljana,Slovenia,0,2,false,,true,,,,206,rsssf-cronaldo-intlg;martj42-results
+2024-06-11-portugal-republic-of-ireland,2024-06-11,2024,international-friendly,,portugal,republic-of-ireland,home,Aveiro,Portugal,3,0,false,,true,,,,207,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2024-06-18-portugal-czech-republic,2024-06-18,2024,uefa-euro,,portugal,czech-republic,neutral,Leipzig,Germany,2,1,false,,true,,,,208,rsssf-cronaldo-intlg;martj42-results
+2024-06-22-portugal-turkey,2024-06-22,2024,uefa-euro,,portugal,turkey,neutral,Dortmund,Germany,3,0,false,,true,,,,209,rsssf-cronaldo-intlg;martj42-results
+2024-06-26-portugal-georgia,2024-06-26,2024,uefa-euro,,portugal,georgia,neutral,Gelsenkirchen,Germany,0,2,false,,true,,,,210,rsssf-cronaldo-intlg;martj42-results
+2024-07-01-portugal-slovenia,2024-07-01,2024,uefa-euro,,portugal,slovenia,neutral,Frankfurt,Germany,0,0,true,won 3-0,true,,,,211,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2024-07-05-portugal-france,2024-07-05,2024,uefa-euro,,portugal,france,neutral,Hamburg,Germany,0,0,true,lost 4-5,true,,,,212,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts
+2024-09-05-portugal-croatia,2024-09-05,2024,uefa-nations-league,,portugal,croatia,home,Lisbon,Portugal,2,1,false,,true,,,,213,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2024-09-08-portugal-scotland,2024-09-08,2024,uefa-nations-league,,portugal,scotland,home,Lisbon,Portugal,2,1,false,,true,,,,214,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2024-10-12-portugal-poland,2024-10-12,2024,uefa-nations-league,,portugal,poland,away,Warsaw,Poland,3,1,false,,true,,,,215,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2024-10-15-portugal-scotland,2024-10-15,2024,uefa-nations-league,,portugal,scotland,away,Glasgow,Scotland,0,0,false,,true,,,,216,rsssf-cronaldo-intlg;martj42-results
+2024-11-15-portugal-poland,2024-11-15,2024,uefa-nations-league,,portugal,poland,home,Porto,Portugal,5,1,false,,true,,,,217,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2025-03-20-portugal-denmark,2025-03-20,2025,uefa-nations-league,,portugal,denmark,away,Copenhagen,Denmark,0,1,false,,true,,,,218,rsssf-cronaldo-intlg;martj42-results
+2025-03-23-portugal-denmark,2025-03-23,2025,uefa-nations-league,,portugal,denmark,home,Lisbon,Portugal,5,2,true,,true,,,,219,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2025-06-04-portugal-germany,2025-06-04,2025,uefa-nations-league,,portugal,germany,away,Munich,Germany,2,1,false,,true,,,,220,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2025-06-08-portugal-spain,2025-06-08,2025,uefa-nations-league,,portugal,spain,neutral,Munich,Germany,2,2,true,won 5-3,true,,,,221,rsssf-cronaldo-intlg;martj42-results;martj42-shootouts;wikipedia-cr7-intl-goals
+2025-09-06-portugal-armenia,2025-09-06,2025,fifa-world-cup-qualification,,portugal,armenia,away,Yerevan,Armenia,5,0,false,,true,,,,222,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2025-09-09-portugal-hungary,2025-09-09,2025,fifa-world-cup-qualification,,portugal,hungary,away,Budapest,Hungary,3,2,false,,true,,,,223,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2025-10-11-portugal-republic-of-ireland,2025-10-11,2025,fifa-world-cup-qualification,,portugal,republic-of-ireland,home,Lisbon,Portugal,1,0,false,,true,,,,224,rsssf-cronaldo-intlg;martj42-results
+2025-10-14-portugal-hungary,2025-10-14,2025,fifa-world-cup-qualification,,portugal,hungary,home,Lisbon,Portugal,2,2,false,,true,,,,225,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2025-11-13-portugal-republic-of-ireland,2025-11-13,2025,fifa-world-cup-qualification,,portugal,republic-of-ireland,away,Dublin,Republic of Ireland,0,2,false,,true,,,,226,rsssf-cronaldo-intlg;martj42-results
+2026-06-06-portugal-chile,2026-06-06,2026,international-friendly,,portugal,chile,home,Oeiras,Portugal,2,1,false,,true,,,,227,rsssf-cronaldo-intlg;martj42-results
+2026-06-10-portugal-nigeria,2026-06-10,2026,international-friendly,,portugal,nigeria,home,Leiria,Portugal,2,1,false,,true,,,,228,rsssf-cronaldo-intlg;martj42-results
+2026-06-17-portugal-dr-congo,2026-06-17,2026,fifa-world-cup,,portugal,dr-congo,neutral,Houston,United States,1,1,false,,true,,,,229,rsssf-cronaldo-intlg;martj42-results
+2026-06-23-portugal-uzbekistan,2026-06-23,2026,fifa-world-cup,,portugal,uzbekistan,neutral,Houston,United States,5,0,false,,true,,,,230,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2026-06-27-portugal-colombia,2026-06-27,2026,fifa-world-cup,,portugal,colombia,neutral,Miami Gardens,United States,0,0,false,,true,,,,231,rsssf-cronaldo-intlg;martj42-results
+2026-07-02-portugal-croatia,2026-07-02,2026,fifa-world-cup,,portugal,croatia,neutral,Toronto,Canada,2,1,false,,true,,,,232,rsssf-cronaldo-intlg;martj42-results;wikipedia-cr7-intl-goals
+2026-07-06-portugal-spain,2026-07-06,2026,fifa-world-cup,,portugal,spain,neutral,Dallas,United States,0,1,false,,true,,,,233,rsssf-cronaldo-intlg;martj42-results
+2026-09-24-portugal-wales,2026-09-24,2026,uefa-nations-league,,portugal,wales,home,Lisbon,Portugal,1,0,,,true,,,,234,wikipedia-cr7-intl-goals;wikipedia-cristiano-ronaldo;martj42-results

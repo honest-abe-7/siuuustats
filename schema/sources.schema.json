@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siuuustats.pages.dev/schema/sources.schema.json",
+  "title": "Source",
+  "description": "Every citation the ledger relies on. Attribution pages are generated from this table.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_id",
+    "title",
+    "publisher",
+    "url",
+    "licence",
+    "tier",
+    "revision",
+    "accessed_at",
+    "notes"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "licence": {
+      "type": "string",
+      "enum": [
+        "CC BY-SA 4.0",
+        "CC0 1.0",
+        "ODbL 1.0",
+        "Free with acknowledgement (RSSSF)",
+        "Citation only"
+      ]
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "official",
+        "reference",
+        "secondary"
+      ]
+    },
+    "revision": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Wikipedia revision id, git commit sha, or 'last updated' stamp of the snapshot used"
+    },
+    "accessed_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+competition_id,name,type,scope,confederation,country,official,includes_qualifiers,notes
+fifa-world-cup,FIFA World Cup,intl_tournament,international,,,true,false,Final tournaments only.
+fifa-world-cup-qualification,FIFA World Cup qualification,intl_qualifier,international,,,true,,Portugal plays in the UEFA zone.
+uefa-euro,UEFA European Championship,intl_tournament,international,UEFA,,true,false,Final tournaments only.
+uefa-euro-qualification,UEFA European Championship qualifying,intl_qualifier,international,UEFA,,true,,
+uefa-nations-league,UEFA Nations League,intl_league,international,UEFA,,true,,League phase and Finals.
+fifa-confederations-cup,FIFA Confederations Cup,intl_tournament,international,,,true,false,
+international-friendly,International friendly,friendly,international,,,true,,Full (A) internationals count toward official totals.

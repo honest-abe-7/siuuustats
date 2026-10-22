@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siuuustats.pages.dev/schema/competitions.schema.json",
+  "title": "Competition",
+  "description": "Competition identities (not editions). Counting rules live here as explicit columns.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "competition_id",
+    "name",
+    "type",
+    "scope",
+    "confederation",
+    "country",
+    "official",
+    "includes_qualifiers",
+    "notes"
+  ],
+  "properties": {
+    "competition_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "league",
+        "domestic_cup",
+        "league_cup",
+        "super_cup",
+        "continental_club",
+        "club_world",
+        "intl_tournament",
+        "intl_qualifier",
+        "intl_league",
+        "friendly"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "club",
+        "international"
+      ]
+    },
+    "confederation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "official": {
+      "type": "boolean",
+      "description": "false = excluded from official totals (e.g. club friendlies)"
+    },
+    "includes_qualifiers": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Whether qualifying-round matches are filed under this competition (UEFA 140 vs 141 rule)"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siuuustats.pages.dev/schema/matches.schema.json",
+  "title": "Match",
+  "description": "One row per senior match Ronaldo was in the squad for. appeared=false marks an unused substitute.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "match_id",
+    "date",
+    "season",
+    "competition_id",
+    "stage",
+    "team_id",
+    "opponent_id",
+    "venue",
+    "city",
+    "country",
+    "score_for",
+    "score_against",
+    "extra_time",
+    "shootout",
+    "appeared",
+    "started",
+    "minutes",
+    "captain",
+    "cap_number",
+    "source_ids"
+  ],
+  "properties": {
+    "match_id": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "{date}-{team_id}-{opponent_id}"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "season": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2})?$",
+      "description": "Club: 2026-27. International: calendar year 2026."
+    },
+    "competition_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "stage": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "team_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "opponent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "venue": {
+      "type": "string",
+      "enum": [
+        "home",
+        "away",
+        "neutral"
+      ]
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "score_for": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "score_against": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "extra_time": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "shootout": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(won|lost) [0-9]+-[0-9]+$"
+    },
+    "appeared": {
+      "type": "boolean"
+    },
+    "started": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "minutes": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 130
+    },
+    "captain": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "cap_number": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "description": "International appearance number; null for club matches"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Semicolon-separated source_id list in CSV; each must exist in sources.csv"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$comment": "Pinned, cited headline figures. Reconciliation fails if the ledger stops matching them; update deliberately (with a new source revision) when Ronaldo plays again.",
+  "as_of": "2026-10-22",
+  "expectations": [
+    { "id": "intl-goals", "fn": "intlGoals", "expected": 146, "source_id": "wikipedia-cristiano-ronaldo" },
+    { "id": "intl-caps", "fn": "intlCaps", "expected": 234, "source_id": "wikipedia-cristiano-ronaldo" },
+    { "id": "intl-competitive-goals", "fn": "intlCompetitiveGoals", "expected": 124, "source_id": "martj42-goalscorers" },
+    { "id": "intl-competitive-caps", "fn": "intlCompetitiveCaps", "expected": 178, "source_id": "wikipedia-cr7-intl-goals" },
+    { "id": "intl-penalty-goals", "fn": "internationalSummary.penalty_goals", "expected": 23, "source_id": "messivsronaldo-app-international" },
+    { "id": "intl-hat-tricks", "fn": "internationalSummary.hat_tricks", "expected": 10, "source_id": "wikipedia-cr7-intl-goals" }
+  ]
+}

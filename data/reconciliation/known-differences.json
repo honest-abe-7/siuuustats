@@ -1,0 +1,21 @@
+{
+  "$comment": "Accepted disagreements between the ledger and an external source. A difference only counts as known while BOTH expected and actual still equal the values below, so any change forces a fresh review.",
+  "differences": [
+    {
+      "check": "rsssf-total-caps",
+      "expected": 233,
+      "actual": 234,
+      "source_id": "rsssf-cronaldo-intlg",
+      "reason": "RSSSF list (last updated 7 Oct 2026) ends at cap 233 on 6 Jul 2026 and omits the 24 Sep 2026 Nations League appearance vs Wales (see data/manual/international-appearances-extra.csv).",
+      "reviewed_at": "2026-10-22"
+    },
+    {
+      "check": "wikipedia-lead-intl-wins",
+      "expected": 141,
+      "actual": 142,
+      "source_id": "wikipedia-cristiano-ronaldo",
+      "reason": "Wikipedia's lead says 141 international wins, which equals RSSSF's 141 over 233 caps. The 234th cap (Portugal 1-0 Wales, 24 Sep 2026) was a win, so the lead appears not to have been updated. Shootouts are counted as draws.",
+      "reviewed_at": "2026-10-22"
+    }
+  ]
+}

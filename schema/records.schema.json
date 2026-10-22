@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siuuustats.pages.dev/schema/records.schema.json",
+  "title": "Record",
+  "description": "Claims the site makes. compute_fn ties a value to the stats engine; editorial records (compute_fn null) need at least two sources.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "title",
+    "scope",
+    "value",
+    "unit",
+    "compute_fn",
+    "shared_with",
+    "status",
+    "last_checked",
+    "source_ids",
+    "notes"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "world",
+        "continental",
+        "competition",
+        "league",
+        "club",
+        "national_team"
+      ]
+    },
+    "value": {
+      "type": "string",
+      "minLength": 1
+    },
+    "unit": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "compute_fn": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-zA-Z]+(:[a-z0-9-]+)?$"
+    },
+    "shared_with": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "disputed",
+        "broken"
+      ]
+    },
+    "last_checked": {
+      "type": "string",
+      "format": "date"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Semicolon-separated source_id list in CSV; each must exist in sources.csv"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

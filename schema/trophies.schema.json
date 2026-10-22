@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siuuustats.pages.dev/schema/trophies.schema.json",
+  "title": "Trophy",
+  "description": "Team honours. counted_in_total decides what the headline trophy count includes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "trophy_id",
+    "competition_id",
+    "season",
+    "team_id",
+    "participation",
+    "counted_in_total",
+    "source_ids",
+    "notes"
+  ],
+  "properties": {
+    "trophy_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "competition_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "season": {
+      "type": "string",
+      "pattern": "^[0-9]{4}(-[0-9]{2})?$"
+    },
+    "team_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "participation": {
+      "type": "string",
+      "enum": [
+        "played_final",
+        "played",
+        "squad_unused",
+        "not_in_squad"
+      ]
+    },
+    "counted_in_total": {
+      "type": "boolean"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Semicolon-separated source_id list in CSV; each must exist in sources.csv"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

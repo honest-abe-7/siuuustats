@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://siuuustats.pages.dev/schema/teams.schema.json",
+  "title": "Team",
+  "description": "Clubs and national teams (Ronaldo's own and opponents). National team names follow martj42/international_results.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "team_id",
+    "name",
+    "kind",
+    "country",
+    "confederation",
+    "wikidata_id"
+  ],
+  "properties": {
+    "team_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "club",
+        "national"
+      ]
+    },
+    "country": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "confederation": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "UEFA",
+        "CONMEBOL",
+        "CONCACAF",
+        "CAF",
+        "AFC",
+        "OFC",
+        null
+      ]
+    },
+    "wikidata_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^Q[0-9]+$"
+    }
+  }
+}

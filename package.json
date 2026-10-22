@@ -1,0 +1,31 @@
+{
+  "name": "siuuustats",
+  "version": "0.1.0",
+  "description": "SIUUU Stats: cited, data-backed Cristiano Ronaldo stats ledger (data model + validation subsystem).",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "snapshots:refresh": "node scripts/ingest/fetch-snapshots.mjs",
+    "ingest:intl": "node scripts/ingest/international.mjs",
+    "validate": "node scripts/validate.mjs",
+    "reconcile": "node scripts/reconcile.mjs",
+    "build:api": "node scripts/build-api.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run validate && npm run reconcile && npm test && npm run build:api"
+  },
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "cheerio": "^1.2.0",
+    "csv-parse": "^7.0.3",
+    "csv-stringify": "^6.9.0"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}

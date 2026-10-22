@@ -1,0 +1,1134 @@
+date,home_team,away_team,team,scorer,minute,own_goal,penalty,assist
+1928-05-27,Portugal,Chile,Chile,Guillermo Saavedra,14,FALSE,FALSE,NA
+1928-05-27,Portugal,Chile,Chile,Alejandro Carbonell,30,FALSE,FALSE,NA
+1928-05-27,Portugal,Chile,Portugal,Vítor Silva,38,FALSE,FALSE,NA
+1928-05-27,Portugal,Chile,Portugal,Pepe Soares,40,FALSE,FALSE,NA
+1928-05-27,Portugal,Chile,Portugal,Pepe Soares,50,FALSE,FALSE,NA
+1928-05-27,Portugal,Chile,Portugal,Valdemar Mota,63,FALSE,FALSE,NA
+1928-05-29,Portugal,Yugoslavia,Portugal,Vítor Silva,25,FALSE,FALSE,NA
+1928-05-29,Portugal,Yugoslavia,Yugoslavia,Mirko Bonačić,40,FALSE,FALSE,NA
+1928-05-29,Portugal,Yugoslavia,Portugal,Augusto Silva,90,FALSE,FALSE,NA
+1928-06-04,Egypt,Portugal,Egypt,Mahmoud Mokhtar El-Tetsh,15,FALSE,FALSE,NA
+1928-06-04,Egypt,Portugal,Egypt,Ali Mohamed Riad,48,FALSE,FALSE,NA
+1928-06-04,Egypt,Portugal,Portugal,Vítor Silva,76,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Eduardo González Valiño,3,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Isidro Lángara,13,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Isidro Lángara,14,FALSE,TRUE,NA
+1934-03-11,Spain,Portugal,Spain,Isidro Lángara,46,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Luis Regueiro,65,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Martí Ventolrà,68,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Luis Regueiro,70,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Isidro Lángara,71,FALSE,FALSE,NA
+1934-03-11,Spain,Portugal,Spain,Isidro Lángara,85,FALSE,FALSE,NA
+1934-03-18,Portugal,Spain,Portugal,Vítor Silva,10,FALSE,FALSE,NA
+1934-03-18,Portugal,Spain,Spain,Isidro Lángara,12,FALSE,FALSE,NA
+1934-03-18,Portugal,Spain,Spain,Isidro Lángara,25,FALSE,FALSE,NA
+1938-05-01,Switzerland,Portugal,Switzerland,Georges Aeby,24,FALSE,FALSE,NA
+1938-05-01,Switzerland,Portugal,Switzerland,Lauro Amadò,29,FALSE,FALSE,NA
+1938-05-01,Switzerland,Portugal,Portugal,Fernando Peyroteo,72,FALSE,TRUE,NA
+1950-04-02,Spain,Portugal,Spain,Telmo Zarra,11,FALSE,FALSE,NA
+1950-04-02,Spain,Portugal,Spain,Estanislau Basora,13,FALSE,FALSE,NA
+1950-04-02,Spain,Portugal,Spain,José Luis Panizo,15,FALSE,FALSE,NA
+1950-04-02,Spain,Portugal,Portugal,Fernando Cabrita,36,FALSE,FALSE,NA
+1950-04-02,Spain,Portugal,Spain,Telmo Zarra,58,FALSE,FALSE,NA
+1950-04-02,Spain,Portugal,Spain,Luis Molowny,65,FALSE,FALSE,NA
+1950-04-09,Portugal,Spain,Spain,Telmo Zarra,24,FALSE,FALSE,NA
+1950-04-09,Portugal,Spain,Portugal,José Travassos,51,FALSE,FALSE,NA
+1950-04-09,Portugal,Spain,Portugal,Jesus Correia,53,FALSE,FALSE,NA
+1950-04-09,Portugal,Spain,Spain,Agustín Gaínza,82,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Ernst Ocwirk,13,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Erich Probst,14,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Erich Probst,19,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Erich Probst,31,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Erich Probst,59,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Portugal,José Águas,60,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Ernst Happel,68,FALSE,TRUE,NA
+1953-09-27,Austria,Portugal,Austria,Erich Probst,70,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Theodor Wagner,83,FALSE,FALSE,NA
+1953-09-27,Austria,Portugal,Austria,Robert Dienst,87,FALSE,FALSE,NA
+1957-01-16,Portugal,Northern Ireland,Northern Ireland,Billy Bingham,6,FALSE,FALSE,NA
+1957-01-16,Portugal,Northern Ireland,Portugal,Manuel Vasques,24,FALSE,FALSE,NA
+1957-05-01,Northern Ireland,Portugal,Northern Ireland,Tommy Casey,22,FALSE,FALSE,NA
+1957-05-01,Northern Ireland,Portugal,Northern Ireland,Billy Simpson,60,FALSE,FALSE,NA
+1957-05-01,Northern Ireland,Portugal,Northern Ireland,Jimmy McIlroy,70,FALSE,TRUE,NA
+1957-05-26,Portugal,Italy,Portugal,Manuel Vasques,41,FALSE,FALSE,NA
+1957-05-26,Portugal,Italy,Portugal,António Dias Teixeira,81,FALSE,FALSE,NA
+1957-05-26,Portugal,Italy,Portugal,Matateu,87,FALSE,FALSE,NA
+1957-12-22,Italy,Portugal,Italy,Guido Gratton,36,FALSE,FALSE,NA
+1957-12-22,Italy,Portugal,Italy,Guido Gratton,72,FALSE,FALSE,NA
+1957-12-22,Italy,Portugal,Italy,Gino Pivatelli,84,FALSE,FALSE,NA
+1959-06-21,German DR,Portugal,Portugal,Matateu,12,FALSE,FALSE,NA
+1959-06-21,German DR,Portugal,Portugal,Mário Coluna,67,FALSE,FALSE,NA
+1959-06-28,Portugal,German DR,Portugal,Mário Coluna,45,FALSE,FALSE,NA
+1959-06-28,Portugal,German DR,German DR,Gerhard Vogt,47,FALSE,FALSE,NA
+1959-06-28,Portugal,German DR,Portugal,Mário Coluna,62,FALSE,FALSE,NA
+1959-06-28,Portugal,German DR,Portugal,Domiciano Cavém,68,FALSE,FALSE,NA
+1959-06-28,Portugal,German DR,German DR,Horst Kohle,72,FALSE,FALSE,NA
+1960-05-08,Portugal,Yugoslavia,Portugal,Joaquim Santana,30,FALSE,FALSE,NA
+1960-05-08,Portugal,Yugoslavia,Portugal,Matateu,70,FALSE,FALSE,NA
+1960-05-08,Portugal,Yugoslavia,Yugoslavia,Bora Kostić,81,FALSE,FALSE,NA
+1960-05-22,Yugoslavia,Portugal,Yugoslavia,Dragoslav Šekularac,8,FALSE,FALSE,NA
+1960-05-22,Yugoslavia,Portugal,Portugal,Domiciano Cavém,29,FALSE,FALSE,NA
+1960-05-22,Yugoslavia,Portugal,Yugoslavia,Zvezdan Čebinac,45,FALSE,FALSE,NA
+1960-05-22,Yugoslavia,Portugal,Yugoslavia,Bora Kostić,50,FALSE,FALSE,NA
+1960-05-22,Yugoslavia,Portugal,Yugoslavia,Milan Galić,79,FALSE,FALSE,NA
+1960-05-22,Yugoslavia,Portugal,Yugoslavia,Bora Kostić,88,FALSE,FALSE,NA
+1961-03-19,Portugal,Luxembourg,Portugal,José Águas,39,FALSE,FALSE,NA
+1961-03-19,Portugal,Luxembourg,Portugal,Fernand Brosius,50,TRUE,FALSE,NA
+1961-03-19,Portugal,Luxembourg,Portugal,Yaúca,53,FALSE,FALSE,NA
+1961-03-19,Portugal,Luxembourg,Portugal,Yaúca,66,FALSE,FALSE,NA
+1961-03-19,Portugal,Luxembourg,Portugal,Yaúca,83,FALSE,FALSE,NA
+1961-03-19,Portugal,Luxembourg,Portugal,Mário Coluna,85,FALSE,FALSE,NA
+1961-05-21,Portugal,England,Portugal,José Águas,59,FALSE,FALSE,NA
+1961-05-21,Portugal,England,England,Ron Flowers,83,FALSE,FALSE,NA
+1961-10-08,Luxembourg,Portugal,Luxembourg,Ady Schmit,21,FALSE,FALSE,NA
+1961-10-08,Luxembourg,Portugal,Luxembourg,Ady Schmit,53,FALSE,FALSE,NA
+1961-10-08,Luxembourg,Portugal,Luxembourg,Ady Schmit,56,FALSE,FALSE,NA
+1961-10-08,Luxembourg,Portugal,Luxembourg,Nicolas Hoffmann,83,FALSE,FALSE,NA
+1961-10-08,Luxembourg,Portugal,Portugal,Eusébio,83,FALSE,FALSE,NA
+1961-10-08,Luxembourg,Portugal,Portugal,Yaúca,89,FALSE,FALSE,NA
+1961-10-25,England,Portugal,England,John Connelly,5,FALSE,FALSE,NA
+1961-10-25,England,Portugal,England,Ray Pointer,10,FALSE,FALSE,NA
+1962-11-07,Bulgaria,Portugal,Portugal,Eusébio,49,FALSE,FALSE,NA
+1962-11-07,Bulgaria,Portugal,Bulgaria,Georgi Asparuhov,65,FALSE,FALSE,NA
+1962-11-07,Bulgaria,Portugal,Bulgaria,Georgi Asparuhov,76,FALSE,FALSE,NA
+1962-11-07,Bulgaria,Portugal,Bulgaria,Todor Diev,84,FALSE,FALSE,NA
+1962-12-16,Portugal,Bulgaria,Portugal,Hernâni Ferreira da Silva,4,FALSE,FALSE,NA
+1962-12-16,Portugal,Bulgaria,Portugal,Hernâni Ferreira da Silva,26,FALSE,FALSE,NA
+1962-12-16,Portugal,Bulgaria,Portugal,Mário Coluna,53,FALSE,FALSE,NA
+1962-12-16,Portugal,Bulgaria,Bulgaria,Hristo Iliev,83,FALSE,FALSE,NA
+1963-01-23,Bulgaria,Portugal,Bulgaria,Georgi Asparuhov,87,FALSE,FALSE,NA
+1965-01-24,Portugal,Turkey,Portugal,Mário Coluna,16,FALSE,FALSE,NA
+1965-01-24,Portugal,Turkey,Portugal,Eusébio,21,FALSE,FALSE,NA
+1965-01-24,Portugal,Turkey,Turkey,Fevzi Zemzem,33,FALSE,FALSE,NA
+1965-01-24,Portugal,Turkey,Portugal,Jaime Graça,52,FALSE,FALSE,NA
+1965-01-24,Portugal,Turkey,Portugal,Eusébio,63,FALSE,FALSE,NA
+1965-01-24,Portugal,Turkey,Portugal,Eusébio,77,FALSE,FALSE,NA
+1965-04-19,Turkey,Portugal,Portugal,Eusébio,59,FALSE,FALSE,NA
+1965-04-25,Czechoslovakia,Portugal,Portugal,Eusébio,20,FALSE,FALSE,NA
+1965-06-14,Portugal,Romania,Portugal,Eusébio,14,FALSE,FALSE,NA
+1965-06-14,Portugal,Romania,Portugal,Eusébio,39,FALSE,FALSE,NA
+1965-06-14,Portugal,Romania,Romania,Sorin Avram,71,FALSE,FALSE,NA
+1965-11-21,Romania,Portugal,Romania,Ion Pârcălab,1,FALSE,FALSE,NA
+1965-11-21,Romania,Portugal,Romania,Alexandru Badea,43,FALSE,FALSE,NA
+1966-07-13,Hungary,Portugal,Portugal,José Augusto,2,FALSE,FALSE,António Simões
+1966-07-13,Hungary,Portugal,Hungary,Ferenc Bene,60,FALSE,FALSE,Gyula Rákosi
+1966-07-13,Hungary,Portugal,Portugal,José Augusto,67,FALSE,FALSE,NA
+1966-07-13,Hungary,Portugal,Portugal,José Torres,90,FALSE,FALSE,Eusébio
+1966-07-16,Bulgaria,Portugal,Portugal,Ivan Vutsov,7,TRUE,FALSE,NA
+1966-07-16,Bulgaria,Portugal,Portugal,Eusébio,38,FALSE,FALSE,António Simões
+1966-07-16,Bulgaria,Portugal,Portugal,José Torres,81,FALSE,FALSE,Hilário
+1966-07-19,Brazil,Portugal,Portugal,António Simões,15,FALSE,FALSE,NA
+1966-07-19,Brazil,Portugal,Portugal,Eusébio,27,FALSE,FALSE,José Torres
+1966-07-19,Brazil,Portugal,Brazil,Rildo da Costa Menezes,73,FALSE,FALSE,Jairzinho
+1966-07-19,Brazil,Portugal,Portugal,Eusébio,85,FALSE,FALSE,José Torres
+1966-07-23,North Korea,Portugal,North Korea,Pak Seung-zin,1,FALSE,FALSE,Han Bong-zin
+1966-07-23,North Korea,Portugal,North Korea,Li Dong-woon,22,FALSE,FALSE,Yang Seung-kook
+1966-07-23,North Korea,Portugal,North Korea,Yang Seung-kook,25,FALSE,FALSE,Pak Doo-ik
+1966-07-23,North Korea,Portugal,Portugal,Eusébio,27,FALSE,FALSE,José Augusto
+1966-07-23,North Korea,Portugal,Portugal,Eusébio,43,FALSE,TRUE,NA
+1966-07-23,North Korea,Portugal,Portugal,Eusébio,56,FALSE,FALSE,António Simões
+1966-07-23,North Korea,Portugal,Portugal,Eusébio,59,FALSE,TRUE,NA
+1966-07-23,North Korea,Portugal,Portugal,José Augusto,80,FALSE,FALSE,José Torres
+1966-07-26,England,Portugal,England,Bobby Charlton,30,FALSE,FALSE,NA
+1966-07-26,England,Portugal,England,Bobby Charlton,80,FALSE,FALSE,Geoff Hurst
+1966-07-26,England,Portugal,Portugal,Eusébio,82,FALSE,TRUE,NA
+1966-07-28,Portugal,Russia,Portugal,Eusébio,12,FALSE,TRUE,NA
+1966-07-28,Portugal,Russia,Russia,Eduard Malofeyev,43,FALSE,FALSE,NA
+1966-07-28,Portugal,Russia,Portugal,José Torres,89,FALSE,FALSE,José Augusto
+1966-11-13,Portugal,Sweden,Portugal,Jaime Graça,21,FALSE,FALSE,NA
+1966-11-13,Portugal,Sweden,Sweden,Inge Danielsson,29,FALSE,FALSE,NA
+1966-11-13,Portugal,Sweden,Sweden,Inge Danielsson,87,FALSE,FALSE,NA
+1967-06-01,Sweden,Portugal,Portugal,Custódio Pinto,19,FALSE,FALSE,NA
+1967-06-01,Sweden,Portugal,Sweden,Ingvar Svensson,90,FALSE,FALSE,NA
+1967-06-08,Norway,Portugal,Portugal,Eusébio,15,FALSE,FALSE,NA
+1967-06-08,Norway,Portugal,Norway,Odd Iversen,34,FALSE,FALSE,NA
+1967-06-08,Norway,Portugal,Portugal,Eusébio,61,FALSE,FALSE,NA
+1967-11-12,Portugal,Norway,Portugal,José Torres,29,FALSE,FALSE,NA
+1967-11-12,Portugal,Norway,Norway,Olav Nilsen,40,FALSE,FALSE,NA
+1967-11-12,Portugal,Norway,Portugal,Jaime Graça,65,FALSE,FALSE,NA
+1967-11-26,Bulgaria,Portugal,Bulgaria,Dinko Dermendzhiev,63,FALSE,FALSE,NA
+1968-10-27,Portugal,Romania,Portugal,Jacinto Santos,21,FALSE,FALSE,NA
+1968-10-27,Portugal,Romania,Portugal,Jacinto João,33,FALSE,FALSE,NA
+1968-10-27,Portugal,Romania,Portugal,Jacinto Santos,72,FALSE,FALSE,NA
+1968-12-11,Greece,Portugal,Portugal,José Augusto,17,FALSE,FALSE,NA
+1968-12-11,Greece,Portugal,Greece,Giorgos Dedes,33,FALSE,FALSE,NA
+1968-12-11,Greece,Portugal,Greece,Mimis Papaioannou,37,FALSE,FALSE,NA
+1968-12-11,Greece,Portugal,Greece,José Torres,49,TRUE,FALSE,NA
+1968-12-11,Greece,Portugal,Greece,Giorgos Sideris,61,FALSE,FALSE,NA
+1968-12-11,Greece,Portugal,Portugal,Eusébio,64,FALSE,FALSE,NA
+1969-04-16,Portugal,Switzerland,Switzerland,Georges Vuilleumier,21,FALSE,FALSE,NA
+1969-04-16,Portugal,Switzerland,Switzerland,Georges Vuilleumier,35,FALSE,FALSE,NA
+1969-05-04,Portugal,Greece,Greece,Kostas Eleftherakis,68,FALSE,FALSE,NA
+1969-05-04,Portugal,Greece,Greece,Vasilis Botinos,74,FALSE,FALSE,NA
+1969-05-04,Portugal,Greece,Portugal,Eusébio,82,FALSE,FALSE,NA
+1969-05-04,Portugal,Greece,Portugal,Fernando Peres,86,FALSE,FALSE,NA
+1969-10-12,Romania,Portugal,Romania,Nicolae Dobrin,30,FALSE,FALSE,NA
+1969-11-02,Switzerland,Portugal,Portugal,Eusébio,40,FALSE,FALSE,NA
+1969-11-02,Switzerland,Portugal,Switzerland,Fritz Künzli,88,FALSE,FALSE,NA
+1970-10-14,Denmark,Portugal,Portugal,Jacinto João,40,FALSE,FALSE,NA
+1971-02-17,Belgium,Portugal,Belgium,Raoul Lambert,14,FALSE,FALSE,NA
+1971-02-17,Belgium,Portugal,Belgium,Raoul Lambert,64,FALSE,TRUE,NA
+1971-02-17,Belgium,Portugal,Belgium,André De Nul,75,FALSE,FALSE,NA
+1971-04-21,Portugal,Scotland,Portugal,Pat Stanton,22,TRUE,FALSE,NA
+1971-04-21,Portugal,Scotland,Portugal,Eusébio,83,FALSE,FALSE,NA
+1971-05-12,Portugal,Denmark,Portugal,Rui Rodrigues,17,FALSE,FALSE,NA
+1971-05-12,Portugal,Denmark,Portugal,Eusébio,42,FALSE,FALSE,NA
+1971-05-12,Portugal,Denmark,Portugal,Vítor Baptista,47,FALSE,FALSE,NA
+1971-05-12,Portugal,Denmark,Portugal,Vítor Baptista,49,FALSE,FALSE,NA
+1971-05-12,Portugal,Denmark,Portugal,Erik Sandvad,87,TRUE,FALSE,NA
+1971-10-13,Scotland,Portugal,Scotland,John O'Hare,22,FALSE,FALSE,NA
+1971-10-13,Scotland,Portugal,Portugal,Rui Rodrigues,56,FALSE,FALSE,NA
+1971-10-13,Scotland,Portugal,Scotland,Archie Gemmill,58,FALSE,FALSE,NA
+1971-11-21,Portugal,Belgium,Belgium,Raoul Lambert,61,FALSE,FALSE,NA
+1971-11-21,Portugal,Belgium,Portugal,Fernando Peres,90,FALSE,TRUE,NA
+1972-03-29,Portugal,Cyprus,Portugal,Humberto Coelho,7,FALSE,FALSE,NA
+1972-03-29,Portugal,Cyprus,Portugal,Nené,17,FALSE,FALSE,NA
+1972-03-29,Portugal,Cyprus,Portugal,Artur Jorge,46,FALSE,FALSE,NA
+1972-03-29,Portugal,Cyprus,Portugal,Rui Jordão,81,FALSE,FALSE,NA
+1972-05-10,Cyprus,Portugal,Portugal,Chico Faria,36,FALSE,FALSE,NA
+1973-03-28,Northern Ireland,Portugal,Northern Ireland,Martin O'Neill,18,FALSE,FALSE,NA
+1973-03-28,Northern Ireland,Portugal,Portugal,Eusébio,84,FALSE,TRUE,NA
+1973-05-02,Bulgaria,Portugal,Bulgaria,Georgi Denev,38,FALSE,FALSE,NA
+1973-05-02,Bulgaria,Portugal,Bulgaria,Hristo Bonev,60,FALSE,FALSE,NA
+1973-05-02,Bulgaria,Portugal,Portugal,Nené,74,FALSE,FALSE,NA
+1973-10-13,Portugal,Bulgaria,Portugal,Alfredo Quaresma,48,FALSE,FALSE,NA
+1973-10-13,Portugal,Bulgaria,Bulgaria,Hristo Bonev,56,FALSE,FALSE,NA
+1973-10-13,Portugal,Bulgaria,Bulgaria,Hristo Bonev,65,FALSE,FALSE,NA
+1973-10-13,Portugal,Bulgaria,Portugal,António Simões,89,FALSE,FALSE,NA
+1973-11-14,Portugal,Northern Ireland,Portugal,Rui Jordão,34,FALSE,FALSE,NA
+1973-11-14,Portugal,Northern Ireland,Northern Ireland,Liam O'Kane,68,FALSE,FALSE,NA
+1975-04-30,Czechoslovakia,Portugal,Czechoslovakia,Přemysl Bičovský,11,FALSE,FALSE,NA
+1975-04-30,Czechoslovakia,Portugal,Czechoslovakia,Přemysl Bičovský,22,FALSE,FALSE,NA
+1975-04-30,Czechoslovakia,Portugal,Czechoslovakia,Zdeněk Nehoda,25,FALSE,FALSE,NA
+1975-04-30,Czechoslovakia,Portugal,Czechoslovakia,Zdeněk Nehoda,46,FALSE,FALSE,NA
+1975-04-30,Czechoslovakia,Portugal,Czechoslovakia,Ladislav Petráš,52,FALSE,FALSE,NA
+1975-06-08,Cyprus,Portugal,Portugal,Nené,25,FALSE,FALSE,NA
+1975-06-08,Cyprus,Portugal,Portugal,Mário Moínhos,87,FALSE,FALSE,NA
+1975-11-12,Portugal,Czechoslovakia,Czechoslovakia,Anton Ondruš,7,FALSE,FALSE,NA
+1975-11-12,Portugal,Czechoslovakia,Portugal,Nené,8,FALSE,FALSE,NA
+1975-11-19,Portugal,England,Portugal,Rui Rodrigues,16,FALSE,FALSE,NA
+1975-11-19,Portugal,England,England,Mick Channon,42,FALSE,FALSE,NA
+1975-12-03,Portugal,Cyprus,Portugal,João Resende Alves,20,FALSE,FALSE,NA
+1976-10-16,Portugal,Poland,Poland,Grzegorz Lato,49,FALSE,FALSE,NA
+1976-10-16,Portugal,Poland,Poland,Grzegorz Lato,77,FALSE,FALSE,NA
+1976-11-17,Portugal,Denmark,Portugal,Manuel Fernandes,69,FALSE,FALSE,NA
+1976-12-05,Cyprus,Portugal,Portugal,Fernando Chalana,36,FALSE,FALSE,NA
+1976-12-05,Cyprus,Portugal,Cyprus,Stavros Stylianou,74,FALSE,TRUE,NA
+1976-12-05,Cyprus,Portugal,Portugal,Nené,76,FALSE,FALSE,NA
+1977-10-09,Denmark,Portugal,Portugal,Rui Jordão,15,FALSE,FALSE,NA
+1977-10-09,Denmark,Portugal,Portugal,Nené,35,FALSE,FALSE,NA
+1977-10-09,Denmark,Portugal,Denmark,Per Røntved,45,FALSE,TRUE,NA
+1977-10-09,Denmark,Portugal,Portugal,Manuel Fernandes,61,FALSE,FALSE,NA
+1977-10-09,Denmark,Portugal,Portugal,Octávio Machado,79,FALSE,FALSE,NA
+1977-10-09,Denmark,Portugal,Denmark,Allan Hansen,88,FALSE,FALSE,NA
+1977-10-29,Poland,Portugal,Poland,Kazimierz Deyna,36,FALSE,FALSE,NA
+1977-10-29,Poland,Portugal,Portugal,Manuel Fernandes,61,FALSE,FALSE,NA
+1977-11-16,Portugal,Cyprus,Portugal,Seninho,11,FALSE,FALSE,NA
+1977-11-16,Portugal,Cyprus,Portugal,Fernando Chalana,35,FALSE,FALSE,NA
+1977-11-16,Portugal,Cyprus,Portugal,Francisco Vital,58,FALSE,FALSE,NA
+1977-11-16,Portugal,Cyprus,Portugal,Manuel Fernandes,71,FALSE,FALSE,NA
+1978-10-11,Portugal,Belgium,Portugal,Eurico Gomes,31,FALSE,FALSE,NA
+1978-10-11,Portugal,Belgium,Belgium,Franky Vercauteren,37,FALSE,FALSE,NA
+1978-11-15,Austria,Portugal,Portugal,Nené,30,FALSE,FALSE,NA
+1978-11-15,Austria,Portugal,Austria,Walter Schachner,71,FALSE,FALSE,NA
+1978-11-15,Austria,Portugal,Portugal,Alberto Fonseca,90,FALSE,FALSE,NA
+1978-11-29,Portugal,Scotland,Portugal,Alberto Fonseca,28,FALSE,FALSE,NA
+1979-05-09,Norway,Portugal,Portugal,João Resende Alves,35,FALSE,FALSE,NA
+1979-10-17,Belgium,Portugal,Belgium,Wilfried Van Moer,46,FALSE,FALSE,NA
+1979-10-17,Belgium,Portugal,Belgium,François Van der Elst,56,FALSE,FALSE,NA
+1979-11-01,Portugal,Norway,Norway,Georg Hammer,10,FALSE,FALSE,NA
+1979-11-01,Portugal,Norway,Portugal,Artur Correia,37,FALSE,FALSE,NA
+1979-11-01,Portugal,Norway,Portugal,Nené,59,FALSE,FALSE,NA
+1979-11-01,Portugal,Norway,Portugal,Nené,71,FALSE,FALSE,NA
+1979-11-21,Portugal,Austria,Austria,Kurt Welzl,37,FALSE,FALSE,NA
+1979-11-21,Portugal,Austria,Portugal,Reinaldo Gomes,42,FALSE,FALSE,NA
+1979-11-21,Portugal,Austria,Austria,Walter Schachner,51,FALSE,FALSE,NA
+1980-03-26,Scotland,Portugal,Scotland,Kenny Dalglish,7,FALSE,FALSE,NA
+1980-03-26,Scotland,Portugal,Scotland,Andy Gray,25,FALSE,FALSE,NA
+1980-03-26,Scotland,Portugal,Scotland,Steve Archibald,68,FALSE,FALSE,NA
+1980-03-26,Scotland,Portugal,Portugal,Fernando Gomes,75,FALSE,FALSE,NA
+1980-03-26,Scotland,Portugal,Scotland,Archie Gemmill,83,FALSE,TRUE,NA
+1980-11-19,Portugal,Northern Ireland,Portugal,Rui Jordão,60,FALSE,FALSE,NA
+1980-12-17,Portugal,Israel,Portugal,Humberto Coelho,33,FALSE,FALSE,NA
+1980-12-17,Portugal,Israel,Portugal,Rui Jordão,36,FALSE,FALSE,NA
+1980-12-17,Portugal,Israel,Portugal,Humberto Coelho,72,FALSE,FALSE,NA
+1981-04-29,Northern Ireland,Portugal,Northern Ireland,Gerry Armstrong,74,FALSE,FALSE,NA
+1981-06-24,Sweden,Portugal,Sweden,Bo Börjesson,39,FALSE,FALSE,NA
+1981-06-24,Sweden,Portugal,Sweden,Gabriel Mendes,55,TRUE,FALSE,NA
+1981-06-24,Sweden,Portugal,Sweden,Jan Svensson,67,FALSE,FALSE,NA
+1981-10-14,Portugal,Sweden,Sweden,Thomas Larsson,38,FALSE,FALSE,NA
+1981-10-14,Portugal,Sweden,Portugal,Minervino Pietra,65,FALSE,FALSE,NA
+1981-10-14,Portugal,Sweden,Sweden,Tony Persson,89,FALSE,FALSE,NA
+1981-10-28,Israel,Portugal,Israel,Benny Tabak,6,FALSE,FALSE,NA
+1981-10-28,Israel,Portugal,Portugal,Rui Jordão,8,FALSE,FALSE,NA
+1981-10-28,Israel,Portugal,Israel,Gidi Damti,14,FALSE,FALSE,NA
+1981-10-28,Israel,Portugal,Israel,Benny Tabak,18,FALSE,FALSE,NA
+1981-10-28,Israel,Portugal,Israel,Benny Tabak,30,FALSE,FALSE,NA
+1981-11-18,Portugal,Scotland,Scotland,Paul Sturrock,9,FALSE,FALSE,NA
+1981-11-18,Portugal,Scotland,Portugal,Manuel Fernandes,33,FALSE,FALSE,NA
+1981-11-18,Portugal,Scotland,Portugal,Manuel Fernandes,56,FALSE,FALSE,NA
+1982-09-22,Finland,Portugal,Portugal,Nené,15,FALSE,FALSE,NA
+1982-09-22,Finland,Portugal,Portugal,António Luís Alves Ribeiro Oliveira,89,FALSE,FALSE,NA
+1982-10-10,Portugal,Poland,Portugal,Nené,2,FALSE,FALSE,NA
+1982-10-10,Portugal,Poland,Portugal,Fernando Gomes,82,FALSE,FALSE,NA
+1982-10-10,Portugal,Poland,Poland,Paweł Król,90,FALSE,FALSE,NA
+1983-04-27,Russia,Portugal,Russia,Fyodor Cherenkov,16,FALSE,FALSE,NA
+1983-04-27,Russia,Portugal,Russia,Sergey Rodionov,40,FALSE,FALSE,NA
+1983-04-27,Russia,Portugal,Russia,Anatoliy Demyanenko,53,FALSE,FALSE,NA
+1983-04-27,Russia,Portugal,Russia,Fyodor Cherenkov,63,FALSE,FALSE,NA
+1983-04-27,Russia,Portugal,Russia,Nikolay Larionov,86,FALSE,FALSE,NA
+1983-09-21,Portugal,Finland,Portugal,Rui Jordão,18,FALSE,FALSE,NA
+1983-09-21,Portugal,Finland,Portugal,Carlos Manuel,23,FALSE,FALSE,NA
+1983-09-21,Portugal,Finland,Portugal,Jukka Ikäläinen,47,TRUE,FALSE,NA
+1983-09-21,Portugal,Finland,Portugal,José Luís,83,FALSE,FALSE,NA
+1983-09-21,Portugal,Finland,Portugal,António Luís Alves Ribeiro Oliveira,86,FALSE,FALSE,NA
+1983-10-28,Poland,Portugal,Portugal,Carlos Manuel,32,FALSE,FALSE,NA
+1983-11-13,Portugal,Russia,Portugal,Rui Jordão,44,FALSE,TRUE,NA
+1984-06-17,Portugal,Spain,Portugal,António Sousa,52,FALSE,FALSE,NA
+1984-06-17,Portugal,Spain,Spain,Santillana,73,FALSE,FALSE,NA
+1984-06-20,Portugal,Romania,Portugal,Nené,81,FALSE,FALSE,NA
+1984-06-23,France,Portugal,France,Jean-François Domergue,24,FALSE,FALSE,NA
+1984-06-23,France,Portugal,Portugal,Rui Jordão,74,FALSE,FALSE,NA
+1984-06-23,France,Portugal,Portugal,Rui Jordão,98,FALSE,FALSE,NA
+1984-06-23,France,Portugal,France,Jean-François Domergue,114,FALSE,FALSE,NA
+1984-06-23,France,Portugal,France,Michel Platini,119,FALSE,FALSE,NA
+1984-09-12,Sweden,Portugal,Portugal,Fernando Gomes,78,FALSE,FALSE,NA
+1984-10-14,Portugal,Czechoslovakia,Portugal,Diamantino,14,FALSE,FALSE,NA
+1984-10-14,Portugal,Czechoslovakia,Czechoslovakia,Petr Janečka,39,FALSE,FALSE,NA
+1984-10-14,Portugal,Czechoslovakia,Portugal,Carlos Manuel,50,FALSE,FALSE,NA
+1984-11-14,Portugal,Sweden,Portugal,Rui Jordão,11,FALSE,FALSE,NA
+1984-11-14,Portugal,Sweden,Sweden,Robert Prytz,29,FALSE,TRUE,NA
+1984-11-14,Portugal,Sweden,Sweden,Robert Prytz,35,FALSE,FALSE,NA
+1984-11-14,Portugal,Sweden,Sweden,Torbjörn Nilsson,38,FALSE,FALSE,NA
+1985-02-10,Malta,Portugal,Portugal,Carlos Manuel,6,FALSE,FALSE,NA
+1985-02-10,Malta,Portugal,Portugal,Fernando Gomes,13,FALSE,FALSE,NA
+1985-02-10,Malta,Portugal,Malta,Leonard Farrugia,59,FALSE,FALSE,NA
+1985-02-10,Malta,Portugal,Portugal,Fernando Gomes,74,FALSE,FALSE,NA
+1985-02-24,Portugal,Germany,Germany,Pierre Littbarski,28,FALSE,FALSE,NA
+1985-02-24,Portugal,Germany,Germany,Rudi Völler,37,FALSE,FALSE,NA
+1985-02-24,Portugal,Germany,Portugal,Diamantino,57,FALSE,FALSE,NA
+1985-09-25,Czechoslovakia,Portugal,Czechoslovakia,Vladimír Hruška,21,FALSE,FALSE,NA
+1985-10-12,Portugal,Malta,Portugal,Fernando Gomes,37,FALSE,FALSE,NA
+1985-10-12,Portugal,Malta,Malta,Frederico Rosa,46,TRUE,FALSE,NA
+1985-10-12,Portugal,Malta,Portugal,José Rafael,50,FALSE,FALSE,NA
+1985-10-12,Portugal,Malta,Malta,Michael Degiorgio,78,FALSE,FALSE,NA
+1985-10-12,Portugal,Malta,Portugal,Fernando Gomes,79,FALSE,FALSE,NA
+1985-10-16,Germany,Portugal,Portugal,Carlos Manuel,55,FALSE,FALSE,NA
+1986-06-03,Portugal,England,Portugal,Carlos Manuel,75,FALSE,FALSE,Diamantino
+1986-06-07,Poland,Portugal,Poland,Włodzimierz Smolarek,68,FALSE,FALSE,Dariusz Dziekanowski
+1986-06-11,Portugal,Morocco,Morocco,Abderrazak Khairi,19,FALSE,FALSE,NA
+1986-06-11,Portugal,Morocco,Morocco,Abderrazak Khairi,26,FALSE,FALSE,Labid Khalifa
+1986-06-11,Portugal,Morocco,Morocco,Abdelkrim Merry,62,FALSE,FALSE,Mohamed Timoumi
+1986-06-11,Portugal,Morocco,Portugal,Diamantino,80,FALSE,FALSE,NA
+1986-10-12,Portugal,Sweden,Sweden,Glenn Strömberg,52,FALSE,FALSE,NA
+1986-10-12,Portugal,Sweden,Portugal,José Coelho,66,FALSE,FALSE,NA
+1986-10-29,Switzerland,Portugal,Switzerland,Georges Bregy,6,FALSE,FALSE,NA
+1986-10-29,Switzerland,Portugal,Portugal,Manuel Fernandes,85,FALSE,FALSE,NA
+1987-02-14,Portugal,Italy,Italy,Alessandro Altobelli,40,FALSE,FALSE,NA
+1987-03-29,Portugal,Malta,Portugal,Jorge Plácido,11,FALSE,FALSE,NA
+1987-03-29,Portugal,Malta,Malta,Dennis Mizzi,23,FALSE,FALSE,NA
+1987-03-29,Portugal,Malta,Malta,Carmel Busuttil,68,FALSE,FALSE,NA
+1987-03-29,Portugal,Malta,Portugal,Jorge Plácido,77,FALSE,FALSE,NA
+1987-09-23,Sweden,Portugal,Portugal,Fernando Gomes,34,FALSE,FALSE,NA
+1987-12-05,Italy,Portugal,Italy,Gianluca Vialli,8,FALSE,FALSE,NA
+1987-12-05,Italy,Portugal,Italy,Giuseppe Giannini,87,FALSE,FALSE,NA
+1987-12-05,Italy,Portugal,Italy,Luigi De Agostini,89,FALSE,FALSE,NA
+1987-12-20,Malta,Portugal,Portugal,Frederico Rosa,74,FALSE,FALSE,NA
+1988-11-16,Portugal,Luxembourg,Portugal,Fernando Gomes,31,FALSE,FALSE,NA
+1989-02-15,Portugal,Belgium,Portugal,Vítor Paneira,53,FALSE,FALSE,NA
+1989-02-15,Portugal,Belgium,Belgium,Marc Van Der Linden,84,FALSE,FALSE,NA
+1989-04-26,Portugal,Switzerland,Portugal,João Domingos Pinto,48,FALSE,FALSE,NA
+1989-04-26,Portugal,Switzerland,Portugal,Frederico Rosa,56,FALSE,FALSE,NA
+1989-04-26,Portugal,Switzerland,Switzerland,Dario Zuffi,64,FALSE,FALSE,NA
+1989-04-26,Portugal,Switzerland,Portugal,Vítor Paneira,69,FALSE,FALSE,NA
+1989-09-06,Belgium,Portugal,Belgium,Jan Ceulemans,34,FALSE,FALSE,NA
+1989-09-06,Belgium,Portugal,Belgium,Marc Van Der Linden,59,FALSE,FALSE,NA
+1989-09-06,Belgium,Portugal,Belgium,Marc Van Der Linden,69,FALSE,FALSE,NA
+1989-09-20,Switzerland,Portugal,Switzerland,Kubilay Türkyilmaz,28,FALSE,TRUE,NA
+1989-09-20,Switzerland,Portugal,Portugal,Paulo Futre,74,FALSE,TRUE,NA
+1989-09-20,Switzerland,Portugal,Portugal,Rui Águas,77,FALSE,FALSE,NA
+1989-10-06,Czechoslovakia,Portugal,Czechoslovakia,Michal Bílek,11,FALSE,TRUE,NA
+1989-10-06,Czechoslovakia,Portugal,Portugal,Rui Águas,74,FALSE,FALSE,NA
+1989-10-06,Czechoslovakia,Portugal,Czechoslovakia,Michal Bílek,82,FALSE,FALSE,NA
+1989-10-11,Luxembourg,Portugal,Portugal,Rui Águas,43,FALSE,FALSE,NA
+1989-10-11,Luxembourg,Portugal,Portugal,Rui Águas,53,FALSE,FALSE,NA
+1989-10-11,Luxembourg,Portugal,Portugal,Rui Barros,72,FALSE,FALSE,NA
+1990-10-17,Portugal,Netherlands,Portugal,Rui Águas,54,FALSE,FALSE,NA
+1991-01-23,Greece,Portugal,Greece,Stefanos Borbokis,7,FALSE,FALSE,NA
+1991-01-23,Greece,Portugal,Portugal,Rui Águas,18,FALSE,FALSE,NA
+1991-01-23,Greece,Portugal,Portugal,Paulo Futre,62,FALSE,FALSE,NA
+1991-01-23,Greece,Portugal,Greece,Stelios Manolas,68,FALSE,FALSE,NA
+1991-01-23,Greece,Portugal,Greece,Panagiotis Tsalouchidis,85,FALSE,FALSE,NA
+1991-02-09,Malta,Portugal,Portugal,Paulo Futre,27,FALSE,FALSE,NA
+1991-02-20,Portugal,Malta,Portugal,Rui Águas,5,FALSE,FALSE,NA
+1991-02-20,Portugal,Malta,Portugal,José Leal,34,FALSE,FALSE,NA
+1991-02-20,Portugal,Malta,Portugal,Vítor Paneira,41,FALSE,TRUE,NA
+1991-02-20,Portugal,Malta,Portugal,Charles Scerri,48,TRUE,FALSE,NA
+1991-02-20,Portugal,Malta,Portugal,Jorge Cadete,81,FALSE,FALSE,NA
+1991-09-11,Portugal,Finland,Portugal,César Brito,22,FALSE,FALSE,NA
+1991-10-16,Netherlands,Portugal,Netherlands,Richard Witschge,20,FALSE,FALSE,NA
+1991-11-20,Portugal,Greece,Portugal,João Vieira Pinto,17,FALSE,FALSE,NA
+1993-01-24,Malta,Portugal,Portugal,Rui Águas,58,FALSE,FALSE,NA
+1993-02-24,Portugal,Italy,Italy,Roberto Baggio,2,FALSE,FALSE,NA
+1993-02-24,Portugal,Italy,Italy,Pierluigi Casiraghi,25,FALSE,FALSE,NA
+1993-02-24,Portugal,Italy,Portugal,Fernando Couto,56,FALSE,FALSE,NA
+1993-02-24,Portugal,Italy,Italy,Dino Baggio,73,FALSE,FALSE,NA
+1993-03-31,Switzerland,Portugal,Switzerland,Stéphane Chapuisat,39,FALSE,FALSE,NA
+1993-03-31,Switzerland,Portugal,Portugal,José Orlando Semedo,44,FALSE,FALSE,NA
+1993-04-28,Portugal,Scotland,Portugal,Rui Barros,5,FALSE,FALSE,NA
+1993-04-28,Portugal,Scotland,Portugal,Jorge Cadete,45,FALSE,FALSE,NA
+1993-04-28,Portugal,Scotland,Portugal,Paulo Futre,67,FALSE,FALSE,NA
+1993-04-28,Portugal,Scotland,Portugal,Rui Barros,70,FALSE,FALSE,NA
+1993-04-28,Portugal,Scotland,Portugal,Jorge Cadete,72,FALSE,FALSE,NA
+1993-06-19,Portugal,Malta,Portugal,António Nogueira,1,FALSE,FALSE,NA
+1993-06-19,Portugal,Malta,Portugal,Rui Costa,8,FALSE,FALSE,NA
+1993-06-19,Portugal,Malta,Portugal,João Domingos Pinto,23,FALSE,FALSE,NA
+1993-06-19,Portugal,Malta,Portugal,Jorge Cadete,85,FALSE,FALSE,NA
+1993-09-05,Estonia,Portugal,Portugal,Rui Costa,61,FALSE,FALSE,NA
+1993-09-05,Estonia,Portugal,Portugal,António Folha,74,FALSE,FALSE,NA
+1993-10-13,Portugal,Switzerland,Portugal,João Domingos Pinto,8,FALSE,FALSE,NA
+1993-11-10,Portugal,Estonia,Portugal,Paulo Futre,2,FALSE,FALSE,NA
+1993-11-10,Portugal,Estonia,Portugal,Oceano da Cruz,37,FALSE,TRUE,NA
+1993-11-10,Portugal,Estonia,Portugal,Rui Águas,86,FALSE,FALSE,NA
+1993-11-17,Italy,Portugal,Italy,Dino Baggio,83,FALSE,FALSE,NA
+1994-09-07,Northern Ireland,Portugal,Portugal,Rui Costa,8,FALSE,FALSE,NA
+1994-09-07,Northern Ireland,Portugal,Northern Ireland,Jimmy Quinn,58,FALSE,TRUE,NA
+1994-09-07,Northern Ireland,Portugal,Portugal,Domingos Paciência,81,FALSE,FALSE,NA
+1994-10-09,Latvia,Portugal,Portugal,João Vieira Pinto,31,FALSE,FALSE,NA
+1994-10-09,Latvia,Portugal,Portugal,João Vieira Pinto,69,FALSE,FALSE,NA
+1994-10-09,Latvia,Portugal,Portugal,Luís Figo,70,FALSE,FALSE,NA
+1994-10-09,Latvia,Portugal,Latvia,Jevgeņijs Miļevskis,87,FALSE,FALSE,NA
+1994-11-13,Portugal,Austria,Portugal,Luís Figo,37,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,Domingos Paciência,2,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,Domingos Paciência,11,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,Oceano da Cruz,45,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,João Domingos Pinto,56,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,Fernando Couto,72,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,António Folha,74,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,Paulo Alves,75,FALSE,FALSE,NA
+1994-12-18,Portugal,Liechtenstein,Portugal,Paulo Alves,79,FALSE,FALSE,NA
+1995-04-26,Republic of Ireland,Portugal,Republic of Ireland,Vítor Baía,44,TRUE,FALSE,NA
+1995-06-03,Portugal,Latvia,Portugal,Luís Figo,5,FALSE,FALSE,NA
+1995-06-03,Portugal,Latvia,Portugal,Carlos Secretário,19,FALSE,FALSE,NA
+1995-06-03,Portugal,Latvia,Portugal,Domingos Paciência,20,FALSE,FALSE,NA
+1995-06-03,Portugal,Latvia,Latvia,Vīts Rimkus,51,FALSE,FALSE,NA
+1995-06-03,Portugal,Latvia,Latvia,Vīts Rimkus,85,FALSE,FALSE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Domingos Paciência,25,FALSE,FALSE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Paulinho Santos,33,FALSE,FALSE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Rui Costa,41,FALSE,FALSE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Paulo Alves,66,FALSE,FALSE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Rui Costa,70,FALSE,TRUE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Paulo Alves,73,FALSE,FALSE,NA
+1995-08-15,Liechtenstein,Portugal,Portugal,Paulo Alves,90,FALSE,FALSE,NA
+1995-09-03,Portugal,Northern Ireland,Portugal,Domingos Paciência,47,FALSE,FALSE,NA
+1995-09-03,Portugal,Northern Ireland,Northern Ireland,Michael Hughes,66,FALSE,FALSE,NA
+1995-10-11,Austria,Portugal,Austria,Peter Stöger,21,FALSE,FALSE,NA
+1995-10-11,Austria,Portugal,Portugal,Paulinho Santos,49,FALSE,FALSE,NA
+1995-11-15,Portugal,Republic of Ireland,Portugal,Rui Costa,60,FALSE,FALSE,NA
+1995-11-15,Portugal,Republic of Ireland,Portugal,Hélder,74,FALSE,FALSE,NA
+1995-11-15,Portugal,Republic of Ireland,Portugal,Jorge Cadete,89,FALSE,FALSE,NA
+1996-06-09,Denmark,Portugal,Denmark,Brian Laudrup,22,FALSE,FALSE,NA
+1996-06-09,Denmark,Portugal,Portugal,Ricardo Sá Pinto,53,FALSE,FALSE,NA
+1996-06-14,Portugal,Turkey,Portugal,Fernando Couto,66,FALSE,FALSE,NA
+1996-06-19,Croatia,Portugal,Portugal,Luís Figo,4,FALSE,FALSE,NA
+1996-06-19,Croatia,Portugal,Portugal,João Vieira Pinto,33,FALSE,FALSE,NA
+1996-06-19,Croatia,Portugal,Portugal,Domingos Paciência,82,FALSE,FALSE,NA
+1996-06-23,Czech Republic,Portugal,Czech Republic,Karel Poborský,53,FALSE,FALSE,NA
+1996-10-05,Ukraine,Portugal,Ukraine,Serhiy Popov,4,FALSE,FALSE,NA
+1996-10-05,Ukraine,Portugal,Portugal,João Vieira Pinto,83,FALSE,FALSE,NA
+1996-10-05,Ukraine,Portugal,Ukraine,Yuriy Maksymov,88,FALSE,FALSE,NA
+1996-10-09,Albania,Portugal,Portugal,Luís Figo,10,FALSE,FALSE,NA
+1996-10-09,Albania,Portugal,Portugal,Hélder Cristóvão,75,FALSE,FALSE,NA
+1996-10-09,Albania,Portugal,Portugal,Rui Costa,88,FALSE,FALSE,NA
+1996-11-09,Portugal,Ukraine,Portugal,Fernando Couto,58,FALSE,FALSE,NA
+1997-06-07,Portugal,Albania,Portugal,João Vieira Pinto,14,FALSE,FALSE,NA
+1997-06-07,Portugal,Albania,Portugal,Luís Figo,70,FALSE,FALSE,NA
+1997-08-20,Portugal,Armenia,Portugal,Domingos Paciência,23,FALSE,FALSE,NA
+1997-08-20,Portugal,Armenia,Portugal,Luís Figo,31,FALSE,FALSE,NA
+1997-08-20,Portugal,Armenia,Armenia,Éric Assadourian,46,FALSE,FALSE,NA
+1997-08-20,Portugal,Armenia,Portugal,Pedro Barbosa,55,FALSE,FALSE,NA
+1997-09-06,Germany,Portugal,Portugal,Pedro Barbosa,70,FALSE,FALSE,NA
+1997-09-06,Germany,Portugal,Germany,Ulf Kirsten,80,FALSE,FALSE,NA
+1997-10-11,Portugal,Northern Ireland,Portugal,Sérgio Conceição,18,FALSE,FALSE,NA
+1998-09-06,Hungary,Portugal,Hungary,Ferenc Horváth,32,FALSE,FALSE,NA
+1998-09-06,Hungary,Portugal,Portugal,Ricardo Sá Pinto,56,FALSE,FALSE,NA
+1998-09-06,Hungary,Portugal,Portugal,Ricardo Sá Pinto,76,FALSE,FALSE,NA
+1998-09-06,Hungary,Portugal,Portugal,Rui Costa,84,FALSE,FALSE,NA
+1998-10-10,Portugal,Romania,Romania,Dorinel Munteanu,90,FALSE,FALSE,NA
+1998-10-14,Slovakia,Portugal,Portugal,João Vieira Pinto,17,FALSE,FALSE,NA
+1998-10-14,Slovakia,Portugal,Portugal,João Vieira Pinto,30,FALSE,FALSE,NA
+1998-10-14,Slovakia,Portugal,Portugal,Abel Xavier,70,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,Ricardo Sá Pinto,28,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,João Vieira Pinto,36,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,Paulo Madeira,67,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,Sérgio Conceição,75,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,João Vieira Pinto,77,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,Pauleta,82,FALSE,FALSE,NA
+1999-03-26,Portugal,Azerbaijan,Portugal,Pauleta,83,FALSE,FALSE,NA
+1999-03-31,Liechtenstein,Portugal,Portugal,Rui Costa,16,FALSE,TRUE,NA
+1999-03-31,Liechtenstein,Portugal,Portugal,Luís Figo,49,FALSE,FALSE,NA
+1999-03-31,Liechtenstein,Portugal,Portugal,Paulo Madeira,54,FALSE,FALSE,NA
+1999-03-31,Liechtenstein,Portugal,Portugal,Paulo Madeira,60,FALSE,FALSE,NA
+1999-03-31,Liechtenstein,Portugal,Portugal,Rui Costa,79,FALSE,FALSE,NA
+1999-06-05,Portugal,Slovakia,Portugal,Capucho,64,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,Ricardo Sá Pinto,29,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,João Vieira Pinto,40,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,Ricardo Sá Pinto,45,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,Ricardo Sá Pinto,52,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,João Vieira Pinto,59,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,João Vieira Pinto,67,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,Rui Costa,80,FALSE,FALSE,NA
+1999-06-09,Portugal,Liechtenstein,Portugal,Rui Costa,90,FALSE,TRUE,NA
+1999-09-04,Azerbaijan,Portugal,Azerbaijan,Zaur Tagizade,51,FALSE,FALSE,NA
+1999-09-04,Azerbaijan,Portugal,Portugal,Luís Figo,90,FALSE,FALSE,NA
+1999-09-08,Romania,Portugal,Romania,Gheorghe Hagi,37,FALSE,FALSE,NA
+1999-09-08,Romania,Portugal,Portugal,Luís Figo,45,FALSE,FALSE,NA
+1999-10-09,Portugal,Hungary,Portugal,Rui Costa,15,FALSE,TRUE,NA
+1999-10-09,Portugal,Hungary,Portugal,João Vieira Pinto,16,FALSE,FALSE,NA
+1999-10-09,Portugal,Hungary,Portugal,Abel Xavier,58,FALSE,FALSE,NA
+2000-06-12,Portugal,England,England,Paul Scholes,3,FALSE,FALSE,NA
+2000-06-12,Portugal,England,England,Steve McManaman,18,FALSE,FALSE,NA
+2000-06-12,Portugal,England,Portugal,Luís Figo,22,FALSE,FALSE,NA
+2000-06-12,Portugal,England,Portugal,João Vieira Pinto,37,FALSE,FALSE,NA
+2000-06-12,Portugal,England,Portugal,Nuno Gomes,59,FALSE,FALSE,NA
+2000-06-17,Romania,Portugal,Portugal,Costinha,90,FALSE,FALSE,NA
+2000-06-20,Portugal,Germany,Portugal,Sérgio Conceição,35,FALSE,FALSE,NA
+2000-06-20,Portugal,Germany,Portugal,Sérgio Conceição,54,FALSE,FALSE,NA
+2000-06-20,Portugal,Germany,Portugal,Sérgio Conceição,71,FALSE,FALSE,NA
+2000-06-24,Turkey,Portugal,Portugal,Nuno Gomes,44,FALSE,FALSE,NA
+2000-06-24,Turkey,Portugal,Portugal,Nuno Gomes,56,FALSE,FALSE,NA
+2000-06-28,France,Portugal,Portugal,Nuno Gomes,19,FALSE,FALSE,NA
+2000-06-28,France,Portugal,France,Thierry Henry,51,FALSE,FALSE,NA
+2000-06-28,France,Portugal,France,Zinedine Zidane,117,FALSE,FALSE,NA
+2000-09-03,Estonia,Portugal,Portugal,Rui Costa,15,FALSE,FALSE,NA
+2000-09-03,Estonia,Portugal,Portugal,Luís Figo,49,FALSE,FALSE,NA
+2000-09-03,Estonia,Portugal,Portugal,Ricardo Sá Pinto,57,FALSE,FALSE,NA
+2000-09-03,Estonia,Portugal,Estonia,Andres Oper,83,FALSE,FALSE,NA
+2000-10-07,Portugal,Republic of Ireland,Portugal,Sérgio Conceição,57,FALSE,FALSE,NA
+2000-10-07,Portugal,Republic of Ireland,Republic of Ireland,Matt Holland,73,FALSE,FALSE,NA
+2000-10-11,Netherlands,Portugal,Portugal,Sérgio Conceição,11,FALSE,FALSE,NA
+2000-10-11,Netherlands,Portugal,Portugal,Pauleta,44,FALSE,FALSE,NA
+2001-02-28,Portugal,Andorra,Portugal,Luís Figo,1,FALSE,FALSE,NA
+2001-02-28,Portugal,Andorra,Portugal,Pauleta,36,FALSE,FALSE,NA
+2001-02-28,Portugal,Andorra,Portugal,Luís Figo,49,FALSE,FALSE,NA
+2001-03-28,Portugal,Netherlands,Netherlands,Jimmy Floyd Hasselbaink,18,FALSE,TRUE,NA
+2001-03-28,Portugal,Netherlands,Netherlands,Patrick Kluivert,48,FALSE,FALSE,NA
+2001-03-28,Portugal,Netherlands,Portugal,Pauleta,83,FALSE,FALSE,NA
+2001-03-28,Portugal,Netherlands,Portugal,Luís Figo,90,FALSE,TRUE,NA
+2001-06-02,Republic of Ireland,Portugal,Republic of Ireland,Roy Keane,68,FALSE,FALSE,NA
+2001-06-02,Republic of Ireland,Portugal,Portugal,Luís Figo,78,FALSE,FALSE,NA
+2001-06-06,Portugal,Cyprus,Portugal,Pauleta,36,FALSE,FALSE,NA
+2001-06-06,Portugal,Cyprus,Portugal,Pedro Barbosa,55,FALSE,FALSE,NA
+2001-06-06,Portugal,Cyprus,Portugal,Pedro Barbosa,60,FALSE,FALSE,NA
+2001-06-06,Portugal,Cyprus,Portugal,Pauleta,70,FALSE,FALSE,NA
+2001-06-06,Portugal,Cyprus,Portugal,João Vieira Pinto,76,FALSE,FALSE,NA
+2001-06-06,Portugal,Cyprus,Portugal,João Vieira Pinto,81,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Nuno Gomes,36,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Pauleta,39,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Nuno Gomes,40,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Andorra,Roberto Jonas,42,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Nuno Gomes,45,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Rui Jorge,45,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Sérgio Conceição,58,FALSE,FALSE,NA
+2001-09-01,Andorra,Portugal,Portugal,Nuno Gomes,90,FALSE,FALSE,NA
+2001-09-05,Cyprus,Portugal,Cyprus,Michalis Konstantinou,25,FALSE,FALSE,NA
+2001-09-05,Cyprus,Portugal,Portugal,Nuno Gomes,48,FALSE,FALSE,NA
+2001-09-05,Cyprus,Portugal,Portugal,Pauleta,64,FALSE,FALSE,NA
+2001-09-05,Cyprus,Portugal,Portugal,Sérgio Conceição,71,FALSE,FALSE,NA
+2001-10-06,Portugal,Estonia,Portugal,João Vieira Pinto,30,FALSE,FALSE,NA
+2001-10-06,Portugal,Estonia,Portugal,Nuno Gomes,50,FALSE,FALSE,NA
+2001-10-06,Portugal,Estonia,Portugal,Pauleta,59,FALSE,FALSE,NA
+2001-10-06,Portugal,Estonia,Portugal,Nuno Gomes,65,FALSE,FALSE,NA
+2001-10-06,Portugal,Estonia,Portugal,Luís Figo,80,FALSE,FALSE,NA
+2002-06-05,United States,Portugal,United States,John O'Brien,4,FALSE,FALSE,NA
+2002-06-05,United States,Portugal,United States,Jorge Costa,29,TRUE,FALSE,NA
+2002-06-05,United States,Portugal,United States,Brian McBride,36,FALSE,FALSE,Tony Sanneh
+2002-06-05,United States,Portugal,Portugal,Beto,39,FALSE,FALSE,NA
+2002-06-05,United States,Portugal,Portugal,Jeff Agoos,71,TRUE,FALSE,NA
+2002-06-10,Portugal,Poland,Portugal,Pauleta,14,FALSE,FALSE,João Pinto
+2002-06-10,Portugal,Poland,Portugal,Pauleta,65,FALSE,FALSE,Luís Figo
+2002-06-10,Portugal,Poland,Portugal,Pauleta,77,FALSE,FALSE,Rui Costa
+2002-06-10,Portugal,Poland,Portugal,Rui Costa,88,FALSE,FALSE,Nuno Capucho
+2002-06-14,South Korea,Portugal,South Korea,Park Ji-sung,70,FALSE,FALSE,Lee Young-pyo
+2004-06-12,Portugal,Greece,Greece,Giorgos Karagounis,7,FALSE,FALSE,NA
+2004-06-12,Portugal,Greece,Greece,Angelos Basinas,51,FALSE,TRUE,NA
+2004-06-12,Portugal,Greece,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2004-06-16,Portugal,Russia,Portugal,Maniche,7,FALSE,FALSE,NA
+2004-06-16,Portugal,Russia,Portugal,Rui Costa,89,FALSE,FALSE,NA
+2004-06-20,Portugal,Spain,Portugal,Nuno Gomes,57,FALSE,FALSE,NA
+2004-06-24,Portugal,England,England,Michael Owen,3,FALSE,FALSE,NA
+2004-06-24,Portugal,England,Portugal,Hélder Postiga,83,FALSE,FALSE,NA
+2004-06-24,Portugal,England,Portugal,Rui Costa,110,FALSE,FALSE,NA
+2004-06-24,Portugal,England,England,Frank Lampard,115,FALSE,FALSE,NA
+2004-06-30,Portugal,Netherlands,Portugal,Cristiano Ronaldo,26,FALSE,FALSE,NA
+2004-06-30,Portugal,Netherlands,Portugal,Maniche,58,FALSE,FALSE,NA
+2004-06-30,Portugal,Netherlands,Netherlands,Jorge Andrade,63,TRUE,FALSE,NA
+2004-07-04,Portugal,Greece,Greece,Angelos Charisteas,57,FALSE,FALSE,NA
+2004-09-04,Latvia,Portugal,Portugal,Cristiano Ronaldo,57,FALSE,FALSE,NA
+2004-09-04,Latvia,Portugal,Portugal,Pauleta,58,FALSE,FALSE,NA
+2004-09-08,Portugal,Estonia,Portugal,Cristiano Ronaldo,75,FALSE,FALSE,NA
+2004-09-08,Portugal,Estonia,Portugal,Hélder Postiga,83,FALSE,FALSE,NA
+2004-09-08,Portugal,Estonia,Portugal,Pauleta,86,FALSE,FALSE,NA
+2004-09-08,Portugal,Estonia,Portugal,Hélder Postiga,90,FALSE,FALSE,NA
+2004-10-09,Liechtenstein,Portugal,Portugal,Pauleta,23,FALSE,FALSE,NA
+2004-10-09,Liechtenstein,Portugal,Portugal,Daniel Hasler,39,TRUE,FALSE,NA
+2004-10-09,Liechtenstein,Portugal,Liechtenstein,Franz Burgmeier,48,FALSE,FALSE,NA
+2004-10-09,Liechtenstein,Portugal,Liechtenstein,Thomas Beck,76,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Pauleta,26,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Cristiano Ronaldo,39,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Deco,45,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Cristiano Ronaldo,69,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Russia,Andrey Arshavin,79,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Simão Sabrosa,82,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Petit,89,FALSE,FALSE,NA
+2004-10-13,Portugal,Russia,Portugal,Petit,90,FALSE,FALSE,NA
+2004-11-17,Luxembourg,Portugal,Portugal,Ben Federspiel,11,TRUE,FALSE,NA
+2004-11-17,Luxembourg,Portugal,Portugal,Cristiano Ronaldo,28,FALSE,FALSE,NA
+2004-11-17,Luxembourg,Portugal,Portugal,Maniche,52,FALSE,FALSE,NA
+2004-11-17,Luxembourg,Portugal,Portugal,Pauleta,67,FALSE,FALSE,NA
+2004-11-17,Luxembourg,Portugal,Portugal,Pauleta,82,FALSE,FALSE,NA
+2005-03-30,Slovakia,Portugal,Slovakia,Miroslav Karhan,8,FALSE,TRUE,NA
+2005-03-30,Slovakia,Portugal,Portugal,Hélder Postiga,62,FALSE,FALSE,NA
+2005-06-04,Portugal,Slovakia,Portugal,Fernando Meira,21,FALSE,FALSE,NA
+2005-06-04,Portugal,Slovakia,Portugal,Cristiano Ronaldo,42,FALSE,FALSE,NA
+2005-06-08,Estonia,Portugal,Portugal,Cristiano Ronaldo,32,FALSE,FALSE,NA
+2005-09-03,Portugal,Luxembourg,Portugal,Jorge Andrade,24,FALSE,FALSE,NA
+2005-09-03,Portugal,Luxembourg,Portugal,Ricardo Carvalho,30,FALSE,FALSE,NA
+2005-09-03,Portugal,Luxembourg,Portugal,Pauleta,38,FALSE,FALSE,NA
+2005-09-03,Portugal,Luxembourg,Portugal,Pauleta,57,FALSE,FALSE,NA
+2005-09-03,Portugal,Luxembourg,Portugal,Simão Sabrosa,80,FALSE,FALSE,NA
+2005-09-03,Portugal,Luxembourg,Portugal,Simão Sabrosa,85,FALSE,FALSE,NA
+2005-10-08,Portugal,Liechtenstein,Liechtenstein,Benjamin Fischer,32,FALSE,FALSE,NA
+2005-10-08,Portugal,Liechtenstein,Portugal,Pauleta,48,FALSE,FALSE,NA
+2005-10-08,Portugal,Liechtenstein,Portugal,Nuno Gomes,85,FALSE,FALSE,NA
+2005-10-12,Portugal,Latvia,Portugal,Pauleta,20,FALSE,FALSE,NA
+2005-10-12,Portugal,Latvia,Portugal,Pauleta,22,FALSE,FALSE,NA
+2005-10-12,Portugal,Latvia,Portugal,Hugo Viana,86,FALSE,FALSE,NA
+2006-06-11,Angola,Portugal,Portugal,Pauleta,4,FALSE,FALSE,Luís Figo
+2006-06-17,Portugal,Iran,Portugal,Deco,63,FALSE,FALSE,Luís Figo
+2006-06-17,Portugal,Iran,Portugal,Cristiano Ronaldo,80,FALSE,TRUE,NA
+2006-06-21,Portugal,Mexico,Portugal,Maniche,6,FALSE,FALSE,Simão Sabrosa
+2006-06-21,Portugal,Mexico,Portugal,Simão Sabrosa,24,FALSE,TRUE,NA
+2006-06-21,Portugal,Mexico,Mexico,Francisco Fonseca,29,FALSE,FALSE,Pável Pardo
+2006-06-25,Portugal,Netherlands,Portugal,Maniche,23,FALSE,FALSE,Pauleta
+2006-07-05,Portugal,France,France,Zinedine Zidane,33,FALSE,TRUE,NA
+2006-07-08,Germany,Portugal,Germany,Bastian Schweinsteiger,56,FALSE,FALSE,NA
+2006-07-08,Germany,Portugal,Germany,Petit,60,TRUE,FALSE,NA
+2006-07-08,Germany,Portugal,Germany,Bastian Schweinsteiger,78,FALSE,FALSE,Oliver Neuville
+2006-07-08,Germany,Portugal,Portugal,Nuno Gomes,88,FALSE,FALSE,Luís Figo
+2006-09-06,Finland,Portugal,Finland,Jonatan Johansson,22,FALSE,FALSE,NA
+2006-09-06,Finland,Portugal,Portugal,Nuno Gomes,42,FALSE,FALSE,NA
+2006-10-07,Portugal,Azerbaijan,Portugal,Cristiano Ronaldo,25,FALSE,FALSE,NA
+2006-10-07,Portugal,Azerbaijan,Portugal,Ricardo Carvalho,31,FALSE,FALSE,NA
+2006-10-07,Portugal,Azerbaijan,Portugal,Cristiano Ronaldo,63,FALSE,FALSE,NA
+2006-10-11,Poland,Portugal,Poland,Euzebiusz Smolarek,9,FALSE,FALSE,NA
+2006-10-11,Poland,Portugal,Poland,Euzebiusz Smolarek,18,FALSE,FALSE,NA
+2006-10-11,Poland,Portugal,Portugal,Nuno Gomes,90,FALSE,FALSE,NA
+2006-11-15,Portugal,Kazakhstan,Portugal,Simão Sabrosa,8,FALSE,FALSE,NA
+2006-11-15,Portugal,Kazakhstan,Portugal,Cristiano Ronaldo,30,FALSE,FALSE,NA
+2006-11-15,Portugal,Kazakhstan,Portugal,Simão Sabrosa,86,FALSE,FALSE,NA
+2007-03-24,Portugal,Belgium,Portugal,Nuno Gomes,53,FALSE,FALSE,NA
+2007-03-24,Portugal,Belgium,Portugal,Cristiano Ronaldo,55,FALSE,FALSE,NA
+2007-03-24,Portugal,Belgium,Portugal,Ricardo Quaresma,68,FALSE,FALSE,NA
+2007-03-24,Portugal,Belgium,Portugal,Cristiano Ronaldo,75,FALSE,FALSE,NA
+2007-03-28,Serbia,Portugal,Portugal,Tiago Mendes,5,FALSE,FALSE,NA
+2007-03-28,Serbia,Portugal,Serbia,Boško Janković,37,FALSE,FALSE,NA
+2007-06-02,Belgium,Portugal,Portugal,Nani,43,FALSE,FALSE,NA
+2007-06-02,Belgium,Portugal,Belgium,Marouane Fellaini,55,FALSE,FALSE,NA
+2007-06-02,Belgium,Portugal,Portugal,Hélder Postiga,64,FALSE,FALSE,NA
+2007-08-22,Armenia,Portugal,Armenia,Robert Arzumanyan,10,FALSE,FALSE,NA
+2007-08-22,Armenia,Portugal,Portugal,Cristiano Ronaldo,37,FALSE,FALSE,NA
+2007-09-08,Portugal,Poland,Poland,Mariusz Lewandowski,44,FALSE,FALSE,NA
+2007-09-08,Portugal,Poland,Portugal,Maniche,50,FALSE,FALSE,NA
+2007-09-08,Portugal,Poland,Portugal,Cristiano Ronaldo,73,FALSE,FALSE,NA
+2007-09-08,Portugal,Poland,Poland,Jacek Krzynówek,88,FALSE,FALSE,NA
+2007-09-12,Portugal,Serbia,Portugal,Simão Sabrosa,11,FALSE,FALSE,NA
+2007-09-12,Portugal,Serbia,Serbia,Branislav Ivanović,88,FALSE,FALSE,NA
+2007-10-13,Azerbaijan,Portugal,Portugal,Bruno Alves,12,FALSE,FALSE,NA
+2007-10-13,Azerbaijan,Portugal,Portugal,Hugo Almeida,45,FALSE,FALSE,NA
+2007-10-17,Kazakhstan,Portugal,Portugal,Ariza Makukula,84,FALSE,FALSE,NA
+2007-10-17,Kazakhstan,Portugal,Kazakhstan,Dmitry Byakov,90,FALSE,FALSE,NA
+2007-10-17,Kazakhstan,Portugal,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2007-11-17,Portugal,Armenia,Portugal,Hugo Almeida,42,FALSE,FALSE,NA
+2008-06-07,Portugal,Turkey,Portugal,Pepe,61,FALSE,FALSE,NA
+2008-06-07,Portugal,Turkey,Portugal,Raul Meireles,90,FALSE,FALSE,NA
+2008-06-11,Czech Republic,Portugal,Portugal,Deco,8,FALSE,FALSE,NA
+2008-06-11,Czech Republic,Portugal,Czech Republic,Libor Sionko,17,FALSE,FALSE,NA
+2008-06-11,Czech Republic,Portugal,Portugal,Cristiano Ronaldo,63,FALSE,FALSE,NA
+2008-06-11,Czech Republic,Portugal,Portugal,Ricardo Quaresma,90,FALSE,FALSE,NA
+2008-06-15,Switzerland,Portugal,Switzerland,Hakan Yakin,71,FALSE,FALSE,NA
+2008-06-15,Switzerland,Portugal,Switzerland,Hakan Yakin,83,FALSE,TRUE,NA
+2008-06-19,Portugal,Germany,Germany,Bastian Schweinsteiger,22,FALSE,FALSE,NA
+2008-06-19,Portugal,Germany,Germany,Miroslav Klose,26,FALSE,FALSE,NA
+2008-06-19,Portugal,Germany,Portugal,Nuno Gomes,40,FALSE,FALSE,NA
+2008-06-19,Portugal,Germany,Germany,Michael Ballack,61,FALSE,FALSE,NA
+2008-06-19,Portugal,Germany,Portugal,Hélder Postiga,87,FALSE,FALSE,NA
+2008-09-06,Malta,Portugal,Portugal,Brian Said,26,TRUE,FALSE,NA
+2008-09-06,Malta,Portugal,Portugal,Hugo Almeida,61,FALSE,FALSE,NA
+2008-09-06,Malta,Portugal,Portugal,Simão Sabrosa,72,FALSE,FALSE,NA
+2008-09-06,Malta,Portugal,Portugal,Nani,78,FALSE,FALSE,NA
+2008-09-10,Portugal,Denmark,Portugal,Nani,42,FALSE,FALSE,NA
+2008-09-10,Portugal,Denmark,Denmark,Nicklas Bendtner,84,FALSE,FALSE,NA
+2008-09-10,Portugal,Denmark,Portugal,Deco,86,FALSE,TRUE,NA
+2008-09-10,Portugal,Denmark,Denmark,Christian Poulsen,88,FALSE,FALSE,NA
+2008-09-10,Portugal,Denmark,Denmark,Daniel Jensen,90,FALSE,FALSE,NA
+2009-06-06,Albania,Portugal,Portugal,Hugo Almeida,27,FALSE,FALSE,NA
+2009-06-06,Albania,Portugal,Albania,Erjon Bogdani,29,FALSE,FALSE,NA
+2009-06-06,Albania,Portugal,Portugal,Bruno Alves,90,FALSE,FALSE,NA
+2009-09-05,Denmark,Portugal,Denmark,Nicklas Bendtner,43,FALSE,FALSE,NA
+2009-09-05,Denmark,Portugal,Portugal,Liédson,86,FALSE,FALSE,NA
+2009-09-09,Hungary,Portugal,Portugal,Pepe,10,FALSE,FALSE,NA
+2009-10-10,Portugal,Hungary,Portugal,Simão Sabrosa,18,FALSE,FALSE,NA
+2009-10-10,Portugal,Hungary,Portugal,Liédson,74,FALSE,FALSE,NA
+2009-10-10,Portugal,Hungary,Portugal,Simão Sabrosa,79,FALSE,FALSE,NA
+2009-10-14,Portugal,Malta,Portugal,Nani,14,FALSE,FALSE,NA
+2009-10-14,Portugal,Malta,Portugal,Simão Sabrosa,45,FALSE,FALSE,NA
+2009-10-14,Portugal,Malta,Portugal,Miguel Veloso,52,FALSE,FALSE,NA
+2009-10-14,Portugal,Malta,Portugal,Edinho,90,FALSE,FALSE,NA
+2009-11-14,Portugal,Bosnia and Herzegovina,Portugal,Bruno Alves,31,FALSE,FALSE,NA
+2009-11-18,Bosnia and Herzegovina,Portugal,Portugal,Raul Meireles,56,FALSE,FALSE,NA
+2010-06-21,Portugal,North Korea,Portugal,Raul Meireles,29,FALSE,FALSE,Tiago Mendes
+2010-06-21,Portugal,North Korea,Portugal,Simão Sabrosa,53,FALSE,FALSE,Raul Meireles
+2010-06-21,Portugal,North Korea,Portugal,Hugo Almeida,56,FALSE,FALSE,Fábio Coentrão
+2010-06-21,Portugal,North Korea,Portugal,Tiago Mendes,60,FALSE,FALSE,Cristiano Ronaldo
+2010-06-21,Portugal,North Korea,Portugal,Liédson,81,FALSE,FALSE,Duda
+2010-06-21,Portugal,North Korea,Portugal,Cristiano Ronaldo,87,FALSE,FALSE,Liédson
+2010-06-21,Portugal,North Korea,Portugal,Tiago Mendes,89,FALSE,FALSE,Fábio Coentrão
+2010-06-29,Spain,Portugal,Spain,David Villa,63,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Cyprus,Efstathios Aloneftis,3,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Portugal,Hugo Almeida,8,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Cyprus,Michalis Konstantinou,11,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Portugal,Raul Meireles,29,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Portugal,Danny,50,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Cyprus,Ioannis Okkas,57,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Portugal,Manuel Fernandes,60,FALSE,FALSE,NA
+2010-09-03,Portugal,Cyprus,Cyprus,Andreas Avraam,89,FALSE,FALSE,NA
+2010-09-07,Norway,Portugal,Norway,Erik Huseklepp,21,FALSE,FALSE,NA
+2010-10-08,Portugal,Denmark,Portugal,Nani,29,FALSE,FALSE,NA
+2010-10-08,Portugal,Denmark,Portugal,Nani,31,FALSE,FALSE,NA
+2010-10-08,Portugal,Denmark,Denmark,Ricardo Carvalho,80,TRUE,FALSE,NA
+2010-10-08,Portugal,Denmark,Portugal,Cristiano Ronaldo,85,FALSE,FALSE,NA
+2010-10-12,Iceland,Portugal,Portugal,Cristiano Ronaldo,3,FALSE,FALSE,NA
+2010-10-12,Iceland,Portugal,Iceland,Heiðar Helguson,17,FALSE,FALSE,NA
+2010-10-12,Iceland,Portugal,Portugal,Raul Meireles,27,FALSE,FALSE,NA
+2010-10-12,Iceland,Portugal,Portugal,Hélder Postiga,72,FALSE,FALSE,NA
+2011-06-04,Portugal,Norway,Portugal,Hélder Postiga,53,FALSE,FALSE,NA
+2011-09-02,Cyprus,Portugal,Portugal,Cristiano Ronaldo,35,FALSE,TRUE,NA
+2011-09-02,Cyprus,Portugal,Portugal,Cristiano Ronaldo,83,FALSE,FALSE,NA
+2011-09-02,Cyprus,Portugal,Portugal,Hugo Almeida,84,FALSE,FALSE,NA
+2011-09-02,Cyprus,Portugal,Portugal,Danny,90,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Portugal,Nani,13,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Portugal,Nani,21,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Portugal,Hélder Postiga,45,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Iceland,Hallgrímur Jónasson,48,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Iceland,Hallgrímur Jónasson,68,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Portugal,João Moutinho,81,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Portugal,Eliseu,87,FALSE,FALSE,NA
+2011-10-07,Portugal,Iceland,Iceland,Gylfi Sigurðsson,90,FALSE,TRUE,NA
+2011-10-11,Denmark,Portugal,Denmark,Michael Krohn-Dehli,13,FALSE,FALSE,NA
+2011-10-11,Denmark,Portugal,Denmark,Nicklas Bendtner,63,FALSE,FALSE,NA
+2011-10-11,Denmark,Portugal,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Portugal,Cristiano Ronaldo,8,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Portugal,Nani,24,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Bosnia and Herzegovina,Zvjezdan Misimović,41,FALSE,TRUE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Portugal,Cristiano Ronaldo,53,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Bosnia and Herzegovina,Emir Spahić,65,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Portugal,Hélder Postiga,72,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Portugal,Miguel Veloso,80,FALSE,FALSE,NA
+2011-11-15,Portugal,Bosnia and Herzegovina,Portugal,Hélder Postiga,82,FALSE,FALSE,NA
+2012-06-09,Germany,Portugal,Germany,Mario Gómez,72,FALSE,FALSE,NA
+2012-06-13,Denmark,Portugal,Portugal,Pepe,24,FALSE,FALSE,NA
+2012-06-13,Denmark,Portugal,Portugal,Hélder Postiga,36,FALSE,FALSE,NA
+2012-06-13,Denmark,Portugal,Denmark,Nicklas Bendtner,41,FALSE,FALSE,NA
+2012-06-13,Denmark,Portugal,Denmark,Nicklas Bendtner,80,FALSE,FALSE,NA
+2012-06-13,Denmark,Portugal,Portugal,Silvestre Varela,87,FALSE,FALSE,NA
+2012-06-17,Portugal,Netherlands,Netherlands,Rafael van der Vaart,11,FALSE,FALSE,NA
+2012-06-17,Portugal,Netherlands,Portugal,Cristiano Ronaldo,28,FALSE,FALSE,NA
+2012-06-17,Portugal,Netherlands,Portugal,Cristiano Ronaldo,74,FALSE,FALSE,NA
+2012-06-21,Czech Republic,Portugal,Portugal,Cristiano Ronaldo,79,FALSE,FALSE,NA
+2012-09-07,Luxembourg,Portugal,Luxembourg,Daniel da Mota,13,FALSE,FALSE,NA
+2012-09-07,Luxembourg,Portugal,Portugal,Cristiano Ronaldo,28,FALSE,FALSE,NA
+2012-09-07,Luxembourg,Portugal,Portugal,Hélder Postiga,54,FALSE,FALSE,NA
+2012-09-11,Portugal,Azerbaijan,Portugal,Silvestre Varela,63,FALSE,FALSE,NA
+2012-09-11,Portugal,Azerbaijan,Portugal,Hélder Postiga,85,FALSE,FALSE,NA
+2012-09-11,Portugal,Azerbaijan,Portugal,Bruno Alves,88,FALSE,FALSE,NA
+2012-10-12,Russia,Portugal,Russia,Aleksandr Kerzhakov,6,FALSE,FALSE,NA
+2012-10-16,Portugal,Northern Ireland,Northern Ireland,Niall McGinn,30,FALSE,FALSE,NA
+2012-10-16,Portugal,Northern Ireland,Portugal,Hélder Postiga,79,FALSE,FALSE,NA
+2013-03-22,Israel,Portugal,Portugal,Bruno Alves,2,FALSE,FALSE,NA
+2013-03-22,Israel,Portugal,Israel,Tomer Hemed,24,FALSE,FALSE,NA
+2013-03-22,Israel,Portugal,Israel,Eden Ben Basat,40,FALSE,FALSE,NA
+2013-03-22,Israel,Portugal,Israel,Rami Gershon,70,FALSE,FALSE,NA
+2013-03-22,Israel,Portugal,Portugal,Hélder Postiga,72,FALSE,FALSE,NA
+2013-03-22,Israel,Portugal,Portugal,Fábio Coentrão,90,FALSE,FALSE,NA
+2013-03-26,Azerbaijan,Portugal,Portugal,Bruno Alves,63,FALSE,FALSE,NA
+2013-03-26,Azerbaijan,Portugal,Portugal,Hugo Almeida,79,FALSE,FALSE,NA
+2013-06-07,Portugal,Russia,Portugal,Hélder Postiga,9,FALSE,FALSE,NA
+2013-09-06,Northern Ireland,Portugal,Portugal,Bruno Alves,21,FALSE,FALSE,NA
+2013-09-06,Northern Ireland,Portugal,Northern Ireland,Gareth McAuley,36,FALSE,FALSE,NA
+2013-09-06,Northern Ireland,Portugal,Northern Ireland,Jamie Ward,52,FALSE,FALSE,NA
+2013-09-06,Northern Ireland,Portugal,Portugal,Cristiano Ronaldo,68,FALSE,FALSE,NA
+2013-09-06,Northern Ireland,Portugal,Portugal,Cristiano Ronaldo,77,FALSE,FALSE,NA
+2013-09-06,Northern Ireland,Portugal,Portugal,Cristiano Ronaldo,83,FALSE,FALSE,NA
+2013-10-11,Portugal,Israel,Portugal,Ricardo Costa,28,FALSE,FALSE,NA
+2013-10-11,Portugal,Israel,Israel,Eden Ben Basat,85,FALSE,FALSE,NA
+2013-10-15,Portugal,Luxembourg,Portugal,Silvestre Varela,30,FALSE,FALSE,NA
+2013-10-15,Portugal,Luxembourg,Portugal,Nani,36,FALSE,FALSE,NA
+2013-10-15,Portugal,Luxembourg,Portugal,Hélder Postiga,78,FALSE,FALSE,NA
+2013-11-15,Portugal,Sweden,Portugal,Cristiano Ronaldo,82,FALSE,FALSE,NA
+2013-11-19,Sweden,Portugal,Portugal,Cristiano Ronaldo,50,FALSE,FALSE,NA
+2013-11-19,Sweden,Portugal,Sweden,Zlatan Ibrahimović,68,FALSE,FALSE,NA
+2013-11-19,Sweden,Portugal,Sweden,Zlatan Ibrahimović,72,FALSE,FALSE,NA
+2013-11-19,Sweden,Portugal,Portugal,Cristiano Ronaldo,77,FALSE,FALSE,NA
+2013-11-19,Sweden,Portugal,Portugal,Cristiano Ronaldo,79,FALSE,FALSE,NA
+2014-06-16,Germany,Portugal,Germany,Thomas Müller,12,FALSE,TRUE,NA
+2014-06-16,Germany,Portugal,Germany,Mats Hummels,32,FALSE,FALSE,Toni Kroos
+2014-06-16,Germany,Portugal,Germany,Thomas Müller,45,FALSE,FALSE,Toni Kroos
+2014-06-16,Germany,Portugal,Germany,Thomas Müller,78,FALSE,FALSE,NA
+2014-06-22,United States,Portugal,Portugal,Nani,5,FALSE,FALSE,André Almeida
+2014-06-22,United States,Portugal,United States,Jermaine Jones,64,FALSE,FALSE,NA
+2014-06-22,United States,Portugal,United States,Clint Dempsey,81,FALSE,FALSE,Graham Zusi
+2014-06-22,United States,Portugal,Portugal,Silvestre Varela,90,FALSE,FALSE,Cristiano Ronaldo
+2014-06-26,Portugal,Ghana,Portugal,John Boye,31,TRUE,FALSE,NA
+2014-06-26,Portugal,Ghana,Ghana,Asamoah Gyan,57,FALSE,FALSE,Kwadwo Asamoah
+2014-06-26,Portugal,Ghana,Portugal,Cristiano Ronaldo,80,FALSE,FALSE,NA
+2014-09-07,Portugal,Albania,Albania,Bekim Balaj,52,FALSE,FALSE,NA
+2014-10-14,Denmark,Portugal,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2014-11-14,Portugal,Armenia,Portugal,Cristiano Ronaldo,72,FALSE,FALSE,NA
+2015-03-29,Portugal,Serbia,Portugal,Ricardo Carvalho,10,FALSE,FALSE,NA
+2015-03-29,Portugal,Serbia,Serbia,Nemanja Matić,61,FALSE,FALSE,NA
+2015-03-29,Portugal,Serbia,Portugal,Fábio Coentrão,63,FALSE,FALSE,NA
+2015-06-13,Armenia,Portugal,Armenia,Marcos Pizzelli,14,FALSE,FALSE,NA
+2015-06-13,Armenia,Portugal,Portugal,Cristiano Ronaldo,29,FALSE,TRUE,NA
+2015-06-13,Armenia,Portugal,Portugal,Cristiano Ronaldo,55,FALSE,FALSE,NA
+2015-06-13,Armenia,Portugal,Portugal,Cristiano Ronaldo,58,FALSE,FALSE,NA
+2015-06-13,Armenia,Portugal,Armenia,Hrayr Mkoyan,72,FALSE,FALSE,NA
+2015-09-07,Albania,Portugal,Portugal,Miguel Veloso,90,FALSE,FALSE,NA
+2015-10-08,Portugal,Denmark,Portugal,João Moutinho,66,FALSE,FALSE,NA
+2015-10-11,Serbia,Portugal,Portugal,Nani,5,FALSE,FALSE,NA
+2015-10-11,Serbia,Portugal,Serbia,Zoran Tošić,65,FALSE,FALSE,NA
+2015-10-11,Serbia,Portugal,Portugal,João Moutinho,78,FALSE,FALSE,NA
+2016-06-14,Portugal,Iceland,Portugal,Nani,31,FALSE,FALSE,NA
+2016-06-14,Portugal,Iceland,Iceland,Birkir Bjarnason,50,FALSE,FALSE,NA
+2016-06-22,Hungary,Portugal,Hungary,Zoltán Gera,19,FALSE,FALSE,NA
+2016-06-22,Hungary,Portugal,Portugal,Nani,42,FALSE,FALSE,NA
+2016-06-22,Hungary,Portugal,Hungary,Balázs Dzsudzsák,47,FALSE,FALSE,NA
+2016-06-22,Hungary,Portugal,Portugal,Cristiano Ronaldo,50,FALSE,FALSE,NA
+2016-06-22,Hungary,Portugal,Hungary,Balázs Dzsudzsák,55,FALSE,FALSE,NA
+2016-06-22,Hungary,Portugal,Portugal,Cristiano Ronaldo,62,FALSE,FALSE,NA
+2016-06-25,Croatia,Portugal,Portugal,Ricardo Quaresma,117,FALSE,FALSE,NA
+2016-06-30,Poland,Portugal,Poland,Robert Lewandowski,2,FALSE,FALSE,NA
+2016-06-30,Poland,Portugal,Portugal,Renato Sanches,33,FALSE,FALSE,NA
+2016-07-06,Portugal,Wales,Portugal,Cristiano Ronaldo,50,FALSE,FALSE,NA
+2016-07-06,Portugal,Wales,Portugal,Nani,53,FALSE,FALSE,NA
+2016-07-10,France,Portugal,Portugal,Eder,109,FALSE,FALSE,NA
+2016-09-06,Switzerland,Portugal,Switzerland,Breel Embolo,24,FALSE,FALSE,NA
+2016-09-06,Switzerland,Portugal,Switzerland,Admir Mehmedi,30,FALSE,FALSE,NA
+2016-10-07,Portugal,Andorra,Portugal,Cristiano Ronaldo,2,FALSE,FALSE,NA
+2016-10-07,Portugal,Andorra,Portugal,Cristiano Ronaldo,4,FALSE,FALSE,NA
+2016-10-07,Portugal,Andorra,Portugal,João Cancelo,44,FALSE,FALSE,NA
+2016-10-07,Portugal,Andorra,Portugal,Cristiano Ronaldo,47,FALSE,FALSE,NA
+2016-10-07,Portugal,Andorra,Portugal,Cristiano Ronaldo,68,FALSE,FALSE,NA
+2016-10-07,Portugal,Andorra,Portugal,André Silva,86,FALSE,FALSE,NA
+2016-10-10,Faroe Islands,Portugal,Portugal,André Silva,12,FALSE,FALSE,NA
+2016-10-10,Faroe Islands,Portugal,Portugal,André Silva,22,FALSE,FALSE,NA
+2016-10-10,Faroe Islands,Portugal,Portugal,André Silva,37,FALSE,FALSE,NA
+2016-10-10,Faroe Islands,Portugal,Portugal,Cristiano Ronaldo,65,FALSE,FALSE,NA
+2016-10-10,Faroe Islands,Portugal,Portugal,João Moutinho,90,FALSE,FALSE,NA
+2016-10-10,Faroe Islands,Portugal,Portugal,João Cancelo,90,FALSE,FALSE,NA
+2016-11-13,Portugal,Latvia,Portugal,Cristiano Ronaldo,28,FALSE,TRUE,NA
+2016-11-13,Portugal,Latvia,Latvia,Artūrs Zjuzins,67,FALSE,FALSE,NA
+2016-11-13,Portugal,Latvia,Portugal,William Carvalho,70,FALSE,FALSE,NA
+2016-11-13,Portugal,Latvia,Portugal,Cristiano Ronaldo,85,FALSE,FALSE,NA
+2016-11-13,Portugal,Latvia,Portugal,Bruno Alves,90,FALSE,FALSE,NA
+2017-03-25,Portugal,Hungary,Portugal,André Silva,32,FALSE,FALSE,NA
+2017-03-25,Portugal,Hungary,Portugal,Cristiano Ronaldo,36,FALSE,FALSE,NA
+2017-03-25,Portugal,Hungary,Portugal,Cristiano Ronaldo,65,FALSE,FALSE,NA
+2017-06-09,Latvia,Portugal,Portugal,Cristiano Ronaldo,41,FALSE,FALSE,NA
+2017-06-09,Latvia,Portugal,Portugal,Cristiano Ronaldo,63,FALSE,FALSE,NA
+2017-06-09,Latvia,Portugal,Portugal,André Silva,67,FALSE,FALSE,NA
+2017-06-18,Portugal,Mexico,Portugal,Ricardo Quaresma,34,FALSE,FALSE,NA
+2017-06-18,Portugal,Mexico,Mexico,Javier Hernández,42,FALSE,FALSE,NA
+2017-06-18,Portugal,Mexico,Portugal,Cédric Soares,86,FALSE,FALSE,NA
+2017-06-18,Portugal,Mexico,Mexico,Héctor Moreno,90,FALSE,FALSE,NA
+2017-06-21,Russia,Portugal,Portugal,Cristiano Ronaldo,8,FALSE,FALSE,NA
+2017-06-24,New Zealand,Portugal,Portugal,Cristiano Ronaldo,33,FALSE,TRUE,NA
+2017-06-24,New Zealand,Portugal,Portugal,Bernardo Silva,37,FALSE,FALSE,NA
+2017-06-24,New Zealand,Portugal,Portugal,André Silva,80,FALSE,FALSE,NA
+2017-06-24,New Zealand,Portugal,Portugal,Nani,90,FALSE,FALSE,NA
+2017-07-02,Portugal,Mexico,Mexico,Luís Neto,54,TRUE,FALSE,NA
+2017-07-02,Portugal,Mexico,Portugal,Pepe,90,FALSE,FALSE,NA
+2017-07-02,Portugal,Mexico,Portugal,Adrien Silva,104,FALSE,TRUE,NA
+2017-08-31,Portugal,Faroe Islands,Portugal,Cristiano Ronaldo,3,FALSE,FALSE,NA
+2017-08-31,Portugal,Faroe Islands,Portugal,Cristiano Ronaldo,28,FALSE,TRUE,NA
+2017-08-31,Portugal,Faroe Islands,Faroe Islands,Rógvi Baldvinsson,38,FALSE,FALSE,NA
+2017-08-31,Portugal,Faroe Islands,Portugal,William Carvalho,58,FALSE,FALSE,NA
+2017-08-31,Portugal,Faroe Islands,Portugal,Cristiano Ronaldo,65,FALSE,FALSE,NA
+2017-08-31,Portugal,Faroe Islands,Portugal,Nélson Oliveira,85,FALSE,FALSE,NA
+2017-09-03,Hungary,Portugal,Portugal,André Silva,48,FALSE,FALSE,NA
+2017-10-07,Andorra,Portugal,Portugal,Cristiano Ronaldo,63,FALSE,FALSE,NA
+2017-10-07,Andorra,Portugal,Portugal,André Silva,86,FALSE,FALSE,NA
+2017-10-10,Portugal,Switzerland,Portugal,Johan Djourou,41,TRUE,FALSE,NA
+2017-10-10,Portugal,Switzerland,Portugal,André Silva,57,FALSE,FALSE,NA
+2018-06-15,Portugal,Spain,Portugal,Cristiano Ronaldo,4,FALSE,TRUE,NA
+2018-06-15,Portugal,Spain,Spain,Diego Costa,24,FALSE,FALSE,Sergio Busquets
+2018-06-15,Portugal,Spain,Portugal,Cristiano Ronaldo,44,FALSE,FALSE,Gonçalo Guedes
+2018-06-15,Portugal,Spain,Spain,Diego Costa,55,FALSE,FALSE,Sergio Busquets
+2018-06-15,Portugal,Spain,Spain,Nacho,58,FALSE,FALSE,Isco
+2018-06-15,Portugal,Spain,Portugal,Cristiano Ronaldo,88,FALSE,FALSE,NA
+2018-06-20,Portugal,Morocco,Portugal,Cristiano Ronaldo,4,FALSE,FALSE,João Moutinho
+2018-06-25,Iran,Portugal,Portugal,Ricardo Quaresma,45,FALSE,FALSE,Adrien Silva
+2018-06-25,Iran,Portugal,Iran,Karim Ansarifard,90,FALSE,TRUE,NA
+2018-06-30,Uruguay,Portugal,Uruguay,Edinson Cavani,7,FALSE,FALSE,Luis Suárez
+2018-06-30,Uruguay,Portugal,Portugal,Pepe,55,FALSE,FALSE,Raphaël Guerreiro
+2018-06-30,Uruguay,Portugal,Uruguay,Edinson Cavani,62,FALSE,FALSE,Raphaël Guerreiro
+2018-09-10,Portugal,Italy,Portugal,André Silva,48,FALSE,FALSE,NA
+2018-10-11,Poland,Portugal,Poland,Krzysztof Piątek,18,FALSE,FALSE,NA
+2018-10-11,Poland,Portugal,Portugal,André Silva,32,FALSE,FALSE,NA
+2018-10-11,Poland,Portugal,Portugal,Kamil Glik,43,TRUE,FALSE,NA
+2018-10-11,Poland,Portugal,Portugal,Bernardo Silva,52,FALSE,FALSE,NA
+2018-10-11,Poland,Portugal,Poland,Jakub Błaszczykowski,77,FALSE,FALSE,NA
+2018-11-20,Portugal,Poland,Portugal,André Silva,34,FALSE,FALSE,NA
+2018-11-20,Portugal,Poland,Poland,Arkadiusz Milik,66,FALSE,TRUE,NA
+2019-03-25,Portugal,Serbia,Serbia,Dušan Tadić,7,FALSE,TRUE,NA
+2019-03-25,Portugal,Serbia,Portugal,Danilo Pereira,42,FALSE,FALSE,NA
+2019-06-05,Portugal,Switzerland,Portugal,Cristiano Ronaldo,25,FALSE,FALSE,NA
+2019-06-05,Portugal,Switzerland,Switzerland,Ricardo Rodríguez,57,FALSE,TRUE,NA
+2019-06-05,Portugal,Switzerland,Portugal,Cristiano Ronaldo,88,FALSE,FALSE,NA
+2019-06-05,Portugal,Switzerland,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2019-06-09,Portugal,Netherlands,Portugal,Gonçalo Guedes,60,FALSE,FALSE,NA
+2019-09-07,Serbia,Portugal,Portugal,William Carvalho,42,FALSE,FALSE,NA
+2019-09-07,Serbia,Portugal,Portugal,Gonçalo Guedes,58,FALSE,FALSE,NA
+2019-09-07,Serbia,Portugal,Serbia,Nikola Milenković,68,FALSE,FALSE,NA
+2019-09-07,Serbia,Portugal,Portugal,Cristiano Ronaldo,80,FALSE,FALSE,NA
+2019-09-07,Serbia,Portugal,Serbia,Aleksandar Mitrović,85,FALSE,FALSE,NA
+2019-09-07,Serbia,Portugal,Portugal,Bernardo Silva,86,FALSE,FALSE,NA
+2019-09-10,Lithuania,Portugal,Portugal,Cristiano Ronaldo,7,FALSE,TRUE,NA
+2019-09-10,Lithuania,Portugal,Lithuania,Vytautas Andriuškevičius,28,FALSE,FALSE,NA
+2019-09-10,Lithuania,Portugal,Portugal,Cristiano Ronaldo,62,FALSE,FALSE,NA
+2019-09-10,Lithuania,Portugal,Portugal,Cristiano Ronaldo,65,FALSE,FALSE,NA
+2019-09-10,Lithuania,Portugal,Portugal,Cristiano Ronaldo,76,FALSE,FALSE,NA
+2019-09-10,Lithuania,Portugal,Portugal,William Carvalho,90,FALSE,FALSE,NA
+2019-10-11,Portugal,Luxembourg,Portugal,Bernardo Silva,16,FALSE,FALSE,NA
+2019-10-11,Portugal,Luxembourg,Portugal,Cristiano Ronaldo,65,FALSE,FALSE,NA
+2019-10-11,Portugal,Luxembourg,Portugal,Gonçalo Guedes,89,FALSE,FALSE,NA
+2019-10-14,Ukraine,Portugal,Ukraine,Roman Yaremchuk,6,FALSE,FALSE,NA
+2019-10-14,Ukraine,Portugal,Ukraine,Andriy Yarmolenko,27,FALSE,FALSE,NA
+2019-10-14,Ukraine,Portugal,Portugal,Cristiano Ronaldo,72,FALSE,TRUE,NA
+2019-11-14,Portugal,Lithuania,Portugal,Cristiano Ronaldo,7,FALSE,TRUE,NA
+2019-11-14,Portugal,Lithuania,Portugal,Cristiano Ronaldo,22,FALSE,FALSE,NA
+2019-11-14,Portugal,Lithuania,Portugal,Pizzi,52,FALSE,FALSE,NA
+2019-11-14,Portugal,Lithuania,Portugal,Gonçalo Paciência,56,FALSE,FALSE,NA
+2019-11-14,Portugal,Lithuania,Portugal,Bernardo Silva,63,FALSE,FALSE,NA
+2019-11-14,Portugal,Lithuania,Portugal,Cristiano Ronaldo,65,FALSE,FALSE,NA
+2019-11-17,Luxembourg,Portugal,Portugal,Bruno Fernandes,39,FALSE,FALSE,NA
+2019-11-17,Luxembourg,Portugal,Portugal,Cristiano Ronaldo,86,FALSE,FALSE,NA
+2020-09-05,Portugal,Croatia,Portugal,João Cancelo,41,FALSE,FALSE,NA
+2020-09-05,Portugal,Croatia,Portugal,Diogo Jota,58,FALSE,FALSE,NA
+2020-09-05,Portugal,Croatia,Portugal,João Félix,70,FALSE,FALSE,NA
+2020-09-05,Portugal,Croatia,Portugal,André Silva,90,FALSE,FALSE,NA
+2020-09-05,Portugal,Croatia,Croatia,Bruno Petković,90,FALSE,FALSE,NA
+2020-09-08,Sweden,Portugal,Portugal,Cristiano Ronaldo,45,FALSE,FALSE,NA
+2020-09-08,Sweden,Portugal,Portugal,Cristiano Ronaldo,72,FALSE,FALSE,NA
+2020-10-14,Portugal,Sweden,Portugal,Bernardo Silva,21,FALSE,FALSE,NA
+2020-10-14,Portugal,Sweden,Portugal,Diogo Jota,44,FALSE,FALSE,NA
+2020-10-14,Portugal,Sweden,Portugal,Diogo Jota,72,FALSE,FALSE,NA
+2020-11-14,Portugal,France,France,N'Golo Kanté,54,FALSE,FALSE,NA
+2020-11-17,Croatia,Portugal,Croatia,Mateo Kovačić,29,FALSE,FALSE,NA
+2020-11-17,Croatia,Portugal,Portugal,Rúben Dias,52,FALSE,FALSE,NA
+2020-11-17,Croatia,Portugal,Portugal,João Félix,60,FALSE,FALSE,NA
+2020-11-17,Croatia,Portugal,Croatia,Mateo Kovačić,65,FALSE,FALSE,NA
+2020-11-17,Croatia,Portugal,Portugal,Rúben Dias,90,FALSE,FALSE,NA
+2021-03-24,Portugal,Azerbaijan,Portugal,Maksim Medvedev,36,TRUE,FALSE,NA
+2021-03-27,Serbia,Portugal,Portugal,Diogo Jota,11,FALSE,FALSE,NA
+2021-03-27,Serbia,Portugal,Portugal,Diogo Jota,36,FALSE,FALSE,NA
+2021-03-27,Serbia,Portugal,Serbia,Aleksandar Mitrović,46,FALSE,FALSE,NA
+2021-03-27,Serbia,Portugal,Serbia,Filip Kostić,60,FALSE,FALSE,NA
+2021-03-30,Luxembourg,Portugal,Luxembourg,Gerson Rodrigues,30,FALSE,FALSE,NA
+2021-03-30,Luxembourg,Portugal,Portugal,Diogo Jota,45,FALSE,FALSE,NA
+2021-03-30,Luxembourg,Portugal,Portugal,Cristiano Ronaldo,51,FALSE,FALSE,NA
+2021-03-30,Luxembourg,Portugal,Portugal,João Palhinha,80,FALSE,FALSE,NA
+2021-06-15,Hungary,Portugal,Portugal,Raphaël Guerreiro,84,FALSE,FALSE,NA
+2021-06-15,Hungary,Portugal,Portugal,Cristiano Ronaldo,87,FALSE,TRUE,NA
+2021-06-15,Hungary,Portugal,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2021-06-19,Germany,Portugal,Portugal,Cristiano Ronaldo,15,FALSE,FALSE,NA
+2021-06-19,Germany,Portugal,Germany,Rúben Dias,35,TRUE,FALSE,NA
+2021-06-19,Germany,Portugal,Germany,Raphaël Guerreiro,39,TRUE,FALSE,NA
+2021-06-19,Germany,Portugal,Germany,Kai Havertz,51,FALSE,FALSE,NA
+2021-06-19,Germany,Portugal,Germany,Robin Gosens,60,FALSE,FALSE,NA
+2021-06-19,Germany,Portugal,Portugal,Diogo Jota,67,FALSE,FALSE,NA
+2021-06-23,Portugal,France,Portugal,Cristiano Ronaldo,31,FALSE,TRUE,NA
+2021-06-23,Portugal,France,France,Karim Benzema,45,FALSE,TRUE,NA
+2021-06-23,Portugal,France,France,Karim Benzema,47,FALSE,FALSE,NA
+2021-06-23,Portugal,France,Portugal,Cristiano Ronaldo,60,FALSE,TRUE,NA
+2021-06-27,Belgium,Portugal,Belgium,Thorgan Hazard,42,FALSE,FALSE,NA
+2021-09-01,Portugal,Republic of Ireland,Republic of Ireland,John Egan,45,FALSE,FALSE,NA
+2021-09-01,Portugal,Republic of Ireland,Portugal,Cristiano Ronaldo,89,FALSE,FALSE,NA
+2021-09-01,Portugal,Republic of Ireland,Portugal,Cristiano Ronaldo,90,FALSE,FALSE,NA
+2021-09-07,Azerbaijan,Portugal,Portugal,Bernardo Silva,26,FALSE,FALSE,NA
+2021-09-07,Azerbaijan,Portugal,Portugal,André Silva,31,FALSE,FALSE,NA
+2021-09-07,Azerbaijan,Portugal,Portugal,Diogo Jota,75,FALSE,FALSE,NA
+2021-10-12,Portugal,Luxembourg,Portugal,Cristiano Ronaldo,8,FALSE,TRUE,NA
+2021-10-12,Portugal,Luxembourg,Portugal,Cristiano Ronaldo,13,FALSE,TRUE,NA
+2021-10-12,Portugal,Luxembourg,Portugal,Bruno Fernandes,18,FALSE,FALSE,NA
+2021-10-12,Portugal,Luxembourg,Portugal,João Palhinha,69,FALSE,FALSE,NA
+2021-10-12,Portugal,Luxembourg,Portugal,Cristiano Ronaldo,87,FALSE,FALSE,NA
+2021-11-14,Portugal,Serbia,Portugal,Renato Sanches,2,FALSE,FALSE,NA
+2021-11-14,Portugal,Serbia,Serbia,Dušan Tadić,33,FALSE,FALSE,NA
+2021-11-14,Portugal,Serbia,Serbia,Aleksandar Mitrović,90,FALSE,FALSE,NA
+2022-03-24,Portugal,Turkey,Portugal,Otávio,15,FALSE,FALSE,NA
+2022-03-24,Portugal,Turkey,Portugal,Diogo Jota,42,FALSE,FALSE,NA
+2022-03-24,Portugal,Turkey,Turkey,Burak Yılmaz,65,FALSE,FALSE,NA
+2022-03-24,Portugal,Turkey,Portugal,Matheus Nunes,90,FALSE,FALSE,NA
+2022-03-29,Portugal,North Macedonia,Portugal,Bruno Fernandes,32,FALSE,FALSE,NA
+2022-03-29,Portugal,North Macedonia,Portugal,Bruno Fernandes,65,FALSE,FALSE,NA
+2022-06-02,Spain,Portugal,Spain,Álvaro Morata,25,FALSE,FALSE,NA
+2022-06-02,Spain,Portugal,Portugal,Ricardo Horta,82,FALSE,FALSE,NA
+2022-06-05,Portugal,Switzerland,Portugal,William Carvalho,15,FALSE,FALSE,NA
+2022-06-05,Portugal,Switzerland,Portugal,Cristiano Ronaldo,35,FALSE,FALSE,NA
+2022-06-05,Portugal,Switzerland,Portugal,Cristiano Ronaldo,39,FALSE,FALSE,NA
+2022-06-05,Portugal,Switzerland,Portugal,João Cancelo,68,FALSE,FALSE,NA
+2022-06-09,Portugal,Czech Republic,Portugal,João Cancelo,33,FALSE,FALSE,NA
+2022-06-09,Portugal,Czech Republic,Portugal,Gonçalo Guedes,38,FALSE,FALSE,NA
+2022-06-12,Switzerland,Portugal,Switzerland,Haris Seferovic,1,FALSE,FALSE,NA
+2022-09-24,Czech Republic,Portugal,Portugal,Diogo Dalot,33,FALSE,FALSE,NA
+2022-09-24,Czech Republic,Portugal,Portugal,Bruno Fernandes,45,FALSE,FALSE,NA
+2022-09-24,Czech Republic,Portugal,Portugal,Diogo Dalot,52,FALSE,FALSE,NA
+2022-09-24,Czech Republic,Portugal,Portugal,Diogo Jota,82,FALSE,FALSE,NA
+2022-09-27,Portugal,Spain,Spain,Álvaro Morata,88,FALSE,FALSE,NA
+2022-11-24,Portugal,Ghana,Portugal,Cristiano Ronaldo,65,FALSE,TRUE,NA
+2022-11-24,Portugal,Ghana,Ghana,André Ayew,73,FALSE,FALSE,Mohammed Kudus
+2022-11-24,Portugal,Ghana,Portugal,João Félix,78,FALSE,FALSE,Bruno Fernandes
+2022-11-24,Portugal,Ghana,Portugal,Rafael Leão,80,FALSE,FALSE,Bruno Fernandes
+2022-11-24,Portugal,Ghana,Ghana,Osman Bukari,89,FALSE,FALSE,Baba Rahman
+2022-11-28,Portugal,Uruguay,Portugal,Bruno Fernandes,54,FALSE,FALSE,Raphaël Guerreiro
+2022-11-28,Portugal,Uruguay,Portugal,Bruno Fernandes,90,FALSE,TRUE,NA
+2022-12-02,South Korea,Portugal,Portugal,Ricardo Horta,5,FALSE,FALSE,Diogo Dalot
+2022-12-02,South Korea,Portugal,South Korea,Kim Young-gwon,27,FALSE,FALSE,NA
+2022-12-02,South Korea,Portugal,South Korea,Hwang Hee-chan,90,FALSE,FALSE,Son Heung-min
+2022-12-06,Portugal,Switzerland,Portugal,Gonçalo Ramos,17,FALSE,FALSE,João Félix
+2022-12-06,Portugal,Switzerland,Portugal,Pepe,33,FALSE,FALSE,Bruno Fernandes
+2022-12-06,Portugal,Switzerland,Portugal,Gonçalo Ramos,51,FALSE,FALSE,Diogo Dalot
+2022-12-06,Portugal,Switzerland,Portugal,Raphaël Guerreiro,55,FALSE,FALSE,Gonçalo Ramos
+2022-12-06,Portugal,Switzerland,Switzerland,Manuel Akanji,58,FALSE,FALSE,Xherdan Shaqiri
+2022-12-06,Portugal,Switzerland,Portugal,Gonçalo Ramos,67,FALSE,FALSE,João Félix
+2022-12-06,Portugal,Switzerland,Portugal,Rafael Leão,90,FALSE,FALSE,Raphaël Guerreiro
+2022-12-10,Morocco,Portugal,Morocco,Youssef En-Nesyri,42,FALSE,FALSE,Yahia Attiyat Allah
+2023-03-23,Portugal,Liechtenstein,Portugal,João Cancelo,8,FALSE,FALSE,NA
+2023-03-23,Portugal,Liechtenstein,Portugal,Bernardo Silva,47,FALSE,FALSE,NA
+2023-03-23,Portugal,Liechtenstein,Portugal,Cristiano Ronaldo,51,FALSE,TRUE,NA
+2023-03-23,Portugal,Liechtenstein,Portugal,Cristiano Ronaldo,63,FALSE,FALSE,NA
+2023-03-26,Luxembourg,Portugal,Portugal,Cristiano Ronaldo,9,FALSE,FALSE,NA
+2023-03-26,Luxembourg,Portugal,Portugal,João Félix,15,FALSE,FALSE,NA
+2023-03-26,Luxembourg,Portugal,Portugal,Bernardo Silva,18,FALSE,FALSE,NA
+2023-03-26,Luxembourg,Portugal,Portugal,Cristiano Ronaldo,31,FALSE,FALSE,NA
+2023-03-26,Luxembourg,Portugal,Portugal,Otávio,77,FALSE,FALSE,NA
+2023-03-26,Luxembourg,Portugal,Portugal,Rafael Leão,88,FALSE,FALSE,NA
+2023-06-17,Portugal,Bosnia and Herzegovina,Portugal,Bernardo Silva,44,FALSE,FALSE,NA
+2023-06-17,Portugal,Bosnia and Herzegovina,Portugal,Bruno Fernandes,77,FALSE,FALSE,NA
+2023-06-17,Portugal,Bosnia and Herzegovina,Portugal,Bruno Fernandes,90,FALSE,FALSE,NA
+2023-06-20,Iceland,Portugal,Portugal,Cristiano Ronaldo,89,FALSE,FALSE,NA
+2023-09-08,Slovakia,Portugal,Portugal,Bruno Fernandes,43,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Gonçalo Inácio,12,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Gonçalo Ramos,18,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Gonçalo Ramos,34,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Gonçalo Inácio,45,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Diogo Jota,58,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Ricardo Horta,67,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Diogo Jota,78,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,Bruno Fernandes,83,FALSE,FALSE,NA
+2023-09-11,Portugal,Luxembourg,Portugal,João Félix,88,FALSE,FALSE,NA
+2023-10-13,Portugal,Slovakia,Portugal,Gonçalo Ramos,18,FALSE,FALSE,NA
+2023-10-13,Portugal,Slovakia,Portugal,Cristiano Ronaldo,29,FALSE,TRUE,NA
+2023-10-13,Portugal,Slovakia,Slovakia,Dávid Hancko,69,FALSE,FALSE,NA
+2023-10-13,Portugal,Slovakia,Portugal,Cristiano Ronaldo,72,FALSE,FALSE,NA
+2023-10-13,Portugal,Slovakia,Slovakia,Stanislav Lobotka,80,FALSE,FALSE,NA
+2023-10-16,Bosnia and Herzegovina,Portugal,Portugal,Cristiano Ronaldo,5,FALSE,TRUE,NA
+2023-10-16,Bosnia and Herzegovina,Portugal,Portugal,Cristiano Ronaldo,20,FALSE,FALSE,NA
+2023-10-16,Bosnia and Herzegovina,Portugal,Portugal,Bruno Fernandes,25,FALSE,FALSE,NA
+2023-10-16,Bosnia and Herzegovina,Portugal,Portugal,João Cancelo,32,FALSE,FALSE,NA
+2023-10-16,Bosnia and Herzegovina,Portugal,Portugal,João Félix,41,FALSE,FALSE,NA
+2023-11-16,Liechtenstein,Portugal,Portugal,Cristiano Ronaldo,46,FALSE,FALSE,NA
+2023-11-16,Liechtenstein,Portugal,Portugal,João Cancelo,57,FALSE,FALSE,NA
+2023-11-19,Portugal,Iceland,Portugal,Bruno Fernandes,37,FALSE,FALSE,NA
+2023-11-19,Portugal,Iceland,Portugal,Ricardo Horta,66,FALSE,FALSE,NA
+2024-06-18,Portugal,Czech Republic,Czech Republic,Lukáš Provod,62,FALSE,FALSE,NA
+2024-06-18,Portugal,Czech Republic,Portugal,Robin Hranáč,69,TRUE,FALSE,NA
+2024-06-18,Portugal,Czech Republic,Portugal,Francisco Conceição,90,FALSE,FALSE,NA
+2024-06-22,Turkey,Portugal,Portugal,Bernardo Silva,21,FALSE,FALSE,NA
+2024-06-22,Turkey,Portugal,Portugal,Samet Akaydin,28,TRUE,FALSE,NA
+2024-06-22,Turkey,Portugal,Portugal,Bruno Fernandes,56,FALSE,FALSE,NA
+2024-06-26,Georgia,Portugal,Georgia,Khvicha Kvaratskhelia,2,FALSE,FALSE,NA
+2024-06-26,Georgia,Portugal,Georgia,Georges Mikautadze,57,FALSE,TRUE,NA
+2024-09-05,Portugal,Croatia,Portugal,Diogo Dalot,7,FALSE,FALSE,NA
+2024-09-05,Portugal,Croatia,Portugal,Cristiano Ronaldo,34,FALSE,FALSE,NA
+2024-09-05,Portugal,Croatia,Croatia,Diogo Dalot,41,TRUE,FALSE,NA
+2024-09-08,Portugal,Scotland,Scotland,Scott McTominay,7,FALSE,FALSE,NA
+2024-09-08,Portugal,Scotland,Portugal,Bruno Fernandes,54,FALSE,FALSE,NA
+2024-09-08,Portugal,Scotland,Portugal,Cristiano Ronaldo,88,FALSE,FALSE,NA
+2024-10-12,Poland,Portugal,Portugal,Bernardo Silva,26,FALSE,FALSE,NA
+2024-10-12,Poland,Portugal,Portugal,Cristiano Ronaldo,37,FALSE,FALSE,NA
+2024-10-12,Poland,Portugal,Poland,Piotr Zieliński,78,FALSE,FALSE,NA
+2024-10-12,Poland,Portugal,Portugal,Jan Bednarek,88,TRUE,FALSE,NA
+2024-11-15,Portugal,Poland,Portugal,Rafael Leão,59,FALSE,FALSE,NA
+2024-11-15,Portugal,Poland,Portugal,Cristiano Ronaldo,72,FALSE,TRUE,NA
+2024-11-15,Portugal,Poland,Portugal,Bruno Fernandes,80,FALSE,FALSE,NA
+2024-11-15,Portugal,Poland,Portugal,Pedro Neto,83,FALSE,FALSE,NA
+2024-11-15,Portugal,Poland,Portugal,Cristiano Ronaldo,87,FALSE,FALSE,NA
+2024-11-15,Portugal,Poland,Poland,Dominik Marczuk,88,FALSE,FALSE,NA
+2024-11-18,Croatia,Portugal,Portugal,João Félix,33,FALSE,FALSE,NA
+2024-11-18,Croatia,Portugal,Croatia,Joško Gvardiol,65,FALSE,FALSE,NA
+2025-03-20,Denmark,Portugal,Denmark,Rasmus Højlund,78,FALSE,FALSE,NA
+2025-03-23,Portugal,Denmark,Portugal,Joachim Andersen,38,TRUE,FALSE,NA
+2025-03-23,Portugal,Denmark,Denmark,Rasmus Kristensen,56,FALSE,FALSE,NA
+2025-03-23,Portugal,Denmark,Portugal,Cristiano Ronaldo,72,FALSE,FALSE,NA
+2025-03-23,Portugal,Denmark,Denmark,Christian Eriksen,76,FALSE,FALSE,NA
+2025-03-23,Portugal,Denmark,Portugal,Francisco Trincão,86,FALSE,FALSE,NA
+2025-03-23,Portugal,Denmark,Portugal,Francisco Trincão,91,FALSE,FALSE,NA
+2025-03-23,Portugal,Denmark,Portugal,Gonçalo Ramos,115,FALSE,FALSE,NA
+2025-06-04,Germany,Portugal,Germany,Florian Wirtz,48,FALSE,FALSE,NA
+2025-06-04,Germany,Portugal,Portugal,Francisco Conceição,63,FALSE,FALSE,NA
+2025-06-04,Germany,Portugal,Portugal,Cristiano Ronaldo,68,FALSE,FALSE,NA
+2025-06-08,Portugal,Spain,Spain,Martín Zubimendi,21,FALSE,FALSE,NA
+2025-06-08,Portugal,Spain,Portugal,Nuno Mendes,26,FALSE,FALSE,NA
+2025-06-08,Portugal,Spain,Spain,Mikel Oyarzabal,45,FALSE,FALSE,NA
+2025-06-08,Portugal,Spain,Portugal,Cristiano Ronaldo,61,FALSE,FALSE,NA
+2025-09-06,Armenia,Portugal,Portugal,João Félix,10,FALSE,FALSE,NA
+2025-09-06,Armenia,Portugal,Portugal,Cristiano Ronaldo,21,FALSE,FALSE,NA
+2025-09-06,Armenia,Portugal,Portugal,João Cancelo,32,FALSE,FALSE,NA
+2025-09-06,Armenia,Portugal,Portugal,Cristiano Ronaldo,46,FALSE,FALSE,NA
+2025-09-06,Armenia,Portugal,Portugal,João Félix,62,FALSE,FALSE,NA
+2025-09-09,Hungary,Portugal,Hungary,Barnabás Varga,21,FALSE,FALSE,NA
+2025-09-09,Hungary,Portugal,Portugal,Bernardo Silva,36,FALSE,FALSE,NA
+2025-09-09,Hungary,Portugal,Portugal,Cristiano Ronaldo,58,FALSE,TRUE,NA
+2025-09-09,Hungary,Portugal,Hungary,Barnabás Varga,84,FALSE,FALSE,NA
+2025-09-09,Hungary,Portugal,Portugal,João Cancelo,86,FALSE,FALSE,NA
+2025-10-11,Portugal,Republic of Ireland,Portugal,Rúben Neves,90,FALSE,FALSE,NA
+2025-10-14,Portugal,Hungary,Hungary,Attila Szalai,8,FALSE,FALSE,NA
+2025-10-14,Portugal,Hungary,Portugal,Cristiano Ronaldo,22,FALSE,FALSE,NA
+2025-10-14,Portugal,Hungary,Portugal,Cristiano Ronaldo,45,FALSE,FALSE,NA
+2025-10-14,Portugal,Hungary,Hungary,Dominik Szoboszlai,90,FALSE,FALSE,NA
+2025-11-13,Republic of Ireland,Portugal,Republic of Ireland,Troy Parrott,17,FALSE,FALSE,NA
+2025-11-13,Republic of Ireland,Portugal,Republic of Ireland,Troy Parrott,45,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,Renato Veiga,7,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Armenia,Eduard Spertsyan,18,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,Gonçalo Ramos,28,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,João Neves,30,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,João Neves,41,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,Bruno Fernandes,45,FALSE,TRUE,NA
+2025-11-16,Portugal,Armenia,Portugal,Bruno Fernandes,52,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,Bruno Fernandes,72,FALSE,TRUE,NA
+2025-11-16,Portugal,Armenia,Portugal,João Neves,81,FALSE,FALSE,NA
+2025-11-16,Portugal,Armenia,Portugal,Francisco Conceição,90,FALSE,FALSE,NA
+2026-06-17,Portugal,DR Congo,Portugal,João Neves,6,FALSE,FALSE,Pedro Neto
+2026-06-17,Portugal,DR Congo,DR Congo,Yoane Wissa,45,FALSE,FALSE,Arthur Masuaku
+2026-06-23,Portugal,Uzbekistan,Portugal,Cristiano Ronaldo,6,FALSE,FALSE,João Cancelo
+2026-06-23,Portugal,Uzbekistan,Portugal,Nuno Mendes,17,FALSE,FALSE,NA
+2026-06-23,Portugal,Uzbekistan,Portugal,Cristiano Ronaldo,39,FALSE,FALSE,Bruno Fernandes
+2026-06-23,Portugal,Uzbekistan,Portugal,Abduvohid Nematov,60,TRUE,FALSE,NA
+2026-06-23,Portugal,Uzbekistan,Portugal,Rafael Leão,87,FALSE,FALSE,NA
+2026-07-02,Portugal,Croatia,Croatia,Ivan Perišić,53,FALSE,FALSE,NA
+2026-07-02,Portugal,Croatia,Portugal,Cristiano Ronaldo,68,FALSE,TRUE,NA
+2026-07-02,Portugal,Croatia,Portugal,Gonçalo Ramos,90,FALSE,FALSE,Rafael Leão
+2026-07-06,Portugal,Spain,Spain,Mikel Merino,90,FALSE,FALSE,Ferran Torres

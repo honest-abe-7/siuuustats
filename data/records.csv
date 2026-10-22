@@ -1,0 +1,6 @@
+record_id,title,scope,value,unit,compute_fn,shared_with,status,last_checked,source_ids,notes
+most-mens-international-goals,Most goals in men's international football,world,146,goals,intlGoals,,verified,2026-10-22,wikipedia-cristiano-ronaldo;wikipedia-cr7-intl-goals,
+most-mens-international-caps,Most caps in men's international football,world,234,caps,intlCaps,,verified,2026-10-22,wikipedia-cristiano-ronaldo;wikipedia-cr7-intl-goals,
+most-goals-world-cup-qualifying,Most goals in FIFA World Cup qualifying,world,41,goals,goalsInCompetition:fifa-world-cup-qualification,,verified,2026-10-22,wikipedia-cristiano-ronaldo;wikipedia-cr7-intl-goals,
+most-goals-euro-finals,Most goals at UEFA European Championship final tournaments,continental,14,goals,goalsInCompetition:uefa-euro,,verified,2026-10-22,wikipedia-cr7-intl-goals,
+most-goals-euro-qualifying,Most goals in UEFA European Championship qualifying,continental,41,goals,goalsInCompetition:uefa-euro-qualification,,verified,2026-10-22,wikipedia-cr7-intl-goals,

@@ -1,0 +1,79 @@
+{
+  "$comment": "Registry of ledger tables. CSV header order = order of `properties` in each schema. Array columns use ';' in CSV.",
+  "listSeparator": ";",
+  "tables": [
+    {
+      "name": "sources",
+      "file": "data/sources.csv",
+      "schema": "schema/sources.schema.json",
+      "primaryKey": "source_id",
+      "foreignKeys": {}
+    },
+    {
+      "name": "teams",
+      "file": "data/teams.csv",
+      "schema": "schema/teams.schema.json",
+      "primaryKey": "team_id",
+      "foreignKeys": {}
+    },
+    {
+      "name": "competitions",
+      "file": "data/competitions.csv",
+      "schema": "schema/competitions.schema.json",
+      "primaryKey": "competition_id",
+      "foreignKeys": {}
+    },
+    {
+      "name": "matches",
+      "file": "data/matches.csv",
+      "schema": "schema/matches.schema.json",
+      "primaryKey": "match_id",
+      "foreignKeys": {
+        "competition_id": "competitions.competition_id",
+        "team_id": "teams.team_id",
+        "opponent_id": "teams.team_id",
+        "source_ids": "sources.source_id"
+      }
+    },
+    {
+      "name": "goals",
+      "file": "data/goals.csv",
+      "schema": "schema/goals.schema.json",
+      "primaryKey": "goal_id",
+      "foreignKeys": {
+        "match_id": "matches.match_id",
+        "team_id": "teams.team_id",
+        "source_ids": "sources.source_id"
+      }
+    },
+    {
+      "name": "trophies",
+      "file": "data/trophies.csv",
+      "schema": "schema/trophies.schema.json",
+      "primaryKey": "trophy_id",
+      "foreignKeys": {
+        "competition_id": "competitions.competition_id",
+        "team_id": "teams.team_id",
+        "source_ids": "sources.source_id"
+      }
+    },
+    {
+      "name": "awards",
+      "file": "data/awards.csv",
+      "schema": "schema/awards.schema.json",
+      "primaryKey": "award_id",
+      "foreignKeys": {
+        "source_ids": "sources.source_id"
+      }
+    },
+    {
+      "name": "records",
+      "file": "data/records.csv",
+      "schema": "schema/records.schema.json",
+      "primaryKey": "record_id",
+      "foreignKeys": {
+        "source_ids": "sources.source_id"
+      }
+    }
+  ]
+}
