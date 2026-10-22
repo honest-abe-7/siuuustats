@@ -134,6 +134,7 @@ import { buildApi } from "./scripts/build-api.mjs";          // (ledger, generat
 | `opponentsScoredAgainst(ledger, pred?)`, `nationalTeamsScoredAgainst` | distinct opponents with first goal date |
 | `goalsFromAge(ledger, age=30)` | goals scored on or after that birthday |
 | `scoringStreaks(ledger, top=5)`, `stageClass(stage)`, `bigGameSplits(ledger)` | streaks and big-game splits for the API |
+| `championsLeagueSplits`, `clutchSplits`, `goalFlags`, `ageBands` (+ `AGE_BANDS`, `AGE_THRESHOLDS`), `seasonOf`, `seasonTotals`, `nationalTeamOpponents`, `tournamentEditions`, `clubOpponentSplits`, `bodyParts`, `milestones` (all `(ledger)`, M3b) | the content-figure endpoints above |
 | `bigGameClass(m)`, `clubSeasonTotals(ledger)`, `honoursSummary(ledger)` (M3b) | big-game class of a match (super cups = finals), per club-season totals, trophy/award headline counts |
 | `NON_FIFA_COMPETITIONS` | `["arab-club-champions-cup"]` |
 | `COMPUTE_FNS`, `evaluateComputeFn(ledger, "name:arg")` | registry for `records.compute_fn` |
@@ -162,7 +163,7 @@ Every file uses this envelope:
 |---|---|
 | `index.json` | `[{path, items}]` listing all endpoints |
 | `summary.json` | `{ international: { team_id, caps, goals, goals_per_game, competitive:{caps,goals}, friendly:{caps,goals}, penalty_goals, hat_tricks, record, first_cap, last_cap }, club: { apps, goals, goals_per_game, goals_excluding_non_fifa, penalty_goals, hat_tricks, record, champions_league:{goals, apps, goals_incl_qualifiers, apps_incl_qualifiers, note}, clubs:[{team_id, name, apps, goals, first_match, last_match}] }, career: { apps, goals, goals_per_game, goals_excluding_non_fifa, non_fifa_competitions, penalty_goals, non_penalty_goals, free_kick_goals, hat_tricks, winning_goals, equalisers, goals_from_age_30, record }, honours: { major_trophies, trophies_incl_not_in_squad, trophies_by_team, trophies_by_participation, champions_league_titles, league_titles, ballon_dor, fifa_best, european_golden_shoes, ucl_top_scorer_seasons, league_top_scorer_awards, individual_awards }, citations: { "<block>.<field>": [source_id…] } }`. `citations` gives per-number sources and has a key for every field of every block (tested); the envelope `attribution` still lists everything used |
-| `goals.json` | `[{goal_id, match_id, date, season, team_id, opponent_id, opponent, competition_id, competition, scope, stage, venue, minute, added_time, method, body_part, assist_player, assist_type, score_after, result, age, intl_goal_no, source_ids}]` in date order |
+| `goals.json` | `[{goal_id, match_id, date, season, team_id, opponent_id, opponent, competition_id, competition, scope, stage, venue, minute, added_time, method, body_part, assist_player, assist_type, score_after, winning_goal, equaliser, result, age, intl_goal_no, source_ids}]` in date order. `winning_goal`/`equaliser` (M3b) use the `winningGoals()`/`equalisers()` definitions |
 | `matches.json` | matches rows (§3) + `scope`, `opponent`, `competition` names |
 | `goals-by-competition.json` | `[{scope, competition_id, name, apps, goals}]` |
 | `goals-by-year.json` | `[{scope, year, apps, goals}]`, calendar year, sorted by scope then year |
@@ -173,7 +174,15 @@ Every file uses this envelope:
 | `goals-by-age.json` (M3) | `[{scope, age, apps, goals, source_ids}]` |
 | `multi-goal-matches.json` (M3) | `[{match_id, date, opponent_id, opponent, goals, kind (brace/hat-trick/poker/haul), scope, team_id, competition_id, result, source_ids}]`, 2+ goals |
 | `streaks.json` (M3) | top 5 consecutive-scoring runs per scope (`all`/`club`/`international`): `[{scope, matches, goals, from, to, match_ids, ongoing, source_ids}]` |
-| `big-games.json` (M3) | `[{scope, stage_class (final/semi_final/quarter_final/round_of_16/early_knockout/group_or_league/qualifying/unknown), apps, goals, source_ids}]` |
+| `big-games.json` (M3) | `[{scope, stage_class (final/semi_final/quarter_final/round_of_16/early_knockout/group_or_league/qualifying/unknown), apps, goals, matches_scored_in, penalties, source_ids}]` |
+| `champions-league.json` (M3b) | `{apps, goals, penalty_goals, non_penalty_goals, by_stage:[{stage_class (group_or_league/round_of_16/quarter_final/semi_final/final), apps, goals, penalties, matches_scored_in, source_ids}], unclassified_apps, knockout:{apps, goals, penalties}, finals:{…}, qualifying:{apps, goals}, incl_qualifying:{apps, goals}, hat_tricks, note, source_ids}`; main competition unless stated |
+| `clutch.json` (M3b) | `[{scope (career/club/international/<club team_id>), apps, goals, winning_goals, winning_goals_in_one_goal_wins, winning_goals_penalties, equalisers, equalisers_penalties, one_goal_wins, one_goal_wins_scored_in, goals_with_minute, goals_80_plus, goals_90_plus, source_ids}]`. Late goals use `minute` (a 90+3 goal has minute 90, so it counts in both `goals_80_plus` and `goals_90_plus`; extra-time minutes 91–120 count too). `goals_with_minute` is the denominator, because the 22 international friendly goals have no minute |
+| `goals-by-age-band.json` (M3b) | `{bands:[{scope (career/club/international), band (under_25/25_29/30_34/35_plus), min_age, max_age, apps, goals, goals_per_game, source_ids}], thresholds:[{scope, from_age (30/35/38/40), apps, goals, goals_before, goals_per_game, source_ids}], birth_date}`. `min_age`/`max_age` are the ages actually played in that band, so labels read 17–24 (career) and 18–24 (Portugal) |
+| `season-totals.json` (M3b) | `{by_year:[{year, apps, goals, club_apps, club_goals, international_apps, international_goals, goals_per_game, source_ids}], by_season:[{season, …same}], scoring_years:{career|club|international: {from, to, years}}, note}`: all competitions; `by_season` puts internationals in the July–June season of their date |
+| `national-teams.json` (M3b) | `{scored_against, faced, scored:[{n, opponent_id, name, caps, goals, first_goal, source_ids}] (in order of first goal), never_scored:[{opponent_id, name, caps, goals:0, first_goal:null, source_ids}], tournament_editions:[{competition_id (fifa-world-cup/uefa-euro/fifa-confederations-cup), year played, apps, goals, source_ids}]}` |
+| `club-opponents.json` (M3b) | `{el_clasico, madrid_derby: {opponent_id, label, for_real_madrid:{apps, goals}, all_clubs:{apps, goals}, by_club:[…], penalties_for_other_clubs, source_ids}, champions_league_opponents:[{opponent_id, name, apps, goals, source_ids}] (main competition, by goals), top_club_opponents:[top 10], top_opponents_by_club:[{team_id, name, opponents:[top 5]}]}` |
+| `body-parts.json` (M3b) | `[{scope, goals, right_foot, left_foot, head, other, unknown, known, source_ids}]`. Body part is known only for 563 club goals; every international goal is `unknown` |
+| `milestones.json` (M3b) | `[{key, label, date, match_id, team_id, opponent_id, opponent, competition_id, age, goal_id?, minute?, value?, apps_to_date?, source_ids}]`: first and latest matches and goals, first match per club, every 100th career goal, 100th UCL goal, 300th La Liga goal, 500th goal from age 30, 100th goal per club |
 | `trophies.json` (M3b) | trophies rows (§3) + `competition`, `team` names |
 | `awards.json` (M3b) | awards rows (§3) |
 | `reconciliation.json` (M3) | `{counts:{pass, known_difference, fail}, checks:[{check, source_id, description, expected, actual, status, note}]}` |
@@ -181,6 +190,14 @@ Every file uses this envelope:
 | `records.json` | records rows + `computed_value` |
 
 Row-level `source_ids` (M3b) on derived tables are the union of the sources cited by the appearances and goals that make up the row.
+
+**Content figures (M3b).** `tests/content-figures.test.mjs` pins every ledger-derivable number in `docs/content/*.md` to the API file a frontend would read. If a write-up changes a number, update the test in the same PR. These write-up claims are *not* derivable from the ledger and stay cited-only:
+- Headed-goal totals (156 career; 5 at Euros) and the "header" labels on Portugal goals: international goals have no body part, and club body part covers 563 of 835 goals.
+- Portugal knockout-stage labels (Euro 2004/2016 semi-finals, Euro 2012 quarter-final, 2019/2025 Nations League Finals, 2026 World Cup round of 32): international `matches.stage` is still empty (data request #4). The goals themselves are in `goals.json`.
+- Penalty attempts and conversion (~220 taken, ~83%), and the 2016 UCL final shoot-out kick: misses and shoot-out kicks are not stored.
+- Comparative records ("first", "only", "most", "record", "level with Di Stéfano", "oldest since 1948", 20+ goals in 12 straight top-five-league seasons, 2023 world top scorer): the ledger has only Ronaldo, so it gives his number but not the ranking.
+- Minutes on the pitch (Euro 2016 final, off after 25'), the 2025-26 Saudi scoring chart and title margin, Wikipedia's 1,343 apps and 494 goals after 30 (reference figures, see known differences).
+- PFA Players' Player of the Year (2007, 2008), Serie A MVP 2019 and Premier League Team of the Year 2021-22 are not in `awards.csv`, because Wikipedia's Honours list leaves them out.
 | `sources.json` | the sources rows cited anywhere in the API |
 
 The frontend must display the `attribution` of any data it renders, which the CC BY-SA licence requires.

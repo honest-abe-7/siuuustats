@@ -80,8 +80,14 @@ test("every summary figure has a citations key naming known sources", () => {
 
 test("derived tables carry row-level source_ids from sources.json", () => {
   const known = new Set(files["sources.json"].data.map((x) => x.source_id));
-  for (const f of ["streaks.json", "big-games.json", "goals-by-age.json", "goals-by-season.json", "goals-by-club.json", "club-season-totals.json", "trophies.json", "awards.json"])
-    for (const r of files[f].data) {
+  const nested = (f) => {
+    const x = files[f].data;
+    if (Array.isArray(x)) return x;
+    return Object.entries(x).filter(([k]) => k !== "source_ids").map(([, v]) => v).flatMap((v) => (Array.isArray(v) ? v.flatMap((r) => (Array.isArray(r?.opponents) ? r.opponents : [r])) : v && typeof v === "object" && v.source_ids ? [v] : []));
+  };
+  for (const f of ["streaks.json", "big-games.json", "goals-by-age.json", "goals-by-season.json", "goals-by-club.json", "club-season-totals.json", "trophies.json", "awards.json",
+    "champions-league.json", "clutch.json", "goals-by-age-band.json", "season-totals.json", "national-teams.json", "club-opponents.json", "body-parts.json", "milestones.json"])
+    for (const r of nested(f)) {
       assert.ok(Array.isArray(r.source_ids) && r.source_ids.length > 0, `${f} row without sources`);
       for (const id of r.source_ids) assert.ok(known.has(id), `${f} cites unknown ${id}`);
     }
