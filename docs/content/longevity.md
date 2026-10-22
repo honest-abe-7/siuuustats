@@ -5,23 +5,40 @@ description: "Two decades at the top: Cristiano Ronaldo's goals by age, scoring 
 kind: argument
 status: draft
 data_as_of: 2026-10-22
-ledger_endpoints: [summary, goals, matches, goals-by-year]
-ledger_source_ids: [wikipedia-cr7-intl-goals, rsssf-cronaldo-intlg, martj42-results, martj42-goalscorers]
-unverified_count: 1
+ledger_endpoints: [summary, goals, matches, goals-by-year, goals-by-age, goals-by-season]
+ledger_source_ids: [eswiki-cr7-club-matches, wikipedia-club-season-articles, kaggle-sigmaborov-cr7-goals, wikipedia-cr7-intl-goals, rsssf-cronaldo-intlg, martj42-results, martj42-goalscorers]
+unverified_count: 0
 ---
 
 # Longevity
 
-> **Argument page.** International numbers marked **[ledger]** are computed from the SIUUU Stats ledger with stats-engine functions (`splitBy`, `ageOn`, `appearances`). Club numbers are cited from Wikipedia's career table (revision 1381391040) and the press until the club ledger (M3) lands.
+> **Argument page.** Numbers marked **[ledger]** are computed by stats-engine functions (`goalsFromAge`, `splitBy`, `ageOn`, `appearances`) from the SIUUU Stats ledger. The ledger now covers every club and international match up to 20 October 2026.
 
 Ronaldo was born on **5 February 1985**.[^wiki] He played his first official senior match for Sporting CP on **14 August 2002**, at 17.[^wiki] Twenty-four years later he is still playing, and still scoring.
 
 ## The headline numbers
 
-- **1,343 official senior appearances** (1,109 for clubs and 234 for Portugal), the most by any outfield player.[^wiki] **[ledger]**[^ledger-summary]
+- **1,341 official senior appearances** (1,107 for clubs and 234 for Portugal). **[ledger]**[^ledger-career] Wikipedia counts 1,343, because it includes 2 Sporting CP B reserve matches, and calls it the most by any outfield player.[^wiki] [^ledger-kd]
 - **981 official senior goals**. Wikipedia calls him the top goalscorer in the history of the sport, though its records table notes that who holds the all-time record is disputed.[^wiki] [^wa-records]
-- On 21 February 2026 he became the **first player to score 500 goals after turning 30**. At that point he had 501 goals after his 30th birthday and 463 before it, so **more of his goals have come after 30 than before**.[^gulf-500] [^soccernews-500]
+- **518 goals from the age of 30 onwards, and 463 before.** **[ledger]**[^ledger-career] So **more of his goals have come after 30 than before**. He became the **first player to score 500 goals after turning 30** on 21 February 2026.[^gulf-500] [^soccernews-500] The press count that day (463 before, 501 after) matches the ledger.[^ledger-age]
 - **Six World Cups and six European Championships.** He is the first player to appear at six Euros, and has a joint-record six World Cups.[^wiki] He is the **first player to score at six World Cups** (2006–2026).[^reuters-6wc] [^ap-6wc] **[ledger]**[^ledger-comp]
+
+## Career: goals by age **[ledger]**
+
+| Age | Apps | Goals | Goals per game |
+|---|---|---|---|
+| 17–24 | 407 | 160 | 0.39 |
+| 25–29 | 311 | 303 | 0.97 |
+| 30–34 | 277 | 259 | 0.94 |
+| 35–41 | 346 | 259 | 0.75 |
+| **Total** | **1,341** | **981** | **0.73** |
+
+Computed as `splitBy(ledger, m => ageBand(ageOn(m.date)))`, with `goalsFromAge(ledger, 30)` = 518 and `goalsFromAge(ledger, 35)` = 259.[^ledger-age] The first band starts at 17 because his first senior club match came at 17.
+
+- **259 goals after his 35th birthday**, as many as he scored from 30 to 34. **[ledger]**[^ledger-age]
+- **161 goals in 193 matches at age 38 or older**, and **58 goals in 80 matches at 40 or older**. **[ledger]**[^ledger-age]
+- He has scored in **every calendar year from 2002 to 2026**, 25 years in a row. **[ledger]**[^ledger-years]
+- His latest goal came on 12 October 2026 for Al-Nassr against Neftchi Fergana, at 41. **[ledger]**[^ledger-goals]
 
 ## Portugal: goals by age **[ledger]**
 
@@ -43,7 +60,7 @@ Computed as `splitBy(ledger, m => ageBand(ageOn(m.date)))`.[^ledger-goals]
 
 ## Club: still producing in his thirties and forties
 
-Goals in all competitions, by season, from the age of 30 (Wikipedia career table):[^wiki]
+Goals in all competitions, by season, from the age of 30. **[ledger]**[^ledger-season] These match Wikipedia's career table.[^wiki]
 
 | Season | Club | Age during season | Goals (all comps) |
 |---|---|---|---|
@@ -63,29 +80,30 @@ Goals in all competitions, by season, from the age of 30 (Wikipedia career table
 - **At 35:** he became the oldest player since 1948 to score 30 or more goals in a season in one of Europe's top five leagues.[^wiki]
 - **At 36:** he became the first player to score at least 20 goals in **12 consecutive seasons** in Europe's top five leagues.[^wiki]
 - **At 36 (2020–21):** he was Serie A's top scorer with 29 goals.[^wiki] [^uefa-capo21]
-- **At 38 (2023):** he was the **world's top scorer for the calendar year**, with 54 official goals.[^espn-2023] [^iffhs-2023]
-- **At 39 (2023–24):** he set the **Saudi Pro League season record of 35 goals**.[^bbc-spl35] [^reuters-spl35]
-- **At 41 (2025–26):** he scored 28 league goals and won the league title, scoring twice on the final day.[^bein-title] [^espn-title]
+- **At 38 (2023):** he was the **world's top scorer for the calendar year**, with 54 official goals in 59 matches.[^espn-2023] [^iffhs-2023] **[ledger]**[^ledger-years]
+- **At 39 (2023–24):** he set the **Saudi Pro League season record of 35 goals**.[^bbc-spl35] [^reuters-spl35] **[ledger]**[^ledger-season]
+- **At 41 (2025–26):** he scored 28 league goals and won the league title, scoring twice on the final day.[^bein-title] [^espn-title] **[ledger]**[^ledger-season]
 
 ## The road to 1,000
 
-He is on **981**, which leaves **19 to go**.[^wiki] He has called 1,000 his final big ambition before retiring.[^gulf-500] When he gets there, this page will say so, with sources.
+He is on **981**, which leaves **19 to go**. **[ledger]**[^ledger-career] He has called 1,000 his final big ambition before retiring.[^gulf-500] When he gets there, this page will say so, with sources.
 
 ## Fair points
 
 - Age has changed his game. Commentators judged his 2026 World Cup ineffective, and his only goals there were two against Uzbekistan and a penalty against Croatia.[^wiki] **[ledger]**[^ledger-goals]
-- His per-cap scoring rate for Portugal after 35 (0.67) is below his peak at 30–34 (1.02). **[ledger]**[^ledger-goals] That is longevity, not immortality.
+- His scoring rate has dropped with age: 0.75 goals per game after 35 against a peak of 0.97 at 25–29, and for Portugal 0.67 after 35 against 1.02 at 30–34. **[ledger]**[^ledger-age] [^ledger-goals] That is longevity, not immortality.
+- Wikipedia's records table still shows **494** goals after 30 (stamped 25 Sep 2026). That is out of date: the press count in February already passed 500, and the ledger has 518.[^wa-records] [^ledger-age]
 
-### UNVERIFIED on this page
-
-- **UNVERIFIED:** His *current* goals-after-30 total. The press confirmed 501 on 21 Feb 2026[^gulf-500], and he has scored since then, but no source we checked gives an up-to-date figure. Wikipedia's records table shows **494** (stamped 25 Sep 2026), which contradicts the February press reports, so we do not use it.[^wa-records] The club ledger will settle this (see data-requests.md).
-
+[^ledger-career]: SIUUU Stats ledger (main @ 605a932), `careerSummary()` in `scripts/lib/stats.mjs`, `/api/v1/summary.json` → `career` (apps 1,341; goals 981; goals_from_age_30 518). Built from `eswiki-cr7-club-matches`, `wikipedia-club-season-articles`, `kaggle-sigmaborov-cr7-goals`, `wikipedia-cr7-intl-goals`, `rsssf-cronaldo-intlg` and `martj42-*`. https://es.wikipedia.org/wiki/Anexo:Partidos_oficiales_de_Cristiano_Ronaldo_en_clubes
+[^ledger-age]: SIUUU Stats ledger, `goalsFromAge()`, `ageOn()` and `splitBy()` in `stats.mjs`; `/api/v1/goals-by-age.json`. Birth date 1985-02-05. https://es.wikipedia.org/wiki/Anexo:Partidos_oficiales_de_Cristiano_Ronaldo_en_clubes
+[^ledger-season]: SIUUU Stats ledger, `/api/v1/goals-by-season.json` (club × season), reconciled to enwiki's per-season table. https://en.wikipedia.org/w/index.php?title=Cristiano_Ronaldo&oldid=1381391040#Club
+[^ledger-kd]: `data/reconciliation/known-differences.json` → `wikipedia-club-career-apps` (1,109 vs 1,107: Sporting CP B ×2). https://en.wikipedia.org/w/index.php?title=Cristiano_Ronaldo&oldid=1381391040#Club
 [^wiki]: Wikipedia contributors, "Cristiano Ronaldo", revision 1381391040 (22 Oct 2026): lead, club and international sections, and *Career statistics* (club as of 20 Oct 2026). https://en.wikipedia.org/w/index.php?title=Cristiano_Ronaldo&oldid=1381391040
 [^wiki-list]: Wikipedia contributors, "List of international goals scored by Cristiano Ronaldo", revision 1376549197. https://en.wikipedia.org/w/index.php?title=List_of_international_goals_scored_by_Cristiano_Ronaldo&oldid=1376549197
 [^wa-records]: Wikipedia contributors, "List of career achievements by Cristiano Ronaldo", revision 1379944509, *Records* table. https://en.wikipedia.org/w/index.php?title=List_of_career_achievements_by_Cristiano_Ronaldo&oldid=1379944509#Records
 [^ledger-summary]: SIUUU Stats ledger, `/api/v1/summary.json` (`caps`, `first_cap`, `last_cap`), built from `rsssf-cronaldo-intlg`, `wikipedia-cr7-intl-goals` and `martj42-results`. https://www.rsssf.org/miscellaneous/cronaldo-intlg.html
-[^ledger-goals]: SIUUU Stats ledger, `/api/v1/goals.json` (`age`, `date`) and `matches.json`, built from `wikipedia-cr7-intl-goals`, `martj42-goalscorers` and `rsssf-cronaldo-intlg`. Age bands come from `ageOn` (birth date 1985-02-05). https://en.wikipedia.org/w/index.php?title=List_of_international_goals_scored_by_Cristiano_Ronaldo&oldid=1376549197
-[^ledger-years]: SIUUU Stats ledger, `/api/v1/goals-by-year.json` (every year from 2004 to 2026 has at least 1 goal). https://en.wikipedia.org/w/index.php?title=List_of_international_goals_scored_by_Cristiano_Ronaldo&oldid=1376549197
+[^ledger-goals]: SIUUU Stats ledger, `/api/v1/goals.json` (`age`, `date`, `scope`) and `matches.json`, built from `eswiki-cr7-club-matches` (club) and `wikipedia-cr7-intl-goals`, `martj42-goalscorers`, `rsssf-cronaldo-intlg` (international). Age bands come from `ageOn` (birth date 1985-02-05). https://en.wikipedia.org/w/index.php?title=List_of_international_goals_scored_by_Cristiano_Ronaldo&oldid=1376549197
+[^ledger-years]: SIUUU Stats ledger, `/api/v1/goals-by-year.json` (club and international scopes. Career: every year from 2002 to 2026 has at least 1 goal, and 2023 has 54 goals in 59 apps. International: every year from 2004 to 2026). https://en.wikipedia.org/w/index.php?title=List_of_international_goals_scored_by_Cristiano_Ronaldo&oldid=1376549197
 [^ledger-comp]: SIUUU Stats ledger, `/api/v1/matches.json` (World Cup appearances in 2006, 2010, 2014, 2018, 2022 and 2026; Euro appearances from 2004 to 2024) and `goals-by-competition.json`. https://github.com/martj42/international_results
 [^gulf-500]: Gulf News, "Ronaldo wears a Bisht after becoming the first player to score 500 goals since turning 30" (22 Feb 2026). https://gulfnews.com/sport/football/ronaldo-wears-a-bisht-after-becoming-the-first-player-to-score-500-goals-since-turning-30-i-belong-to-saudi-arabia-1.500451592
 [^soccernews-500]: SoccerNews, "Al-Nassr 4-0 Al-Hazem: Ronaldo at the double" (21 Feb 2026). https://www.soccernews.com/al-nassr-4-0-al-hazem-ronaldo-at-the-double-to-send-hosts-top-of-saudi-pro-league-table/396290/

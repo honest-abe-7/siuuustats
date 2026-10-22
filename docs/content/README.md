@@ -23,8 +23,10 @@ unverified_count: 0               # count of claims marked UNVERIFIED in the bod
 ## Citation rules used here
 
 - Every factual claim has a footnote (`[^n]`) with a URL. Footnotes are GFM, which Astro renders by default.
-- **Ledger numbers** (international only, from `data/` → `dist/api/v1`) are marked **[ledger]**. They cite the API endpoint and the `source_ids` behind it. Club numbers are not in the ledger yet (M3), so they cite Wikipedia's career table at a pinned revision, plus press or official sources.
-- **Provisional ledger computations** are numbers worked out from ledger rows with a definition that is not yet in `scripts/lib/stats.mjs` (for example "winning goals"). They are marked **[ledger, provisional]** and listed in `data-requests.md`. CONTRACTS §4 says stat definitions must live in `stats.mjs`, so these cannot ship as headline numbers until that function exists.
+- **Ledger numbers** (club and international, from `data/` → `dist/api/v1`, M3 merged at 605a932) are marked **[ledger]**. They cite the `stats.mjs` function or API endpoint and the `source_ids` behind it. Each one was recomputed from main before publishing.
+- **Provisional ledger computations** (marked **[ledger, provisional]**) mean the definition is not yet in `scripts/lib/stats.mjs`. As of the M3 rebase, none are left: winning goals, equalisers, goals from age 30 and national teams scored against all have `stats.mjs` functions with tests.
+- **International `stage` is still null** in the ledger. Any claim about a Portugal knockout round, semi-final or final is cited to UEFA, BBC or Wikipedia and labelled *(stage: cited, not ledger)*.
+- Titles and individual awards are cited from Wikipedia, official sites and the press, because `trophies.csv` and `awards.csv` are still empty.
 - Anything that could not be confirmed is marked **UNVERIFIED** in the text.
 - Where sources disagree, the page shows the range and names the sources. It does not pick the bigger number.
 - Ronaldo only. These pages do not compare him with other players (README scope). Other players are named only when a fact needs it, for example who scored a goal.
@@ -40,6 +42,8 @@ unverified_count: 0               # count of claims marked UNVERIFIED in the bod
 | `data-requests.md` | Stats these pages need that are not in `data/` yet |
 
 ## Pinned reference revisions used
+
+- Ledger: `main` @ 605a932 (M3 club backfill). Club rows come from eswiki "Anexo:Partidos oficiales de Cristiano Ronaldo en clubes" rev 175883102, the 27 enwiki club season articles and the Kaggle "Ronaldo CR7 All Goals GOAT" v1 seed (see ATTRIBUTION.md).
 
 - Wikipedia "Cristiano Ronaldo", revision 1381391040 (22 Oct 2026; career tables as of 20 Oct 2026 for club and 24 Sep 2026 for international). This is the same revision as `sources.csv` → `wikipedia-cristiano-ronaldo`.
 - Wikipedia "List of career achievements by Cristiano Ronaldo", revision 1379944509 (12 Oct 2026; its records table is stamped 25 Sep 2026).
