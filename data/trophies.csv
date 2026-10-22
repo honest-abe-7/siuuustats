@@ -1,1 +1,38 @@
 trophy_id,competition_id,season,team_id,participation,counted_in_total,source_ids,notes
+sporting-cp-supertaca-candido-de-oliveira-2002,supertaca-candido-de-oliveira,2002,sporting-cp,squad_unused,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours;wikipedia-2002-supertaca,"Unused substitute in the one-off match (5-1 v Leixões, 18 Aug 2002). Wikipedia and messivsronaldo.app both count it."
+manchester-united-premier-league-2006-07,premier-league,2006-07,manchester-united,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+manchester-united-premier-league-2007-08,premier-league,2007-08,manchester-united,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+manchester-united-premier-league-2008-09,premier-league,2008-09,manchester-united,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+manchester-united-fa-cup-2003-04,fa-cup,2003-04,manchester-united,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Scored in the final (3-0 v Millwall).
+manchester-united-efl-cup-2005-06,efl-cup,2005-06,manchester-united,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Scored in the final (4-0 v Wigan).
+manchester-united-efl-cup-2008-09,efl-cup,2008-09,manchester-united,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,"Final 0-0 v Tottenham, won on penalties; he scored in the shoot-out."
+manchester-united-fa-community-shield-2007,fa-community-shield,2007,manchester-united,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+manchester-united-fa-community-shield-2008,fa-community-shield,2008,manchester-united,not_in_squad,false,messivsronaldo-app-honours;wikipedia-2008-community-shield,"Not in the squad (recovering from ankle surgery). Wikipedia does not list it; messivsronaldo.app counts it and marks it ""did not feature in squad""."
+manchester-united-uefa-champions-league-2007-08,uefa-champions-league,2007-08,manchester-united,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Scored in the final v Chelsea.
+manchester-united-fifa-club-world-cup-2008,fifa-club-world-cup,2008,manchester-united,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-la-liga-2011-12,la-liga,2011-12,real-madrid,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-la-liga-2016-17,la-liga,2016-17,real-madrid,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-copa-del-rey-2010-11,copa-del-rey,2010-11,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Scored the extra-time winner in the final v Barcelona.
+real-madrid-copa-del-rey-2013-14,copa-del-rey,2013-14,real-madrid,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours;wikipedia-2014-copa-del-rey-final,Played earlier rounds; missed the final v Barcelona through injury.
+real-madrid-supercopa-de-espana-2012,supercopa-de-espana,2012,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-supercopa-de-espana-2017,supercopa-de-espana,2017,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,"Two legs; scored and was sent off in the first leg, suspended for the second."
+real-madrid-uefa-champions-league-2013-14,uefa-champions-league,2013-14,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-uefa-champions-league-2015-16,uefa-champions-league,2015-16,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-uefa-champions-league-2016-17,uefa-champions-league,2016-17,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-uefa-champions-league-2017-18,uefa-champions-league,2017-18,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-uefa-super-cup-2014,uefa-super-cup,2014,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-uefa-super-cup-2016,uefa-super-cup,2016,real-madrid,not_in_squad,false,messivsronaldo-app-honours;wikipedia-2016-uefa-super-cup,"Not in the squad (knee injury from the Euro 2016 final). Wikipedia does not list it; messivsronaldo.app counts it and marks it ""did not feature in squad""."
+real-madrid-uefa-super-cup-2017,uefa-super-cup,2017,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-fifa-club-world-cup-2014,fifa-club-world-cup,2014,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-fifa-club-world-cup-2016,fifa-club-world-cup,2016,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+real-madrid-fifa-club-world-cup-2017,fifa-club-world-cup,2017,real-madrid,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+juventus-serie-a-2018-19,serie-a,2018-19,juventus,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+juventus-serie-a-2019-20,serie-a,2019-20,juventus,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+juventus-coppa-italia-2020-21,coppa-italia,2020-21,juventus,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+juventus-supercoppa-italiana-2018,supercoppa-italiana,2018,juventus,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,"2018 edition, played 16 Jan 2019 (messivsronaldo.app labels it 2019). Scored the only goal v Milan."
+juventus-supercoppa-italiana-2020,supercoppa-italiana,2020,juventus,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,"2020 edition, played 20 Jan 2021 (messivsronaldo.app labels it 2021). Scored v Napoli."
+al-nassr-saudi-pro-league-2025-26,saudi-pro-league,2025-26,al-nassr,played,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+al-nassr-arab-club-champions-cup-2023,arab-club-champions-cup,2023,al-nassr,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Scored both goals in the 2-1 extra-time final v Al-Hilal. Not FIFA/AFC-sanctioned (UAFA); counted by Wikipedia and messivsronaldo.app.
+portugal-uefa-euro-2016,uefa-euro,2016,portugal,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Went off injured in the 25th minute of the final.
+portugal-uefa-nations-league-2018-19,uefa-nations-league,2018-19,portugal,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,
+portugal-uefa-nations-league-2024-25,uefa-nations-league,2024-25,portugal,played_final,true,wikipedia-cristiano-ronaldo;messivsronaldo-app-honours,Scored the equaliser in the final v Spain; went off before extra time.

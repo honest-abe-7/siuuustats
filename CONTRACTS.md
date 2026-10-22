@@ -78,11 +78,20 @@ Rules enforced: id format, team ≠ opponent, no duplicate (date, team, opponent
 | source_ids | FK[] | |
 | verified_by, verified_at | string? | human verification stamp (manual review, M5) |
 
-### trophies — PK `trophy_id` (empty, M3/M4)
+### trophies — PK `trophy_id` (37 rows, M3b)
 `trophy_id, competition_id, season, team_id, participation (played_final | played | squad_unused | not_in_squad), counted_in_total, source_ids, notes`
 
-### awards — PK `award_id` (empty)
+- `trophy_id` = `<team_id>-<competition_id>-<season>`. `season` is the edition label Wikipedia uses (`2006-07` for leagues/cups, `2018` for the Supercoppa played in Jan 2019, `2018-19` for the Nations League).
+- `counted_in_total = true` for the **35** titles in Wikipedia's Honours list (won while in the squad, including the 2002 Supertaça as an unused sub). The 2 extra rows (2008 Community Shield, 2016 UEFA Super Cup) are titles his team won while he was **not in the squad**; messivsronaldo.app counts them, which is why it shows **37**.
+- `participation`: `played_final` = appeared in the final (or the deciding match/legs); `played` = appeared earlier in the competition (league titles; 2013-14 Copa del Rey, final missed injured); `squad_unused` = on the bench, not used; `not_in_squad`.
+- Every row cites Wikipedia and/or messivsronaldo.app; disputed participation rows add the edition's Wikipedia article.
+- Reconciliation checks: the counted rows equal Wikipedia's Honours items one for one (`honours-items-wikipedia`), counts 35/37, and participation agrees with ledger appearances (`honours-participation-vs-ledger`).
+
+### awards — PK `award_id` (82 rows, M3b)
 `award_id, name, awarding_body, year_or_season, placing (1 = winner), source_ids, notes`
+
+- `award_id` = `<award-slug>-<year_or_season>` (`-<placing>` suffix for placings other than 1). All 75 individual honours in Wikipedia's Honours list are rows with `placing = 1` (checked by `honours-individual-count-wikipedia`), plus 7 Ballon d'Or podium placings (2nd/3rd) from messivsronaldo.app.
+- Where sources disagree the row cites both and says so in `notes` (2025 Nations League Finals top scorer: UEFA.com + Wikipedia vs messivsronaldo.app; Portuguese Sportsman of the Year: Wikipedia's 8 years recorded, messivsronaldo.app's extra 2007-2009 noted, not recorded).
 
 ### records — PK `record_id`
 `record_id, title, scope (world | continental | competition | league | club | national_team), value, unit, compute_fn, shared_with, status (verified | disputed | broken), last_checked, source_ids, notes`
@@ -125,6 +134,7 @@ import { buildApi } from "./scripts/build-api.mjs";          // (ledger, generat
 | `opponentsScoredAgainst(ledger, pred?)`, `nationalTeamsScoredAgainst` | distinct opponents with first goal date |
 | `goalsFromAge(ledger, age=30)` | goals scored on or after that birthday |
 | `scoringStreaks(ledger, top=5)`, `stageClass(stage)`, `bigGameSplits(ledger)` | streaks and big-game splits for the API |
+| `bigGameClass(m)`, `clubSeasonTotals(ledger)`, `honoursSummary(ledger)` (M3b) | big-game class of a match (super cups = finals), per club-season totals, trophy/award headline counts |
 | `NON_FIFA_COMPETITIONS` | `["arab-club-champions-cup"]` |
 | `COMPUTE_FNS`, `evaluateComputeFn(ledger, "name:arg")` | registry for `records.compute_fn` |
 
@@ -132,6 +142,7 @@ import { buildApi } from "./scripts/build-api.mjs";          // (ledger, generat
 
 - `data/manual/corrections.csv`: `correction_id, source_id, target, field, from_value, to_value, reason, evidence_source_ids`. Each row changes one upstream value at ingest time. `target` is `cap=N` (RSSSF) or `goal_no=N` (Wikipedia list). The ingest exits 1 if a correction's `from_value` no longer matches the source or its target no longer exists, so a fixed upstream error forces you to remove the correction. It also exits 1 on any source disagreement it does not explain.
 - `data/manual/international-appearances-extra.csv`: appearances missing from RSSSF, each with sources and reasoning.
+- `data/manual/international-unused-squad.csv` (`date, opponent, source_ids, note`): international matches where he was in the matchday squad but did not play. `ingest:intl` emits them as `appeared=false`, `started=false`, `cap_number` empty; score/venue come from martj42. They never count as caps (234 stays 234) and cannot carry goals. First row: Norway 1-2 Portugal, 27 Sep 2026 (BBC, Al Jazeera).
 - Club (M3): corrections with `source_id = eswiki-cr7-club-matches` use `target = match_n=N` (eswiki's match number) and fields `date | venue | goals | goal_cell | result | assisted_by`. `data/manual/club-neutral-results.csv` gives Ronaldo-first scores for neutral-venue matches whose orientation can't be derived. `club-appearances-extra.csv` holds appearances newer than the eswiki snapshot. `club-date-checks.csv` lists dates where the English season article disagrees with eswiki and outside match reports side with eswiki. `club-team-names.csv` maps eswiki opponent names to team ids (with aliases).
 - **2-of-3 rule** (club): when eswiki and Kaggle disagree on a goal detail (currently the penalty flag), the English season article decides and the result is logged in `data/reconciliation/club-ingest-resolutions.json`. Disagreements it can't settle fail the ingest until a correction row is added.
 - `data/reconciliation/expectations.json`: pinned headline numbers. Change these only when a real new goal or cap happens.
@@ -150,21 +161,26 @@ Every file uses this envelope:
 | File | `data` |
 |---|---|
 | `index.json` | `[{path, items}]` listing all endpoints |
-| `summary.json` | `{ international: { team_id, caps, goals, goals_per_game, competitive:{caps,goals}, friendly:{caps,goals}, penalty_goals, hat_tricks, record, first_cap, last_cap }, club: { apps, goals, goals_per_game, goals_excluding_non_fifa, penalty_goals, hat_tricks, record, champions_league:{goals, apps, goals_incl_qualifiers, apps_incl_qualifiers, note}, clubs:[{team_id, apps, goals, first_match, last_match}] }, career: { apps, goals, goals_excluding_non_fifa, non_fifa_competitions, penalty_goals, non_penalty_goals, free_kick_goals, hat_tricks, winning_goals, equalisers, goals_from_age_30, record }, citations: { "<block>.<field>": [source_id…] } }`. `citations` gives per-number sources; the envelope `attribution` still lists everything used |
+| `summary.json` | `{ international: { team_id, caps, goals, goals_per_game, competitive:{caps,goals}, friendly:{caps,goals}, penalty_goals, hat_tricks, record, first_cap, last_cap }, club: { apps, goals, goals_per_game, goals_excluding_non_fifa, penalty_goals, hat_tricks, record, champions_league:{goals, apps, goals_incl_qualifiers, apps_incl_qualifiers, note}, clubs:[{team_id, name, apps, goals, first_match, last_match}] }, career: { apps, goals, goals_per_game, goals_excluding_non_fifa, non_fifa_competitions, penalty_goals, non_penalty_goals, free_kick_goals, hat_tricks, winning_goals, equalisers, goals_from_age_30, record }, honours: { major_trophies, trophies_incl_not_in_squad, trophies_by_team, trophies_by_participation, champions_league_titles, league_titles, ballon_dor, fifa_best, european_golden_shoes, ucl_top_scorer_seasons, league_top_scorer_awards, individual_awards }, citations: { "<block>.<field>": [source_id…] } }`. `citations` gives per-number sources and has a key for every field of every block (tested); the envelope `attribution` still lists everything used |
 | `goals.json` | `[{goal_id, match_id, date, season, team_id, opponent_id, opponent, competition_id, competition, scope, stage, venue, minute, added_time, method, body_part, assist_player, assist_type, score_after, result, age, intl_goal_no, source_ids}]` in date order |
 | `matches.json` | matches rows (§3) + `scope`, `opponent`, `competition` names |
 | `goals-by-competition.json` | `[{scope, competition_id, name, apps, goals}]` |
 | `goals-by-year.json` | `[{scope, year, apps, goals}]`, calendar year, sorted by scope then year |
 | `goals-by-opponent.json` | `[{scope, opponent_id, name, apps, goals}]` (a club and a national team never share an id) |
-| `goals-by-club.json` (M3) | `[{team_id, name, apps, goals, first_match, last_match}]` |
-| `goals-by-season.json` (M3) | `[{season, team_id, competition_id, competition, wikipedia_category, apps, goals}]` (club only) |
-| `goals-by-age.json` (M3) | `[{scope, age, apps, goals}]` |
+| `goals-by-club.json` (M3) | `[{team_id, name, apps, goals, first_match, last_match, source_ids}]` |
+| `goals-by-season.json` (M3) | `[{season, team_id, competition_id, competition, wikipedia_category, apps, goals, source_ids}]` (club only) |
+| `club-season-totals.json` (M3b) | `[{season, team_id, name, apps, goals, goals_per_game, by_category:{league|national_cup|league_cup|continental|other: {apps, goals}}, source_ids}]`, one row per club season (2021-22 and 2022-23 have two clubs) |
+| `goals-by-age.json` (M3) | `[{scope, age, apps, goals, source_ids}]` |
 | `multi-goal-matches.json` (M3) | `[{match_id, date, opponent_id, opponent, goals, kind (brace/hat-trick/poker/haul), scope, team_id, competition_id, result, source_ids}]`, 2+ goals |
-| `streaks.json` (M3) | top 5 consecutive-scoring runs per scope (`all`/`club`/`international`): `[{scope, matches, goals, from, to, match_ids, ongoing}]` |
-| `big-games.json` (M3) | `[{scope, stage_class (final/semi_final/quarter_final/round_of_16/early_knockout/group_or_league/qualifying/unknown), apps, goals}]` |
+| `streaks.json` (M3) | top 5 consecutive-scoring runs per scope (`all`/`club`/`international`): `[{scope, matches, goals, from, to, match_ids, ongoing, source_ids}]` |
+| `big-games.json` (M3) | `[{scope, stage_class (final/semi_final/quarter_final/round_of_16/early_knockout/group_or_league/qualifying/unknown), apps, goals, source_ids}]` |
+| `trophies.json` (M3b) | trophies rows (§3) + `competition`, `team` names |
+| `awards.json` (M3b) | awards rows (§3) |
 | `reconciliation.json` (M3) | `{counts:{pass, known_difference, fail}, checks:[{check, source_id, description, expected, actual, status, note}]}` |
 | `corrections.json` (M3) | `{corrections:[…corrections.csv rows], date_checks:[…], resolutions_2_of_3:[…]}` |
 | `records.json` | records rows + `computed_value` |
+
+Row-level `source_ids` (M3b) on derived tables are the union of the sources cited by the appearances and goals that make up the row.
 | `sources.json` | the sources rows cited anywhere in the API |
 
 The frontend must display the `attribution` of any data it renders, which the CC BY-SA licence requires.

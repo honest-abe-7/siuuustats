@@ -181,8 +181,10 @@ export const goalsFromAge = (ledger, age = 30) => goalsWithMatch(ledger).filter(
 export function clubSummary(ledger) {
   const goals = clubGoals(ledger);
   const apps = clubApps(ledger);
+  const teamName = new Map((ledger.tables.teams ?? []).map((t) => [t.team_id, t.name]));
   const perClub = CLUB_TEAMS.map((team_id) => ({
     team_id,
+    name: teamName.get(team_id) ?? null,
     apps: appearances(ledger, (m) => m.team_id === team_id).length,
     goals: goalsForClub(ledger, team_id),
     first_match: appearances(ledger, (m) => m.team_id === team_id).map((m) => m.date).sort()[0] ?? null,
@@ -212,9 +214,11 @@ export function clubSummary(ledger) {
 export function careerSummary(ledger) {
   const goals = careerGoals(ledger);
   const nonFifa = goalsWithMatch(ledger).filter((g) => g.match && NON_FIFA_COMPETITIONS.includes(g.match.competition_id)).length;
+  const apps = careerApps(ledger);
   return {
-    apps: careerApps(ledger),
+    apps,
     goals,
+    goals_per_game: Math.round((goals / apps) * 100) / 100,
     goals_excluding_non_fifa: goals - nonFifa,
     non_fifa_competitions: NON_FIFA_COMPETITIONS,
     penalty_goals: careerPenaltyGoals(ledger),
@@ -284,11 +288,66 @@ export function stageClass(stage) {
   return "other";
 }
 
+/** Stage class of a match for big-game splits: one-off and two-legged super cups count as finals. */
+export const bigGameClass = (m) => (/super-?cup|supercop|shield/.test(m.competition_id) && /^(|1st leg|2nd leg)$/.test(m.stage ?? "") ? "final" : stageClass(m.stage));
+
+/** Per club season (club × season) totals with enwiki-category splits. */
+export function clubSeasonTotals(ledger) {
+  const cat = new Map(ledger.tables.competitions.map((c) => [c.competition_id, c.wikipedia_category]));
+  const rows = new Map();
+  const goalsBy = new Map();
+  for (const g of ledger.tables.goals) goalsBy.set(g.match_id, (goalsBy.get(g.match_id) ?? 0) + 1);
+  for (const m of appearances(ledger, isClub)) {
+    const k = `${m.season}|${m.team_id}`;
+    if (!rows.has(k)) rows.set(k, { season: m.season, team_id: m.team_id, apps: 0, goals: 0, by_category: {} });
+    const r = rows.get(k);
+    const c = cat.get(m.competition_id) ?? "other";
+    r.by_category[c] ??= { apps: 0, goals: 0 };
+    const n = goalsBy.get(m.match_id) ?? 0;
+    r.apps++;
+    r.goals += n;
+    r.by_category[c].apps++;
+    r.by_category[c].goals += n;
+  }
+  return [...rows.values()]
+    .map((r) => ({ ...r, goals_per_game: Math.round((r.goals / r.apps) * 100) / 100 }))
+    .sort((a, b) => a.season.localeCompare(b.season) || a.team_id.localeCompare(b.team_id));
+}
+
 /** Apps and goals by stage class and scope (finals, semi-finals, ...). One-off super cups and two-legged super cups count as finals.
  *  International stage is not yet populated, so international rows are "unknown". */
 export function bigGameSplits(ledger) {
   const out = [];
   for (const [scope, pred] of [["club", isClub], ["international", isIntl]])
-    for (const r of splitBy(ledger, (m) => (/super-?cup|supercop|shield/.test(m.competition_id) && /^(|1st leg|2nd leg)$/.test(m.stage ?? "") ? "final" : stageClass(m.stage)), pred)) out.push({ scope, stage_class: r.key, apps: r.apps, goals: r.goals });
+    for (const r of splitBy(ledger, bigGameClass, pred)) out.push({ scope, stage_class: r.key, apps: r.apps, goals: r.goals });
   return out;
+}
+
+/**
+ * Team trophies and individual awards headline counts.
+ * major_trophies = rows with counted_in_total (Wikipedia's Honours list: won while in the squad);
+ * trophies_incl_not_in_squad adds titles his team won while he was not in the matchday squad (messivsronaldo.app's 37).
+ */
+export function honoursSummary(ledger) {
+  const trophies = ledger.tables.trophies ?? [];
+  const awards = ledger.tables.awards ?? [];
+  const wins = (prefix) => awards.filter((a) => a.placing === 1 && prefix.some((p) => a.award_id.startsWith(p))).length;
+  const byTeam = {};
+  for (const t of trophies.filter((x) => x.counted_in_total)) byTeam[t.team_id] = (byTeam[t.team_id] ?? 0) + 1;
+  const byParticipation = {};
+  for (const t of trophies) byParticipation[t.participation] = (byParticipation[t.participation] ?? 0) + 1;
+  return {
+    major_trophies: trophies.filter((t) => t.counted_in_total).length,
+    trophies_incl_not_in_squad: trophies.length,
+    trophies_by_team: byTeam,
+    trophies_by_participation: byParticipation,
+    champions_league_titles: trophies.filter((t) => t.counted_in_total && t.competition_id === "uefa-champions-league").length,
+    league_titles: trophies.filter((t) => t.counted_in_total && ["primeira-liga", "premier-league", "la-liga", "serie-a", "saudi-pro-league"].includes(t.competition_id)).length,
+    ballon_dor: awards.filter((a) => a.placing === 1 && ["Ballon d'Or", "FIFA Ballon d'Or"].includes(a.name)).length,
+    fifa_best: wins(["the-best-fifa-mens-player-"]),
+    european_golden_shoes: wins(["european-golden-shoe-"]),
+    ucl_top_scorer_seasons: wins(["ucl-top-scorer-"]),
+    league_top_scorer_awards: wins(["premier-league-golden-boot-", "pichichi-trophy-", "capocannoniere-", "saudi-pro-league-golden-boot-"]),
+    individual_awards: awards.filter((a) => a.placing === 1).length,
+  };
 }

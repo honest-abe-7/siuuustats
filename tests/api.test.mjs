@@ -63,3 +63,48 @@ test("new M3 files exist and are consistent", () => {
 test("records.json computed values equal the stored values", () => {
   for (const r of files["records.json"].data) if (r.compute_fn) assert.equal(r.computed_value, r.value, r.record_id);
 });
+
+test("every summary figure has a citations key naming known sources", () => {
+  const s = files["summary.json"].data;
+  const known = new Set(files["sources.json"].data.map((x) => x.source_id));
+  for (const block of ["international", "club", "career", "honours"])
+    for (const k of Object.keys(s[block])) {
+      if (k === "team_id") continue;
+      const ids = s.citations[`${block}.${k}`];
+      assert.ok(ids && ids.length > 0, `${block}.${k} has no citation`);
+      for (const id of ids) assert.ok(known.has(id), `${block}.${k} cites unknown ${id}`);
+    }
+  assert.ok(s.club.clubs.every((c) => c.name), "club names present");
+  assert.equal(s.career.goals_per_game, Math.round((s.career.goals / s.career.apps) * 100) / 100);
+});
+
+test("derived tables carry row-level source_ids from sources.json", () => {
+  const known = new Set(files["sources.json"].data.map((x) => x.source_id));
+  for (const f of ["streaks.json", "big-games.json", "goals-by-age.json", "goals-by-season.json", "goals-by-club.json", "club-season-totals.json", "trophies.json", "awards.json"])
+    for (const r of files[f].data) {
+      assert.ok(Array.isArray(r.source_ids) && r.source_ids.length > 0, `${f} row without sources`);
+      for (const id of r.source_ids) assert.ok(known.has(id), `${f} cites unknown ${id}`);
+    }
+});
+
+test("club season totals add up to the club totals", () => {
+  const rows = files["club-season-totals.json"].data;
+  assert.equal(rows.reduce((a, r) => a + r.goals, 0), 835);
+  assert.equal(rows.reduce((a, r) => a + r.apps, 0), files["summary.json"].data.club.apps);
+  for (const r of rows) assert.equal(Object.values(r.by_category).reduce((a, c) => a + c.goals, 0), r.goals, `${r.season} ${r.team_id}`);
+});
+
+test("trophies: 35 counted (Wikipedia), 37 including not-in-squad titles (messivsronaldo.app)", () => {
+  const h = files["summary.json"].data.honours;
+  assert.equal(h.major_trophies, 35);
+  assert.equal(h.trophies_incl_not_in_squad, 37);
+  assert.equal(h.ballon_dor, 5);
+  assert.equal(files["trophies.json"].data.filter((t) => !t.counted_in_total).every((t) => t.participation === "not_in_squad"), true);
+});
+
+test("unused-substitute rows are in matches.json but never caps", () => {
+  const unused = files["matches.json"].data.filter((m) => m.appeared === false);
+  assert.ok(unused.some((m) => m.match_id === "2026-09-27-portugal-norway"));
+  assert.ok(unused.every((m) => m.cap_number === null));
+  assert.equal(files["summary.json"].data.international.caps, 234);
+});
