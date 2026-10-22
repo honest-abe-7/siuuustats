@@ -5,7 +5,7 @@ As of **20 Oct 2026** (Al-Nassr 1-0 Neom): **835 club goals in 1,107 club appear
 ## Sources and roles
 | Role | Source |
 |---|---|
-| Match spine (one row per club appearance, goal minutes, penalty/free-kick markers, assisters, minutes, sub on/off) | eswiki *Anexo:Partidos de Cristiano Ronaldo con clubes*, rev 175883102 |
+| Match spine (one row per club appearance, goal minutes, penalty/free-kick markers, assisters, minutes, sub on/off) | eswiki *Anexo:Partidos oficiales de Cristiano Ronaldo en clubes*, rev 175883102 |
 | Acceptance test (apps and goals per club × season × competition category) | enwiki *Cristiano Ronaldo* career table, rev 1381391040, "correct as of 20 October 2026" |
 | Date and score cross-check, tie-breaker for disputed details | 27 enwiki club season articles (pinned revisions in `raw/MANIFEST.json`; only date-anchored snippets are stored) |
 | Enrichment seed: body part, assister fallback, penalty/free-kick cross-check (decision c) | Kaggle "Ronaldo CR7 All Goals GOAT" (CC BY-SA 4.0), 816 goals to 25 Feb 2026, no Arab Club Champions Cup |
