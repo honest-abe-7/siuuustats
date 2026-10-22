@@ -12,6 +12,25 @@ import { runReconciliation } from "./reconcile.mjs";
 
 export const API_VERSION = "v1";
 
+const SOURCE_KEYS = new Set(["source_id", "source_ids", "evidence_source_ids"]);
+/**
+ * Every source id an endpoint's data references: values of source_id / source_ids / evidence_source_ids
+ * (arrays or ";"-joined strings) at any depth, plus every id in any `citations` map (dotted path -> ids).
+ * The envelope adds these to `attribution`, so attribution always covers what the data cites.
+ */
+export function referencedSourceIds(data) {
+  const out = new Set();
+  const add = (v) => (Array.isArray(v) ? v : String(v ?? "").split(";")).forEach((x) => x && out.add(x));
+  const walk = (v, key) => {
+    if (key !== undefined && SOURCE_KEYS.has(key) && (typeof v === "string" || (Array.isArray(v) && v.every((x) => typeof x === "string")))) return add(v);
+    if (key === "citations" && v && typeof v === "object" && !Array.isArray(v)) return Object.values(v).forEach(add);
+    if (Array.isArray(v)) v.forEach((x) => walk(x));
+    else if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, k);
+  };
+  walk(data);
+  return [...out];
+}
+
 export function buildApi(ledger, generatedAt = new Date().toISOString()) {
   const { matches, teams, competitions, sources, records } = ledger.tables;
   const teamName = new Map(teams.map((t) => [t.team_id, t.name]));
@@ -21,7 +40,7 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
   const dataAsOf = matches.map((m) => m.date).sort().at(-1) ?? null;
   const usedSources = new Set();
   const envelope = (endpoint, data, sourceIds) => {
-    const ids = [...new Set(sourceIds)].sort();
+    const ids = [...new Set([...sourceIds, ...referencedSourceIds(data)])].sort();
     ids.forEach((s) => usedSources.add(s));
     return {
       api_version: API_VERSION,
@@ -132,11 +151,55 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
     "honours.league_top_scorer_awards": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
     "honours.individual_awards": ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-individual-awards"],
   };
-  out["summary.json"] = envelope(
-    "summary",
-    { international: stats.internationalSummary(ledger), club: stats.clubSummary(ledger), career: stats.careerSummary(ledger), honours: stats.honoursSummary(ledger), citations },
-    allSrc(matches).concat(allSrc(ledger.tables.goals))
-  );
+  // ---- M3c derived figures (web team requests). Citations are the sources of the rows each figure is computed from.
+  const trophyRows = ledger.tables.trophies ?? [];
+  const trophySrc = (pred) => [...new Set(trophyRows.filter(pred).flatMap((t) => t.source_ids))].sort();
+  const intlNp = stats.nonPenalty(ledger, isPor);
+  const careerNp = stats.nonPenalty(ledger);
+  const muSpells = stats.clubSpells(ledger, "manchester-united").map(({ match_ids, ...s }) => {
+    const ids = new Set(match_ids);
+    const tids = new Set([...s.trophy_ids, ...s.not_in_squad_trophy_ids]);
+    // Trophy counts (including a 0) rest on the full honours lists, so those are always cited.
+    const honours = ["wikipedia-cristiano-ronaldo", "messivsronaldo-app-honours"];
+    return { ...s, source_ids: [...new Set([...rowSrc((m) => ids.has(m.match_id)), ...honours, ...trophySrc((t) => tids.has(t.trophy_id))])].sort() };
+  });
+  const LEAGUE = new Set(competitions.filter((c) => c.type === "league").map((c) => c.competition_id));
+  const RM_UCL = (t) => t.counted_in_total && t.team_id === "real-madrid" && t.competition_id === "uefa-champions-league";
+  const RM_CWC = (t) => t.counted_in_total && t.team_id === "real-madrid" && t.competition_id === "fifa-club-world-cup";
+  const summary = {
+    international: { ...stats.internationalSummary(ledger), non_penalty_goals: intlNp.non_penalty_goals, non_penalty_share_pct: intlNp.non_penalty_share_pct },
+    club: {
+      ...stats.clubSummary(ledger),
+      manchester_united_spells: muSpells,
+    },
+    career: {
+      ...stats.careerSummary(ledger),
+      non_penalty_share_pct: careerNp.non_penalty_share_pct,
+      excluding_al_nassr: stats.careerExcludingClub(ledger, "al-nassr"),
+    },
+    honours: {
+      ...stats.honoursSummary(ledger),
+      league_titles_by_country: stats.leagueTitlesByCountry(ledger),
+      real_madrid_titles: {
+        champions_league: stats.teamTitles(ledger, "real-madrid", "uefa-champions-league"),
+        club_world_cup: stats.teamTitles(ledger, "real-madrid", "fifa-club-world-cup"),
+      },
+    },
+  };
+  const NPG = citations["career.non_penalty_goals"];
+  Object.assign(citations, {
+    "international.non_penalty_goals": [...new Set([...INTL, ...citations["international.penalty_goals"]])],
+    "international.non_penalty_share_pct": [...new Set([...INTL, ...citations["international.penalty_goals"]])],
+    "career.non_penalty_share_pct": [...new Set([...NPG, ...citations["career.goals"]])],
+    "career.excluding_al_nassr": rowSrc((m) => m.team_id !== "al-nassr"),
+    "club.manchester_united_spells": [...new Set(muSpells.flatMap((s) => s.source_ids))].sort(),
+    "honours.league_titles_by_country": trophySrc((t) => t.counted_in_total && LEAGUE.has(t.competition_id)),
+    "honours.real_madrid_titles": trophySrc((t) => RM_UCL(t) || RM_CWC(t)),
+    "honours.real_madrid_titles.champions_league": trophySrc(RM_UCL),
+    "honours.real_madrid_titles.club_world_cup": trophySrc(RM_CWC),
+  });
+  for (const s of muSpells) citations[`club.manchester_united_spells.${s.spell}`] = s.source_ids;
+  out["summary.json"] = envelope("summary", { ...summary, citations }, allSrc(matches).concat(allSrc(ledger.tables.goals)));
   out["goals.json"] = envelope("goals", goalRows, allSrc(goalRows));
   out["matches.json"] = envelope(
     "matches",

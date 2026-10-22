@@ -114,3 +114,40 @@ test("unused-substitute rows are in matches.json but never caps", () => {
   assert.ok(unused.every((m) => m.cap_number === null));
   assert.equal(files["summary.json"].data.international.caps, 234);
 });
+
+// Independent of build-api's own collector: walk every endpoint's data for source references.
+const citedIn = (data) => {
+  const ids = new Set();
+  const add = (v) => (Array.isArray(v) ? v : String(v).split(";")).forEach((x) => x && ids.add(x));
+  const walk = (v, key) => {
+    if (["source_id", "source_ids", "evidence_source_ids"].includes(key) && (typeof v === "string" || Array.isArray(v))) return add(v);
+    if (key === "citations" && v && typeof v === "object") return Object.values(v).forEach(add);
+    if (Array.isArray(v)) v.forEach((x) => walk(x));
+    else if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) walk(x, k);
+  };
+  walk(data);
+  return ids;
+};
+
+test("every endpoint's attribution includes every source its citations and source_ids reference", () => {
+  const known = new Set(loadLedger().tables.sources.map((s) => s.source_id));
+  for (const [name, body] of Object.entries(files)) {
+    const attributed = new Set(body.attribution.map((a) => a.source_id));
+    for (const id of citedIn(body.data)) {
+      assert.ok(attributed.has(id), `${name}: ${id} is cited but missing from attribution`);
+      assert.ok(known.has(id), `${name}: ${id} is not in data/sources.csv`);
+    }
+    for (const a of body.attribution) assert.ok(a.title && a.url, `${name}: attribution ${a.source_id} has no sources.csv row`);
+  }
+});
+
+test("summary.json attribution covers the honours citations (regression: 7 honours sources were missing)", () => {
+  const attributed = new Set(files["summary.json"].attribution.map((a) => a.source_id));
+  for (const id of ["messivsronaldo-app-honours", "messivsronaldo-app-individual-awards", "uefa-com-ucl-all-time-top-scorers", "wikipedia-2002-supertaca", "wikipedia-2008-community-shield", "wikipedia-2014-copa-del-rey-final", "wikipedia-2016-uefa-super-cup"])
+    assert.ok(attributed.has(id), id);
+});
+
+test("sources.json lists every source attributed by any endpoint", () => {
+  const listed = new Set(files["sources.json"].data.map((s) => s.source_id));
+  for (const [name, body] of Object.entries(files)) for (const a of body.attribution) assert.ok(listed.has(a.source_id), `${name}: ${a.source_id}`);
+});
