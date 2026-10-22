@@ -1,12 +1,90 @@
 {
-  "$comment": "Pinned, cited headline figures. Reconciliation fails if the ledger stops matching them; update deliberately (with a new source revision) when Ronaldo plays again.",
-  "as_of": "2026-10-22",
-  "expectations": [
-    { "id": "intl-goals", "fn": "intlGoals", "expected": 146, "source_id": "wikipedia-cristiano-ronaldo" },
-    { "id": "intl-caps", "fn": "intlCaps", "expected": 234, "source_id": "wikipedia-cristiano-ronaldo" },
-    { "id": "intl-competitive-goals", "fn": "intlCompetitiveGoals", "expected": 124, "source_id": "martj42-goalscorers" },
-    { "id": "intl-competitive-caps", "fn": "intlCompetitiveCaps", "expected": 178, "source_id": "wikipedia-cr7-intl-goals" },
-    { "id": "intl-penalty-goals", "fn": "internationalSummary.penalty_goals", "expected": 23, "source_id": "messivsronaldo-app-international" },
-    { "id": "intl-hat-tricks", "fn": "internationalSummary.hat_tricks", "expected": 10, "source_id": "wikipedia-cr7-intl-goals" }
-  ]
+ "$comment": "Pinned, cited headline figures. Reconciliation fails if the ledger stops matching them; update deliberately (with a new source revision) when Ronaldo plays again.",
+ "as_of": "2026-10-22",
+ "expectations": [
+  {
+   "id": "intl-goals",
+   "fn": "intlGoals",
+   "expected": 146,
+   "source_id": "wikipedia-cristiano-ronaldo"
+  },
+  {
+   "id": "intl-caps",
+   "fn": "intlCaps",
+   "expected": 234,
+   "source_id": "wikipedia-cristiano-ronaldo"
+  },
+  {
+   "id": "intl-competitive-goals",
+   "fn": "intlCompetitiveGoals",
+   "expected": 124,
+   "source_id": "martj42-goalscorers"
+  },
+  {
+   "id": "intl-competitive-caps",
+   "fn": "intlCompetitiveCaps",
+   "expected": 178,
+   "source_id": "wikipedia-cr7-intl-goals"
+  },
+  {
+   "id": "intl-penalty-goals",
+   "fn": "internationalSummary.penalty_goals",
+   "expected": 23,
+   "source_id": "messivsronaldo-app-international"
+  },
+  {
+   "id": "intl-hat-tricks",
+   "fn": "internationalSummary.hat_tricks",
+   "expected": 10,
+   "source_id": "wikipedia-cr7-intl-goals"
+  },
+  {
+   "id": "club-goals",
+   "fn": "clubGoals",
+   "expected": 835,
+   "source_id": "wikipedia-cristiano-ronaldo"
+  },
+  {
+   "id": "club-apps-ledger",
+   "fn": "clubApps",
+   "expected": 1107,
+   "source_id": "eswiki-cr7-club-matches"
+  },
+  {
+   "id": "career-goals",
+   "fn": "careerGoals",
+   "expected": 981,
+   "source_id": "wikipedia-cristiano-ronaldo"
+  },
+  {
+   "id": "ucl-goals-main",
+   "fn": "uclGoalsMain",
+   "expected": 140,
+   "source_id": "wikipedia-club-season-articles"
+  },
+  {
+   "id": "ucl-goals-incl-qualifiers",
+   "fn": "uclGoalsInclQualifiers",
+   "expected": 141,
+   "source_id": "wikipedia-club-season-articles"
+  },
+  {
+   "id": "real-madrid-goals",
+   "fn": "goalsForClub:real-madrid",
+   "expected": 450,
+   "source_id": "wikipedia-cristiano-ronaldo"
+  },
+  {
+   "id": "career-penalty-goals",
+   "fn": "careerPenaltyGoals",
+   "expected": 184,
+   "source_id": "kaggle-sigmaborov-cr7-goals"
+  },
+  {
+   "id": "national-teams-scored-against",
+   "fn": "nationalTeamsScoredAgainst",
+   "expected": 49,
+   "source_id": "wikipedia-cr7-intl-goals"
+  }
+ ]
 }

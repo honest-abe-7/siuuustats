@@ -16,6 +16,39 @@
       "source_id": "wikipedia-cristiano-ronaldo",
       "reason": "Wikipedia's lead says 141 international wins, which equals RSSSF's 141 over 233 caps. The 234th cap (Portugal 1-0 Wales, 24 Sep 2026) was a win, so the lead appears not to have been updated. Shootouts are counted as draws.",
       "reviewed_at": "2026-10-22"
+    },
+    {
+      "check": "wikipedia-club-season:sporting-cp-b:2002-03:league",
+      "expected": {
+        "apps": 2,
+        "goals": 0
+      },
+      "actual": {
+        "apps": 0,
+        "goals": 0
+      },
+      "source_id": "wikipedia-cristiano-ronaldo",
+      "reason": "enwiki counts 2 Segunda Divisão B appearances for Sporting CP B in 2002-03 (0 goals). eswiki's match table omits them and sources disagree on the dates and opponents, so the ledger has no match rows for them. Listed in the M3 gap list.",
+      "reviewed_at": "2026-10-22"
+    },
+    {
+      "check": "wikipedia-club-career-apps",
+      "expected": 1109,
+      "actual": 1107,
+      "source_id": "wikipedia-cristiano-ronaldo",
+      "reason": "The 2 Sporting CP B reserve-team appearances (see the sporting-cp-b check). Every first-team season and competition matches enwiki exactly. Per decision (b), the published club appearance figure is the ledger's 1,107.",
+      "reviewed_at": "2026-10-22"
+    },
+    {
+      "check": "kaggle-goals-per-match",
+      "expected": [],
+      "actual": [
+        "2007-02-03: kaggle 1 vs ledger 0",
+        "2007-02-04: kaggle 0 vs ledger 1"
+      ],
+      "source_id": "kaggle-sigmaborov-cr7-goals",
+      "reason": "Kaggle dates Tottenham 0-4 Man Utd as 3 Feb 2007. It was played on Sunday 4 Feb 2007 (season article; Premier League, BBC and ESPN match pages). The ledger keeps 4 Feb and the ingest matches Kaggle's row to it with a one-day tolerance.",
+      "reviewed_at": "2026-10-22"
     }
   ]
 }

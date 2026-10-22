@@ -1,0 +1,4 @@
+es_match_no,date,opponent,evidence_source_ids,note
+22,2003-03-08,Naval,zerozero-2003-03-08-sporting-naval,"Taça de Portugal QF. The 2002-03 Sporting season article says 9 March; zerozero's match sheet says Saturday 8 March 2003, matching eswiki. Kept 8 March (2 of 3)."
+335,2009-12-19,Real Zaragoza,uefa-com-2009-12-19-real-madrid-zaragoza;kaggle-sigmaborov-cr7-goals,"Real Madrid 6-0 Zaragoza. The 2009-10 Real Madrid season article says 20 Dec; UEFA.com and Kaggle say 19 Dec 2009, matching eswiki."
+338,2010-01-16,Athletic Bilbao,athletic-club-2010-01-16-real-madrid,"Athletic 1-0 Real Madrid. The 2009-10 Real Madrid season article says 17 Jan; Athletic Club's own match page says Saturday 16 Jan 2010 20:00, matching eswiki."

@@ -62,7 +62,8 @@ const m42 = loadMartj42();
 const extras = readCsv(join(ROOT, "data/manual/international-appearances-extra.csv")).rows;
 
 // ---- documented corrections to source data (data/manual/corrections.csv) ----
-const corrections = readCsv(join(ROOT, "data/manual/corrections.csv")).rows;
+const INTL_SOURCES = ["rsssf-cronaldo-intlg", "wikipedia-cr7-intl-goals"];
+const corrections = readCsv(join(ROOT, "data/manual/corrections.csv")).rows.filter((c) => INTL_SOURCES.includes(c.source_id));
 const applied = [];
 function applyCorrection(row, sourceId, targetKey, targetValue, field, toTyped) {
   const c = corrections.find((x) => x.source_id === sourceId && x.target === `${targetKey}=${targetValue}` && x.field === field);
@@ -241,6 +242,7 @@ writeCsv(
 );
 
 const otherMatches = keepOther("data/matches.csv", (r) => r.team_id !== TEAM);
+for (const m of matches) m.notes ??= null;
 writeCsv(join(ROOT, "data/matches.csv"), cols("matches"), [...otherMatches, ...matches].sort((a, b) => a.date.localeCompare(b.date) || a.match_id.localeCompare(b.match_id)));
 const otherGoals = keepOther("data/goals.csv", (r) => r.team_id !== TEAM);
 writeCsv(join(ROOT, "data/goals.csv"), cols("goals"), [...otherGoals, ...goals].sort((a, b) => a.goal_id.localeCompare(b.goal_id, "en", { numeric: true })));

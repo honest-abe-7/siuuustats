@@ -52,8 +52,9 @@ export function validateLedger(ledger) {
     if (typeof m.match_id === "string" && !m.match_id.startsWith(`${m.date}-${m.team_id}-${m.opponent_id}`))
       add("matches", row, `match_id must be {date}-{team_id}-{opponent_id}`);
     if (m.team_id === m.opponent_id) add("matches", row, "team_id equals opponent_id");
-    if (m.shootout && m.score_for !== m.score_against) add("matches", row, "shootout recorded but score is not level");
-    if (m.shootout && m.extra_time === false) add("matches", row, "shootout recorded but extra_time is false");
+    // A second leg can go to penalties with the aggregate level but the match itself won (e.g. Real Madrid 2-1 Bayern, 2012).
+    if (m.shootout && m.score_for !== m.score_against && !/2nd leg/i.test(m.stage ?? "")) add("matches", row, "shootout recorded but score is not level");
+    if (m.cap_number !== null && m.season !== m.date.slice(0, 4)) add("matches", row, "international matches use the calendar year as season");
     if (!m.appeared && (m.minutes || m.started)) add("matches", row, "unused substitute cannot have minutes or a start");
     const nk = `${m.date}|${m.team_id}|${m.opponent_id}`;
     if (natural.has(nk)) add("matches", row, `duplicate match (same date/team/opponent as row ${natural.get(nk)})`);

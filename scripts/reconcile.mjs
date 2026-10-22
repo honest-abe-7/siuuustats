@@ -7,7 +7,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROOT, loadLedger } from "./lib/ledger.mjs";
 import * as stats from "./lib/stats.mjs";
-import { parseWikiList, parseWikiArticle, parseRsssf, loadMartj42 } from "./lib/sources-raw.mjs";
+import { parseWikiList, parseWikiArticle, parseRsssf, loadMartj42, parseWikiClubTable, loadKaggleGoals } from "./lib/sources-raw.mjs";
 
 const WIKI_COMP = {
   "UEFA European Championship qualifying": "uefa-euro-qualification",
@@ -34,7 +34,7 @@ export function runReconciliation(root = ROOT, ledger = loadLedger(root)) {
   const exp = JSON.parse(readFileSync(join(root, "data/reconciliation/expectations.json"), "utf8"));
   for (const e of exp.expectations) {
     const [fn, field] = e.fn.split(".");
-    const v = field ? stats[fn](ledger)[field] : stats[fn](ledger);
+    const v = e.fn.includes(":") ? stats.evaluateComputeFn(ledger, e.fn) : field ? stats[fn](ledger)[field] : stats[fn](ledger);
     add(`pinned-${e.id}`, e.source_id, e.expected, v, `Pinned figure ${e.id} (as of ${exp.as_of})`);
   }
 
@@ -102,7 +102,55 @@ export function runReconciliation(root = ROOT, ledger = loadLedger(root)) {
   const capDiffs = rs.caps.filter((c) => (goalsByCap[c.cap] ?? 0) !== c.goals).map((c) => `cap ${c.cap}: rsssf ${c.goals} vs ledger ${goalsByCap[c.cap] ?? 0}`);
   add("rsssf-goals-per-cap", "rsssf-cronaldo-intlg", [], capDiffs, "Caps where RSSSF and the ledger disagree on goals scored");
 
-  // 6. records.csv values
+  // 6. Club career vs enwiki's per-season, per-competition-category table (the M3 acceptance test)
+  const clubTable = parseWikiClubTable(root);
+  const category = new Map(ledger.tables.competitions.map((c) => [c.competition_id, c.wikipedia_category]));
+  const CLUB_ID = { "Sporting CP": "sporting-cp", "Sporting CP B": "sporting-cp-b", "Manchester United": "manchester-united", "Real Madrid": "real-madrid", Juventus: "juventus", "Al-Nassr": "al-nassr", "Al Nassr": "al-nassr" };
+  const CATS = ["league", "national_cup", "league_cup", "continental", "other"];
+  const cell = (pred) => {
+    const r = stats.splitBy(ledger, () => "x", pred)[0];
+    return { apps: r?.apps ?? 0, goals: r?.goals ?? 0 };
+  };
+  for (const row of clubTable.filter((r) => r.kind === "season")) {
+    const season = row.season.replace("–", "-");
+    const team = CLUB_ID[row.club] ?? row.club;
+    for (const c of CATS) {
+      const w = { apps: row[c]?.apps ?? 0, goals: row[c]?.goals ?? 0 };
+      const o = cell((m) => m.team_id === team && m.season === season && category.get(m.competition_id) === c);
+      add(`wikipedia-club-season:${team}:${season}:${c}`, "wikipedia-cristiano-ronaldo", w, o, `${row.club} ${row.season} ${c.replace("_", " ")} apps and goals`);
+    }
+  }
+  // A spell's total row follows its season rows in the table, which keeps Man Utd's two spells apart.
+  let spell = [];
+  for (const row of clubTable) {
+    if (row.kind === "season") {
+      spell.push(row);
+      continue;
+    }
+    if (row.kind !== "club_total") continue;
+    const team = CLUB_ID[row.club] ?? row.club;
+    const seasons = new Set(spell.filter((r) => r.club === row.club).map((r) => r.season.replace("–", "-")));
+    spell = [];
+    const o = cell((m) => m.team_id === team && seasons.has(m.season));
+    add(`wikipedia-club-total:${team}:${[...seasons][0]}`, "wikipedia-cristiano-ronaldo", row.total, o, `${row.club} spell total`);
+  }
+  const career = clubTable.find((r) => r.kind === "career");
+  const clubSum = stats.clubSummary(ledger);
+  add("wikipedia-club-career-apps", "wikipedia-cristiano-ronaldo", career.total.apps, clubSum.apps, "Club career appearances (enwiki table total)");
+  add("wikipedia-club-career-goals", "wikipedia-cristiano-ronaldo", career.total.goals, clubSum.goals, "Club career goals (enwiki table total)");
+  add("career-goals-club-plus-intl", "wikipedia-cristiano-ronaldo", career.total.goals + wa.infoboxGoals, stats.careerGoals(ledger), "Career goals = enwiki club total + infobox international goals");
+
+  // 7. Kaggle per-match coverage (seed source): every Kaggle goal date must carry the same number of ledger goals
+  const kaggle = loadKaggleGoals(root);
+  const kPerDate = {};
+  for (const k of kaggle) kPerDate[k.date] = (kPerDate[k.date] ?? 0) + 1;
+  const kLast = kaggle.map((k) => k.date).sort().at(-1);
+  const oPerDate = {};
+  for (const g of stats.goalsWithMatch(ledger)) if (g.match && g.match.team_id !== stats.NATIONAL_TEAM && g.match.date <= kLast && g.match.competition_id !== "arab-club-champions-cup") oPerDate[g.match.date] = (oPerDate[g.match.date] ?? 0) + 1;
+  const kDiffs = [...new Set([...Object.keys(kPerDate), ...Object.keys(oPerDate)])].filter((d) => kPerDate[d] !== oPerDate[d]).sort().map((d) => `${d}: kaggle ${kPerDate[d] ?? 0} vs ledger ${oPerDate[d] ?? 0}`);
+  add("kaggle-goals-per-match", "kaggle-sigmaborov-cr7-goals", [], kDiffs, `Dates (to ${kLast}, Arab Club Champions Cup excluded: not in Kaggle) where Kaggle and the ledger disagree on Ronaldo's club goals`);
+
+  // 8. records.csv values
   for (const rec of ledger.tables.records) {
     if (!rec.compute_fn) continue;
     add(`record-value:${rec.record_id}`, rec.source_ids[0], rec.value, String(stats.evaluateComputeFn(ledger, rec.compute_fn)), `records.csv value for ${rec.title}`);

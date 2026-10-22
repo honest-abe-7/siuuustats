@@ -1,0 +1,2 @@
+date,season,team_id,opponent_id,opponent_name,opponent_country,competition_id,stage,venue,score_for,score_against,source_ids,reason
+2026-10-20,2026-27,al-nassr,neom,Neom,Saudi Arabia,saudi-pro-league,Matchday 10,home,1,0,wikipedia-club-season-articles;wikipedia-cristiano-ronaldo,"Not yet in the eswiki table (rev 175883102). The 2026-27 season article lists Al-Nassr 1-0 Neom on 20 Oct 2026 (Félix 61'), and the enwiki career table, stamped 'correct as of 20 October 2026', counts it in Ronaldo's 2026-27 league apps. 0 goals."

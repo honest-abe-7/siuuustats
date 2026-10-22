@@ -14,7 +14,8 @@
     "country",
     "official",
     "includes_qualifiers",
-    "notes"
+    "notes",
+    "wikipedia_category"
   ],
   "properties": {
     "competition_id": {
@@ -75,6 +76,21 @@
         "string",
         "null"
       ]
+    },
+    "wikipedia_category": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "league",
+        "national_cup",
+        "league_cup",
+        "continental",
+        "other",
+        null
+      ],
+      "description": "Club competitions only: the column of Wikipedia's club career table this competition is counted under (used for per-season reconciliation)."
     }
   }
 }

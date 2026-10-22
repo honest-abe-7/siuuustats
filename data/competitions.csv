@@ -1,8 +1,31 @@
-competition_id,name,type,scope,confederation,country,official,includes_qualifiers,notes
-fifa-world-cup,FIFA World Cup,intl_tournament,international,,,true,false,Final tournaments only.
-fifa-world-cup-qualification,FIFA World Cup qualification,intl_qualifier,international,,,true,,Portugal plays in the UEFA zone.
-uefa-euro,UEFA European Championship,intl_tournament,international,UEFA,,true,false,Final tournaments only.
-uefa-euro-qualification,UEFA European Championship qualifying,intl_qualifier,international,UEFA,,true,,
-uefa-nations-league,UEFA Nations League,intl_league,international,UEFA,,true,,League phase and Finals.
-fifa-confederations-cup,FIFA Confederations Cup,intl_tournament,international,,,true,false,
-international-friendly,International friendly,friendly,international,,,true,,Full (A) internationals count toward official totals.
+competition_id,name,type,scope,confederation,country,official,includes_qualifiers,notes,wikipedia_category
+fifa-world-cup,FIFA World Cup,intl_tournament,international,,,true,false,Final tournaments only.,
+fifa-world-cup-qualification,FIFA World Cup qualification,intl_qualifier,international,,,true,,Portugal plays in the UEFA zone.,
+uefa-euro,UEFA European Championship,intl_tournament,international,UEFA,,true,false,Final tournaments only.,
+uefa-euro-qualification,UEFA European Championship qualifying,intl_qualifier,international,UEFA,,true,,,
+uefa-nations-league,UEFA Nations League,intl_league,international,UEFA,,true,,League phase and Finals.,
+fifa-confederations-cup,FIFA Confederations Cup,intl_tournament,international,,,true,false,,
+international-friendly,International friendly,friendly,international,,,true,,Full (A) internationals count toward official totals.,
+primeira-liga,Primeira Liga,league,club,UEFA,Portugal,true,,,league
+taca-de-portugal,Taça de Portugal,domestic_cup,club,UEFA,Portugal,true,,,national_cup
+premier-league,Premier League,league,club,UEFA,England,true,,,league
+fa-cup,FA Cup,domestic_cup,club,UEFA,England,true,,,national_cup
+efl-cup,Football League Cup,league_cup,club,UEFA,England,true,,Also known as the EFL Cup / Carabao Cup.,league_cup
+fa-community-shield,FA Community Shield,super_cup,club,UEFA,England,true,,,other
+la-liga,La Liga,league,club,UEFA,Spain,true,,,league
+copa-del-rey,Copa del Rey,domestic_cup,club,UEFA,Spain,true,,,national_cup
+supercopa-de-espana,Supercopa de España,super_cup,club,UEFA,Spain,true,,,other
+serie-a,Serie A,league,club,UEFA,Italy,true,,,league
+coppa-italia,Coppa Italia,domestic_cup,club,UEFA,Italy,true,,,national_cup
+supercoppa-italiana,Supercoppa Italiana,super_cup,club,UEFA,Italy,true,,,other
+saudi-pro-league,Saudi Pro League,league,club,AFC,Saudi Arabia,true,,,league
+kings-cup-saudi-arabia,King's Cup (Saudi Arabia),domestic_cup,club,AFC,Saudi Arabia,true,,,national_cup
+saudi-super-cup,Saudi Super Cup,super_cup,club,AFC,Saudi Arabia,true,,,other
+uefa-champions-league,UEFA Champions League,continental_club,club,UEFA,,true,true,Qualifying rounds are filed here with stage 'Qualifying round N'. Headline figures use the main competition (stage not starting with 'Qualifying'); UEFA's own all-time figure includes qualifying.,continental
+uefa-cup,UEFA Cup,continental_club,club,UEFA,,true,true,Predecessor of the UEFA Europa League.,continental
+uefa-europa-league,UEFA Europa League,continental_club,club,UEFA,,true,true,,continental
+uefa-super-cup,UEFA Super Cup,super_cup,club,UEFA,,true,false,,other
+fifa-club-world-cup,FIFA Club World Cup,club_world,club,,,true,false,,other
+afc-champions-league,AFC Champions League (Elite),continental_club,club,AFC,,true,true,Includes the AFC Champions League Elite (2024-25 onwards).,continental
+afc-champions-league-two,AFC Champions League Two,continental_club,club,AFC,,true,true,,continental
+arab-club-champions-cup,Arab Club Champions Cup,continental_club,club,,,true,false,"UAFA competition. Wikipedia counts it under 'Other', not 'Continental'.",other

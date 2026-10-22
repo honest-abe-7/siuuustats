@@ -25,7 +25,8 @@
     "minutes",
     "captain",
     "cap_number",
-    "source_ids"
+    "source_ids",
+    "notes"
   ],
   "properties": {
     "match_id": {
@@ -141,6 +142,13 @@
       "minItems": 1,
       "uniqueItems": true,
       "description": "Semicolon-separated source_id list in CSV; each must exist in sources.csv"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Caveats on this row, e.g. an awarded result (score_for/score_against hold the official result)."
     }
   }
 }

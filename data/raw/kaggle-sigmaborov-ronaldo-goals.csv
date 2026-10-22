@@ -1,0 +1,817 @@
+﻿competition,stage,match_date,home_away,team,opponent,final_score,player_position,goal_minute,score_after_goal,goal_method,assist_player,season,goal_decade,is_home_goal,goal_minute_bucket
+Liga Portugal ,6,07/10/02,Home,Sporting CP,Moreirense FC,3:0,LW,34',2:0,Solo run,Not Applicable,2002/03,2000s,1,31-45
+Liga Portugal ,6,07/10/02,Home,Sporting CP,Moreirense FC,3:0,LW,90'+5,3:0,Header,Rui Jorge,2002/03,2000s,1,76-90
+Liga Portugal ,8,26/10/02,Away,Sporting CP,Boavista FC,1:2,Not Applicable,88',1:2,Right-footed shot,Carlos Martins,2002/03,2000s,0,76-90
+Taça de Portugal ,Fourth Round,24/11/02,Home,Sporting CP,CD Estarreja,4:1,LW,67',3:1,Left-footed shot,César Prates,2002/03,2000s,1,61-75
+Taça de Portugal ,Fifth Round,18/12/02,Home,Sporting CP,FC Oliveira do Hospital,8:1,SS,13',3:0,Left-footed shot,Ricardo Fernandes,2002/03,2000s,1,01-15
+Premier League ,11,01/11/03,Home,Manchester United,Portsmouth FC,3:0,RW,80',2:0,Direct free kick,Not Applicable,2003/04,2000s,1,76-90
+FA Cup ,Fifth Round,14/02/04,Home,Manchester United,Manchester City,4:2,RW,74',3:0,Right-footed shot,Not Applicable,2003/04,2000s,1,61-75
+Premier League ,29,20/03/04,Home,Manchester United,Tottenham Hotspur,3:0,RW,89',2:0,Right-footed shot,Roy Keane,2003/04,2000s,1,76-90
+Premier League ,32,10/04/04,Away,Manchester United,Birmingham City,1:2,RW,60',1:1,Header,Ryan Giggs,2003/04,2000s,0,46-60
+Premier League ,38,15/05/04,Away,Manchester United,Aston Villa,0:2,RW,4',0:1,Right-footed shot,Darren Fletcher,2003/04,2000s,0,01-15
+FA Cup ,Final,22/05/04,Home,Manchester United,Millwall FC,3:0,RW,44',1:0,Header,Gary Neville,2003/04,2000s,1,31-45
+Premier League ,16,04/12/04,Home,Manchester United,Southampton FC,3:0,RW,87',3:0,Right-footed shot,Gary Neville,2004/05,2000s,1,76-90
+FA Cup ,Third Round,19/01/05,Away,Manchester United,Exeter City,0:2,RW,9',0:1,Left-footed shot,Paul Scholes,2004/05,2000s,0,01-15
+Premier League ,24,22/01/05,Home,Manchester United,Aston Villa,3:1,RW,8',1:0,Right-footed shot,Louis Saha,2004/05,2000s,1,01-15
+Premier League ,25,01/02/05,Away,Manchester United,Arsenal FC,2:4,RW,54',2:2,Left-footed shot,Ryan Giggs,2004/05,2000s,0,46-60
+Premier League ,25,01/02/05,Away,Manchester United,Arsenal FC,2:4,RW,58',2:3,Tap-in,Ryan Giggs,2004/05,2000s,0,46-60
+FA Cup ,Fifth Round,19/02/05,Away,Manchester United,Everton FC,0:2,RW,58',0:2,Left-footed shot,Paul Scholes,2004/05,2000s,0,46-60
+FA Cup ,Sixth Round,12/03/05,Away,Manchester United,Southampton FC,0:4,RW,45'+1,0:2,Left-footed shot,Ruud van Nistelrooy,2004/05,2000s,0,31-45
+Premier League ,30,19/03/05,Home,Manchester United,Fulham FC,1:0,RW,21',1:0,Right-footed shot,Roy Keane,2004/05,2000s,1,16-30
+FA Cup ,Semi-Finals,17/04/05,Away,Manchester United,Newcastle United,1:4,RW,76',1:4,Right-footed shot,Ruud van Nistelrooy,2004/05,2000s,0,76-90
+Champions League Qu. ,Third Round,09/08/05,Home,Manchester United,Debreceni VSC,3:0,RW,63',3:0,Right-footed shot,Wayne Rooney,2005/06,2000s,1,61-75
+Premier League ,11,29/10/05,Away,Manchester United,Middlesbrough FC,4:1,RW,90'+4,4:1,Header,Paul Scholes,2005/06,2000s,0,76-90
+EFL Cup ,Round of 16,30/11/05,Home,Manchester United,West Bromwich Albion,3:1,RW,12',1:0,Penalty,Not Applicable,2005/06,2000s,1,01-15
+Premier League ,20,31/12/05,Home,Manchester United,Bolton Wanderers,4:1,RW,68',3:1,Right-footed shot,Wayne Rooney,2005/06,2000s,1,61-75
+Premier League ,20,31/12/05,Home,Manchester United,Bolton Wanderers,4:1,RW,90'+1,4:1,Left-footed shot,Not Applicable,2005/06,2000s,1,76-90
+Premier League ,25,04/02/06,Home,Manchester United,Fulham FC,4:2,RW,14',2:0,Direct free kick,Not Applicable,2005/06,2000s,1,01-15
+Premier League ,25,04/02/06,Home,Manchester United,Fulham FC,4:2,RW,86',4:2,Right-footed shot,Not Applicable,2005/06,2000s,1,76-90
+Premier League ,26,11/02/06,Away,Manchester United,Portsmouth FC,1:3,RW,38',0:2,Left-footed shot,Not Applicable,2005/06,2000s,0,31-45
+Premier League ,26,11/02/06,Away,Manchester United,Portsmouth FC,1:3,RW,45',0:3,Right-footed shot,Wayne Rooney,2005/06,2000s,0,31-45
+EFL Cup ,Final,26/02/06,Home,Manchester United,Wigan Athletic,4:0,RW,59',3:0,Right-footed shot,Louis Saha,2005/06,2000s,1,46-60
+Premier League ,28,06/03/06,Away,Manchester United,Wigan Athletic,1:2,RW,74',1:1,Right-footed shot,Ruud van Nistelrooy,2005/06,2000s,0,61-75
+Premier League ,38,07/05/06,Home,Manchester United,Charlton Athletic,4:0,RW,23',2:0,Left-footed shot,Wes Brown,2005/06,2000s,1,16-30
+Premier League ,1,20/08/06,Home,Manchester United,Fulham FC,5:1,RW,19',4:0,Right-footed shot,Wayne Rooney,2006/07,2000s,1,16-30
+Premier League ,6,23/09/06,Away,Manchester United,Reading FC,1:1,SS,73',1:1,Right-footed shot,John O'Shea,2006/07,2000s,0,61-75
+Premier League ,10,28/10/06,Away,Manchester United,Bolton Wanderers,0:4,SS,82',0:3,Not reported,Louis Saha,2006/07,2000s,0,76-90
+Premier League ,11,04/11/06,Home,Manchester United,Portsmouth FC,3:0,SS,10',2:0,Direct free kick,Not Applicable,2006/07,2000s,1,01-15
+Premier League ,15,29/11/06,Home,Manchester United,Everton FC,3:0,SS,39',1:0,Right-footed shot,Not Applicable,2006/07,2000s,1,31-45
+Premier League ,17,09/12/06,Home,Manchester United,Manchester City,3:1,SS,84',3:1,Not reported,Not Applicable,2006/07,2000s,1,76-90
+Premier League ,19,23/12/06,Away,Manchester United,Aston Villa,0:3,LW,58',0:1,Right-footed shot,Not Applicable,2006/07,2000s,0,46-60
+Premier League ,19,23/12/06,Away,Manchester United,Aston Villa,0:3,LW,85',0:3,Right-footed shot,Gary Neville,2006/07,2000s,0,76-90
+Premier League ,20,26/12/06,Home,Manchester United,Wigan Athletic,3:1,LW,47',1:0,Header,Paul Scholes,2006/07,2000s,1,46-60
+Premier League ,20,26/12/06,Home,Manchester United,Wigan Athletic,3:1,LW,50',2:0,Penalty rebound,Not Applicable,2006/07,2000s,1,46-60
+Premier League ,21,30/12/06,Home,Manchester United,Reading FC,3:2,LW,58',2:1,Right-footed shot,Not Applicable,2006/07,2000s,1,46-60
+Premier League ,21,30/12/06,Home,Manchester United,Reading FC,3:2,LW,77',3:1,Right-footed shot,Ryan Giggs,2006/07,2000s,1,76-90
+Premier League ,23,13/01/07,Home,Manchester United,Aston Villa,3:1,LW,34',3:0,Header,Michael Carrick,2006/07,2000s,1,31-45
+Premier League ,25,31/01/07,Home,Manchester United,Watford FC,4:0,RW,12',1:0,Penalty,Not Applicable,2006/07,2000s,1,01-15
+Premier League ,26,03/02/07,Away,Manchester United,Tottenham Hotspur,0:4,RW,45',0:1,Penalty,Not Applicable,2006/07,2000s,0,31-45
+Premier League ,28,24/02/07,Away,Manchester United,Fulham FC,1:2,RW,88',1:2,Solo run,Mikaël Silvestre,2006/07,2000s,0,76-90
+FA Cup ,Sixth Round,10/03/07,Away,Manchester United,Middlesbrough FC,2:2,RW,68',2:2,Penalty,Not Applicable,2006/07,2000s,0,61-75
+FA Cup ,Sixth Round,19/03/07,Home,Manchester United,Middlesbrough FC,1:0,RW,76',1:0,Penalty,Not Applicable,2006/07,2000s,1,76-90
+UEFA Champions League ,Quarter-Finals,10/04/07,Home,Manchester United,AS Roma,7:1,RW,44',4:0,Right-footed shot,Ryan Giggs,2006/07,2000s,1,31-45
+UEFA Champions League ,Quarter-Finals,10/04/07,Home,Manchester United,AS Roma,7:1,RW,49',5:0,Right-footed shot,Ryan Giggs,2006/07,2000s,1,46-60
+FA Cup ,Semi-Finals,14/04/07,Away,Manchester United,Watford FC,1:4,RW,28',1:2,Right-footed shot,Wayne Rooney,2006/07,2000s,0,16-30
+UEFA Champions League ,Semi-Finals,24/04/07,Home,Manchester United,AC Milan,3:2,RW,5',1:0,Header,Ryan Giggs,2006/07,2000s,1,01-15
+Premier League ,37,05/05/07,Away,Manchester United,Manchester City,0:1,RW,34',0:1,Penalty,Not Applicable,2006/07,2000s,0,31-45
+UEFA Champions League ,Group Stage,19/09/07,Away,Manchester United,Sporting CP,0:1,RW,62',0:1,Header,Wes Brown,2007/08,2000s,0,61-75
+Premier League ,8,29/09/07,Away,Manchester United,Birmingham City,0:1,RW,51',0:1,Left-footed shot,Not Applicable,2007/08,2000s,0,46-60
+Premier League ,9,06/10/07,Home,Manchester United,Wigan Athletic,4:0,RW,59',2:0,Header,Ryan Giggs,2007/08,2000s,1,46-60
+Premier League ,9,06/10/07,Home,Manchester United,Wigan Athletic,4:0,RW,76',3:0,Right-footed shot,Wayne Rooney,2007/08,2000s,1,76-90
+UEFA Champions League ,Group Stage,23/10/07,Away,Manchester United,Dynamo Kyiv,2:4,RW,41',1:3,Right-footed shot,Ryan Giggs,2007/08,2000s,0,31-45
+UEFA Champions League ,Group Stage,23/10/07,Away,Manchester United,Dynamo Kyiv,2:4,RW,68',1:4,Penalty,Not Applicable,2007/08,2000s,0,61-75
+Premier League ,12,03/11/07,Away,Manchester United,Arsenal FC,2:2,RW,82',1:2,Left-footed shot,Patrice Evra,2007/08,2000s,0,76-90
+UEFA Champions League ,Group Stage,07/11/07,Home,Manchester United,Dynamo Kyiv,4:0,RW,88',4:0,Right-footed shot,Patrice Evra,2007/08,2000s,1,76-90
+Premier League ,13,11/11/07,Home,Manchester United,Blackburn Rovers,2:0,RW,34',1:0,Header,Ryan Giggs,2007/08,2000s,1,31-45
+Premier League ,13,11/11/07,Home,Manchester United,Blackburn Rovers,2:0,RW,35',2:0,Right-footed shot,Carlos Tevez,2007/08,2000s,1,31-45
+UEFA Champions League ,Group Stage,27/11/07,Home,Manchester United,Sporting CP,2:1,RW,90'+3,2:1,Direct free kick,Not Applicable,2007/08,2000s,1,76-90
+Premier League ,15,03/12/07,Home,Manchester United,Fulham FC,2:0,RW,10',1:0,Right-footed shot,Nemanja Vidic‎,2007/08,2000s,1,01-15
+Premier League ,15,03/12/07,Home,Manchester United,Fulham FC,2:0,RW,58',2:0,Header,John O'Shea,2007/08,2000s,1,46-60
+Premier League ,16,08/12/07,Home,Manchester United,Derby County,4:1,RW,90',4:1,Penalty,Not Applicable,2007/08,2000s,1,76-90
+Premier League ,18,23/12/07,Home,Manchester United,Everton FC,2:1,RW,22',1:0,Left-footed shot,Carlos Tevez,2007/08,2000s,1,16-30
+Premier League ,18,23/12/07,Home,Manchester United,Everton FC,2:1,RW,87',2:1,Penalty,Not Applicable,2007/08,2000s,1,76-90
+Premier League ,19,26/12/07,Away,Manchester United,Sunderland AFC,0:4,RW,45',0:3,Direct free kick,Not Applicable,2007/08,2000s,0,31-45
+Premier League ,20,29/12/07,Away,Manchester United,West Ham United,2:1,RW,14',0:1,Header,Ryan Giggs,2007/08,2000s,0,01-15
+FA Cup ,Third Round,05/01/08,Away,Manchester United,Aston Villa,0:2,Not Applicable,81',0:1,Left-footed shot,Ryan Giggs,2007/08,2000s,0,76-90
+Premier League ,22,12/01/08,Home,Manchester United,Newcastle United,6:0,RW,48',1:0,Direct free kick,Not Applicable,2007/08,2000s,1,46-60
+Premier League ,22,12/01/08,Home,Manchester United,Newcastle United,6:0,RW,70',3:0,Right-footed shot,Carlos Tevez,2007/08,2000s,1,61-75
+Premier League ,22,12/01/08,Home,Manchester United,Newcastle United,6:0,RW,88',5:0,Left-footed shot,Not Applicable,2007/08,2000s,1,76-90
+Premier League ,23,19/01/08,Away,Manchester United,Reading FC,0:2,RW,90'+2,0:2,Right-footed shot,Not Applicable,2007/08,2000s,0,76-90
+FA Cup ,Fourth Round,27/01/08,Home,Manchester United,Tottenham Hotspur,3:1,RW,69',2:1,Penalty,Not Applicable,2007/08,2000s,1,61-75
+FA Cup ,Fourth Round,27/01/08,Home,Manchester United,Tottenham Hotspur,3:1,RW,88',3:1,Right-footed shot,Ryan Giggs,2007/08,2000s,1,76-90
+Premier League ,24,30/01/08,Home,Manchester United,Portsmouth FC,2:0,SS,10',1:0,Right-footed shot,Nani,2007/08,2000s,1,01-15
+Premier League ,24,30/01/08,Home,Manchester United,Portsmouth FC,2:0,SS,12',2:0,Direct free kick,Not Applicable,2007/08,2000s,1,01-15
+Premier League ,27,23/02/08,Away,Manchester United,Newcastle United,1:5,RW,45',0:2,Right-footed shot,Michael Carrick,2007/08,2000s,0,31-45
+Premier League ,27,23/02/08,Away,Manchester United,Newcastle United,1:5,RW,56',0:3,Right-footed shot,Not Applicable,2007/08,2000s,0,46-60
+UEFA Champions League ,Round of 16,04/03/08,Home,Manchester United,Olympique Lyon,1:0,RW,41',1:0,Left-footed shot,Not Applicable,2007/08,2000s,1,31-45
+Premier League ,29,15/03/08,Away,Manchester United,Derby County,0:1,CF,76',0:1,Right-footed shot,Wayne Rooney,2007/08,2000s,0,76-90
+Premier League ,30,19/03/08,Home,Manchester United,Bolton Wanderers,2:0,CF,8',1:0,Right-footed shot,Not Applicable,2007/08,2000s,1,01-15
+Premier League ,30,19/03/08,Home,Manchester United,Bolton Wanderers,2:0,CF,19',2:0,Direct free kick,Not Applicable,2007/08,2000s,1,16-30
+Premier League ,31,23/03/08,Home,Manchester United,Liverpool FC,3:0,RW,79',2:0,Header,Nani,2007/08,2000s,1,76-90
+Premier League ,32,29/03/08,Home,Manchester United,Aston Villa,4:0,RW,16',1:0,Right-footed shot,Not Applicable,2007/08,2000s,1,16-30
+UEFA Champions League ,Quarter-Finals,01/04/08,Away,Manchester United,AS Roma,0:2,CF,39',0:1,Header,Paul Scholes,2007/08,2000s,0,31-45
+Premier League ,33,06/04/08,Away,Manchester United,Middlesbrough FC,2:2,CF,9',0:1,Left-footed shot,Michael Carrick,2007/08,2000s,0,01-15
+Premier League ,34,13/04/08,Home,Manchester United,Arsenal FC,2:1,RW,53',1:1,Penalty,Not Applicable,2007/08,2000s,1,46-60
+Premier League ,37,03/05/08,Home,Manchester United,West Ham United,4:1,RW,3',1:0,Right-footed shot,Edwin van der Sar,2007/08,2000s,1,01-15
+Premier League ,37,03/05/08,Home,Manchester United,West Ham United,4:1,RW,24',2:0,Right-footed shot,Owen Hargreaves,2007/08,2000s,1,16-30
+Premier League ,38,11/05/08,Away,Manchester United,Wigan Athletic,0:2,RW,32',0:1,Penalty,Not Applicable,2007/08,2000s,0,31-45
+UEFA Champions League ,Final,21/05/08,Home,Manchester United,Chelsea FC,6:5,RW,26',1:0,Header,Wes Brown,2007/08,2000s,1,16-30
+EFL Cup ,Third Round,23/09/08,Home,Manchester United,Middlesbrough FC,3:1,SS,25',1:0,Header,Ryan Giggs,2008/09,2000s,1,16-30
+Premier League ,6,27/09/08,Home,Manchester United,Bolton Wanderers,2:0,SS,59',1:0,Penalty,Not Applicable,2008/09,2000s,1,46-60
+Premier League ,8,18/10/08,Home,Manchester United,West Bromwich Albion,4:0,SS,69',2:0,Left-footed shot,Wayne Rooney,2008/09,2000s,1,61-75
+Premier League ,10,29/10/08,Home,Manchester United,West Ham United,2:0,SS,14',1:0,Left-footed shot,Nani,2008/09,2000s,1,01-15
+Premier League ,10,29/10/08,Home,Manchester United,West Ham United,2:0,SS,30',2:0,Right-footed shot,Dimitar Berbatov,2008/09,2000s,1,16-30
+Premier League ,11,01/11/08,Home,Manchester United,Hull City,4:3,RW,3',1:0,Left-footed shot,Dimitar Berbatov,2008/09,2000s,1,01-15
+Premier League ,11,01/11/08,Home,Manchester United,Hull City,4:3,RW,43',3:1,Header,Nani,2008/09,2000s,1,31-45
+Premier League ,13,15/11/08,Home,Manchester United,Stoke City,5:0,LW,3',1:0,Direct free kick,Not Applicable,2008/09,2000s,1,01-15
+Premier League ,13,15/11/08,Home,Manchester United,Stoke City,5:0,LW,88',5:0,Direct free kick,Not Applicable,2008/09,2000s,1,76-90
+Club World Cup ,Semi-Finals,18/12/08,Away,Manchester United,Gamba Osaka,3:5,RW,45'+1,0:2,Header,Ryan Giggs,2008/09,2000s,0,31-45
+EFL Cup ,Semi-Finals,20/01/09,Home,Manchester United,Derby County,4:2,Not Applicable,89',4:1,Penalty,Not Applicable,2008/09,2000s,1,76-90
+Premier League ,23,27/01/09,Away,Manchester United,West Bromwich Albion,0:5,Not Applicable,65',0:4,Right-footed shot,Ryan Giggs,2008/09,2000s,0,61-75
+Premier League ,23,27/01/09,Away,Manchester United,West Bromwich Albion,0:5,Not Applicable,73',0:5,Right-footed shot,Dimitar Berbatov,2008/09,2000s,0,61-75
+Premier League ,24,31/01/09,Home,Manchester United,Everton FC,1:0,Not Applicable,43',1:0,Penalty,Not Applicable,2008/09,2000s,1,31-45
+FA Cup ,Fifth Round,15/02/09,Away,Manchester United,Derby County,1:4,CF,68',1:3,Header,Ryan Giggs,2008/09,2000s,0,61-75
+Premier League ,26,21/02/09,Home,Manchester United,Blackburn Rovers,2:1,CF,60',2:1,Direct free kick,Not Applicable,2008/09,2000s,1,46-60
+UEFA Champions League ,Round of 16,11/03/09,Home,Manchester United,Inter Milan,2:0,CF,49',2:0,Header,Wayne Rooney,2008/09,2000s,1,46-60
+Premier League ,29,14/03/09,Home,Manchester United,Liverpool FC,1:4,CF,22',1:0,Penalty,Not Applicable,2008/09,2000s,1,16-30
+Premier League ,31,05/04/09,Home,Manchester United,Aston Villa,3:2,RW,11',1:0,Direct free kick,Not Applicable,2008/09,2000s,1,01-15
+Premier League ,31,05/04/09,Home,Manchester United,Aston Villa,3:2,RW,80',2:2,Left-footed shot,Michael Carrick,2008/09,2000s,1,76-90
+UEFA Champions League ,Quarter-Finals,15/04/09,Away,Manchester United,FC Porto,0:1,RW,6',0:1,Long distance kick,Anderson,2008/09,2000s,0,01-15
+Premier League ,34,25/04/09,Home,Manchester United,Tottenham Hotspur,5:2,RW,57',1:2,Penalty,Not Applicable,2008/09,2000s,1,46-60
+Premier League ,34,25/04/09,Home,Manchester United,Tottenham Hotspur,5:2,RW,68',3:2,Header,Wayne Rooney,2008/09,2000s,1,61-75
+UEFA Champions League ,Semi-Finals,05/05/09,Away,Manchester United,Arsenal FC,1:3,CF,11',0:2,Direct free kick,Not Applicable,2008/09,2000s,0,01-15
+UEFA Champions League ,Semi-Finals,05/05/09,Away,Manchester United,Arsenal FC,1:3,CF,61',0:3,Right-footed shot,Wayne Rooney,2008/09,2000s,0,61-75
+Premier League ,36,10/05/09,Home,Manchester United,Manchester City,2:0,LW,17',1:0,Direct free kick,Not Applicable,2008/09,2000s,1,16-30
+LaLiga ,1,29/08/09,Home,Real Madrid,Deportivo de La Coruña,3:2,LW,35',2:1,Penalty,Not Applicable,2009/10,2000s,1,31-45
+LaLiga ,2,12/09/09,Away,Real Madrid,RCD Espanyol Barcelona,0:3,CF,90',0:3,Right-footed shot,Guti,2009/10,2000s,0,76-90
+UEFA Champions League ,Group Stage,15/09/09,Away,Real Madrid,FC Zürich,2:5,CF,27',0:1,Direct free kick,Not Applicable,2009/10,2000s,0,16-30
+UEFA Champions League ,Group Stage,15/09/09,Away,Real Madrid,FC Zürich,2:5,CF,89',2:4,Direct free kick,Not Applicable,2009/10,2000s,0,76-90
+LaLiga ,3,20/09/09,Home,Real Madrid,Xerez CD,5:0,CF,1',1:0,Right-footed shot,Not Applicable,2009/10,2000s,1,01-15
+LaLiga ,3,20/09/09,Home,Real Madrid,Xerez CD,5:0,CF,75',2:0,Header,Esteban Granero,2009/10,2000s,1,61-75
+LaLiga ,4,23/09/09,Away,Real Madrid,Villarreal CF,0:2,LW,2',0:1,Right-footed shot,Not Applicable,2009/10,2000s,0,01-15
+UEFA Champions League ,Group Stage,30/09/09,Home,Real Madrid,Olympique Marseille,3:0,CF,58',1:0,Left-footed shot,Pepe,2009/10,2000s,1,46-60
+UEFA Champions League ,Group Stage,30/09/09,Home,Real Madrid,Olympique Marseille,3:0,CF,64',3:0,Right-footed shot,Karim Benzema,2009/10,2000s,1,61-75
+LaLiga ,13,05/12/09,Home,Real Madrid,UD Almería,4:2,CF,84',4:2,Right-footed shot,Gonzalo Higuaín,2009/10,2000s,1,76-90
+UEFA Champions League ,Group Stage,08/12/09,Away,Real Madrid,Olympique Marseille,1:3,CF,5',0:1,Direct free kick,Not Applicable,2009/10,2000s,0,01-15
+UEFA Champions League ,Group Stage,08/12/09,Away,Real Madrid,Olympique Marseille,1:3,CF,80',1:3,Right-footed shot,Lassana Diarra,2009/10,2000s,0,76-90
+LaLiga ,15,19/12/09,Home,Real Madrid,Real Zaragoza,6:0,CF,50',5:0,Left-footed shot,Ezequiel Garay,2009/10,2000s,1,46-60
+LaLiga ,19,24/01/10,Home,Real Madrid,Málaga CF,2:0,CF,35',1:0,Right-footed shot,Kaká,2009/10,2010s,1,31-45
+LaLiga ,19,24/01/10,Home,Real Madrid,Málaga CF,2:0,CF,39',2:0,Right-footed shot,Guti,2009/10,2010s,1,31-45
+LaLiga ,22,13/02/10,Away,Real Madrid,Xerez CD,0:3,CF,69',0:2,Header,Kaká,2009/10,2010s,0,61-75
+LaLiga ,22,13/02/10,Away,Real Madrid,Xerez CD,0:3,CF,71',0:3,Left-footed shot,Kaká,2009/10,2010s,0,61-75
+LaLiga ,23,21/02/10,Home,Real Madrid,Villarreal CF,6:2,CF,18',1:0,Direct free kick,Not Applicable,2009/10,2010s,1,16-30
+LaLiga ,24,27/02/10,Away,Real Madrid,CD Tenerife,1:5,CF,78',1:4,Penalty,Not Applicable,2009/10,2010s,0,76-90
+LaLiga ,25,06/03/10,Home,Real Madrid,Sevilla FC,3:2,CF,59',1:2,Left-footed shot,Not Applicable,2009/10,2010s,1,46-60
+UEFA Champions League ,Round of 16,10/03/10,Home,Real Madrid,Olympique Lyon,1:1,LW,6',1:0,Left-footed shot,Guti,2009/10,2010s,1,01-15
+LaLiga ,26,14/03/10,Away,Real Madrid,Real Valladolid CF,1:4,CF,29',0:1,Direct free kick,Not Applicable,2009/10,2010s,0,16-30
+LaLiga ,28,25/03/10,Away,Real Madrid,Getafe CF,2:4,CF,13',0:1,Direct free kick,Not Applicable,2009/10,2010s,0,01-15
+LaLiga ,28,25/03/10,Away,Real Madrid,Getafe CF,2:4,CF,36',0:4,Right-footed shot,Not Applicable,2009/10,2010s,0,31-45
+LaLiga ,30,04/04/10,Away,Real Madrid,Racing Santander,0:2,CF,23',0:1,Penalty,Not Applicable,2009/10,2010s,0,16-30
+LaLiga ,32,15/04/10,Away,Real Madrid,UD Almería,1:2,CF,26',1:1,Left-footed shot,Not Applicable,2009/10,2010s,0,16-30
+LaLiga ,33,18/04/10,Home,Real Madrid,Valencia CF,2:0,CF,77',2:0,Right-footed shot,Marcelo,2009/10,2010s,1,76-90
+LaLiga ,35,02/05/10,Home,Real Madrid,CA Osasuna,3:2,CF,25',1:1,Right-footed shot,Not Applicable,2009/10,2010s,1,16-30
+LaLiga ,35,02/05/10,Home,Real Madrid,CA Osasuna,3:2,CF,89',3:2,Header,Gonzalo Higuaín,2009/10,2010s,1,76-90
+LaLiga ,36,05/05/10,Away,Real Madrid,RCD Mallorca,1:4,CF,26',1:1,Right-footed shot,Sergio Ramos,2009/10,2010s,0,16-30
+LaLiga ,36,05/05/10,Away,Real Madrid,RCD Mallorca,1:4,CF,56',1:2,Right-footed shot,Sergio Ramos,2009/10,2010s,0,46-60
+LaLiga ,36,05/05/10,Away,Real Madrid,RCD Mallorca,1:4,CF,71',1:3,Right-footed shot,Not Applicable,2009/10,2010s,0,61-75
+LaLiga ,37,08/05/10,Home,Real Madrid,Athletic Bilbao,5:1,CF,21',1:0,Penalty,Not Applicable,2009/10,2010s,1,16-30
+LaLiga ,4,21/09/10,Home,Real Madrid,RCD Espanyol Barcelona,3:0,LW,28',1:0,Penalty,Not Applicable,2010/11,2010s,1,16-30
+LaLiga ,6,03/10/10,Home,Real Madrid,Deportivo de La Coruña,6:1,LW,4',1:0,Header,Mesut Özil,2010/11,2010s,1,01-15
+LaLiga ,6,03/10/10,Home,Real Madrid,Deportivo de La Coruña,6:1,LW,89',6:1,Left-footed shot,Xabi Alonso,2010/11,2010s,1,76-90
+LaLiga ,7,16/10/10,Away,Real Madrid,Málaga CF,1:4,LW,45',0:2,Right-footed shot,Mesut Özil,2010/11,2010s,0,31-45
+LaLiga ,7,16/10/10,Away,Real Madrid,Málaga CF,1:4,LW,50',0:3,Penalty,Not Applicable,2010/11,2010s,0,46-60
+UEFA Champions League ,Group Stage,19/10/10,Home,Real Madrid,AC Milan,2:0,LW,13',1:0,Direct free kick,Not Applicable,2010/11,2010s,1,01-15
+LaLiga ,8,23/10/10,Home,Real Madrid,Racing Santander,6:1,LW,15',2:0,Right-footed shot,Gonzalo Higuaín,2010/11,2010s,1,01-15
+LaLiga ,8,23/10/10,Home,Real Madrid,Racing Santander,6:1,LW,26',3:0,Left-footed shot,Mesut Özil,2010/11,2010s,1,16-30
+LaLiga ,8,23/10/10,Home,Real Madrid,Racing Santander,6:1,LW,47',4:0,Right-footed shot,Ángel Di María,2010/11,2010s,1,46-60
+LaLiga ,8,23/10/10,Home,Real Madrid,Racing Santander,6:1,LW,55',5:0,Penalty,Not Applicable,2010/11,2010s,1,46-60
+LaLiga ,9,30/10/10,Away,Real Madrid,Hércules CF,1:3,LW,82',1:2,Right-footed shot,Not Applicable,2010/11,2010s,0,76-90
+LaLiga ,9,30/10/10,Away,Real Madrid,Hércules CF,1:3,LW,86',1:3,Right-footed shot,Karim Benzema,2010/11,2010s,0,76-90
+Copa del Rey ,Fourth Round,10/11/10,Home,Real Madrid,Real Murcia CF,5:1,LW,76',3:0,Left-footed shot,Ángel Di María,2010/11,2010s,1,76-90
+LaLiga ,12,20/11/10,Home,Real Madrid,Athletic Bilbao,5:1,LW,30',2:0,Left-footed shot,Mesut Özil,2010/11,2010s,1,16-30
+LaLiga ,12,20/11/10,Home,Real Madrid,Athletic Bilbao,5:1,LW,62',4:1,Direct free kick,Not Applicable,2010/11,2010s,1,61-75
+LaLiga ,12,20/11/10,Home,Real Madrid,Athletic Bilbao,5:1,LW,90'+1,5:1,Penalty,Not Applicable,2010/11,2010s,1,76-90
+UEFA Champions League ,Group Stage,23/11/10,Away,Real Madrid,Ajax Amsterdam,0:4,LW,70',0:3,Left-footed shot,Ángel Di María,2010/11,2010s,0,61-75
+UEFA Champions League ,Group Stage,23/11/10,Away,Real Madrid,Ajax Amsterdam,0:4,LW,81',0:4,Penalty,Not Applicable,2010/11,2010s,0,76-90
+LaLiga ,14,04/12/10,Home,Real Madrid,Valencia CF,2:0,CF,72',1:0,Left-footed shot,Mesut Özil,2010/11,2010s,1,61-75
+LaLiga ,14,04/12/10,Home,Real Madrid,Valencia CF,2:0,CF,86',2:0,Right-footed shot,Not Applicable,2010/11,2010s,1,76-90
+UEFA Champions League ,Group Stage,08/12/10,Home,Real Madrid,AJ Auxerre,4:0,LW,49',2:0,Right-footed shot,Marcelo,2010/11,2010s,1,46-60
+LaLiga ,15,12/12/10,Away,Real Madrid,Real Zaragoza,1:3,LW,43',0:2,Direct free kick,Not Applicable,2010/11,2010s,0,31-45
+Copa del Rey ,Round of 16,22/12/10,Home,Real Madrid,Levante UD,8:0,LW,44',4:0,Right-footed shot,Karim Benzema,2010/11,2010s,1,31-45
+Copa del Rey ,Round of 16,22/12/10,Home,Real Madrid,Levante UD,8:0,LW,71',6:0,Right-footed shot,Ángel Di María,2010/11,2010s,1,61-75
+Copa del Rey ,Round of 16,22/12/10,Home,Real Madrid,Levante UD,8:0,LW,73',7:0,Right-footed shot,Karim Benzema,2010/11,2010s,1,61-75
+LaLiga ,17,03/01/11,Away,Real Madrid,Getafe CF,2:3,LW,11',0:1,Penalty,Not Applicable,2010/11,2010s,0,01-15
+LaLiga ,17,03/01/11,Away,Real Madrid,Getafe CF,2:3,LW,57',1:3,Right-footed shot,Karim Benzema,2010/11,2010s,0,46-60
+LaLiga ,18,09/01/11,Home,Real Madrid,Villarreal CF,4:2,LW,10',1:1,Right-footed shot,Mesut Özil,2010/11,2010s,1,01-15
+LaLiga ,18,09/01/11,Home,Real Madrid,Villarreal CF,4:2,LW,45',2:2,Header,Xabi Alonso,2010/11,2010s,1,31-45
+LaLiga ,18,09/01/11,Home,Real Madrid,Villarreal CF,4:2,LW,79',3:2,Left-footed shot,Kaká,2010/11,2010s,1,76-90
+Copa del Rey ,Quarter-Finals,13/01/11,Home,Real Madrid,Atlético de Madrid,3:1,LW,60',2:1,Right-footed shot,Mesut Özil,2010/11,2010s,1,46-60
+Copa del Rey ,Quarter-Finals,20/01/11,Away,Real Madrid,Atlético de Madrid,0:1,CF,22',0:1,Right-footed shot,Sergio Ramos,2010/11,2010s,0,16-30
+LaLiga ,22,06/02/11,Home,Real Madrid,Real Sociedad,4:1,LW,20',2:0,Left-footed shot,Kaká,2010/11,2010s,1,16-30
+LaLiga ,22,06/02/11,Home,Real Madrid,Real Sociedad,4:1,LW,42',3:0,Header,Mesut Özil,2010/11,2010s,1,31-45
+LaLiga ,26,03/03/11,Home,Real Madrid,Málaga CF,7:0,LW,50',4:0,Left-footed shot,Mesut Özil,2010/11,2010s,1,46-60
+LaLiga ,26,03/03/11,Home,Real Madrid,Málaga CF,7:0,LW,67',6:0,Penalty,Not Applicable,2010/11,2010s,1,61-75
+LaLiga ,26,03/03/11,Home,Real Madrid,Málaga CF,7:0,LW,76',7:0,Right-footed shot,Sergio Canales,2010/11,2010s,1,76-90
+UEFA Champions League ,Quarter-Finals,05/04/11,Home,Real Madrid,Tottenham Hotspur,4:0,LW,87',4:0,Right-footed shot,Kaká,2010/11,2010s,1,76-90
+LaLiga ,31,09/04/11,Away,Real Madrid,Athletic Bilbao,0:3,CF,70',0:3,Right-footed shot,Esteban Granero,2010/11,2010s,0,61-75
+UEFA Champions League ,Quarter-Finals,13/04/11,Away,Real Madrid,Tottenham Hotspur,0:1,RW,50',0:1,Right-footed shot,Sami Khedira,2010/11,2010s,0,46-60
+LaLiga ,32,16/04/11,Home,Real Madrid,FC Barcelona,1:1,LW,82',1:1,Penalty,Not Applicable,2010/11,2010s,1,76-90
+Copa del Rey ,Final,20/04/11,Away,Real Madrid,FC Barcelona,0:1,CF,103',0:1,Header,Ángel Di María,2010/11,2010s,0,90+
+LaLiga ,35,07/05/11,Away,Real Madrid,Sevilla FC,2:6,LW,30',0:2,Right-footed shot,Pepe,2010/11,2010s,0,16-30
+LaLiga ,35,07/05/11,Away,Real Madrid,Sevilla FC,2:6,LW,64',1:4,Right-footed shot,Not Applicable,2010/11,2010s,0,61-75
+LaLiga ,35,07/05/11,Away,Real Madrid,Sevilla FC,2:6,LW,70',1:5,Right-footed shot,Mesut Özil,2010/11,2010s,0,61-75
+LaLiga ,35,07/05/11,Away,Real Madrid,Sevilla FC,2:6,LW,76',1:6,Right-footed shot,Karim Benzema,2010/11,2010s,0,76-90
+LaLiga ,36,10/05/11,Home,Real Madrid,Getafe CF,4:0,LW,23',1:0,Header,Mesut Özil,2010/11,2010s,1,16-30
+LaLiga ,36,10/05/11,Home,Real Madrid,Getafe CF,4:0,LW,57',2:0,Left-footed shot,Mesut Özil,2010/11,2010s,1,46-60
+LaLiga ,36,10/05/11,Home,Real Madrid,Getafe CF,4:0,LW,90'+1,4:0,Penalty,Not Applicable,2010/11,2010s,1,76-90
+LaLiga ,37,15/05/11,Away,Real Madrid,Villarreal CF,1:3,CF,22',0:2,Direct free kick,Not Applicable,2010/11,2010s,0,16-30
+LaLiga ,37,15/05/11,Away,Real Madrid,Villarreal CF,1:3,CF,90',1:3,Direct free kick,Not Applicable,2010/11,2010s,0,76-90
+LaLiga ,38,21/05/11,Home,Real Madrid,UD Almería,8:1,LW,4',1:0,Right-footed shot,Sergio Ramos,2010/11,2010s,1,01-15
+LaLiga ,38,21/05/11,Home,Real Madrid,UD Almería,8:1,LW,76',7:1,Right-footed shot,Sergio Ramos,2010/11,2010s,1,76-90
+Supercopa ,Final,17/08/11,Away,Real Madrid,FC Barcelona,3:2,LW,20',1:1,Right-footed shot,Karim Benzema,2011/12,2010s,0,16-30
+LaLiga ,2,28/08/11,Away,Real Madrid,Real Zaragoza,0:6,LW,23',0:1,Left-footed shot,Mesut Özil,2011/12,2010s,0,16-30
+LaLiga ,2,28/08/11,Away,Real Madrid,Real Zaragoza,0:6,LW,70',0:4,Right-footed shot,Ángel Di María,2011/12,2010s,0,61-75
+LaLiga ,2,28/08/11,Away,Real Madrid,Real Zaragoza,0:6,LW,86',0:6,Right-footed shot,Kaká,2011/12,2010s,0,76-90
+LaLiga ,3,10/09/11,Home,Real Madrid,Getafe CF,4:2,LW,59',2:1,Penalty,Not Applicable,2011/12,2010s,1,46-60
+LaLiga ,6,24/09/11,Home,Real Madrid,Rayo Vallecano,6:2,LW,39',1:1,Left-footed shot,Kaká,2011/12,2010s,1,31-45
+LaLiga ,6,24/09/11,Home,Real Madrid,Rayo Vallecano,6:2,LW,51',3:1,Penalty,Not Applicable,2011/12,2010s,1,46-60
+LaLiga ,6,24/09/11,Home,Real Madrid,Rayo Vallecano,6:2,LW,84',6:2,Penalty,Not Applicable,2011/12,2010s,1,76-90
+UEFA Champions League ,Group Stage,27/09/11,Home,Real Madrid,Ajax Amsterdam,3:0,LW,25',1:0,Right-footed shot,Karim Benzema,2011/12,2010s,1,16-30
+LaLiga ,9,22/10/11,Away,Real Madrid,Málaga CF,0:4,LW,24',0:2,Left-footed shot,Ángel Di María,2011/12,2010s,0,16-30
+LaLiga ,9,22/10/11,Away,Real Madrid,Málaga CF,0:4,LW,28',0:3,Right-footed shot,Xabi Alonso,2011/12,2010s,0,16-30
+LaLiga ,9,22/10/11,Away,Real Madrid,Málaga CF,0:4,LW,38',0:4,Right-footed shot,Sergio Ramos,2011/12,2010s,0,31-45
+UEFA Champions League ,Group Stage,02/11/11,Away,Real Madrid,Olympique Lyon,0:2,LW,25',0:1,Direct free kick,Not Applicable,2011/12,2010s,0,16-30
+UEFA Champions League ,Group Stage,02/11/11,Away,Real Madrid,Olympique Lyon,0:2,LW,69',0:2,Penalty,Not Applicable,2011/12,2010s,0,61-75
+LaLiga ,12,06/11/11,Home,Real Madrid,CA Osasuna,7:1,LW,23',1:0,Header,Ángel Di María,2011/12,2010s,1,16-30
+LaLiga ,12,06/11/11,Home,Real Madrid,CA Osasuna,7:1,LW,55',4:1,Penalty,Not Applicable,2011/12,2010s,1,46-60
+LaLiga ,12,06/11/11,Home,Real Madrid,CA Osasuna,7:1,LW,58',5:1,Header,Álvaro Arbeloa,2011/12,2010s,1,46-60
+LaLiga ,13,19/11/11,Away,Real Madrid,Valencia CF,2:3,LW,79',1:3,Right-footed shot,Pepe,2011/12,2010s,0,76-90
+LaLiga ,14,26/11/11,Home,Real Madrid,Atlético de Madrid,4:1,LW,24',1:1,Penalty,Not Applicable,2011/12,2010s,1,16-30
+LaLiga ,14,26/11/11,Home,Real Madrid,Atlético de Madrid,4:1,LW,82',4:1,Penalty,Not Applicable,2011/12,2010s,1,76-90
+LaLiga ,15,03/12/11,Away,Real Madrid,Sporting Gijón,0:3,LW,65',0:2,Right-footed shot,Ángel Di María,2011/12,2010s,0,61-75
+Copa del Rey ,Fourth Round,13/12/11,Away,Real Madrid,SD Ponferradina,0:2,LW,74',0:2,Left-footed shot,Gonzalo Higuaín,2011/12,2010s,0,61-75
+LaLiga ,17,17/12/11,Away,Real Madrid,Sevilla FC,2:6,LW,10',0:1,Right-footed shot,Ángel Di María,2011/12,2010s,0,01-15
+LaLiga ,17,17/12/11,Away,Real Madrid,Sevilla FC,2:6,LW,41',0:3,Right-footed shot,Karim Benzema,2011/12,2010s,0,31-45
+LaLiga ,17,17/12/11,Away,Real Madrid,Sevilla FC,2:6,LW,86',1:5,Penalty,Not Applicable,2011/12,2010s,0,76-90
+LaLiga ,18,07/01/12,Home,Real Madrid,Granada CF,5:1,LW,89',5:1,Right-footed shot,Not Applicable,2011/12,2010s,1,76-90
+Copa del Rey ,Quarter-Finals,18/01/12,Home,Real Madrid,FC Barcelona,1:2,LW,11',1:0,Left-footed shot,Karim Benzema,2011/12,2010s,1,01-15
+LaLiga ,1,22/01/12,Home,Real Madrid,Athletic Bilbao,4:1,LW,46',2:1,Penalty,Not Applicable,2011/12,2010s,1,46-60
+LaLiga ,1,22/01/12,Home,Real Madrid,Athletic Bilbao,4:1,LW,67',3:1,Penalty,Not Applicable,2011/12,2010s,1,61-75
+Copa del Rey ,Quarter-Finals,25/01/12,Away,Real Madrid,FC Barcelona,2:2,LW,68',2:1,Right-footed shot,Mesut Özil,2011/12,2010s,0,61-75
+LaLiga ,21,28/01/12,Home,Real Madrid,Real Zaragoza,3:1,LW,48',2:1,Right-footed shot,Mesut Özil,2011/12,2010s,1,46-60
+LaLiga ,23,12/02/12,Home,Real Madrid,Levante UD,4:2,LW,45',1:1,Penalty,Not Applicable,2011/12,2010s,1,31-45
+LaLiga ,23,12/02/12,Home,Real Madrid,Levante UD,4:2,LW,50',2:1,Header,Gonzalo Higuaín,2011/12,2010s,1,46-60
+LaLiga ,23,12/02/12,Home,Real Madrid,Levante UD,4:2,LW,57',3:1,Right-footed shot,Fábio Coentrão,2011/12,2010s,1,46-60
+LaLiga ,24,18/02/12,Home,Real Madrid,Racing Santander,4:0,LW,6',1:0,Header,Kaká,2011/12,2010s,1,01-15
+UEFA Champions League ,Round of 16,21/02/12,Away,Real Madrid,CSKA Moscow,1:1,LW,28',0:1,Left-footed shot,Fábio Coentrão,2011/12,2010s,0,16-30
+LaLiga ,25,26/02/12,Away,Real Madrid,Rayo Vallecano,0:1,LW,53',0:1,Right-footed shot,Not Applicable,2011/12,2010s,0,46-60
+LaLiga ,26,04/03/12,Home,Real Madrid,RCD Espanyol Barcelona,5:0,LW,23',1:0,Left-footed shot,Gonzalo Higuaín,2011/12,2010s,1,16-30
+LaLiga ,27,10/03/12,Away,Real Madrid,Real Betis Balompié,2:3,LW,52',1:2,Left-footed shot,Marcelo,2011/12,2010s,0,46-60
+LaLiga ,27,10/03/12,Away,Real Madrid,Real Betis Balompié,2:3,LW,73',2:3,Left-footed shot,Not Applicable,2011/12,2010s,0,61-75
+UEFA Champions League ,Round of 16,14/03/12,Home,Real Madrid,CSKA Moscow,4:1,LW,55',2:0,Right-footed shot,Sergio Ramos,2011/12,2010s,1,46-60
+UEFA Champions League ,Round of 16,14/03/12,Home,Real Madrid,CSKA Moscow,4:1,LW,90'+4,4:1,Right-footed shot,Karim Benzema,2011/12,2010s,1,76-90
+LaLiga ,29,21/03/12,Away,Real Madrid,Villarreal CF,1:1,LW,61',0:1,Right-footed shot,Mesut Özil,2011/12,2010s,0,61-75
+LaLiga ,30,24/03/12,Home,Real Madrid,Real Sociedad,5:1,LW,32',2:0,Right-footed shot,Kaká,2011/12,2010s,1,31-45
+LaLiga ,30,24/03/12,Home,Real Madrid,Real Sociedad,5:1,LW,55',5:1,Right-footed shot,Gonzalo Higuaín,2011/12,2010s,1,46-60
+LaLiga ,31,31/03/12,Away,Real Madrid,CA Osasuna,1:5,LW,37',0:2,Long distance kick,Xabi Alonso,2011/12,2010s,0,31-45
+LaLiga ,31,31/03/12,Away,Real Madrid,CA Osasuna,1:5,LW,70',1:4,Direct free kick,Not Applicable,2011/12,2010s,0,61-75
+UEFA Champions League ,Quarter-Finals,04/04/12,Home,Real Madrid,APOEL Nicosia,5:2,LW,26',1:0,Right-footed shot,Marcelo,2011/12,2010s,1,16-30
+UEFA Champions League ,Quarter-Finals,04/04/12,Home,Real Madrid,APOEL Nicosia,5:2,LW,75',3:1,Direct free kick,Not Applicable,2011/12,2010s,1,61-75
+LaLiga ,33,11/04/12,Away,Real Madrid,Atlético de Madrid,1:4,LW,24',0:1,Direct free kick,Not Applicable,2011/12,2010s,0,16-30
+LaLiga ,33,11/04/12,Away,Real Madrid,Atlético de Madrid,1:4,LW,67',1:2,Long distance kick,Not Applicable,2011/12,2010s,0,61-75
+LaLiga ,33,11/04/12,Away,Real Madrid,Atlético de Madrid,1:4,LW,82',1:3,Penalty,Not Applicable,2011/12,2010s,0,76-90
+LaLiga ,34,14/04/12,Home,Real Madrid,Sporting Gijón,3:1,LW,74',2:1,Header,Ángel Di María,2011/12,2010s,1,61-75
+LaLiga ,35,21/04/12,Away,Real Madrid,FC Barcelona,1:2,LW,73',1:2,Right-footed shot,Mesut Özil,2011/12,2010s,0,61-75
+UEFA Champions League ,Semi-Finals,25/04/12,Home,Real Madrid,Bayern Munich,3:4,LW,6',1:0,Penalty,Not Applicable,2011/12,2010s,1,01-15
+UEFA Champions League ,Semi-Finals,25/04/12,Home,Real Madrid,Bayern Munich,3:4,LW,14',2:0,Right-footed shot,Mesut Özil,2011/12,2010s,1,01-15
+LaLiga ,36,29/04/12,Home,Real Madrid,Sevilla FC,3:0,LW,19',1:0,Right-footed shot,Karim Benzema,2011/12,2010s,1,16-30
+LaLiga ,20,02/05/12,Away,Real Madrid,Athletic Bilbao,0:3,LW,49',0:3,Header,Xabi Alonso,2011/12,2010s,0,46-60
+LaLiga ,37,05/05/12,Away,Real Madrid,Granada CF,1:2,LW,81',1:1,Penalty,Not Applicable,2011/12,2010s,0,76-90
+LaLiga ,38,13/05/12,Home,Real Madrid,RCD Mallorca,4:1,LW,18',1:0,Header,Marcelo,2011/12,2010s,1,16-30
+Supercopa ,Final,23/08/12,Away,Real Madrid,FC Barcelona,3:2,LW,55',0:1,Header,Mesut Özil,2012/13,2010s,0,46-60
+Supercopa ,Final,29/08/12,Home,Real Madrid,FC Barcelona,2:1,LW,19',2:0,Right-footed shot,Sami Khedira,2012/13,2010s,1,16-30
+LaLiga ,3,02/09/12,Home,Real Madrid,Granada CF,3:0,LW,25',1:0,Right-footed shot,José Callejón,2012/13,2010s,1,16-30
+LaLiga ,3,02/09/12,Home,Real Madrid,Granada CF,3:0,LW,53',2:0,Left-footed shot,Not Applicable,2012/13,2010s,1,46-60
+UEFA Champions League ,Group Stage,18/09/12,Home,Real Madrid,Manchester City,3:2,LW,90',3:2,Right-footed shot,Marcelo,2012/13,2010s,1,76-90
+LaLiga ,5,24/09/12,Away,Real Madrid,Rayo Vallecano,0:2,LW,70',0:2,Penalty,Not Applicable,2012/13,2010s,0,61-75
+LaLiga ,6,30/09/12,Home,Real Madrid,Deportivo de La Coruña,5:1,LW,22',1:1,Penalty,Not Applicable,2012/13,2010s,1,16-30
+LaLiga ,6,30/09/12,Home,Real Madrid,Deportivo de La Coruña,5:1,LW,43',3:1,Header,Not Applicable,2012/13,2010s,1,31-45
+LaLiga ,6,30/09/12,Home,Real Madrid,Deportivo de La Coruña,5:1,LW,83',5:1,Penalty,Not Applicable,2012/13,2010s,1,76-90
+UEFA Champions League ,Group Stage,03/10/12,Away,Real Madrid,Ajax Amsterdam,1:4,LW,42',0:1,Right-footed shot,Karim Benzema,2012/13,2010s,0,31-45
+UEFA Champions League ,Group Stage,03/10/12,Away,Real Madrid,Ajax Amsterdam,1:4,LW,79',1:3,Right-footed shot,Karim Benzema,2012/13,2010s,0,76-90
+UEFA Champions League ,Group Stage,03/10/12,Away,Real Madrid,Ajax Amsterdam,1:4,LW,81',1:4,Left-footed shot,Sami Khedira,2012/13,2010s,0,76-90
+LaLiga ,7,07/10/12,Away,Real Madrid,FC Barcelona,2:2,LW,22',0:1,Left-footed shot,Karim Benzema,2012/13,2010s,0,16-30
+LaLiga ,7,07/10/12,Away,Real Madrid,FC Barcelona,2:2,LW,66',2:2,Right-footed shot,Mesut Özil,2012/13,2010s,0,61-75
+LaLiga ,8,20/10/12,Home,Real Madrid,Celta de Vigo,2:0,LW,67',2:0,Penalty,Not Applicable,2012/13,2010s,1,61-75
+UEFA Champions League ,Group Stage,24/10/12,Away,Real Madrid,Borussia Dortmund,2:1,LW,38',1:1,Right-footed shot,Mesut Özil,2012/13,2010s,0,31-45
+LaLiga ,9,28/10/12,Away,Real Madrid,RCD Mallorca,0:5,LW,22',0:2,Right-footed shot,Gonzalo Higuaín,2012/13,2010s,0,16-30
+LaLiga ,9,28/10/12,Away,Real Madrid,RCD Mallorca,0:5,LW,73',0:4,Right-footed shot,Gonzalo Higuaín,2012/13,2010s,0,61-75
+LaLiga ,11,11/11/12,Away,Real Madrid,Levante UD,1:2,CF,21',0:1,Right-footed shot,Not Applicable,2012/13,2010s,0,16-30
+LaLiga ,14,01/12/12,Home,Real Madrid,Atlético de Madrid,2:0,LW,16',1:0,Direct free kick,Not Applicable,2012/13,2010s,1,16-30
+UEFA Champions League ,Group Stage,04/12/12,Home,Real Madrid,Ajax Amsterdam,4:1,LW,13',1:0,Right-footed shot,Karim Benzema,2012/13,2010s,1,01-15
+Copa del Rey ,Round of 16,12/12/12,Away,Real Madrid,Celta de Vigo,2:1,LW,87',2:1,Left-footed shot,Xabi Alonso,2012/13,2010s,0,76-90
+LaLiga ,16,16/12/12,Home,Real Madrid,RCD Espanyol Barcelona,2:2,CF,45',1:1,Right-footed shot,Sami Khedira,2012/13,2010s,1,31-45
+LaLiga ,18,06/01/13,Home,Real Madrid,Real Sociedad,4:3,LW,68',3:2,Left-footed shot,Karim Benzema,2012/13,2010s,1,61-75
+LaLiga ,18,06/01/13,Home,Real Madrid,Real Sociedad,4:3,LW,70',4:2,Direct free kick,Not Applicable,2012/13,2010s,1,61-75
+Copa del Rey ,Round of 16,09/01/13,Home,Real Madrid,Celta de Vigo,4:0,LW,2',1:0,Right-footed shot,Álvaro Arbeloa,2012/13,2010s,1,01-15
+Copa del Rey ,Round of 16,09/01/13,Home,Real Madrid,Celta de Vigo,4:0,LW,24',2:0,Left-footed shot,Luka Modrić,2012/13,2010s,1,16-30
+Copa del Rey ,Round of 16,09/01/13,Home,Real Madrid,Celta de Vigo,4:0,LW,87',3:0,Left-footed shot,Gonzalo Higuaín,2012/13,2010s,1,76-90
+LaLiga ,20,20/01/13,Away,Real Madrid,Valencia CF,0:5,LW,35',0:3,Left-footed shot,Fábio Coentrão,2012/13,2010s,0,31-45
+LaLiga ,20,20/01/13,Away,Real Madrid,Valencia CF,0:5,LW,41',0:4,Right-footed shot,Mesut Özil,2012/13,2010s,0,31-45
+LaLiga ,21,27/01/13,Home,Real Madrid,Getafe CF,4:0,LW,62',2:0,Left-footed shot,Mesut Özil,2012/13,2010s,1,61-75
+LaLiga ,21,27/01/13,Home,Real Madrid,Getafe CF,4:0,LW,65',3:0,Header,Ángel Di María,2012/13,2010s,1,61-75
+LaLiga ,21,27/01/13,Home,Real Madrid,Getafe CF,4:0,LW,72',4:0,Penalty,Not Applicable,2012/13,2010s,1,61-75
+LaLiga ,23,09/02/13,Home,Real Madrid,Sevilla FC,4:1,LW,26',2:0,Left-footed shot,Kaká,2012/13,2010s,1,16-30
+LaLiga ,23,09/02/13,Home,Real Madrid,Sevilla FC,4:1,LW,46',3:0,Left-footed shot,Álvaro Arbeloa,2012/13,2010s,1,46-60
+LaLiga ,23,09/02/13,Home,Real Madrid,Sevilla FC,4:1,LW,59',4:0,Right-footed shot,Gonzalo Higuaín,2012/13,2010s,1,46-60
+UEFA Champions League ,Round of 16,13/02/13,Home,Real Madrid,Manchester United,1:1,LW,30',1:1,Header,Ángel Di María,2012/13,2010s,1,16-30
+Copa del Rey ,Semi-Finals,26/02/13,Away,Real Madrid,FC Barcelona,1:3,LW,12',0:1,Penalty,Not Applicable,2012/13,2010s,0,01-15
+Copa del Rey ,Semi-Finals,26/02/13,Away,Real Madrid,FC Barcelona,1:3,LW,57',0:2,Left-footed shot,Not Applicable,2012/13,2010s,0,46-60
+UEFA Champions League ,Round of 16,05/03/13,Away,Real Madrid,Manchester United,1:2,LW,69',1:2,Right-footed shot,Gonzalo Higuaín,2012/13,2010s,0,61-75
+LaLiga ,27,10/03/13,Away,Real Madrid,Celta de Vigo,1:2,LW,61',0:1,Left-footed shot,José Callejón,2012/13,2010s,0,61-75
+LaLiga ,27,10/03/13,Away,Real Madrid,Celta de Vigo,1:2,LW,71',1:2,Penalty,Not Applicable,2012/13,2010s,0,61-75
+LaLiga ,28,16/03/13,Home,Real Madrid,RCD Mallorca,5:2,LW,52',2:2,Header,Mesut Özil,2012/13,2010s,1,46-60
+LaLiga ,29,30/03/13,Away,Real Madrid,Real Zaragoza,1:1,LW,38',1:1,Long distance kick,Not Applicable,2012/13,2010s,0,31-45
+UEFA Champions League ,Quarter-Finals,03/04/13,Home,Real Madrid,Galatasaray,3:0,LW,9',1:0,Left-footed shot,Mesut Özil,2012/13,2010s,1,01-15
+LaLiga ,30,06/04/13,Home,Real Madrid,Levante UD,5:1,RW,84',3:1,Right-footed shot,Gonzalo Higuaín,2012/13,2010s,1,76-90
+UEFA Champions League ,Quarter-Finals,09/04/13,Away,Real Madrid,Galatasaray,3:2,LW,8',0:1,Right-footed shot,Sami Khedira,2012/13,2010s,0,01-15
+UEFA Champions League ,Quarter-Finals,09/04/13,Away,Real Madrid,Galatasaray,3:2,LW,90'+2,3:2,Right-footed shot,Karim Benzema,2012/13,2010s,0,76-90
+LaLiga ,31,14/04/13,Away,Real Madrid,Athletic Bilbao,0:3,LW,2',0:1,Direct free kick,Not Applicable,2012/13,2010s,0,01-15
+LaLiga ,31,14/04/13,Away,Real Madrid,Athletic Bilbao,0:3,LW,68',0:2,Header,Xabi Alonso,2012/13,2010s,0,61-75
+UEFA Champions League ,Semi-Finals,24/04/13,Away,Real Madrid,Borussia Dortmund,4:1,LW,43',1:1,Right-footed shot,Gonzalo Higuaín,2012/13,2010s,0,31-45
+LaLiga ,34,04/05/13,Home,Real Madrid,Real Valladolid CF,4:3,LW,32',2:1,Header,Ángel Di María,2012/13,2010s,1,31-45
+LaLiga ,34,04/05/13,Home,Real Madrid,Real Valladolid CF,4:3,LW,70',4:2,Header,Mesut Özil,2012/13,2010s,1,61-75
+LaLiga ,36,08/05/13,Home,Real Madrid,Málaga CF,6:2,LW,26',2:1,Right-footed shot,Xabi Alonso,2012/13,2010s,1,16-30
+Copa del Rey ,Final,17/05/13,Away,Real Madrid,Atlético de Madrid,2:1,LW,14',0:1,Header,Mesut Özil,2012/13,2010s,0,01-15
+LaLiga ,3,01/09/13,Home,Real Madrid,Athletic Bilbao,3:1,LW,45',2:0,Header,Ángel Di María,2013/14,2010s,1,31-45
+LaLiga ,4,14/09/13,Away,Real Madrid,Villarreal CF,2:2,LW,64',1:2,Right-footed shot,Not Applicable,2013/14,2010s,0,61-75
+UEFA Champions League ,Group Stage,17/09/13,Away,Real Madrid,Galatasaray,1:6,LW,63',0:3,Left-footed shot,Isco,2013/14,2010s,0,61-75
+UEFA Champions League ,Group Stage,17/09/13,Away,Real Madrid,Galatasaray,1:6,LW,66',0:4,Tap-in,Sergio Ramos,2013/14,2010s,0,61-75
+UEFA Champions League ,Group Stage,17/09/13,Away,Real Madrid,Galatasaray,1:6,LW,90',1:6,Left-footed shot,Karim Benzema,2013/14,2010s,0,76-90
+LaLiga ,5,22/09/13,Home,Real Madrid,Getafe CF,4:1,LW,34',2:1,Penalty,Not Applicable,2013/14,2010s,1,31-45
+LaLiga ,5,22/09/13,Home,Real Madrid,Getafe CF,4:1,LW,90',4:1,Right-footed shot,Sami Khedira,2013/14,2010s,1,76-90
+LaLiga ,6,25/09/13,Away,Real Madrid,Elche CF,1:2,LW,51',0:1,Direct free kick,Not Applicable,2013/14,2010s,0,46-60
+LaLiga ,6,25/09/13,Away,Real Madrid,Elche CF,1:2,LW,90'+6,1:2,Penalty,Not Applicable,2013/14,2010s,0,76-90
+UEFA Champions League ,Group Stage,02/10/13,Home,Real Madrid,FC Copenhagen,4:0,LW,21',1:0,Header,Marcelo,2013/14,2010s,1,16-30
+UEFA Champions League ,Group Stage,02/10/13,Home,Real Madrid,FC Copenhagen,4:0,LW,65',2:0,Header,Ángel Di María,2013/14,2010s,1,61-75
+LaLiga ,8,05/10/13,Away,Real Madrid,Levante UD,2:3,LW,90'+4,2:3,Right-footed shot,Luka Modrić,2013/14,2010s,0,76-90
+LaLiga ,9,19/10/13,Home,Real Madrid,Málaga CF,2:0,LW,90'+1,2:0,Penalty,Not Applicable,2013/14,2010s,1,76-90
+UEFA Champions League ,Group Stage,23/10/13,Home,Real Madrid,Juventus FC,2:1,LW,4',1:0,Right-footed shot,Ángel Di María,2013/14,2010s,1,01-15
+UEFA Champions League ,Group Stage,23/10/13,Home,Real Madrid,Juventus FC,2:1,LW,29',2:1,Penalty,Not Applicable,2013/14,2010s,1,16-30
+LaLiga ,11,30/10/13,Home,Real Madrid,Sevilla FC,7:3,LW,31',3:0,Penalty,Not Applicable,2013/14,2010s,1,31-45
+LaLiga ,11,30/10/13,Home,Real Madrid,Sevilla FC,7:3,LW,60',5:2,Right-footed shot,Gareth Bale,2013/14,2010s,1,46-60
+LaLiga ,11,30/10/13,Home,Real Madrid,Sevilla FC,7:3,LW,71',6:3,Right-footed shot,Karim Benzema,2013/14,2010s,1,61-75
+LaLiga ,12,02/11/13,Away,Real Madrid,Rayo Vallecano,2:3,LW,3',0:1,Right-footed shot,Luka Modrić,2013/14,2010s,0,01-15
+LaLiga ,12,02/11/13,Away,Real Madrid,Rayo Vallecano,2:3,LW,48',0:3,Right-footed shot,Gareth Bale,2013/14,2010s,0,46-60
+UEFA Champions League ,Group Stage,05/11/13,Away,Real Madrid,Juventus FC,2:2,LW,52',1:1,Right-footed shot,Karim Benzema,2013/14,2010s,0,46-60
+LaLiga ,13,09/11/13,Home,Real Madrid,Real Sociedad,5:1,LW,12',1:0,Right-footed shot,Karim Benzema,2013/14,2010s,1,01-15
+LaLiga ,13,09/11/13,Home,Real Madrid,Real Sociedad,5:1,LW,27',3:0,Penalty,Not Applicable,2013/14,2010s,1,16-30
+LaLiga ,13,09/11/13,Home,Real Madrid,Real Sociedad,5:1,LW,76',5:1,Direct free kick,Not Applicable,2013/14,2010s,1,76-90
+LaLiga ,14,23/11/13,Away,Real Madrid,UD Almería,0:5,LW,3',0:1,Left-footed shot,Isco,2013/14,2010s,0,01-15
+UEFA Champions League ,Group Stage,10/12/13,Away,Real Madrid,FC Copenhagen,0:2,LW,48',0:2,Right-footed shot,Pepe,2013/14,2010s,0,46-60
+LaLiga ,17,22/12/13,Away,Real Madrid,Valencia CF,2:3,LW,40',1:2,Header,Ángel Di María,2013/14,2010s,0,31-45
+LaLiga ,18,06/01/14,Home,Real Madrid,Celta de Vigo,3:0,LW,82',2:0,Right-footed shot,Daniel Carvajal,2013/14,2010s,1,76-90
+LaLiga ,18,06/01/14,Home,Real Madrid,Celta de Vigo,3:0,LW,90',3:0,Right-footed shot,Gareth Bale,2013/14,2010s,1,76-90
+Copa del Rey ,Round of 16,15/01/14,Away,Real Madrid,CA Osasuna,0:2,LW,22',0:1,Direct free kick,Not Applicable,2013/14,2010s,0,16-30
+LaLiga ,20,18/01/14,Away,Real Madrid,Real Betis Balompié,0:5,LW,10',0:1,Right-footed shot,Ángel Di María,2013/14,2010s,0,01-15
+LaLiga ,21,25/01/14,Home,Real Madrid,Granada CF,2:0,LW,57',1:0,Right-footed shot,Luka Modrić,2013/14,2010s,1,46-60
+Copa del Rey ,Semi-Finals,11/02/14,Away,Real Madrid,Atlético de Madrid,0:2,LW,6',0:1,Penalty,Not Applicable,2013/14,2010s,0,01-15
+Copa del Rey ,Semi-Finals,11/02/14,Away,Real Madrid,Atlético de Madrid,0:2,LW,15',0:2,Penalty,Not Applicable,2013/14,2010s,0,01-15
+UEFA Champions League ,Round of 16,26/02/14,Away,Real Madrid,FC Schalke 04,1:6,LW,52',0:3,Left-footed shot,Gareth Bale,2013/14,2010s,0,46-60
+UEFA Champions League ,Round of 16,26/02/14,Away,Real Madrid,FC Schalke 04,1:6,LW,89',0:6,Right-footed shot,Karim Benzema,2013/14,2010s,0,76-90
+LaLiga ,26,02/03/14,Away,Real Madrid,Atlético de Madrid,2:2,LW,82',2:2,Right-footed shot,Gareth Bale,2013/14,2010s,0,76-90
+LaLiga ,27,09/03/14,Home,Real Madrid,Levante UD,3:0,LW,11',1:0,Header,Ángel Di María,2013/14,2010s,1,01-15
+LaLiga ,28,15/03/14,Away,Real Madrid,Málaga CF,0:1,LW,23',0:1,Right-footed shot,Gareth Bale,2013/14,2010s,0,16-30
+UEFA Champions League ,Round of 16,18/03/14,Home,Real Madrid,FC Schalke 04,3:1,LW,22',1:0,Right-footed shot,Gareth Bale,2013/14,2010s,1,16-30
+UEFA Champions League ,Round of 16,18/03/14,Home,Real Madrid,FC Schalke 04,3:1,LW,74',2:1,Right-footed shot,Not Applicable,2013/14,2010s,1,61-75
+LaLiga ,29,23/03/14,Home,Real Madrid,FC Barcelona,3:4,LW,55',3:2,Penalty,Not Applicable,2013/14,2010s,1,46-60
+LaLiga ,30,26/03/14,Away,Real Madrid,Sevilla FC,2:1,LW,14',0:1,Direct free kick,Not Applicable,2013/14,2010s,0,01-15
+LaLiga ,31,29/03/14,Home,Real Madrid,Rayo Vallecano,5:0,LW,15',1:0,Right-footed shot,Gareth Bale,2013/14,2010s,1,01-15
+UEFA Champions League ,Quarter-Finals,02/04/14,Home,Real Madrid,Borussia Dortmund,3:0,LW,57',3:0,Left-footed shot,Luka Modrić,2013/14,2010s,1,46-60
+LaLiga ,35,26/04/14,Home,Real Madrid,CA Osasuna,4:0,LW,6',1:0,Long distance kick,Ángel Di María,2013/14,2010s,1,01-15
+LaLiga ,35,26/04/14,Home,Real Madrid,CA Osasuna,4:0,LW,52',2:0,Long distance kick,Isco,2013/14,2010s,1,46-60
+UEFA Champions League ,Semi-Finals,29/04/14,Away,Real Madrid,Bayern Munich,0:4,SS,34',0:3,Counter attack goal,Gareth Bale,2013/14,2010s,0,31-45
+UEFA Champions League ,Semi-Finals,29/04/14,Away,Real Madrid,Bayern Munich,0:4,SS,90',0:4,Direct free kick,Not Applicable,2013/14,2010s,0,76-90
+LaLiga ,36,04/05/14,Home,Real Madrid,Valencia CF,2:2,LW,90',2:2,Right-footed shot,Ángel Di María,2013/14,2010s,1,76-90
+UEFA Champions League ,Final,24/05/14,Home,Real Madrid,Atlético de Madrid,4:1,LW,120',4:1,Penalty,Not Applicable,2013/14,2010s,1,90+
+UEFA Super Cup ,Final,12/08/14,Home,Real Madrid,Sevilla FC,2:0,LW,30',1:0,Right-footed shot,Gareth Bale,2014/15,2010s,1,16-30
+UEFA Super Cup ,Final,12/08/14,Home,Real Madrid,Sevilla FC,2:0,LW,49',2:0,Left-footed shot,Karim Benzema,2014/15,2010s,1,46-60
+LaLiga ,1,25/08/14,Home,Real Madrid,Córdoba CF,2:0,LW,90',2:0,Right-footed shot,Isco,2014/15,2010s,1,76-90
+LaLiga ,3,13/09/14,Home,Real Madrid,Atlético de Madrid,1:2,LW,25',1:1,Penalty,Not Applicable,2014/15,2010s,1,16-30
+UEFA Champions League ,Group Stage,16/09/14,Home,Real Madrid,FC Basel 1893,5:1,LW,31',3:0,Right-footed shot,Gareth Bale,2014/15,2010s,1,31-45
+LaLiga ,4,20/09/14,Away,Real Madrid,Deportivo de La Coruña,2:8,LW,29',0:1,Header,Álvaro Arbeloa,2014/15,2010s,0,16-30
+LaLiga ,4,20/09/14,Away,Real Madrid,Deportivo de La Coruña,2:8,LW,41',0:3,Left-footed shot,Karim Benzema,2014/15,2010s,0,31-45
+LaLiga ,4,20/09/14,Away,Real Madrid,Deportivo de La Coruña,2:8,LW,78',1:6,Left-footed shot,James Rodríguez,2014/15,2010s,0,76-90
+LaLiga ,5,23/09/14,Home,Real Madrid,Elche CF,5:1,CF,28',2:1,Penalty,Not Applicable,2014/15,2010s,1,16-30
+LaLiga ,5,23/09/14,Home,Real Madrid,Elche CF,5:1,CF,32',3:1,Header,Marcelo,2014/15,2010s,1,31-45
+LaLiga ,5,23/09/14,Home,Real Madrid,Elche CF,5:1,CF,80',4:1,Penalty,Not Applicable,2014/15,2010s,1,76-90
+LaLiga ,5,23/09/14,Home,Real Madrid,Elche CF,5:1,CF,90',5:1,Right-footed shot,Gareth Bale,2014/15,2010s,1,76-90
+LaLiga ,6,27/09/14,Away,Real Madrid,Villarreal CF,0:2,CF,40',0:2,Right-footed shot,Karim Benzema,2014/15,2010s,0,31-45
+UEFA Champions League ,Group Stage,01/10/14,Away,Real Madrid,Ludogorets Razgrad,1:2,CF,25',1:1,Penalty,Not Applicable,2014/15,2010s,0,16-30
+LaLiga ,7,05/10/14,Home,Real Madrid,Athletic Bilbao,5:0,LW,3',1:0,Header,Gareth Bale,2014/15,2010s,1,01-15
+LaLiga ,7,05/10/14,Home,Real Madrid,Athletic Bilbao,5:0,LW,55',3:0,Right-footed shot,Gareth Bale,2014/15,2010s,1,46-60
+LaLiga ,7,05/10/14,Home,Real Madrid,Athletic Bilbao,5:0,LW,89',5:0,Deflected shot on goal,Pepe,2014/15,2010s,1,76-90
+LaLiga ,8,18/10/14,Away,Real Madrid,Levante UD,0:5,SS,13',0:1,Penalty,Not Applicable,2014/15,2010s,0,01-15
+LaLiga ,8,18/10/14,Away,Real Madrid,Levante UD,0:5,SS,61',0:3,Right-footed shot,Isco,2014/15,2010s,0,61-75
+UEFA Champions League ,Group Stage,22/10/14,Away,Real Madrid,Liverpool FC,0:3,CF,23',0:1,Right-footed shot,James Rodríguez,2014/15,2010s,0,16-30
+LaLiga ,9,25/10/14,Home,Real Madrid,FC Barcelona,3:1,CF,35',1:1,Penalty,Not Applicable,2014/15,2010s,1,31-45
+LaLiga ,10,01/11/14,Away,Real Madrid,Granada CF,0:4,CF,2',0:1,Right-footed shot,Karim Benzema,2014/15,2010s,0,01-15
+LaLiga ,11,08/11/14,Home,Real Madrid,Rayo Vallecano,5:1,CF,83',5:1,Right-footed shot,Isco,2014/15,2010s,1,76-90
+LaLiga ,12,22/11/14,Away,Real Madrid,SD Eibar,0:4,CF,43',0:2,Right-footed shot,Daniel Carvajal,2014/15,2010s,0,31-45
+LaLiga ,12,22/11/14,Away,Real Madrid,SD Eibar,0:4,CF,83',0:4,Penalty,Not Applicable,2014/15,2010s,0,76-90
+UEFA Champions League ,Group Stage,26/11/14,Away,Real Madrid,FC Basel 1893,0:1,LW,35',0:1,Left-footed shot,Karim Benzema,2014/15,2010s,0,31-45
+LaLiga ,14,06/12/14,Home,Real Madrid,Celta de Vigo,3:0,CF,36',1:0,Penalty,Not Applicable,2014/15,2010s,1,31-45
+LaLiga ,14,06/12/14,Home,Real Madrid,Celta de Vigo,3:0,CF,65',2:0,Right-footed shot,Not Applicable,2014/15,2010s,1,61-75
+LaLiga ,14,06/12/14,Home,Real Madrid,Celta de Vigo,3:0,CF,81',3:0,Left-footed shot,Marcelo,2014/15,2010s,1,76-90
+UEFA Champions League ,Group Stage,09/12/14,Home,Real Madrid,Ludogorets Razgrad,4:0,CF,20',1:0,Penalty,Not Applicable,2014/15,2010s,1,16-30
+LaLiga ,15,12/12/14,Away,Real Madrid,UD Almería,1:4,CF,81',1:3,Right-footed shot,Karim Benzema,2014/15,2010s,0,76-90
+LaLiga ,15,12/12/14,Away,Real Madrid,UD Almería,1:4,CF,89',1:4,Right-footed shot,Daniel Carvajal,2014/15,2010s,0,76-90
+LaLiga ,17,04/01/15,Away,Real Madrid,Valencia CF,2:1,LW,14',0:1,Penalty,Not Applicable,2014/15,2010s,0,01-15
+Copa del Rey ,Round of 16,15/01/15,Home,Real Madrid,Atlético de Madrid,2:2,LW,54',2:2,Header,Gareth Bale,2014/15,2010s,1,46-60
+LaLiga ,19,18/01/15,Away,Real Madrid,Getafe CF,0:3,LW,63',0:1,Left-footed shot,Karim Benzema,2014/15,2010s,0,61-75
+LaLiga ,19,18/01/15,Away,Real Madrid,Getafe CF,0:3,LW,79',0:3,Header,James Rodríguez,2014/15,2010s,0,76-90
+UEFA Champions League ,Round of 16,18/02/15,Away,Real Madrid,FC Schalke 04,0:2,LW,26',0:1,Header,Daniel Carvajal,2014/15,2010s,0,16-30
+LaLiga ,24,22/02/15,Away,Real Madrid,Elche CF,0:2,CF,69',0:2,Header,Isco,2014/15,2010s,0,61-75
+LaLiga ,25,01/03/15,Home,Real Madrid,Villarreal CF,1:1,CF,52',1:0,Penalty,Not Applicable,2014/15,2010s,1,46-60
+UEFA Champions League ,Round of 16,10/03/15,Home,Real Madrid,FC Schalke 04,3:4,CF,25',1:1,Header,Toni Kroos,2014/15,2010s,1,16-30
+UEFA Champions League ,Round of 16,10/03/15,Home,Real Madrid,FC Schalke 04,3:4,CF,45',2:2,Header,Fábio Coentrão,2014/15,2010s,1,31-45
+LaLiga ,28,22/03/15,Away,Real Madrid,FC Barcelona,2:1,LW,31',1:1,Right-footed shot,Karim Benzema,2014/15,2010s,0,31-45
+LaLiga ,29,05/04/15,Home,Real Madrid,Granada CF,9:1,CF,30',2:0,Right-footed shot,James Rodríguez,2014/15,2010s,1,16-30
+LaLiga ,29,05/04/15,Home,Real Madrid,Granada CF,9:1,CF,36',3:0,Right-footed shot,Not Applicable,2014/15,2010s,1,31-45
+LaLiga ,29,05/04/15,Home,Real Madrid,Granada CF,9:1,CF,38',4:0,Long distance kick,Gareth Bale,2014/15,2010s,1,31-45
+LaLiga ,29,05/04/15,Home,Real Madrid,Granada CF,9:1,CF,54',6:0,Header,Gareth Bale,2014/15,2010s,1,46-60
+LaLiga ,29,05/04/15,Home,Real Madrid,Granada CF,9:1,CF,90',9:1,Header,Luka Modrić,2014/15,2010s,1,76-90
+LaLiga ,30,08/04/15,Away,Real Madrid,Rayo Vallecano,0:2,LW,68',0:1,Header,Daniel Carvajal,2014/15,2010s,0,61-75
+LaLiga ,31,11/04/15,Home,Real Madrid,SD Eibar,3:0,LW,21',1:0,Direct free kick,Not Applicable,2014/15,2010s,1,16-30
+LaLiga ,32,18/04/15,Home,Real Madrid,Málaga CF,3:1,CF,90'+2,3:1,Left-footed shot,Chicharito,2014/15,2010s,1,76-90
+LaLiga ,35,02/05/15,Away,Real Madrid,Sevilla FC,2:3,CF,36',0:1,Header,Isco,2014/15,2010s,0,31-45
+LaLiga ,35,02/05/15,Away,Real Madrid,Sevilla FC,2:3,CF,37',0:2,Right-footed shot,Chicharito,2014/15,2010s,0,31-45
+LaLiga ,35,02/05/15,Away,Real Madrid,Sevilla FC,2:3,CF,69',1:3,Header,Gareth Bale,2014/15,2010s,0,61-75
+UEFA Champions League ,Semi-Finals,05/05/15,Away,Real Madrid,Juventus FC,2:1,CF,27',1:1,Header,James Rodríguez,2014/15,2010s,0,16-30
+UEFA Champions League ,Semi-Finals,13/05/15,Home,Real Madrid,Juventus FC,1:1,LW,23',1:0,Penalty,Not Applicable,2014/15,2010s,1,16-30
+LaLiga ,37,17/05/15,Away,Real Madrid,RCD Espanyol Barcelona,1:4,LW,59',0:1,Left-footed shot,Karim Benzema,2014/15,2010s,0,46-60
+LaLiga ,37,17/05/15,Away,Real Madrid,RCD Espanyol Barcelona,1:4,LW,83',1:3,Right-footed shot,Chicharito,2014/15,2010s,0,76-90
+LaLiga ,37,17/05/15,Away,Real Madrid,RCD Espanyol Barcelona,1:4,LW,90'+1,1:4,Header,James Rodríguez,2014/15,2010s,0,76-90
+LaLiga ,38,23/05/15,Home,Real Madrid,Getafe CF,7:3,LW,13',1:0,Header,Marcelo,2014/15,2010s,1,01-15
+LaLiga ,38,23/05/15,Home,Real Madrid,Getafe CF,7:3,LW,32',2:2,Direct free kick,Not Applicable,2014/15,2010s,1,31-45
+LaLiga ,38,23/05/15,Home,Real Madrid,Getafe CF,7:3,LW,34',3:2,Penalty,Not Applicable,2014/15,2010s,1,31-45
+LaLiga ,3,12/09/15,Away,Real Madrid,RCD Espanyol Barcelona,0:6,LW,7',0:1,Right-footed shot,Luka Modrić,2015/16,2010s,0,01-15
+LaLiga ,3,12/09/15,Away,Real Madrid,RCD Espanyol Barcelona,0:6,LW,17',0:2,Penalty,Not Applicable,2015/16,2010s,0,16-30
+LaLiga ,3,12/09/15,Away,Real Madrid,RCD Espanyol Barcelona,0:6,LW,20',0:3,Left-footed shot,Gareth Bale,2015/16,2010s,0,16-30
+LaLiga ,3,12/09/15,Away,Real Madrid,RCD Espanyol Barcelona,0:6,LW,61',0:5,Right-footed shot,Gareth Bale,2015/16,2010s,0,61-75
+LaLiga ,3,12/09/15,Away,Real Madrid,RCD Espanyol Barcelona,0:6,LW,81',0:6,Right-footed shot,Lucas Vázquez,2015/16,2010s,0,76-90
+UEFA Champions League ,Group Stage,15/09/15,Home,Real Madrid,Shakhtar Donetsk,4:0,LW,56',2:0,Penalty,Not Applicable,2015/16,2010s,1,46-60
+UEFA Champions League ,Group Stage,15/09/15,Home,Real Madrid,Shakhtar Donetsk,4:0,LW,64',3:0,Penalty,Not Applicable,2015/16,2010s,1,61-75
+UEFA Champions League ,Group Stage,15/09/15,Home,Real Madrid,Shakhtar Donetsk,4:0,LW,82',4:0,Header,Not Applicable,2015/16,2010s,1,76-90
+UEFA Champions League ,Group Stage,30/09/15,Away,Real Madrid,Malmö FF,0:2,LW,29',0:1,Right-footed shot,Isco,2015/16,2010s,0,16-30
+UEFA Champions League ,Group Stage,30/09/15,Away,Real Madrid,Malmö FF,0:2,LW,90',0:2,Left-footed shot,Lucas Vázquez,2015/16,2010s,0,76-90
+LaLiga ,8,17/10/15,Home,Real Madrid,Levante UD,3:0,CF,30',2:0,Right-footed shot,Toni Kroos,2015/16,2010s,1,16-30
+LaLiga ,9,24/10/15,Away,Real Madrid,Celta de Vigo,1:3,CF,8',0:1,Right-footed shot,Lucas Vázquez,2015/16,2010s,0,01-15
+LaLiga ,10,31/10/15,Home,Real Madrid,UD Las Palmas,3:1,CF,14',2:0,Header,Marcelo,2015/16,2010s,1,01-15
+UEFA Champions League ,Group Stage,25/11/15,Away,Real Madrid,Shakhtar Donetsk,3:4,CF,18',0:1,Header,Gareth Bale,2015/16,2010s,0,16-30
+UEFA Champions League ,Group Stage,25/11/15,Away,Real Madrid,Shakhtar Donetsk,3:4,CF,70',0:4,Right-footed shot,Gareth Bale,2015/16,2010s,0,61-75
+LaLiga ,13,29/11/15,Away,Real Madrid,SD Eibar,0:2,CF,82',0:2,Penalty,Not Applicable,2015/16,2010s,0,76-90
+LaLiga ,14,05/12/15,Home,Real Madrid,Getafe CF,4:1,LW,38',4:0,Right-footed shot,Toni Kroos,2015/16,2010s,1,31-45
+UEFA Champions League ,Group Stage,08/12/15,Home,Real Madrid,Malmö FF,8:0,LW,39',3:0,Direct free kick,Not Applicable,2015/16,2010s,1,31-45
+UEFA Champions League ,Group Stage,08/12/15,Home,Real Madrid,Malmö FF,8:0,LW,47',4:0,Tap-in,Not Applicable,2015/16,2010s,1,46-60
+UEFA Champions League ,Group Stage,08/12/15,Home,Real Madrid,Malmö FF,8:0,LW,50',5:0,Right-footed shot,Danilo,2015/16,2010s,1,46-60
+UEFA Champions League ,Group Stage,08/12/15,Home,Real Madrid,Malmö FF,8:0,LW,59',6:0,Right-footed shot,Isco,2015/16,2010s,1,46-60
+LaLiga ,16,20/12/15,Home,Real Madrid,Rayo Vallecano,10:2,LW,30',3:2,Penalty,Not Applicable,2015/16,2010s,1,16-30
+LaLiga ,16,20/12/15,Home,Real Madrid,Rayo Vallecano,10:2,LW,54',6:2,Header,James Rodríguez,2015/16,2010s,1,46-60
+LaLiga ,17,30/12/15,Home,Real Madrid,Real Sociedad,3:1,LW,42',1:0,Penalty,Not Applicable,2015/16,2010s,1,31-45
+LaLiga ,17,30/12/15,Home,Real Madrid,Real Sociedad,3:1,LW,68',2:1,Left-footed shot,Marcelo,2015/16,2010s,1,61-75
+LaLiga ,20,17/01/16,Home,Real Madrid,Sporting Gijón,5:1,LW,9',2:0,Left-footed shot,Karim Benzema,2015/16,2010s,1,01-15
+LaLiga ,20,17/01/16,Home,Real Madrid,Sporting Gijón,5:1,LW,18',4:0,Left-footed shot,Daniel Carvajal,2015/16,2010s,1,16-30
+LaLiga ,22,31/01/16,Home,Real Madrid,RCD Espanyol Barcelona,6:0,LW,12',2:0,Penalty,Not Applicable,2015/16,2010s,1,01-15
+LaLiga ,22,31/01/16,Home,Real Madrid,RCD Espanyol Barcelona,6:0,LW,45',4:0,Left-footed shot,Not Applicable,2015/16,2010s,1,31-45
+LaLiga ,22,31/01/16,Home,Real Madrid,RCD Espanyol Barcelona,6:0,LW,82',5:0,Header,Jesé,2015/16,2010s,1,76-90
+LaLiga ,24,13/02/16,Home,Real Madrid,Athletic Bilbao,4:2,LW,3',1:0,Right-footed shot,Karim Benzema,2015/16,2010s,1,01-15
+LaLiga ,24,13/02/16,Home,Real Madrid,Athletic Bilbao,4:2,LW,87',4:1,Right-footed shot,Lucas Vázquez,2015/16,2010s,1,76-90
+UEFA Champions League ,Round of 16,17/02/16,Away,Real Madrid,AS Roma,0:2,LW,57',0:1,Right-footed shot,Marcelo,2015/16,2010s,0,46-60
+LaLiga ,25,21/02/16,Away,Real Madrid,Málaga CF,1:1,LW,33',0:1,Header,Toni Kroos,2015/16,2010s,0,31-45
+LaLiga ,27,02/03/16,Away,Real Madrid,Levante UD,1:3,LW,34',0:1,Penalty,Not Applicable,2015/16,2010s,0,31-45
+LaLiga ,28,05/03/16,Home,Real Madrid,Celta de Vigo,7:1,LW,50',2:0,Long distance kick,Sergio Ramos,2015/16,2010s,1,46-60
+LaLiga ,28,05/03/16,Home,Real Madrid,Celta de Vigo,7:1,LW,58',3:0,Direct free kick,Not Applicable,2015/16,2010s,1,46-60
+LaLiga ,28,05/03/16,Home,Real Madrid,Celta de Vigo,7:1,LW,64',4:1,Right-footed shot,Isco,2015/16,2010s,1,61-75
+LaLiga ,28,05/03/16,Home,Real Madrid,Celta de Vigo,7:1,LW,76',5:1,Header,Jesé,2015/16,2010s,1,76-90
+UEFA Champions League ,Round of 16,08/03/16,Home,Real Madrid,AS Roma,2:0,CF,64',1:0,Right-footed shot,Lucas Vázquez,2015/16,2010s,1,61-75
+LaLiga ,30,20/03/16,Home,Real Madrid,Sevilla FC,4:0,LW,64',2:0,Left-footed shot,Danilo,2015/16,2010s,1,61-75
+LaLiga ,31,02/04/16,Away,Real Madrid,FC Barcelona,1:2,LW,85',1:2,Right-footed shot,Gareth Bale,2015/16,2010s,0,76-90
+LaLiga ,32,09/04/16,Home,Real Madrid,SD Eibar,4:0,CF,19',3:0,Right-footed shot,Jesé,2015/16,2010s,1,16-30
+UEFA Champions League ,Quarter-Finals,12/04/16,Home,Real Madrid,VfL Wolfsburg,3:0,LW,16',1:0,Right-footed shot,Daniel Carvajal,2015/16,2010s,1,16-30
+UEFA Champions League ,Quarter-Finals,12/04/16,Home,Real Madrid,VfL Wolfsburg,3:0,LW,17',2:0,Header,Toni Kroos,2015/16,2010s,1,16-30
+UEFA Champions League ,Quarter-Finals,12/04/16,Home,Real Madrid,VfL Wolfsburg,3:0,LW,77',3:0,Direct free kick,Not Applicable,2015/16,2010s,1,76-90
+LaLiga ,33,16/04/16,Away,Real Madrid,Getafe CF,1:5,LW,90'+2,1:5,Left-footed shot,Jesé,2015/16,2010s,0,76-90
+LaLiga ,37,08/05/16,Home,Real Madrid,Valencia CF,3:2,LW,26',1:0,Right-footed shot,Marcelo,2015/16,2010s,1,16-30
+LaLiga ,37,08/05/16,Home,Real Madrid,Valencia CF,3:2,LW,59',3:1,Left-footed shot,James Rodríguez,2015/16,2010s,1,46-60
+LaLiga ,38,14/05/16,Away,Real Madrid,Deportivo de La Coruña,0:2,LW,8',0:1,Left-footed shot,Karim Benzema,2015/16,2010s,0,01-15
+LaLiga ,38,14/05/16,Away,Real Madrid,Deportivo de La Coruña,0:2,LW,25',0:2,Header,Toni Kroos,2015/16,2010s,0,16-30
+LaLiga ,3,10/09/16,Home,Real Madrid,CA Osasuna,5:2,LW,6',1:0,Right-footed shot,Gareth Bale,2016/17,2010s,1,01-15
+UEFA Champions League ,Group Stage,14/09/16,Home,Real Madrid,Sporting CP,2:1,LW,89',1:1,Direct free kick,Not Applicable,2016/17,2010s,1,76-90
+UEFA Champions League ,Group Stage,27/09/16,Away,Real Madrid,Borussia Dortmund,2:2,LW,17',0:1,Right-footed shot,Gareth Bale,2016/17,2010s,0,16-30
+LaLiga ,8,15/10/16,Away,Real Madrid,Real Betis Balompié,1:6,LW,78',1:6,Right-footed shot,Álvaro Morata,2016/17,2010s,0,76-90
+LaLiga ,10,29/10/16,Away,Real Madrid,Deportivo Alavés,1:4,LW,17',1:1,Penalty,Not Applicable,2016/17,2010s,0,16-30
+LaLiga ,10,29/10/16,Away,Real Madrid,Deportivo Alavés,1:4,LW,33',1:2,Right-footed shot,Karim Benzema,2016/17,2010s,0,31-45
+LaLiga ,10,29/10/16,Away,Real Madrid,Deportivo Alavés,1:4,LW,88',1:4,Right-footed shot,Marcelo,2016/17,2010s,0,76-90
+LaLiga ,12,19/11/16,Away,Real Madrid,Atlético de Madrid,0:3,CF,23',0:1,Direct free kick,Not Applicable,2016/17,2010s,0,16-30
+LaLiga ,12,19/11/16,Away,Real Madrid,Atlético de Madrid,0:3,CF,71',0:2,Penalty,Not Applicable,2016/17,2010s,0,61-75
+LaLiga ,12,19/11/16,Away,Real Madrid,Atlético de Madrid,0:3,CF,77',0:3,Right-footed shot,Gareth Bale,2016/17,2010s,0,76-90
+LaLiga ,13,26/11/16,Home,Real Madrid,Sporting Gijón,2:1,LW,5',1:0,Penalty,Not Applicable,2016/17,2010s,1,01-15
+LaLiga ,13,26/11/16,Home,Real Madrid,Sporting Gijón,2:1,LW,18',2:0,Header,Nacho Fernández,2016/17,2010s,1,16-30
+Club World Cup ,Semi-Finals,15/12/16,Away,Real Madrid,CF América,0:2,LW,90'+3,0:2,Right-footed shot,James Rodríguez,2016/17,2010s,0,76-90
+Club World Cup ,Final,18/12/16,Home,Real Madrid,Kashima Antlers,4:2,LW,60',2:2,Penalty,Not Applicable,2016/17,2010s,1,46-60
+Club World Cup ,Final,18/12/16,Home,Real Madrid,Kashima Antlers,4:2,LW,97',3:2,Left-footed shot,Karim Benzema,2016/17,2010s,1,90+
+Club World Cup ,Final,18/12/16,Home,Real Madrid,Kashima Antlers,4:2,LW,104',4:2,Left-footed shot,Toni Kroos,2016/17,2010s,1,90+
+LaLiga ,17,07/01/17,Home,Real Madrid,Granada CF,5:0,LW,27',3:0,Header,Marcelo,2016/17,2010s,1,16-30
+LaLiga ,18,15/01/17,Away,Real Madrid,Sevilla FC,2:1,CF,67',0:1,Penalty,Not Applicable,2016/17,2010s,0,61-75
+Copa del Rey ,Quarter-Finals,25/01/17,Away,Real Madrid,Celta de Vigo,2:2,CF,62',1:1,Direct free kick,Not Applicable,2016/17,2010s,0,61-75
+LaLiga ,20,29/01/17,Home,Real Madrid,Real Sociedad,3:0,LW,51',2:0,Right-footed shot,Mateo Kovacic,2016/17,2010s,1,46-60
+LaLiga ,22,11/02/17,Away,Real Madrid,CA Osasuna,1:3,CF,24',0:1,Right-footed shot,Karim Benzema,2016/17,2010s,0,16-30
+LaLiga ,16,22/02/17,Away,Real Madrid,Valencia CF,2:1,LW,44',2:1,Header,Marcelo,2016/17,2010s,0,31-45
+LaLiga ,24,26/02/17,Away,Real Madrid,Villarreal CF,2:3,LW,74',2:2,Penalty,Not Applicable,2016/17,2010s,0,61-75
+LaLiga ,25,01/03/17,Home,Real Madrid,UD Las Palmas,3:3,LW,86',2:3,Penalty,Not Applicable,2016/17,2010s,1,76-90
+LaLiga ,25,01/03/17,Home,Real Madrid,UD Las Palmas,3:3,LW,89',3:3,Header,James Rodríguez,2016/17,2010s,1,76-90
+LaLiga ,27,12/03/17,Home,Real Madrid,Real Betis Balompié,2:1,LW,41',1:1,Header,Marcelo,2016/17,2010s,1,31-45
+UEFA Champions League ,Quarter-Finals,12/04/17,Away,Real Madrid,Bayern Munich,1:2,LW,47',1:1,Right-footed shot,Daniel Carvajal,2016/17,2010s,0,46-60
+UEFA Champions League ,Quarter-Finals,12/04/17,Away,Real Madrid,Bayern Munich,1:2,LW,77',1:2,Right-footed shot,Marco Asensio,2016/17,2010s,0,76-90
+UEFA Champions League ,Quarter-Finals,18/04/17,Home,Real Madrid,Bayern Munich,4:2,CF,76',1:1,Header,Casemiro,2016/17,2010s,1,76-90
+UEFA Champions League ,Quarter-Finals,18/04/17,Home,Real Madrid,Bayern Munich,4:2,CF,105',2:2,Left-footed shot,Sergio Ramos,2016/17,2010s,1,90+
+UEFA Champions League ,Quarter-Finals,18/04/17,Home,Real Madrid,Bayern Munich,4:2,CF,109',3:2,Right-footed shot,Marcelo,2016/17,2010s,1,90+
+LaLiga ,35,29/04/17,Home,Real Madrid,Valencia CF,2:1,LW,27',1:0,Header,Daniel Carvajal,2016/17,2010s,1,16-30
+UEFA Champions League ,Semi-Finals,02/05/17,Home,Real Madrid,Atlético de Madrid,3:0,CF,10',1:0,Header,Casemiro,2016/17,2010s,1,01-15
+UEFA Champions League ,Semi-Finals,02/05/17,Home,Real Madrid,Atlético de Madrid,3:0,CF,73',2:0,Right-footed shot,Karim Benzema,2016/17,2010s,1,61-75
+UEFA Champions League ,Semi-Finals,02/05/17,Home,Real Madrid,Atlético de Madrid,3:0,CF,86',3:0,Right-footed shot,Lucas Vázquez,2016/17,2010s,1,76-90
+LaLiga ,37,14/05/17,Home,Real Madrid,Sevilla FC,4:1,LW,23',2:0,Right-footed shot,Not Applicable,2016/17,2010s,1,16-30
+LaLiga ,37,14/05/17,Home,Real Madrid,Sevilla FC,4:1,LW,78',3:1,Left-footed shot,Toni Kroos,2016/17,2010s,1,76-90
+LaLiga ,21,17/05/17,Away,Real Madrid,Celta de Vigo,1:4,CF,10',0:1,Left-footed shot,Not Applicable,2016/17,2010s,0,01-15
+LaLiga ,21,17/05/17,Away,Real Madrid,Celta de Vigo,1:4,CF,48',0:2,Left-footed shot,Isco,2016/17,2010s,0,46-60
+LaLiga ,38,21/05/17,Away,Real Madrid,Málaga CF,0:2,CF,2',0:1,Right-footed shot,Isco,2016/17,2010s,0,01-15
+UEFA Champions League ,Final,03/06/17,Away,Real Madrid,Juventus FC,1:4,CF,20',0:1,Right-footed shot,Daniel Carvajal,2016/17,2010s,0,16-30
+UEFA Champions League ,Final,03/06/17,Away,Real Madrid,Juventus FC,1:4,CF,64',1:3,Right-footed shot,Luka Modrić,2016/17,2010s,0,61-75
+Supercopa ,Final,13/08/17,Away,Real Madrid,FC Barcelona,1:3,CF,80',1:2,Right-footed shot,Isco,2017/18,2010s,0,76-90
+UEFA Champions League ,Group Stage,13/09/17,Home,Real Madrid,APOEL Nicosia,3:0,CF,12',1:0,Counter attack goal,Gareth Bale,2017/18,2010s,1,01-15
+UEFA Champions League ,Group Stage,13/09/17,Home,Real Madrid,APOEL Nicosia,3:0,CF,51',2:0,Penalty,Not Applicable,2017/18,2010s,1,46-60
+UEFA Champions League ,Group Stage,26/09/17,Away,Real Madrid,Borussia Dortmund,1:3,CF,49',0:2,Left-footed shot,Gareth Bale,2017/18,2010s,0,46-60
+UEFA Champions League ,Group Stage,26/09/17,Away,Real Madrid,Borussia Dortmund,1:3,CF,79',1:3,Right-footed shot,Luka Modrić,2017/18,2010s,0,76-90
+LaLiga ,8,14/10/17,Away,Real Madrid,Getafe CF,1:2,CF,85',1:2,Right-footed shot,Isco,2017/18,2010s,0,76-90
+UEFA Champions League ,Group Stage,17/10/17,Home,Real Madrid,Tottenham Hotspur,1:1,LW,43',1:1,Penalty,Not Applicable,2017/18,2010s,1,31-45
+UEFA Champions League ,Group Stage,01/11/17,Away,Real Madrid,Tottenham Hotspur,3:1,LW,80',3:1,Right-footed shot,Borja Mayoral,2017/18,2010s,0,76-90
+UEFA Champions League ,Group Stage,21/11/17,Away,Real Madrid,APOEL Nicosia,0:6,LW,49',0:5,Header,Marcelo,2017/18,2010s,0,46-60
+UEFA Champions League ,Group Stage,21/11/17,Away,Real Madrid,APOEL Nicosia,0:6,LW,54',0:6,Left-footed shot,Not Applicable,2017/18,2010s,0,46-60
+LaLiga ,13,25/11/17,Home,Real Madrid,Málaga CF,3:2,CF,76',3:2,Penalty rebound,Not Applicable,2017/18,2010s,1,76-90
+UEFA Champions League ,Group Stage,06/12/17,Home,Real Madrid,Borussia Dortmund,3:2,LW,12',2:0,Right-footed shot,Mateo Kovacic,2017/18,2010s,1,01-15
+LaLiga ,15,09/12/17,Home,Real Madrid,Sevilla FC,5:0,CF,23',2:0,Right-footed shot,Marco Asensio,2017/18,2010s,1,16-30
+LaLiga ,15,09/12/17,Home,Real Madrid,Sevilla FC,5:0,CF,31',3:0,Penalty,Not Applicable,2017/18,2010s,1,31-45
+Club World Cup ,Semi-Finals,13/12/17,Away,Real Madrid,Al-Jazira Club,1:2,LW,53',1:1,Right-footed shot,Luka Modrić,2017/18,2010s,0,46-60
+Club World Cup ,Final,16/12/17,Home,Real Madrid,Grêmio Foot-Ball Porto Alegrense,1:0,LW,53',1:0,Direct free kick,Not Applicable,2017/18,2010s,1,46-60
+LaLiga ,20,21/01/18,Home,Real Madrid,Deportivo de La Coruña,7:1,LW,78',5:1,Left-footed shot,Casemiro,2017/18,2010s,1,76-90
+LaLiga ,20,21/01/18,Home,Real Madrid,Deportivo de La Coruña,7:1,LW,84',6:1,Header,Lucas Vázquez,2017/18,2010s,1,76-90
+LaLiga ,21,27/01/18,Away,Real Madrid,Valencia CF,1:4,LW,16',0:1,Penalty,Not Applicable,2017/18,2010s,0,16-30
+LaLiga ,21,27/01/18,Away,Real Madrid,Valencia CF,1:4,LW,38',0:2,Penalty,Not Applicable,2017/18,2010s,0,31-45
+LaLiga ,23,10/02/18,Home,Real Madrid,Real Sociedad,5:2,CF,27',2:0,Right-footed shot,Marcelo,2017/18,2010s,1,16-30
+LaLiga ,23,10/02/18,Home,Real Madrid,Real Sociedad,5:2,CF,37',4:0,Header,Luka Modrić,2017/18,2010s,1,31-45
+LaLiga ,23,10/02/18,Home,Real Madrid,Real Sociedad,5:2,CF,80',5:1,Tap-in,Not Applicable,2017/18,2010s,1,76-90
+UEFA Champions League ,Round of 16,14/02/18,Home,Real Madrid,Paris Saint-Germain,3:1,LW,45',1:1,Penalty,Not Applicable,2017/18,2010s,1,31-45
+UEFA Champions League ,Round of 16,14/02/18,Home,Real Madrid,Paris Saint-Germain,3:1,LW,83',2:1,Tap-in,Not Applicable,2017/18,2010s,1,76-90
+LaLiga ,24,18/02/18,Away,Real Madrid,Real Betis Balompié,3:5,CF,65',2:4,Right-footed shot,Casemiro,2017/18,2010s,0,61-75
+LaLiga ,25,24/02/18,Home,Real Madrid,Deportivo Alavés,4:0,CF,44',1:0,Left-footed shot,Karim Benzema,2017/18,2010s,1,31-45
+LaLiga ,25,24/02/18,Home,Real Madrid,Deportivo Alavés,4:0,CF,61',3:0,Right-footed shot,Lucas Vázquez,2017/18,2010s,1,61-75
+LaLiga ,27,03/03/18,Home,Real Madrid,Getafe CF,3:1,CF,45'+1,2:0,Left-footed shot,Karim Benzema,2017/18,2010s,1,31-45
+LaLiga ,27,03/03/18,Home,Real Madrid,Getafe CF,3:1,CF,78',3:1,Header,Marcelo,2017/18,2010s,1,76-90
+UEFA Champions League ,Round of 16,06/03/18,Away,Real Madrid,Paris Saint-Germain,1:2,CF,51',0:1,Header,Lucas Vázquez,2017/18,2010s,0,46-60
+LaLiga ,28,10/03/18,Away,Real Madrid,SD Eibar,1:2,CF,33',0:1,Right-footed shot,Luka Modrić,2017/18,2010s,0,31-45
+LaLiga ,28,10/03/18,Away,Real Madrid,SD Eibar,1:2,CF,84',1:2,Header,Daniel Carvajal,2017/18,2010s,0,76-90
+LaLiga ,29,18/03/18,Home,Real Madrid,Girona FC,6:3,CF,11',1:0,Left-footed shot,Toni Kroos,2017/18,2010s,1,01-15
+LaLiga ,29,18/03/18,Home,Real Madrid,Girona FC,6:3,CF,47',2:1,Left-footed shot,Karim Benzema,2017/18,2010s,1,46-60
+LaLiga ,29,18/03/18,Home,Real Madrid,Girona FC,6:3,CF,64',4:1,Tap-in,Not Applicable,2017/18,2010s,1,61-75
+LaLiga ,29,18/03/18,Home,Real Madrid,Girona FC,6:3,CF,90'+1,6:3,Right-footed shot,Toni Kroos,2017/18,2010s,1,76-90
+UEFA Champions League ,Quarter-Finals,03/04/18,Away,Real Madrid,Juventus FC,0:3,CF,3',0:1,Right-footed shot,Isco,2017/18,2010s,0,01-15
+UEFA Champions League ,Quarter-Finals,03/04/18,Away,Real Madrid,Juventus FC,0:3,CF,64',0:2,Right-footed shot,Daniel Carvajal,2017/18,2010s,0,61-75
+LaLiga ,31,08/04/18,Home,Real Madrid,Atlético de Madrid,1:1,CF,53',1:0,Right-footed shot,Gareth Bale,2017/18,2010s,1,46-60
+UEFA Champions League ,Quarter-Finals,11/04/18,Home,Real Madrid,Juventus FC,1:3,CF,90'+7,1:3,Penalty,Not Applicable,2017/18,2010s,1,76-90
+LaLiga ,33,18/04/18,Home,Real Madrid,Athletic Bilbao,1:1,CF,87',1:1,Right-footed shot,Luka Modrić,2017/18,2010s,1,76-90
+LaLiga ,36,06/05/18,Away,Real Madrid,FC Barcelona,2:2,LW,14',1:1,Right-footed shot,Karim Benzema,2017/18,2010s,0,01-15
+LaLiga ,38,19/05/18,Away,Real Madrid,Villarreal CF,2:2,CF,32',0:2,Header,Marcelo,2017/18,2010s,0,31-45
+Serie A ,4,16/09/18,Home,Juventus FC,US Sassuolo,2:1,SS,50',1:0,Tap-in,Not Applicable,2018/19,2010s,1,46-60
+Serie A ,4,16/09/18,Home,Juventus FC,US Sassuolo,2:1,SS,65',2:0,Left-footed shot,Emre Can,2018/19,2010s,1,61-75
+Serie A ,5,23/09/18,Away,Juventus FC,Frosinone Calcio,0:2,LW,81',0:1,Left-footed shot,Not Applicable,2018/19,2010s,0,76-90
+Serie A ,8,06/10/18,Away,Juventus FC,Udinese Calcio,0:2,LW,37',0:2,Left-footed shot,Mario Mandžukić,2018/19,2010s,0,31-45
+Serie A ,9,20/10/18,Home,Juventus FC,Genoa CFC,1:1,LW,18',1:0,Tap-in,João Cancelo,2018/19,2010s,1,16-30
+Serie A ,10,27/10/18,Away,Juventus FC,FC Empoli,1:2,CF,54',1:1,Penalty,Not Applicable,2018/19,2010s,0,46-60
+Serie A ,10,27/10/18,Away,Juventus FC,FC Empoli,1:2,CF,70',1:2,Right-footed shot,Blaise Matuidi,2018/19,2010s,0,61-75
+UEFA Champions League ,Group Stage,07/11/18,Home,Juventus FC,Manchester United,1:2,LW,65',1:0,Right-footed shot,Leonardo Bonucci,2018/19,2010s,1,61-75
+Serie A ,12,11/11/18,Away,Juventus FC,AC Milan,0:2,LW,81',0:2,Tap-in,João Cancelo,2018/19,2010s,0,76-90
+Serie A ,13,24/11/18,Home,Juventus FC,SPAL,2:0,CF,29',1:0,Left-footed shot,Miralem Pjanić,2018/19,2010s,1,16-30
+Serie A ,14,01/12/18,Away,Juventus FC,ACF Fiorentina,0:3,LW,79',0:3,Penalty,Not Applicable,2018/19,2010s,0,76-90
+Serie A ,16,15/12/18,Away,Juventus FC,Torino FC,0:1,LW,70',0:1,Penalty,Not Applicable,2018/19,2010s,0,61-75
+Serie A ,18,26/12/18,Away,Juventus FC,Atalanta BC,2:2,CF,78',2:2,Header,Giorgio Chiellini,2018/19,2010s,0,76-90
+Serie A ,19,29/12/18,Home,Juventus FC,UC Sampdoria,2:1,LW,2',1:0,Right-footed shot,Paulo Dybala,2018/19,2010s,1,01-15
+Serie A ,19,29/12/18,Home,Juventus FC,UC Sampdoria,2:1,LW,65',2:1,Penalty,Not Applicable,2018/19,2010s,1,61-75
+Supercoppa Italiana ,Final,16/01/19,Home,Juventus FC,AC Milan,1:0,LW,61',1:0,Header,Miralem Pjanić,2018/19,2010s,1,61-75
+Serie A ,21,27/01/19,Away,Juventus FC,SS Lazio,1:2,LW,88',1:2,Penalty,Not Applicable,2018/19,2010s,0,76-90
+Serie A ,22,02/02/19,Home,Juventus FC,Parma Calcio 1913,3:3,LW,36',1:0,Right-footed shot,Blaise Matuidi,2018/19,2010s,1,31-45
+Serie A ,22,02/02/19,Home,Juventus FC,Parma Calcio 1913,3:3,LW,66',3:1,Header,Mario Mandžukić,2018/19,2010s,1,61-75
+Serie A ,23,10/02/19,Away,Juventus FC,US Sassuolo,0:3,LW,70',0:2,Header,Miralem Pjanić,2018/19,2010s,0,61-75
+Serie A ,24,15/02/19,Home,Juventus FC,Frosinone Calcio,3:0,LW,63',3:0,Right-footed shot,Mario Mandžukić,2018/19,2010s,1,61-75
+UEFA Champions League ,Round of 16,12/03/19,Home,Juventus FC,Atlético de Madrid,3:0,SS,27',1:0,Header,Federico Bernardeschi,2018/19,2010s,1,16-30
+UEFA Champions League ,Round of 16,12/03/19,Home,Juventus FC,Atlético de Madrid,3:0,SS,49',2:0,Header,João Cancelo,2018/19,2010s,1,46-60
+UEFA Champions League ,Round of 16,12/03/19,Home,Juventus FC,Atlético de Madrid,3:0,SS,86',3:0,Penalty,Not Applicable,2018/19,2010s,1,76-90
+UEFA Champions League ,Quarter-Finals,10/04/19,Away,Juventus FC,Ajax Amsterdam,1:1,LW,45',0:1,Header,João Cancelo,2018/19,2010s,0,31-45
+UEFA Champions League ,Quarter-Finals,16/04/19,Home,Juventus FC,Ajax Amsterdam,1:2,LW,28',1:0,Header,Miralem Pjanić,2018/19,2010s,1,16-30
+Serie A ,34,27/04/19,Away,Juventus FC,Inter Milan,1:1,CF,62',1:1,Left-footed shot,Miralem Pjanić,2018/19,2010s,0,61-75
+Serie A ,35,03/05/19,Home,Juventus FC,Torino FC,1:1,CF,84',1:1,Header,Leonardo Spinazzola,2018/19,2010s,1,76-90
+Serie A ,2,31/08/19,Home,Juventus FC,SSC Napoli,4:3,LW,62',3:0,Left-footed shot,Douglas Costa,2019/20,2010s,1,61-75
+Serie A ,4,21/09/19,Home,Juventus FC,Hellas Verona,2:1,LW,49',2:1,Penalty,Not Applicable,2019/20,2010s,1,46-60
+Serie A ,6,28/09/19,Home,Juventus FC,SPAL,2:0,CF,78',2:0,Header,Paulo Dybala,2019/20,2010s,1,76-90
+UEFA Champions League ,Group Stage,01/10/19,Home,Juventus FC,Bayer 04 Leverkusen,3:0,CF,89',3:0,Right-footed shot,Paulo Dybala,2019/20,2010s,1,76-90
+Serie A ,8,19/10/19,Home,Juventus FC,Bologna FC 1909,2:1,CF,19',1:0,Right-footed shot,Not Applicable,2019/20,2010s,1,16-30
+Serie A ,10,30/10/19,Home,Juventus FC,Genoa CFC,2:1,CF,90'+6,2:1,Penalty,Not Applicable,2019/20,2010s,1,76-90
+Serie A ,14,01/12/19,Home,Juventus FC,US Sassuolo,2:2,CF,68',2:2,Penalty,Not Applicable,2019/20,2010s,1,61-75
+Serie A ,15,07/12/19,Away,Juventus FC,SS Lazio,3:1,CF,25',0:1,Tap-in,Rodrigo Bentancur,2019/20,2010s,0,16-30
+UEFA Champions League ,Group Stage,11/12/19,Away,Juventus FC,Bayer 04 Leverkusen,0:2,CF,75',0:1,Right-footed shot,Paulo Dybala,2019/20,2010s,0,61-75
+Serie A ,16,15/12/19,Home,Juventus FC,Udinese Calcio,3:1,CF,9',1:0,Right-footed shot,Not Applicable,2019/20,2010s,1,01-15
+Serie A ,16,15/12/19,Home,Juventus FC,Udinese Calcio,3:1,CF,37',2:0,Left-footed shot,Gonzalo Higuaín,2019/20,2010s,1,31-45
+Serie A ,17,18/12/19,Away,Juventus FC,UC Sampdoria,1:2,CF,45',1:2,Header,Alex Sandro,2019/20,2010s,0,31-45
+Serie A ,18,06/01/20,Home,Juventus FC,Cagliari Calcio,4:0,CF,49',1:0,Right-footed shot,Not Applicable,2019/20,2020s,1,46-60
+Serie A ,18,06/01/20,Home,Juventus FC,Cagliari Calcio,4:0,CF,67',2:0,Penalty,Not Applicable,2019/20,2020s,1,61-75
+Serie A ,18,06/01/20,Home,Juventus FC,Cagliari Calcio,4:0,CF,82',4:0,Left-footed shot,Douglas Costa,2019/20,2020s,1,76-90
+Serie A ,19,12/01/20,Away,Juventus FC,AS Roma,1:2,CF,10',0:2,Penalty,Not Applicable,2019/20,2020s,0,01-15
+Serie A ,20,19/01/20,Home,Juventus FC,Parma Calcio 1913,2:1,CF,43',1:0,Deflected shot on goal,Blaise Matuidi,2019/20,2020s,1,31-45
+Serie A ,20,19/01/20,Home,Juventus FC,Parma Calcio 1913,2:1,CF,58',2:1,Right-footed shot,Paulo Dybala,2019/20,2020s,1,46-60
+Italy Cup ,Quarter-Finals,22/01/20,Home,Juventus FC,AS Roma,3:1,LW,26',1:0,Left-footed shot,Gonzalo Higuaín,2019/20,2020s,1,16-30
+Serie A ,21,26/01/20,Away,Juventus FC,SSC Napoli,2:1,CF,90',2:1,Right-footed shot,Rodrigo Bentancur,2019/20,2020s,0,76-90
+Serie A ,22,02/02/20,Home,Juventus FC,ACF Fiorentina,3:0,LW,40',1:0,Penalty,Not Applicable,2019/20,2020s,1,31-45
+Serie A ,22,02/02/20,Home,Juventus FC,ACF Fiorentina,3:0,LW,80',2:0,Penalty,Not Applicable,2019/20,2020s,1,76-90
+Serie A ,23,08/02/20,Away,Juventus FC,Hellas Verona,2:1,LW,65',0:1,Right-footed shot,Rodrigo Bentancur,2019/20,2020s,0,61-75
+Italy Cup ,Semi-Finals,13/02/20,Away,Juventus FC,AC Milan,1:1,LW,90'+1,1:1,Penalty,Not Applicable,2019/20,2020s,0,76-90
+Serie A ,25,22/02/20,Away,Juventus FC,SPAL,1:2,LW,39',0:1,Tap-in,Juan Cuadrado,2019/20,2020s,0,31-45
+Serie A ,27,22/06/20,Away,Juventus FC,Bologna FC 1909,0:2,LW,23',0:1,Penalty,Not Applicable,2019/20,2020s,0,16-30
+Serie A ,28,26/06/20,Home,Juventus FC,US Lecce,4:0,LW,62',2:0,Penalty,Not Applicable,2019/20,2020s,1,61-75
+Serie A ,29,30/06/20,Away,Juventus FC,Genoa CFC,1:3,LW,56',0:2,Long distance kick,Miralem Pjanić,2019/20,2020s,0,46-60
+Serie A ,30,04/07/20,Home,Juventus FC,Torino FC,4:1,LW,61',3:1,Direct free kick,Not Applicable,2020/21,2020s,1,61-75
+Serie A ,31,07/07/20,Away,Juventus FC,AC Milan,4:2,LW,53',0:2,Left-footed shot,Juan Cuadrado,2020/21,2020s,0,46-60
+Serie A ,32,11/07/20,Home,Juventus FC,Atalanta BC,2:2,LW,55',1:1,Penalty,Not Applicable,2020/21,2020s,1,46-60
+Serie A ,32,11/07/20,Home,Juventus FC,Atalanta BC,2:2,LW,90',2:2,Penalty,Not Applicable,2020/21,2020s,1,76-90
+Serie A ,34,20/07/20,Home,Juventus FC,SS Lazio,2:1,LW,51',1:0,Penalty,Not Applicable,2020/21,2020s,1,46-60
+Serie A ,34,20/07/20,Home,Juventus FC,SS Lazio,2:1,LW,54',2:0,Counter attack goal,Paulo Dybala,2020/21,2020s,1,46-60
+Serie A ,36,26/07/20,Home,Juventus FC,UC Sampdoria,2:0,LW,45'+7,1:0,Right-footed shot,Miralem Pjanić,2020/21,2020s,1,31-45
+UEFA Champions League ,Round of 16,07/08/20,Home,Juventus FC,Olympique Lyon,2:1,LW,43',1:1,Penalty,Not Applicable,2020/21,2020s,1,31-45
+UEFA Champions League ,Round of 16,07/08/20,Home,Juventus FC,Olympique Lyon,2:1,LW,60',2:1,Left-footed shot,Federico Bernardeschi,2020/21,2020s,1,46-60
+Serie A ,1,20/09/20,Home,Juventus FC,UC Sampdoria,3:0,CF,88',3:0,Right-footed shot,Aaron Ramsey,2020/21,2020s,1,76-90
+Serie A ,2,27/09/20,Away,Juventus FC,AS Roma,2:2,CF,44',1:1,Penalty,Not Applicable,2020/21,2020s,0,31-45
+Serie A ,2,27/09/20,Away,Juventus FC,AS Roma,2:2,CF,69',2:2,Header,Danilo,2020/21,2020s,0,61-75
+Serie A ,6,01/11/20,Away,Juventus FC,Spezia Calcio,1:4,CF,59',1:2,Right-footed shot,Álvaro Morata,2020/21,2020s,0,46-60
+Serie A ,6,01/11/20,Away,Juventus FC,Spezia Calcio,1:4,CF,76',1:4,Penalty,Not Applicable,2020/21,2020s,0,76-90
+Serie A ,7,08/11/20,Away,Juventus FC,SS Lazio,1:1,LW,15',0:1,Right-footed shot,Juan Cuadrado,2020/21,2020s,0,01-15
+Serie A ,8,21/11/20,Home,Juventus FC,Cagliari Calcio,2:0,CF,38',1:0,Right-footed shot,Álvaro Morata,2020/21,2020s,1,31-45
+Serie A ,8,21/11/20,Home,Juventus FC,Cagliari Calcio,2:0,CF,42',2:0,Right-footed shot,Merih Demiral,2020/21,2020s,1,31-45
+UEFA Champions League ,Group Stage,24/11/20,Home,Juventus FC,Ferencvárosi TC,2:1,CF,35',1:1,Left-footed shot,Juan Cuadrado,2020/21,2020s,1,31-45
+UEFA Champions League ,Group Stage,02/12/20,Home,Juventus FC,Dynamo Kyiv,3:0,CF,57',2:0,Right-footed shot,Álvaro Morata,2020/21,2020s,1,46-60
+UEFA Champions League ,Group Stage,08/12/20,Away,Juventus FC,FC Barcelona,0:3,CF,13',0:1,Penalty,Not Applicable,2020/21,2020s,0,01-15
+UEFA Champions League ,Group Stage,08/12/20,Away,Juventus FC,FC Barcelona,0:3,CF,52',0:3,Penalty,Not Applicable,2020/21,2020s,0,46-60
+Serie A ,11,13/12/20,Away,Juventus FC,Genoa CFC,1:3,CF,78',1:2,Penalty,Not Applicable,2020/21,2020s,0,76-90
+Serie A ,11,13/12/20,Away,Juventus FC,Genoa CFC,1:3,CF,89',1:3,Penalty,Not Applicable,2020/21,2020s,0,76-90
+Serie A ,13,19/12/20,Away,Juventus FC,Parma Calcio 1913,0:4,CF,26',0:2,Header,Álvaro Morata,2020/21,2020s,0,16-30
+Serie A ,13,19/12/20,Away,Juventus FC,Parma Calcio 1913,0:4,CF,48',0:3,Left-footed shot,Aaron Ramsey,2020/21,2020s,0,46-60
+Serie A ,15,03/01/21,Home,Juventus FC,Udinese Calcio,4:1,CF,31',1:0,Right-footed shot,Aaron Ramsey,2020/21,2020s,1,31-45
+Serie A ,15,03/01/21,Home,Juventus FC,Udinese Calcio,4:1,CF,70',3:0,Left-footed shot,Rodrigo Bentancur,2020/21,2020s,1,61-75
+Serie A ,17,10/01/21,Home,Juventus FC,US Sassuolo,3:1,CF,90'+2,3:1,Right-footed shot,Danilo,2020/21,2020s,1,76-90
+Supercoppa Italiana ,Final,20/01/21,Home,Juventus FC,SSC Napoli,2:0,CF,64',1:0,Tap-in,Not Applicable,2020/21,2020s,1,61-75
+Italy Cup ,Semi-Finals,02/02/21,Away,Juventus FC,Inter Milan,1:2,CF,26',1:1,Penalty,Not Applicable,2020/21,2020s,0,16-30
+Italy Cup ,Semi-Finals,02/02/21,Away,Juventus FC,Inter Milan,1:2,CF,35',1:2,Left-footed shot,Not Applicable,2020/21,2020s,0,31-45
+Serie A ,21,06/02/21,Home,Juventus FC,AS Roma,2:0,CF,13',1:0,Left-footed shot,Álvaro Morata,2020/21,2020s,1,01-15
+Serie A ,23,22/02/21,Home,Juventus FC,FC Crotone,3:0,CF,38',1:0,Header,Alex Sandro,2020/21,2020s,1,31-45
+Serie A ,23,22/02/21,Home,Juventus FC,FC Crotone,3:0,CF,45'+1,2:0,Header,Aaron Ramsey,2020/21,2020s,1,31-45
+Serie A ,24,27/02/21,Away,Juventus FC,Hellas Verona,1:1,CF,49',0:1,Right-footed shot,Federico Chiesa,2020/21,2020s,0,46-60
+Serie A ,25,02/03/21,Home,Juventus FC,Spezia Calcio,3:0,CF,89',3:0,Counter attack goal,Rodrigo Bentancur,2020/21,2020s,1,76-90
+Serie A ,27,14/03/21,Away,Juventus FC,Cagliari Calcio,1:3,CF,10',0:1,Header,Juan Cuadrado,2020/21,2020s,0,01-15
+Serie A ,27,14/03/21,Away,Juventus FC,Cagliari Calcio,1:3,CF,25',0:2,Penalty,Not Applicable,2020/21,2020s,0,16-30
+Serie A ,27,14/03/21,Away,Juventus FC,Cagliari Calcio,1:3,CF,32',0:3,Left-footed shot,Federico Chiesa,2020/21,2020s,0,31-45
+Serie A ,29,03/04/21,Away,Juventus FC,Torino FC,2:2,CF,79',2:2,Header,Giorgio Chiellini,2020/21,2020s,0,76-90
+Serie A ,3,07/04/21,Home,Juventus FC,SSC Napoli,2:1,CF,13',1:0,Right-footed shot,Federico Chiesa,2020/21,2020s,1,01-15
+Serie A ,34,02/05/21,Away,Juventus FC,Udinese Calcio,1:2,CF,83',1:1,Penalty,Not Applicable,2020/21,2020s,0,76-90
+Serie A ,34,02/05/21,Away,Juventus FC,Udinese Calcio,1:2,CF,89',1:2,Header,Adrien Rabiot,2020/21,2020s,0,76-90
+Serie A ,36,12/05/21,Away,Juventus FC,US Sassuolo,1:3,CF,45',0:2,Left-footed shot,Adrien Rabiot,2020/21,2020s,0,31-45
+Serie A ,37,15/05/21,Home,Juventus FC,Inter Milan,3:2,CF,24',1:0,Penalty rebound,Not Applicable,2020/21,2020s,1,16-30
+Premier League ,4,11/09/21,Home,Manchester United,Newcastle United,4:1,CF,45'+2,1:0,Tap-in,Not Applicable,2021/22,2020s,1,31-45
+Premier League ,4,11/09/21,Home,Manchester United,Newcastle United,4:1,CF,62',2:1,Left-footed shot,Luke Shaw,2021/22,2020s,1,61-75
+UEFA Champions League ,Group Stage,14/09/21,Away,Manchester United,BSC Young Boys,2:1,CF,13',0:1,Right-footed shot,Bruno Fernandes,2021/22,2020s,0,01-15
+Premier League ,5,19/09/21,Away,Manchester United,West Ham United,1:2,CF,35',1:1,Right-footed shot,Not Applicable,2021/22,2020s,0,31-45
+UEFA Champions League ,Group Stage,29/09/21,Home,Manchester United,Villarreal CF,2:1,CF,90'+5,2:1,Right-footed shot,Jesse Lingard,2021/22,2020s,1,76-90
+UEFA Champions League ,Group Stage,20/10/21,Home,Manchester United,Atalanta BC,3:2,CF,81',3:2,Header,Luke Shaw,2021/22,2020s,1,76-90
+Premier League ,10,30/10/21,Away,Manchester United,Tottenham Hotspur,0:3,CF,39',0:1,Right-footed shot,Bruno Fernandes,2021/22,2020s,0,31-45
+UEFA Champions League ,Group Stage,02/11/21,Away,Manchester United,Atalanta BC,2:2,CF,45'+1,1:1,Right-footed shot,Bruno Fernandes,2021/22,2020s,0,31-45
+UEFA Champions League ,Group Stage,02/11/21,Away,Manchester United,Atalanta BC,2:2,CF,90'+1,2:2,Right-footed shot,Mason Greenwood,2021/22,2020s,0,76-90
+UEFA Champions League ,Group Stage,23/11/21,Away,Manchester United,Villarreal CF,0:2,CF,78',0:1,Right-footed shot,Not Applicable,2021/22,2020s,0,76-90
+Premier League ,14,02/12/21,Home,Manchester United,Arsenal FC,3:2,CF,52',2:1,Right-footed shot,Marcus Rashford,2021/22,2020s,1,46-60
+Premier League ,14,02/12/21,Home,Manchester United,Arsenal FC,3:2,CF,70',3:2,Penalty,Not Applicable,2021/22,2020s,1,61-75
+Premier League ,16,11/12/21,Away,Manchester United,Norwich City,0:1,CF,75',0:1,Penalty,Not Applicable,2021/22,2020s,0,61-75
+Premier League ,20,30/12/21,Home,Manchester United,Burnley FC,3:1,CF,35',3:0,Right-footed shot,Not Applicable,2021/22,2020s,1,31-45
+Premier League ,18,15/02/22,Home,Manchester United,Brighton &amp; Hove Albion,2:0,CF,51',1:0,Right-footed shot,Scott McTominay,2021/22,2020s,1,46-60
+Premier League ,29,12/03/22,Home,Manchester United,Tottenham Hotspur,3:2,CF,12',1:0,Right-footed shot,Fred,2021/22,2020s,1,01-15
+Premier League ,29,12/03/22,Home,Manchester United,Tottenham Hotspur,3:2,CF,38',2:1,Right-footed shot,Jadon Sancho,2021/22,2020s,1,31-45
+Premier League ,29,12/03/22,Home,Manchester United,Tottenham Hotspur,3:2,CF,81',3:2,Header,Alex Telles,2021/22,2020s,1,76-90
+Premier League ,33,16/04/22,Home,Manchester United,Norwich City,3:2,CF,7',1:0,Right-footed shot,Anthony Elanga,2021/22,2020s,1,01-15
+Premier League ,33,16/04/22,Home,Manchester United,Norwich City,3:2,CF,32',2:0,Header,Alex Telles,2021/22,2020s,1,31-45
+Premier League ,33,16/04/22,Home,Manchester United,Norwich City,3:2,CF,76',3:2,Direct free kick,Not Applicable,2021/22,2020s,1,76-90
+Premier League ,34,23/04/22,Away,Manchester United,Arsenal FC,3:1,CF,34',2:1,Left-footed shot,Nemanja Matić,2021/22,2020s,0,31-45
+Premier League ,37,28/04/22,Home,Manchester United,Chelsea FC,1:1,CF,62',1:1,Right-footed shot,Nemanja Matić,2021/22,2020s,1,61-75
+Premier League ,35,02/05/22,Home,Manchester United,Brentford FC,3:0,CF,61',2:0,Penalty,Not Applicable,2021/22,2020s,1,61-75
+Europa League ,Group Stage,15/09/22,Away,Manchester United,FC Sheriff Tiraspol,0:2,CF,39',0:2,Penalty,Not Applicable,2022/23,2020s,0,31-45
+Premier League ,10,09/10/22,Away,Manchester United,Everton FC,1:2,CF,44',1:2,Counter attack goal,Casemiro,2022/23,2020s,0,31-45
+Europa League ,Group Stage,27/10/22,Home,Manchester United,FC Sheriff Tiraspol,3:0,CF,81',3:0,Left-footed shot,Not Applicable,2022/23,2020s,1,76-90
+Saudi Pro League ,15,03/02/23,Away,Al-Nassr FC,Al-Fateh SC,2:2,CF,90'+3,2:2,Penalty,Not Applicable,2022/23,2020s,0,76-90
+Saudi Pro League ,16,09/02/23,Away,Al-Nassr FC,Al-Wehda FC,0:4,CF,21',0:1,Left-footed shot,Abdulrahman Ghareeb,2022/23,2020s,0,16-30
+Saudi Pro League ,16,09/02/23,Away,Al-Nassr FC,Al-Wehda FC,0:4,CF,40',0:2,Right-footed shot,Sami Al-Najei,2022/23,2020s,0,31-45
+Saudi Pro League ,16,09/02/23,Away,Al-Nassr FC,Al-Wehda FC,0:4,CF,53',0:3,Penalty,Not Applicable,2022/23,2020s,0,46-60
+Saudi Pro League ,16,09/02/23,Away,Al-Nassr FC,Al-Wehda FC,0:4,CF,61',0:4,Right-footed shot,Not Applicable,2022/23,2020s,0,61-75
+Saudi Pro League ,18,25/02/23,Away,Al-Nassr FC,Damac FC,0:3,CF,18',0:1,Penalty,Not Applicable,2022/23,2020s,0,16-30
+Saudi Pro League ,18,25/02/23,Away,Al-Nassr FC,Damac FC,0:3,CF,23',0:2,Left-footed shot,Sultan Al-Ghannam,2022/23,2020s,0,16-30
+Saudi Pro League ,18,25/02/23,Away,Al-Nassr FC,Damac FC,0:3,CF,44',0:3,Counter attack goal,Ayman Yahya,2022/23,2020s,0,31-45
+Saudi Pro League ,21,18/03/23,Home,Al-Nassr FC,Abha Club,2:1,CF,78',1:1,Direct free kick,Not Applicable,2022/23,2020s,1,76-90
+Saudi Pro League ,22,04/04/23,Away,Al-Nassr FC,Al-Adalah FC,0:5,CF,40',0:1,Penalty,Not Applicable,2022/23,2020s,0,31-45
+Saudi Pro League ,22,04/04/23,Away,Al-Nassr FC,Al-Adalah FC,0:5,CF,66',0:3,Left-footed shot,Talisca,2022/23,2020s,0,61-75
+Saudi Pro League ,24,28/04/23,Home,Al-Nassr FC,Al-Raed SFC,4:0,CF,4',1:0,Header,Sultan Al-Ghannam,2022/23,2020s,1,01-15
+Saudi Pro League ,27,16/05/23,Away,Al-Nassr FC,Al-Tai FC,0:2,CF,52',0:1,Penalty,Not Applicable,2022/23,2020s,0,46-60
+Saudi Pro League ,28,23/05/23,Home,Al-Nassr FC,Al-Shabab FC,3:2,CF,59',3:2,Right-footed shot,Luiz Gustavo,2022/23,2020s,1,46-60
+Saudi Pro League ,3,25/08/23,Away,Al-Nassr FC,Al-Fateh SC,0:5,CF,38',0:2,Header,Sultan Al-Ghannam,2023/24,2020s,0,31-45
+Saudi Pro League ,3,25/08/23,Away,Al-Nassr FC,Al-Fateh SC,0:5,CF,55',0:3,Left-footed shot,Abdulrahman Ghareeb,2023/24,2020s,0,46-60
+Saudi Pro League ,3,25/08/23,Away,Al-Nassr FC,Al-Fateh SC,0:5,CF,90'+6,0:5,Left-footed shot,Nawaf Boushal,2023/24,2020s,0,76-90
+Saudi Pro League ,4,29/08/23,Home,Al-Nassr FC,Al-Shabab FC,4:0,CF,13',1:0,Penalty,Not Applicable,2023/24,2020s,1,01-15
+Saudi Pro League ,4,29/08/23,Home,Al-Nassr FC,Al-Shabab FC,4:0,CF,38',2:0,Penalty,Not Applicable,2023/24,2020s,1,31-45
+Saudi Pro League ,5,02/09/23,Away,Al-Nassr FC,Al-Hazem SC,1:5,CF,68',1:4,Right-footed shot,Abdulrahman Ghareeb,2023/24,2020s,0,61-75
+Saudi Pro League ,6,16/09/23,Away,Al-Nassr FC,Al-Raed SFC,1:3,CF,78',0:3,Left-footed shot,Talisca,2023/24,2020s,0,76-90
+Saudi Pro League ,7,22/09/23,Home,Al-Nassr FC,Al-Ahli SFC,4:3,CF,4',1:0,Left-footed shot,Sadio Mané,2023/24,2020s,1,01-15
+Saudi Pro League ,7,22/09/23,Home,Al-Nassr FC,Al-Ahli SFC,4:3,CF,52',4:2,Left-footed shot,Talisca,2023/24,2020s,1,46-60
+Saudi Pro League ,8,29/09/23,Away,Al-Nassr FC,Al-Tai FC,1:2,CF,87',1:2,Penalty,Not Applicable,2023/24,2020s,0,76-90
+AFC Champions League ,Group Stage,02/10/23,Home,Al-Nassr FC,Istiqlol Dushanbe,3:1,CF,66',1:1,Left-footed shot,Not Applicable,2023/24,2020s,1,61-75
+Saudi Pro League ,10,21/10/23,Home,Al-Nassr FC,Damac FC,2:1,CF,56',2:1,Direct free kick,Not Applicable,2023/24,2020s,1,46-60
+AFC Champions League ,Group Stage,24/10/23,Home,Al-Nassr FC,Al-Duhail SC,4:3,CF,61',3:0,Left-footed shot,Sultan Al-Ghannam,2023/24,2020s,1,61-75
+AFC Champions League ,Group Stage,24/10/23,Home,Al-Nassr FC,Al-Duhail SC,4:3,CF,81',4:2,Left-footed shot,Sultan Al-Ghannam,2023/24,2020s,1,76-90
+Saudi Pro League ,12,04/11/23,Home,Al-Nassr FC,Al-Khaleej FC,2:0,CF,26',1:0,Right-footed shot,Abdulrahman Ghareeb,2023/24,2020s,1,16-30
+Saudi Pro League ,13,11/11/23,Away,Al-Nassr FC,Al-Wehda FC,1:3,CF,49',0:3,Right-footed shot,Not Applicable,2023/24,2020s,0,46-60
+Saudi Pro League ,14,24/11/23,Home,Al-Nassr FC,Al-Okhdood Club,3:0,CF,77',2:0,Right-footed shot,Not Applicable,2023/24,2020s,1,76-90
+Saudi Pro League ,14,24/11/23,Home,Al-Nassr FC,Al-Okhdood Club,3:0,CF,80',3:0,Right-footed shot,Not Applicable,2023/24,2020s,1,76-90
+Saudi Pro League ,16,08/12/23,Home,Al-Nassr FC,Al-Riyadh SC,4:1,CF,31',1:0,Right-footed shot,Sadio Mané,2023/24,2020s,1,31-45
+King's Cup ,Quarter-Finals,11/12/23,Away,Al-Nassr FC,Al-Shabab FC,2:5,CF,74',1:4,Right-footed shot,Otávio,2023/24,2020s,0,61-75
+Saudi Pro League ,18,22/12/23,Home,Al-Nassr FC,Al-Ettifaq FC,3:1,CF,73',3:0,Penalty,Not Applicable,2023/24,2020s,1,61-75
+Saudi Pro League ,17,26/12/23,Away,Al-Nassr FC,Al-Ittihad Club,2:5,CF,19',1:1,Penalty,Not Applicable,2023/24,2020s,0,16-30
+Saudi Pro League ,17,26/12/23,Away,Al-Nassr FC,Al-Ittihad Club,2:5,CF,68',2:3,Penalty,Not Applicable,2023/24,2020s,0,61-75
+Saudi Pro League ,19,30/12/23,Away,Al-Nassr FC,Al-Taawoun FC,1:4,CF,90'+2,1:4,Header,Seko Fofana,2023/24,2020s,0,76-90
+AFC Champions League ,Round of 16,14/02/24,Away,Al-Nassr FC,Al-Fayha FC,0:1,CF,81',0:1,Right-footed shot,Marcelo Brozović,2023/24,2020s,0,76-90
+Saudi Pro League ,20,17/02/24,Home,Al-Nassr FC,Al-Fateh SC,2:1,CF,17',1:0,Right-footed shot,Sultan Al-Ghannam,2023/24,2020s,1,16-30
+AFC Champions League ,Round of 16,21/02/24,Home,Al-Nassr FC,Al-Fayha FC,2:0,CF,86',2:0,Right-footed shot,Not Applicable,2023/24,2020s,1,76-90
+Saudi Pro League ,21,25/02/24,Away,Al-Nassr FC,Al-Shabab FC,2:3,CF,21',0:1,Penalty,Not Applicable,2023/24,2020s,0,16-30
+AFC Champions League ,Quarter-Finals,11/03/24,Home,Al-Nassr FC,Al-Ain FC,5:6,CF,118',4:3,Penalty,Not Applicable,2023/24,2020s,1,90+
+Saudi Pro League ,24,15/03/24,Away,Al-Nassr FC,Al-Ahli SFC,0:1,CF,68',0:1,Penalty,Not Applicable,2023/24,2020s,0,61-75
+Saudi Pro League ,25,30/03/24,Home,Al-Nassr FC,Al-Tai FC,5:1,CF,64',3:1,Right-footed shot,Sadio Mané,2023/24,2020s,1,61-75
+Saudi Pro League ,25,30/03/24,Home,Al-Nassr FC,Al-Tai FC,5:1,CF,67',4:1,Right-footed shot,Not Applicable,2023/24,2020s,1,61-75
+Saudi Pro League ,25,30/03/24,Home,Al-Nassr FC,Al-Tai FC,5:1,CF,87',5:1,Header,Abdulmajeed Al-Sulayhim,2023/24,2020s,1,76-90
+Saudi Pro League ,26,02/04/24,Away,Al-Nassr FC,Abha Club,0:8,CF,11',0:1,Direct free kick,Not Applicable,2023/24,2020s,0,01-15
+Saudi Pro League ,26,02/04/24,Away,Al-Nassr FC,Abha Club,0:8,CF,21',0:2,Direct free kick,Not Applicable,2023/24,2020s,0,16-30
+Saudi Pro League ,26,02/04/24,Away,Al-Nassr FC,Abha Club,0:8,CF,42',0:4,Right-footed shot,Not Applicable,2023/24,2020s,0,31-45
+King's Cup ,Semi-Finals,01/05/24,Home,Al-Nassr FC,Al-Khaleej FC,3:1,CF,17',1:0,Left-footed shot,Ayman Yahya,2023/24,2020s,1,16-30
+King's Cup ,Semi-Finals,01/05/24,Home,Al-Nassr FC,Al-Khaleej FC,3:1,CF,57',3:0,Left-footed shot,Ayman Yahya,2023/24,2020s,1,46-60
+Saudi Pro League ,30,04/05/24,Home,Al-Nassr FC,Al-Wehda FC,6:0,CF,5',1:0,Right-footed shot,Not Applicable,2023/24,2020s,1,01-15
+Saudi Pro League ,30,04/05/24,Home,Al-Nassr FC,Al-Wehda FC,6:0,CF,12',2:0,Header,Marcelo Brozović,2023/24,2020s,1,01-15
+Saudi Pro League ,30,04/05/24,Home,Al-Nassr FC,Al-Wehda FC,6:0,CF,52',5:0,Left-footed shot,Sadio Mané,2023/24,2020s,1,46-60
+Saudi Pro League ,31,09/05/24,Away,Al-Nassr FC,Al-Okhdood Club,2:3,CF,15',0:2,Right-footed shot,Ali Al-Hassan,2023/24,2020s,0,01-15
+Saudi Pro League ,34,27/05/24,Home,Al-Nassr FC,Al-Ittihad Club,4:2,CF,45'+3,1:0,Left-footed shot,Mohammed Al-Fatil,2023/24,2020s,1,31-45
+Saudi Pro League ,34,27/05/24,Home,Al-Nassr FC,Al-Ittihad Club,4:2,CF,69',2:0,Header,Marcelo Brozović,2023/24,2020s,1,61-75
+Saudi Super Cup ,Semi-Finals,14/08/24,Away,Al-Nassr FC,Al-Taawoun FC,0:2,CF,57',0:2,Right-footed shot,Sultan Al-Ghannam,2024/25,2020s,0,46-60
+Saudi Super Cup ,Final,17/08/24,Away,Al-Nassr FC,Al-Hilal SFC,4:1,CF,44',0:1,Right-footed shot,Abdulrahman Ghareeb,2024/25,2020s,0,31-45
+Saudi Pro League ,1,22/08/24,Home,Al-Nassr FC,Al-Raed SFC,1:1,CF,34',1:0,Header,Sadio Mané,2024/25,2020s,1,31-45
+Saudi Pro League ,2,27/08/24,Away,Al-Nassr FC,Al-Fayha FC,1:4,CF,45'+10,0:2,Direct free kick,Not Applicable,2024/25,2020s,0,31-45
+Saudi Pro League ,4,20/09/24,Away,Al-Nassr FC,Al-Ettifaq FC,0:3,CF,33',0:1,Penalty,Not Applicable,2024/25,2020s,0,31-45
+Saudi Pro League ,5,27/09/24,Home,Al-Nassr FC,Al-Wehda FC,2:0,CF,56',2:0,Penalty,Not Applicable,2024/25,2020s,1,46-60
+AFC Champions League ,Group Stage,30/09/24,Home,Al-Nassr FC,Al-Rayyan SC,2:1,CF,76',2:0,Left-footed shot,Abdulrahman Ghareeb,2024/25,2020s,1,76-90
+Saudi Pro League ,6,05/10/24,Home,Al-Nassr FC,Al-Orobah FC,3:0,CF,17',1:0,Penalty,Not Applicable,2024/25,2020s,1,16-30
+Saudi Pro League ,7,18/10/24,Away,Al-Nassr FC,Al-Shabab FC,1:2,CF,90'+7,1:2,Penalty,Not Applicable,2024/25,2020s,0,76-90
+AFC Champions League ,Group Stage,05/11/24,Home,Al-Nassr FC,Al-Ain FC,5:1,CF,31',2:0,Left-footed shot,Not Applicable,2024/25,2020s,1,31-45
+Saudi Pro League ,11,22/11/24,Home,Al-Nassr FC,Al-Qadsiah FC,1:2,CF,32',1:0,Right-footed shot,Mohamed Simakan,2024/25,2020s,1,31-45
+AFC Champions League ,Group Stage,25/11/24,Away,Al-Nassr FC,Al-Gharafa SC,1:3,CF,46',0:1,Header,Sultan Al-Ghannam,2024/25,2020s,0,46-60
+AFC Champions League ,Group Stage,25/11/24,Away,Al-Nassr FC,Al-Gharafa SC,1:3,CF,64',0:3,Counter attack goal,Ângelo,2024/25,2020s,0,61-75
+Saudi Pro League ,12,29/11/24,Home,Al-Nassr FC,Damac FC,2:0,CF,17',1:0,Penalty,Not Applicable,2024/25,2020s,1,16-30
+Saudi Pro League ,12,29/11/24,Home,Al-Nassr FC,Damac FC,2:0,CF,79',2:0,Left-footed shot,Nawaf Boushal,2024/25,2020s,1,76-90
+Saudi Pro League ,13,06/12/24,Away,Al-Nassr FC,Al-Ittihad Club,2:1,CF,57',1:1,Right-footed shot,Ângelo,2024/25,2020s,0,46-60
+Saudi Pro League ,14,09/01/25,Home,Al-Nassr FC,Al-Okhdood Club,3:1,CF,42',2:1,Penalty,Not Applicable,2024/25,2020s,1,31-45
+Saudi Pro League ,16,21/01/25,Away,Al-Nassr FC,Al-Khaleej FC,1:3,CF,65',0:1,Right-footed shot,Otávio,2024/25,2020s,0,61-75
+Saudi Pro League ,16,21/01/25,Away,Al-Nassr FC,Al-Khaleej FC,1:3,CF,90'+8,1:3,Left-footed shot,Saad Haqawi,2024/25,2020s,0,76-90
+Saudi Pro League ,17,26/01/25,Home,Al-Nassr FC,Al-Fateh SC,3:1,CF,87',3:1,Right-footed shot,Sadio Mané,2024/25,2020s,1,76-90
+Saudi Pro League ,18,30/01/25,Away,Al-Nassr FC,Al-Raed SFC,1:2,CF,35',0:1,Right-footed shot,Marcelo Brozović,2024/25,2020s,0,31-45
+AFC Champions League ,Group Stage,03/02/25,Home,Al-Nassr FC,Al-Wasl SC,4:0,CF,44',2:0,Penalty,Not Applicable,2024/25,2020s,1,31-45
+AFC Champions League ,Group Stage,03/02/25,Home,Al-Nassr FC,Al-Wasl SC,4:0,CF,78',3:0,Header,Sadio Mané,2024/25,2020s,1,76-90
+Saudi Pro League ,19,07/02/25,Home,Al-Nassr FC,Al-Fayha FC,3:0,CF,74',3:0,Counter attack goal,Nawaf Boushal,2024/25,2020s,1,61-75
+Saudi Pro League ,22,25/02/25,Away,Al-Nassr FC,Al-Wehda FC,0:2,CF,48',0:1,Header,Ângelo,2024/25,2020s,0,46-60
+Saudi Pro League ,24,07/03/25,Home,Al-Nassr FC,Al-Shabab FC,2:2,CF,45'+7,2:1,Right-footed shot,Not Applicable,2024/25,2020s,1,31-45
+AFC Champions League ,Round of 16,10/03/25,Home,Al-Nassr FC,Esteghlal FC,3:0,CF,27',2:0,Penalty,Not Applicable,2024/25,2020s,1,16-30
+Saudi Pro League ,25,14/03/25,Home,Al-Nassr FC,Al-Kholood Club,3:1,CF,4',1:0,Right-footed shot,Not Applicable,2024/25,2020s,1,01-15
+Saudi Pro League ,26,04/04/25,Away,Al-Nassr FC,Al-Hilal SFC,1:3,CF,47',0:2,Left-footed shot,Sadio Mané,2024/25,2020s,0,46-60
+Saudi Pro League ,26,04/04/25,Away,Al-Nassr FC,Al-Hilal SFC,1:3,CF,88',1:3,Penalty,Not Applicable,2024/25,2020s,0,76-90
+Saudi Pro League ,27,12/04/25,Home,Al-Nassr FC,Al-Riyadh SC,2:1,CF,56',1:1,Right-footed shot,Sadio Mané,2024/25,2020s,1,46-60
+Saudi Pro League ,27,12/04/25,Home,Al-Nassr FC,Al-Riyadh SC,2:1,CF,64',2:1,Right-footed shot,Not Applicable,2024/25,2020s,1,61-75
+AFC Champions League ,Quarter-Finals,26/04/25,Away,Al-Nassr FC,Yokohama F. Marinos,1:4,CF,38',0:3,Right-footed shot,Not Applicable,2024/25,2020s,0,31-45
+Saudi Pro League ,33,21/05/25,Home,Al-Nassr FC,Al-Khaleej FC,2:0,CF,90'+7,2:0,Penalty,Not Applicable,2024/25,2020s,1,76-90
+Saudi Pro League ,34,26/05/25,Away,Al-Nassr FC,Al-Fateh SC,3:2,CF,42',0:1,Header,Mohammed Al-Fatil,2024/25,2020s,0,31-45
+Saudi Super Cup ,Final,23/08/25,Home,Al-Nassr FC,Al-Ahli SFC,5:7,CF,41',1:0,Penalty,Not Applicable,2025/26,2020s,1,31-45
+Saudi Pro League ,1,29/08/25,Away,Al-Nassr FC,Al-Taawoun FC,0:5,CF,54',0:2,Penalty,Not Applicable,2025/26,2020s,0,46-60
+Saudi Pro League ,3,20/09/25,Home,Al-Nassr FC,Al-Riyadh SC,5:1,CF,33',3:0,Right-footed shot,João Félix,2025/26,2020s,1,31-45
+Saudi Pro League ,3,20/09/25,Home,Al-Nassr FC,Al-Riyadh SC,5:1,CF,76',5:1,Left-footed shot,Kingsley Coman,2025/26,2020s,1,76-90
+Saudi Pro League ,4,26/09/25,Away,Al-Nassr FC,Al-Ittihad Club,0:2,CF,35',0:2,Header,Sadio Mané,2025/26,2020s,0,31-45
+Saudi Pro League ,5,18/10/25,Home,Al-Nassr FC,Al-Fateh SC,5:1,CF,60',2:1,Right-footed shot,Sadio Mané,2025/26,2020s,1,46-60
+Saudi Pro League ,6,25/10/25,Away,Al-Nassr FC,Al-Hazem SC,0:2,CF,88',0:2,Left-footed shot,Wesley,2025/26,2020s,0,76-90
+Saudi Pro League ,7,01/11/25,Home,Al-Nassr FC,Al-Fayha FC,2:1,CF,37',1:1,Right-footed shot,Kingsley Coman,2025/26,2020s,1,31-45
+Saudi Pro League ,7,01/11/25,Home,Al-Nassr FC,Al-Fayha FC,2:1,CF,90'+14,2:1,Penalty,Not Applicable,2025/26,2020s,1,76-90
+Saudi Pro League ,8,08/11/25,Away,Al-Nassr FC,NEOM SC,1:3,CF,65',0:2,Penalty,Not Applicable,2025/26,2020s,0,61-75
+Saudi Pro League ,9,23/11/25,Home,Al-Nassr FC,Al-Khaleej FC,4:1,CF,90'+6,4:1,Counter attack goal,Nawaf Boushal,2025/26,2020s,1,76-90
+Saudi Pro League ,11,27/12/25,Home,Al-Nassr FC,Al-Okhdood Club,3:0,CF,31',1:0,Right-footed shot,Abdulelah Al-Amri,2025/26,2020s,1,31-45
+Saudi Pro League ,11,27/12/25,Home,Al-Nassr FC,Al-Okhdood Club,3:0,CF,45'+3,2:0,Right-footed shot,Marcelo Brozović,2025/26,2020s,1,31-45
+Saudi Pro League ,12,30/12/25,Away,Al-Nassr FC,Al-Ettifaq FC,2:2,CF,67',1:2,Not reported,João Félix,2025/26,2020s,0,61-75
+Saudi Pro League ,14,08/01/26,Home,Al-Nassr FC,Al-Qadsiah FC,1:2,CF,81',1:2,Penalty,Not Applicable,2025/26,2020s,1,76-90
+Saudi Pro League ,15,12/01/26,Away,Al-Nassr FC,Al-Hilal SFC,3:1,CF,42',0:1,Right-footed shot,Kingsley Coman,2025/26,2020s,0,31-45
+Saudi Pro League ,17,21/01/26,Away,Al-Nassr FC,Damac FC,1:2,CF,50',0:2,Right-footed shot,João Félix,2025/26,2020s,0,46-60
+Saudi Pro League ,19,30/01/26,Away,Al-Nassr FC,Al-Kholood Club,0:3,CF,47',0:1,Right-footed shot,João Félix,2025/26,2020s,0,46-60
+Saudi Pro League ,22,14/02/26,Away,Al-Nassr FC,Al-Fateh SC,0:2,CF,18',0:1,Right-footed shot,Sadio Mané,2025/26,2020s,0,16-30
+Saudi Pro League ,23,21/02/26,Home,Al-Nassr FC,Al-Hazem SC,4:0,CF,13',1:0,Left-footed shot,Kingsley Coman,2025/26,2020s,1,01-15
+Saudi Pro League ,23,21/02/26,Home,Al-Nassr FC,Al-Hazem SC,4:0,CF,79',4:0,Left-footed shot,Kingsley Coman,2025/26,2020s,1,76-90
+Saudi Pro League ,10,25/02/26,Away,Al-Nassr FC,Al-Najma SC,0:5,CF,7',0:1,Penalty,Not Applicable,2025/26,2020s,0,01-15

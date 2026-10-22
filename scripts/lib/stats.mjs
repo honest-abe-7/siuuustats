@@ -111,3 +111,184 @@ export function internationalSummary(ledger) {
     last_cap: appearances(ledger, isIntl).map((m) => m.date).sort().at(-1),
   };
 }
+
+// ---- Club + career (M3) ------------------------------------------------------------------------
+
+const isClub = (m) => m.team_id !== NATIONAL_TEAM;
+export const CLUB_TEAMS = ["sporting-cp", "manchester-united", "real-madrid", "juventus", "al-nassr"];
+export const UCL = "uefa-champions-league";
+/** Competitions FIFA/UEFA/AFC do not count as official (flagged so headline totals can show both). */
+export const NON_FIFA_COMPETITIONS = ["arab-club-champions-cup"];
+const isQualifier = (m) => /qualif/i.test(m.stage ?? "");
+const isAwarded = (m) => /^Awarded /.test(m.notes ?? "");
+
+export const clubApps = (ledger) => appearances(ledger, isClub).length;
+export const clubGoals = (ledger) => goalsWithMatch(ledger).filter((g) => g.match && isClub(g.match)).length;
+export const careerApps = (ledger) => appearances(ledger).length;
+export const careerGoals = (ledger) => ledger.tables.goals.length;
+export const careerPenaltyGoals = (ledger) => penaltyGoals(ledger);
+/** Champions League goals in the main competition (group/league phase onward): the headline figure (decision a). */
+export const uclGoalsMain = (ledger) => goalsWithMatch(ledger).filter((g) => g.match?.competition_id === UCL && !isQualifier(g.match)).length;
+/** UEFA's own count, which includes qualifying rounds: stored and footnoted. */
+export const uclGoalsInclQualifiers = (ledger) => goalsInCompetition(ledger, UCL);
+export const uclAppsMain = (ledger) => appearances(ledger, (m) => m.competition_id === UCL && !isQualifier(m)).length;
+export const goalsForClub = (ledger, teamId) => goalsWithMatch(ledger).filter((g) => g.match?.team_id === teamId).length;
+
+/** Score after a goal, parsed from "for-against". */
+const scoreAfter = (g) => {
+  const [f, a] = String(g.score_after ?? "").split("-").map(Number);
+  return Number.isInteger(f) && Number.isInteger(a) ? { f, a } : null;
+};
+
+/**
+ * Winning goal: a goal in a match Ronaldo's team won (score, not shootout; awarded results excluded)
+ * that took the team to one more than the opponent's final total, i.e. score_after.for === score_against + 1.
+ */
+export function winningGoals(ledger, pred = () => true) {
+  return goalsWithMatch(ledger).filter((g) => {
+    const m = g.match;
+    if (!m || !pred(m) || isAwarded(m) || !(m.score_for > m.score_against)) return false;
+    const s = scoreAfter(g);
+    return s !== null && s.f === m.score_against + 1;
+  });
+}
+
+/** Equaliser: a goal after which the score was level (score_after.for === score_after.against). */
+export function equalisers(ledger, pred = () => true) {
+  return goalsWithMatch(ledger).filter((g) => {
+    if (!g.match || !pred(g.match)) return false;
+    const s = scoreAfter(g);
+    return s !== null && s.f === s.a;
+  });
+}
+
+/** Distinct opponents scored against, with first goal date, optionally filtered by match predicate. */
+export function opponentsScoredAgainst(ledger, pred = () => true) {
+  const first = new Map();
+  for (const g of goalsWithMatch(ledger)) {
+    if (!g.match || !pred(g.match)) continue;
+    const prev = first.get(g.match.opponent_id);
+    if (!prev || g.match.date < prev) first.set(g.match.opponent_id, g.match.date);
+  }
+  return [...first.entries()].map(([opponent_id, first_goal]) => ({ opponent_id, first_goal })).sort((a, b) => a.first_goal.localeCompare(b.first_goal));
+}
+export const nationalTeamsScoredAgainst = (ledger) => opponentsScoredAgainst(ledger, isIntl).length;
+
+/** Goals scored on or after a given age (default 30). */
+export const goalsFromAge = (ledger, age = 30) => goalsWithMatch(ledger).filter((g) => g.match && ageOn(g.match.date) >= Number(age)).length;
+
+/** Club headline summary: totals, per club, per season (club × season) and per competition. */
+export function clubSummary(ledger) {
+  const goals = clubGoals(ledger);
+  const apps = clubApps(ledger);
+  const perClub = CLUB_TEAMS.map((team_id) => ({
+    team_id,
+    apps: appearances(ledger, (m) => m.team_id === team_id).length,
+    goals: goalsForClub(ledger, team_id),
+    first_match: appearances(ledger, (m) => m.team_id === team_id).map((m) => m.date).sort()[0] ?? null,
+    last_match: appearances(ledger, (m) => m.team_id === team_id).map((m) => m.date).sort().at(-1) ?? null,
+  }));
+  const nonFifa = goalsWithMatch(ledger).filter((g) => g.match && isClub(g.match) && NON_FIFA_COMPETITIONS.includes(g.match.competition_id)).length;
+  return {
+    apps,
+    goals,
+    goals_per_game: Math.round((goals / apps) * 100) / 100,
+    goals_excluding_non_fifa: goals - nonFifa,
+    penalty_goals: penaltyGoals(ledger, isClub),
+    hat_tricks: multiGoalMatches(ledger, 3, isClub).length,
+    record: record(ledger, isClub),
+    champions_league: {
+      goals: uclGoalsMain(ledger),
+      apps: uclAppsMain(ledger),
+      goals_incl_qualifiers: uclGoalsInclQualifiers(ledger),
+      apps_incl_qualifiers: appearances(ledger, (m) => m.competition_id === UCL).length,
+      note: "Headline uses the main competition (group/league phase onward). UEFA's figure also counts qualifying rounds (one goal: Debrecen, 9 Aug 2005).",
+    },
+    clubs: perClub,
+  };
+}
+
+/** Career = club + international. */
+export function careerSummary(ledger) {
+  const goals = careerGoals(ledger);
+  const nonFifa = goalsWithMatch(ledger).filter((g) => g.match && NON_FIFA_COMPETITIONS.includes(g.match.competition_id)).length;
+  return {
+    apps: careerApps(ledger),
+    goals,
+    goals_excluding_non_fifa: goals - nonFifa,
+    non_fifa_competitions: NON_FIFA_COMPETITIONS,
+    penalty_goals: careerPenaltyGoals(ledger),
+    non_penalty_goals: goals - careerPenaltyGoals(ledger),
+    free_kick_goals: goalsWithMatch(ledger).filter((g) => g.method === "direct_free_kick").length,
+    hat_tricks: multiGoalMatches(ledger, 3).length,
+    winning_goals: winningGoals(ledger).length,
+    equalisers: equalisers(ledger).length,
+    goals_from_age_30: goalsFromAge(ledger, 30),
+    record: record(ledger),
+  };
+}
+
+Object.assign(COMPUTE_FNS, {
+  clubGoals,
+  clubApps,
+  careerGoals,
+  careerApps,
+  careerPenaltyGoals,
+  uclGoalsMain,
+  uclGoalsInclQualifiers,
+  goalsForClub,
+  nationalTeamsScoredAgainst,
+  goalsFromAge,
+});
+
+/** Longest runs of consecutive appearances with at least one goal, per scope ("all", "club", "international"). */
+export function scoringStreaks(ledger, top = 5) {
+  const goalsBy = new Map();
+  for (const g of ledger.tables.goals) goalsBy.set(g.match_id, (goalsBy.get(g.match_id) ?? 0) + 1);
+  const out = [];
+  for (const [scope, pred] of [["all", () => true], ["club", isClub], ["international", isIntl]]) {
+    const apps = appearances(ledger, pred).slice().sort((a, b) => a.date.localeCompare(b.date) || a.match_id.localeCompare(b.match_id));
+    const runs = [];
+    let cur = null;
+    for (const m of apps) {
+      const n = goalsBy.get(m.match_id) ?? 0;
+      if (n > 0) {
+        cur ??= { scope, matches: 0, goals: 0, from: m.date, to: m.date, match_ids: [] };
+        cur.matches++;
+        cur.goals += n;
+        cur.to = m.date;
+        cur.match_ids.push(m.match_id);
+      } else if (cur) {
+        runs.push(cur);
+        cur = null;
+      }
+    }
+    if (cur) runs.push({ ...cur, ongoing: true });
+    runs.sort((a, b) => b.matches - a.matches || b.goals - a.goals || a.from.localeCompare(b.from));
+    out.push(...runs.slice(0, top).map((r) => ({ ongoing: false, ...r })));
+  }
+  return out;
+}
+
+/** Normalised stage class used for big-game splits. */
+export function stageClass(stage) {
+  const s = String(stage ?? "").toLowerCase();
+  if (!s) return "unknown";
+  if (/qualif|preliminary|play-off round/.test(s)) return "qualifying";
+  if (/^final|^final\b|\bfinal$/.test(s) && !/semi|quarter|1\/8/.test(s)) return "final";
+  if (/semi/.test(s)) return "semi_final";
+  if (/quarter/.test(s)) return "quarter_final";
+  if (/round of 16|last 16|1\/8/.test(s)) return "round_of_16";
+  if (/round of 32|round of 64|round \d|play-off/.test(s)) return "early_knockout";
+  if (/group|league phase|league stage|matchday/.test(s)) return "group_or_league";
+  return "other";
+}
+
+/** Apps and goals by stage class and scope (finals, semi-finals, ...). One-off super cups and two-legged super cups count as finals.
+ *  International stage is not yet populated, so international rows are "unknown". */
+export function bigGameSplits(ledger) {
+  const out = [];
+  for (const [scope, pred] of [["club", isClub], ["international", isIntl]])
+    for (const r of splitBy(ledger, (m) => (/super-?cup|supercop|shield/.test(m.competition_id) && /^(|1st leg|2nd leg)$/.test(m.stage ?? "") ? "final" : stageClass(m.stage)), pred)) out.push({ scope, stage_class: r.key, apps: r.apps, goals: r.goals });
+  return out;
+}

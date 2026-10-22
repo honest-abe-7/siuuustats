@@ -1,0 +1,25 @@
+es_match_no,date,opponent,score_for,score_against,shootout,evidence_source_ids,note
+63,2004-04-03,Arsenal,1,0,,wikipedia-club-season-articles,FA Cup semi-final at Villa Park; Man Utd won 1-0.
+121,2005-05-21,Arsenal,0,0,lost 4-5,wikipedia-club-season-articles,FA Cup final at the Millennium Stadium; 0-0 after extra time; lost 4-5 on penalties.
+221,2007-05-19,Chelsea,0,1,,wikipedia-club-season-articles,FA Cup final at Wembley; Chelsea won 1-0 after extra time.
+222,2007-08-05,Chelsea,1,1,won 3-0,wikipedia-club-season-articles,Community Shield at Wembley; Man Utd won 3-0 on penalties.
+291,2008-12-21,LDU Quito,1,0,,wikipedia-club-season-articles,Club World Cup final in Yokohama; Man Utd won 1-0.
+307,2009-03-01,Tottenham Hotspur,0,0,won 4-1,wikipedia-club-season-articles,League Cup final at Wembley; Man Utd won 4-1 on penalties.
+323,2009-05-27,Barcelona,0,2,,wikipedia-club-season-articles,Champions League final in Rome; Barcelona won 2-0.
+593,2014-12-16,Cruz Azul,4,0,,wikipedia-club-season-articles,Club World Cup semi-final in Rabat; Real Madrid won 4-0.
+594,2014-12-20,San Lorenzo,2,0,,wikipedia-club-season-articles,Club World Cup final in Marrakesh; Real Madrid won 2-0.
+671,2016-05-28,Atlético Madrid,1,1,won 5-3,wikipedia-club-season-articles,Champions League final in Milan; Real Madrid won 5-3 on penalties.
+718,2017-08-08,Manchester United,2,1,,wikipedia-club-season-articles,UEFA Super Cup in Skopje; Real Madrid won 2-1.
+761,2018-05-26,Liverpool,3,1,,wikipedia-club-season-articles,Champions League final in Kyiv; Real Madrid won 3-1.
+825,2019-12-22,Lazio,1,3,,wikipedia-club-season-articles,Supercoppa Italiana in Riyadh; Lazio won 3-1.
+838,2020-06-17,Napoli,0,0,lost 2-4,wikipedia-club-season-articles,Coppa Italia final in Rome; Napoli won 4-2 on penalties.
+894,2021-05-19,Atalanta,2,1,,wikipedia-club-season-articles,Coppa Italia final in Reggio Emilia; Juventus won 2-1.
+969,2023-07-28,Al-Shabab,0,0,,wikipedia-club-season-articles,Arab Club Champions Cup group match in Taif; 0-0.
+970,2023-07-31,Monastir,4,1,,wikipedia-club-season-articles,Arab Club Champions Cup group match in Taif; Al-Nassr won 4-1 (Ronaldo 74').
+971,2023-08-03,Zamalek,1,1,,wikipedia-club-season-articles,Arab Club Champions Cup group match in Taif; 1-1 (Ronaldo 87').
+1011,2024-04-08,Al-Hilal,1,2,,wikipedia-club-season-articles,Saudi Super Cup semi-final in Abu Dhabi; Al-Hilal won 2-1.
+1019,2024-05-31,Al-Hilal,1,1,lost 4-5,wikipedia-club-season-articles,King's Cup final in Jeddah; Al-Hilal won 5-4 on penalties.
+1057,2025-04-30,Kawasaki Frontale,2,3,,wikipedia-club-season-articles,AFC Champions League Elite semi-final in Jeddah; Kawasaki won 3-2.
+1061,2025-08-19,Al-Ittihad,2,1,,wikipedia-club-season-articles,Saudi Super Cup semi-final in Hong Kong; Al-Nassr won 2-1.
+1091,2026-04-22,Al Ahli SC,5,1,,wikipedia-club-season-articles,AFC Champions League Two neutral-venue tie; Al-Nassr won 5-1.
+1021,2024-08-17,Al-Hilal,1,4,,wikipedia-club-season-articles;kaggle-sigmaborov-cr7-goals,"Saudi Super Cup final in Abha; Al-Hilal won 4-1. eswiki's result is Al-Nassr-first while its goal cell (0-1, 44') is Al-Hilal-first; Ronaldo's goal made it 1-0 to Al-Nassr."

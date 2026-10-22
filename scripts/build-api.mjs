@@ -6,6 +6,9 @@ import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ROOT, loadLedger } from "./lib/ledger.mjs";
 import * as stats from "./lib/stats.mjs";
+import { readCsv } from "./lib/csv.mjs";
+import { existsSync, readFileSync } from "node:fs";
+import { runReconciliation } from "./reconcile.mjs";
 
 export const API_VERSION = "v1";
 
@@ -14,6 +17,7 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
   const teamName = new Map(teams.map((t) => [t.team_id, t.name]));
   const compName = new Map(competitions.map((c) => [c.competition_id, c.name]));
   const isPor = (m) => m.team_id === stats.NATIONAL_TEAM;
+  const scopeOf = (m) => (isPor(m) ? "international" : "club");
   const dataAsOf = matches.map((m) => m.date).sort().at(-1) ?? null;
   const usedSources = new Set();
   const envelope = (endpoint, data, sourceIds) => {
@@ -44,6 +48,8 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
       opponent: teamName.get(g.match.opponent_id),
       competition_id: g.match.competition_id,
       competition: compName.get(g.match.competition_id),
+      scope: scopeOf(g.match),
+      stage: g.match.stage ?? null,
       venue: g.match.venue,
       minute: g.minute,
       added_time: g.added_time,
@@ -61,24 +67,104 @@ export function buildApi(ledger, generatedAt = new Date().toISOString()) {
   const allSrc = (rows) => rows.flatMap((r) => r.source_ids);
   const intlMatches = matches.filter(isPor);
   const out = {};
-  out["summary.json"] = envelope("summary", { international: stats.internationalSummary(ledger) }, allSrc(intlMatches).concat(allSrc(ledger.tables.goals)));
+  const clubMatches = matches.filter((m) => !isPor(m));
+  const goalSrc = (pred) => allSrc(goals.filter((g) => g.match && pred(g.match)));
+  const INTL = ["wikipedia-cristiano-ronaldo", "wikipedia-cr7-intl-goals", "rsssf-cronaldo-intlg", "martj42-results"];
+  const CLUB = ["eswiki-cr7-club-matches", "wikipedia-club-season-articles", "wikipedia-cristiano-ronaldo"];
+  // Per-number citations (dotted path into data -> source_ids). The envelope attribution still lists every source used.
+  const citations = {
+    "international.caps": INTL,
+    "international.goals": INTL,
+    "international.penalty_goals": ["wikipedia-cr7-intl-goals", "martj42-goalscorers", "messivsronaldo-app-international"],
+    "international.hat_tricks": ["wikipedia-cr7-intl-goals"],
+    "international.record": ["rsssf-cronaldo-intlg", "martj42-results"],
+    "club.apps": ["eswiki-cr7-club-matches", "wikipedia-club-season-articles"],
+    "club.goals": CLUB,
+    "club.penalty_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-club-season-articles"],
+    "club.champions_league": ["eswiki-cr7-club-matches", "wikipedia-club-season-articles", "wikipedia-cristiano-ronaldo"],
+    "club.clubs": CLUB,
+    "club.record": ["eswiki-cr7-club-matches", "wikipedia-club-season-articles"],
+    "career.apps": ["eswiki-cr7-club-matches", ...INTL],
+    "career.goals": [...CLUB, "wikipedia-cr7-intl-goals"],
+    "career.penalty_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-club-season-articles", "wikipedia-cr7-intl-goals", "martj42-goalscorers"],
+    "career.winning_goals": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-cr7-intl-goals"],
+    "career.equalisers": ["eswiki-cr7-club-matches", "kaggle-sigmaborov-cr7-goals", "wikipedia-cr7-intl-goals"],
+  };
+  out["summary.json"] = envelope(
+    "summary",
+    { international: stats.internationalSummary(ledger), club: stats.clubSummary(ledger), career: stats.careerSummary(ledger), citations },
+    allSrc(matches).concat(allSrc(ledger.tables.goals))
+  );
   out["goals.json"] = envelope("goals", goalRows, allSrc(goalRows));
   out["matches.json"] = envelope(
     "matches",
-    matches.map((m) => ({ ...m, opponent: teamName.get(m.opponent_id), competition: compName.get(m.competition_id) })),
+    matches.map((m) => ({ ...m, scope: scopeOf(m), opponent: teamName.get(m.opponent_id), competition: compName.get(m.competition_id) })),
     allSrc(matches)
   );
-  const withNames = (rows, nameMap, keyName) => rows.map((r) => ({ [keyName]: r.key, name: nameMap ? nameMap.get(r.key) : undefined, apps: r.apps, goals: r.goals }));
-  out["goals-by-competition.json"] = envelope("goals-by-competition", withNames(stats.splitBy(ledger, (m) => m.competition_id), compName, "competition_id"), allSrc(matches).concat(allSrc(ledger.tables.goals)));
+  // Split files: one row per (scope, key). Filter on `scope` for club-only or international-only views.
+  const scoped = (keyFn, map) =>
+    ["international", "club"].flatMap((scope) =>
+      stats.splitBy(ledger, keyFn, (m) => scopeOf(m) === scope).map((r) => ({ scope, ...map(r) }))
+    );
+  const named = (nameMap, keyName) => (r) => ({ [keyName]: r.key, name: nameMap ? nameMap.get(r.key) : undefined, apps: r.apps, goals: r.goals });
+  const everything = allSrc(matches).concat(allSrc(ledger.tables.goals));
+  out["goals-by-competition.json"] = envelope("goals-by-competition", scoped((m) => m.competition_id, named(compName, "competition_id")), everything);
   out["goals-by-year.json"] = envelope(
     "goals-by-year",
-    stats
-      .splitBy(ledger, (m) => m.date.slice(0, 4))
-      .map((r) => ({ year: r.key, apps: r.apps, goals: r.goals }))
-      .sort((a, b) => a.year.localeCompare(b.year)),
-    allSrc(matches).concat(allSrc(ledger.tables.goals))
+    scoped((m) => m.date.slice(0, 4), (r) => ({ year: r.key, apps: r.apps, goals: r.goals })).sort((a, b) => a.scope.localeCompare(b.scope) || a.year.localeCompare(b.year)),
+    everything
   );
-  out["goals-by-opponent.json"] = envelope("goals-by-opponent", withNames(stats.splitBy(ledger, (m) => m.opponent_id), teamName, "opponent_id"), allSrc(matches).concat(allSrc(ledger.tables.goals)));
+  out["goals-by-opponent.json"] = envelope("goals-by-opponent", scoped((m) => m.opponent_id, named(teamName, "opponent_id")), everything);
+  out["goals-by-club.json"] = envelope("goals-by-club", stats.clubSummary(ledger).clubs.map((c) => ({ ...c, name: teamName.get(c.team_id) })), allSrc(clubMatches).concat(goalSrc((m) => !isPor(m))));
+  out["goals-by-season.json"] = envelope(
+    "goals-by-season",
+    stats
+      .splitBy(ledger, (m) => `${m.season}|${m.team_id}|${m.competition_id}`, (m) => !isPor(m))
+      .map((r) => {
+        const [season, team_id, competition_id] = r.key.split("|");
+        return { season, team_id, competition_id, competition: compName.get(competition_id), wikipedia_category: competitions.find((c) => c.competition_id === competition_id)?.wikipedia_category ?? null, apps: r.apps, goals: r.goals };
+      })
+      .sort((a, b) => a.season.localeCompare(b.season) || a.team_id.localeCompare(b.team_id) || b.apps - a.apps || a.competition_id.localeCompare(b.competition_id)),
+    allSrc(clubMatches).concat(goalSrc((m) => !isPor(m)))
+  );
+  const multi = stats.multiGoalMatches(ledger, 2);
+  const multiIds = new Set(multi.map((x) => x.match_id));
+  const matchById = new Map(matches.map((m) => [m.match_id, m]));
+  out["multi-goal-matches.json"] = envelope(
+    "multi-goal-matches",
+    multi.map((x) => {
+      const m = matchById.get(x.match_id);
+      return { ...x, scope: scopeOf(m), opponent: teamName.get(x.opponent_id), competition_id: m.competition_id, team_id: m.team_id, result: `${m.score_for}-${m.score_against}`, kind: x.goals >= 4 ? (x.goals === 4 ? "poker" : "haul") : x.goals === 3 ? "hat-trick" : "brace", source_ids: m.source_ids };
+    }),
+    allSrc(matches.filter((m) => multiIds.has(m.match_id)))
+  );
+  out["goals-by-age.json"] = envelope(
+    "goals-by-age",
+    scoped((m) => stats.ageOn(m.date), (r) => ({ age: r.key, apps: r.apps, goals: r.goals })).sort((a, b) => a.scope.localeCompare(b.scope) || a.age - b.age),
+    everything
+  );
+  out["streaks.json"] = envelope("streaks", stats.scoringStreaks(ledger), everything);
+  out["big-games.json"] = envelope("big-games", stats.bigGameSplits(ledger), everything);
+  const rec = runReconciliation(ledger.root ?? undefined, ledger);
+  out["reconciliation.json"] = envelope(
+    "reconciliation",
+    { counts: rec.counts, checks: rec.checks.map(({ check, source_id, description, expected, actual, status, note }) => ({ check, source_id, description, expected, actual, status, note: note ?? null })) },
+    rec.checks.map((c) => c.source_id)
+  );
+  const root = ledger.root ?? ROOT;
+  const corr = readCsv(join(root, "data/manual/corrections.csv")).rows;
+  const dateChecks = readCsv(join(root, "data/manual/club-date-checks.csv")).rows;
+  const resPath = join(root, "data/reconciliation/club-ingest-resolutions.json");
+  const ingestClub = existsSync(resPath) ? JSON.parse(readFileSync(resPath, "utf8")) : { resolutions: [] };
+  out["corrections.json"] = envelope(
+    "corrections",
+    {
+      corrections: corr.map((c) => ({ ...c, evidence_source_ids: c.evidence_source_ids.split(";") })),
+      date_checks: dateChecks.map((d) => ({ ...d, evidence_source_ids: d.evidence_source_ids.split(";") })),
+      resolutions_2_of_3: ingestClub.resolutions ?? [],
+    },
+    corr.flatMap((c) => [c.source_id, ...c.evidence_source_ids.split(";")]).concat(dateChecks.flatMap((d) => d.evidence_source_ids.split(";")))
+  );
   out["records.json"] = envelope(
     "records",
     records.map((r) => ({ ...r, computed_value: r.compute_fn ? String(stats.evaluateComputeFn(ledger, r.compute_fn)) : null })),

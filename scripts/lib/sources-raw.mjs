@@ -2,7 +2,7 @@
 // shared by the ingest script (to build rows) and the reconciliation suite (to read expected totals).
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { loadHtml, findTable, wikiDate } from "./wikitable.mjs";
+import { loadHtml, findTable, wikiDate, parseTable as parseTableImported } from "./wikitable.mjs";
 import { readCsv } from "./csv.mjs";
 import { ROOT } from "./ledger.mjs";
 
@@ -13,6 +13,10 @@ export const RAW = {
   m42results: "data/raw/martj42-portugal-results.csv",
   m42goals: "data/raw/martj42-portugal-goalscorers.csv",
   m42shootouts: "data/raw/martj42-portugal-shootouts.csv",
+  eswikiClub: "data/raw/eswiki-cr7-club-matches.html",
+  wikiClubTable: "data/raw/wikipedia-cr7-club-career-table.html",
+  kaggleGoals: "data/raw/kaggle-sigmaborov-ronaldo-goals.csv",
+  wikiClubSeasons: "data/raw/wikipedia-club-season-snippets.json",
 };
 
 const read = (rel, root = ROOT) => readFileSync(join(root, rel), "utf8");
@@ -159,4 +163,133 @@ export function loadMartj42(root = ROOT) {
     goals: readCsv(join(root, RAW.m42goals)).rows,
     shootouts: readCsv(join(root, RAW.m42shootouts)).rows,
   };
+}
+
+// ---------------------------------------------------------------------------------------------
+// Club sources (M3)
+// ---------------------------------------------------------------------------------------------
+
+const templatesIn = ($, el) => {
+  const out = [];
+  $(el)
+    .find("[data-mw]")
+    .addBack("[data-mw]")
+    .each((_, e) => {
+      try {
+        for (const p of JSON.parse($(e).attr("data-mw")).parts || [])
+          if (p.template) out.push({ name: p.template.target.wt.trim().toLowerCase(), params: Object.fromEntries(Object.entries(p.template.params || {}).map(([k, v]) => [k, v.wt])) });
+      } catch {
+        /* not a template */
+      }
+    });
+  return out;
+};
+
+/**
+ * Spanish Wikipedia "Partidos oficiales de Cristiano Ronaldo en clubes": one row per official club match.
+ * Returns raw-but-typed rows; interpretation (orientation, stages, ids) happens in the ingest script.
+ */
+export function parseEswikiClub(root = ROOT) {
+  const $ = loadHtml(read(RAW.eswikiClub, root));
+  const table = $("table").first();
+  const header = table.find("tr").first().children().map((_, c) => $(c).text().trim()).get();
+  const want = ["N", "Fecha", "Rival", "Estadio", "Ciudad", "Res.", "G", "Minuto.G", "AP", "A", "Minuto.A", "BA", "Competencia", "Notas", "PR", "MJ", "Temporada"];
+  if (want.some((w, i) => header[i] !== w)) throw new Error(`eswiki header changed: ${header.join("|")}`);
+  // Temporada is a rowspan cell; carry it down.
+  let season = null;
+  const rows = [];
+  table
+    .find("tr")
+    .slice(1)
+    .each((_, tr) => {
+      const tds = $(tr).children("td");
+      if (!tds.length) return;
+      const cells = tds.map((_, td) => cellTextLocal($, td)).get();
+      if (cells.length === 17) season = cells[16];
+      if (!/^\d+$/.test(cells[0] || "")) return;
+      const [d, mo, y] = cells[1].split("/");
+      const notasTemplates = templatesIn($, tds[13]).map((t) => t.name);
+      const flag = templatesIn($, tds[2]).find((t) => t.name === "bandera")?.params["1"] ?? null;
+      rows.push({
+        n: Number(cells[0]),
+        date: `${y}-${mo}-${d}`,
+        opponent: cells[2].replace(/\*+$/, "").trim(),
+        opponentFlag: flag,
+        stadium: cells[3],
+        venueCode: (cells[3].match(/\(([LVN])\)\s*$/) || [])[1] ?? null,
+        city: cells[4],
+        result: cells[5],
+        goals: /^\d+$/.test(cells[6]) ? Number(cells[6]) : 0,
+        goalCell: cells[7],
+        assistedBy: cells[8],
+        assists: /^\d+$/.test(cells[9]) ? Number(cells[9]) : 0,
+        competition: cells[12],
+        notes: cells[13],
+        subOn: notasTemplates.includes("subon"),
+        subOff: notasTemplates.includes("suboff"),
+        keeper: cells[14],
+        minutes: /^\d+$/.test(cells[15]) ? Number(cells[15]) : null,
+        season: (cells.length === 17 ? cells[16] : season)?.replace(".", "-") ?? null,
+      });
+    });
+  return rows;
+}
+
+function cellTextLocal($, td) {
+  const c = $(td).clone();
+  c.find("sup, style").remove();
+  return c.text().replace(/\[\d+\]/g, "").replace(/\s+/g, " ").trim();
+}
+
+/** English Wikipedia club career table: apps/goals per club, season and competition column. */
+export function parseWikiClubTable(root = ROOT) {
+  const $ = loadHtml(read(RAW.wikiClubTable, root));
+  const { header, rows } = (() => {
+    const t = $("table").first();
+    return { ...parseTableLocal($, t) };
+  })();
+  const cats = ["league", "national_cup", "league_cup", "continental", "other", "total"];
+  const num = (s) => (s === "—" || s === "" ? null : Number(s.replace(/,/g, "")));
+  const out = [];
+  for (const r of rows) {
+    const [club, season, division, ...vals] = r;
+    const rec = { club, season: season.replace("–", "-"), division };
+    cats.forEach((c, i) => (rec[c] = { apps: num(vals[i * 2]), goals: num(vals[i * 2 + 1]) }));
+    rec.kind = club === "Career total" ? "career" : season === "Total" ? "club_total" : "season";
+    out.push(rec);
+  }
+  if (!header.includes("Continental / Apps")) throw new Error("enwiki club table header changed");
+  return out;
+}
+
+function parseTableLocal($, t) {
+  return parseTableImported($, t);
+}
+
+/** Kaggle "Ronaldo CR7 All Goals GOAT" (sigmaborov, CC BY-SA 4.0): one row per goal. */
+export function loadKaggleGoals(root = ROOT) {
+  return readCsv(join(root, RAW.kaggleGoals)).rows.map((r, i) => {
+    const [d, m, y] = r.match_date.split("/");
+    const minute = r.goal_minute.match(/^(\d+)'(?:\+(\d+))?/);
+    return {
+      row: i + 2,
+      competition: r.competition.trim(),
+      stage: r.stage.trim(),
+      date: `${Number(y) > 50 ? "19" : "20"}${y}-${m}-${d}`,
+      homeAway: r.home_away,
+      team: r.team,
+      opponent: r.opponent,
+      finalScore: r.final_score,
+      minute: minute ? Number(minute[1]) : null,
+      addedTime: minute && minute[2] ? Number(minute[2]) : null,
+      scoreAfter: r.score_after_goal,
+      method: r.goal_method.trim(),
+      assist: r.assist_player && r.assist_player !== "Not Applicable" ? r.assist_player.trim() : null,
+    };
+  });
+}
+
+/** Date-anchored snippets from the English Wikipedia club season articles. */
+export function loadClubSeasonSnippets(root = ROOT) {
+  return JSON.parse(read(RAW.wikiClubSeasons, root)).pages;
 }
