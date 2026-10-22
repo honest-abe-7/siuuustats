@@ -129,7 +129,7 @@ export const careerGoals = (ledger) => ledger.tables.goals.length;
 export const careerPenaltyGoals = (ledger) => penaltyGoals(ledger);
 /** Champions League goals in the main competition (group/league phase onward): the headline figure (decision a). */
 export const uclGoalsMain = (ledger) => goalsWithMatch(ledger).filter((g) => g.match?.competition_id === UCL && !isQualifier(g.match)).length;
-/** UEFA's own count, which includes qualifying rounds: stored and footnoted. */
+/** Including qualifying rounds (141, the figure on UEFA's "including qualifying rounds" list): stored and footnoted. UEFA.com's headline is 140 (uclGoalsMain). */
 export const uclGoalsInclQualifiers = (ledger) => goalsInCompetition(ledger, UCL);
 export const uclAppsMain = (ledger) => appearances(ledger, (m) => m.competition_id === UCL && !isQualifier(m)).length;
 export const goalsForClub = (ledger, teamId) => goalsWithMatch(ledger).filter((g) => g.match?.team_id === teamId).length;
@@ -202,7 +202,7 @@ export function clubSummary(ledger) {
       apps: uclAppsMain(ledger),
       goals_incl_qualifiers: uclGoalsInclQualifiers(ledger),
       apps_incl_qualifiers: appearances(ledger, (m) => m.competition_id === UCL).length,
-      note: "Headline uses the main competition (group/league phase onward). UEFA's figure also counts qualifying rounds (one goal: Debrecen, 9 Aug 2005).",
+      note: "Headline uses the main competition (group/league phase onward), the same basis as UEFA.com's 140 goals in 183 appearances. UEFA's all-time list including qualifying rounds gives 141 (extra goal: Debrecen, 9 Aug 2005).",
     },
     clubs: perClub,
   };

@@ -9,6 +9,7 @@
   "scripts": {
     "snapshots:refresh": "node scripts/ingest/fetch-snapshots.mjs",
     "ingest:intl": "node scripts/ingest/international.mjs",
+    "ingest:club": "node scripts/ingest/club.mjs",
     "validate": "node scripts/validate.mjs",
     "reconcile": "node scripts/reconcile.mjs",
     "build:api": "node scripts/build-api.mjs",

@@ -49,6 +49,19 @@
       "source_id": "kaggle-sigmaborov-cr7-goals",
       "reason": "Kaggle dates Tottenham 0-4 Man Utd as 3 Feb 2007. It was played on Sunday 4 Feb 2007 (season article; Premier League, BBC and ESPN match pages). The ledger keeps 4 Feb and the ingest matches Kaggle's row to it with a one-day tolerance.",
       "reviewed_at": "2026-10-22"
+    },
+    {
+      "check": "reference-real-madrid-goals-marca",
+      "expected": 451,
+      "actual": 450,
+      "source_id": "skysports-ronaldo-mystery-goal",
+      "reason": "Marca and Real Madrid count 451 Real Madrid goals (312 in La Liga) because they credit Ronaldo with the 74' goal at Real Sociedad on 18 Sep 2010 (1-2): his free kick deflected in off Pepe's back. The official record, ESPN and Wikipedia credit Pepe. The ledger keeps 450 / 311 (data request #16).",
+      "evidence_source_ids": [
+        "espn-2010-09-18-real-sociedad-real-madrid",
+        "skysports-ronaldo-mystery-goal",
+        "wikipedia-club-season-articles"
+      ],
+      "reviewed_at": "2026-10-22"
     }
   ]
 }

@@ -140,6 +140,11 @@ export function runReconciliation(root = ROOT, ledger = loadLedger(root)) {
   add("wikipedia-club-career-goals", "wikipedia-cristiano-ronaldo", career.total.goals, clubSum.goals, "Club career goals (enwiki table total)");
   add("career-goals-club-plus-intl", "wikipedia-cristiano-ronaldo", career.total.goals + wa.infoboxGoals, stats.careerGoals(ledger), "Career goals = enwiki club total + infobox international goals");
 
+  // Reference figures from outlets that count differently (documented; must stay a known difference)
+  add("reference-real-madrid-goals-marca", "skysports-ronaldo-mystery-goal", 451, stats.goalsForClub(ledger, "real-madrid"), "Marca / Real Madrid count of Ronaldo's Real Madrid goals (credits him with Pepe's deflection, 18 Sep 2010)");
+  add("reference-ucl-uefa-com-headline", "uefa-com-ucl-all-time-top-scorers", { goals: 140, apps: 183 }, { goals: stats.uclGoalsMain(ledger), apps: stats.uclAppsMain(ledger) }, "UEFA.com headline Champions League goals and appearances (excluding qualifying)");
+  add("reference-ucl-uefa-incl-qualifying", "uefa-com-ucl-all-time-top-scorers", 141, stats.uclGoalsInclQualifiers(ledger), "UEFA all-time list including qualifying rounds");
+
   // 7. Kaggle per-match coverage (seed source): every Kaggle goal date must carry the same number of ledger goals
   const kaggle = loadKaggleGoals(root);
   const kPerDate = {};

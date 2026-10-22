@@ -21,7 +21,7 @@ supercoppa-italiana,Supercoppa Italiana,super_cup,club,UEFA,Italy,true,,,other
 saudi-pro-league,Saudi Pro League,league,club,AFC,Saudi Arabia,true,,,league
 kings-cup-saudi-arabia,King's Cup (Saudi Arabia),domestic_cup,club,AFC,Saudi Arabia,true,,,national_cup
 saudi-super-cup,Saudi Super Cup,super_cup,club,AFC,Saudi Arabia,true,,,other
-uefa-champions-league,UEFA Champions League,continental_club,club,UEFA,,true,true,Qualifying rounds are filed here with stage 'Qualifying round N'. Headline figures use the main competition (stage not starting with 'Qualifying'); UEFA's own all-time figure includes qualifying.,continental
+uefa-champions-league,UEFA Champions League,continental_club,club,UEFA,,true,true,Qualifying rounds are filed here with stage 'Qualifying round N'. Headline figures use the main competition (stage not starting with 'Qualifying'); UEFA.com's headline (140 in 183) also excludes qualifying; UEFA's 'including qualifying rounds' list gives 141.,continental
 uefa-cup,UEFA Cup,continental_club,club,UEFA,,true,true,Predecessor of the UEFA Europa League.,continental
 uefa-europa-league,UEFA Europa League,continental_club,club,UEFA,,true,true,,continental
 uefa-super-cup,UEFA Super Cup,super_cup,club,UEFA,,true,false,,other

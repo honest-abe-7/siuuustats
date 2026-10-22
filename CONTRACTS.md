@@ -119,7 +119,7 @@ import { buildApi } from "./scripts/build-api.mjs";          // (ledger, generat
 | `clubSummary(ledger)`, `careerSummary(ledger)` | `summary.json` → `club`, `career` (M3) |
 | `clubGoals`, `clubApps`, `careerGoals`, `careerApps`, `careerPenaltyGoals`, `goalsForClub(ledger, teamId)` | club and career totals |
 | `uclGoalsMain`, `uclAppsMain` | Champions League **main competition** (group/league phase onward): the headline (decision a) |
-| `uclGoalsInclQualifiers` | UEFA's count including qualifying rounds (141): stored and footnoted |
+| `uclGoalsInclQualifiers` | count including qualifying rounds (141, as on UEFA's "including qualifying rounds" list): stored and footnoted |
 | `winningGoals(ledger, pred?)` | goals in a match won on the score (not a shootout; awarded results excluded) where `score_after.for === score_against + 1`, i.e. the goal that put the team ahead for good |
 | `equalisers(ledger, pred?)` | goals after which the score was level (`score_after.for === score_after.against`) |
 | `opponentsScoredAgainst(ledger, pred?)`, `nationalTeamsScoredAgainst` | distinct opponents with first goal date |
@@ -187,7 +187,7 @@ The frontend must display the `attribution` of any data it renders, which the CC
 
 ## 9. Club ledger (M3) — decisions and rules
 
-- **Decision (a): Champions League.** The headline is main-competition goals (`uclGoalsMain` = 140, 183 apps). UEFA's figure including qualifying rounds (`uclGoalsInclQualifiers` = 141, 187 apps) is stored and footnoted. The difference is one goal: Man Utd at Debrecen, 9 Aug 2005, third qualifying round.
+- **Decision (a): Champions League.** The headline is main-competition goals (`uclGoalsMain` = 140, 183 apps), the same figure UEFA.com shows (140 goals in 183 appearances, excluding qualifying). The count including qualifying rounds (`uclGoalsInclQualifiers` = 141, 187 apps; UEFA's all-time list "including qualifying rounds" also says 141) is stored and footnoted. The difference is one goal: Man Utd at Debrecen, 9 Aug 2005, third qualifying round.
 - **Decision (b): appearances are whatever the ledger computes** (club 1,107; career 1,341). Wikipedia (1,109 club), ESPN and messivsronaldo are reconciliation references, and every difference is explained in `known-differences.json` (the 2 Sporting CP B reserve apps).
 - **Decision (c): Kaggle seed.** "Ronaldo CR7 All Goals GOAT" (sigmaborov, CC BY-SA 4.0, v1 2026-03-09) adds body part, assist names and penalty/free-kick cross-checks. It never adds or removes a goal by itself. Every season must reconcile to enwiki's per-season, per-category table before it is accepted (all 27 first-team seasons do).
 - **Club spine:** Spanish Wikipedia's "Anexo:Partidos de Cristiano Ronaldo con clubes" match table (rev 175883102) gives one row per appearance. Dates are cross-checked against the English club season articles (pinned revisions in MANIFEST).
