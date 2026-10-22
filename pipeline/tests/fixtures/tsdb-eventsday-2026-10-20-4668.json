@@ -1,0 +1,58 @@
+{
+ "events": [
+  {
+   "idEvent": "2573384",
+   "strEvent": "Al-Ettifaq vs Al-Ittihad",
+   "idLeague": "4668",
+   "strLeague": "Saudi-Arabian Pro League",
+   "strSeason": "2026-2027",
+   "strHomeTeam": "Al-Ettifaq",
+   "strAwayTeam": "Al-Ittihad",
+   "intHomeScore": "1",
+   "intAwayScore": "4",
+   "dateEvent": "2026-10-20",
+   "dateEventLocal": "2026-10-20",
+   "strTime": "18:00:00",
+   "idHomeTeam": "136017",
+   "idAwayTeam": "136018",
+   "strStatus": "FT",
+   "strPostponed": "no"
+  },
+  {
+   "idEvent": "2573385",
+   "strEvent": "Al-Taawoun vs Al-Qadsiah",
+   "idLeague": "4668",
+   "strLeague": "Saudi-Arabian Pro League",
+   "strSeason": "2026-2027",
+   "strHomeTeam": "Al-Taawoun",
+   "strAwayTeam": "Al-Qadsiah",
+   "intHomeScore": "0",
+   "intAwayScore": "1",
+   "dateEvent": "2026-10-20",
+   "dateEventLocal": "2026-10-20",
+   "strTime": "15:10:00",
+   "idHomeTeam": "136012",
+   "idAwayTeam": "136015",
+   "strStatus": "FT",
+   "strPostponed": "no"
+  },
+  {
+   "idEvent": "2573386",
+   "strEvent": "Al-Nassr vs Neom",
+   "idLeague": "4668",
+   "strLeague": "Saudi-Arabian Pro League",
+   "strSeason": "2026-2027",
+   "strHomeTeam": "Al-Nassr",
+   "strAwayTeam": "Neom",
+   "intHomeScore": "1",
+   "intAwayScore": "0",
+   "dateEvent": "2026-10-20",
+   "dateEventLocal": "2026-10-20",
+   "strTime": "18:00:00",
+   "idHomeTeam": "136022",
+   "idAwayTeam": "150637",
+   "strStatus": "FT",
+   "strPostponed": "no"
+  }
+ ]
+}

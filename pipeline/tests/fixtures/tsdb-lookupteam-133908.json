@@ -1,0 +1,20 @@
+{
+ "teams": [
+  {
+   "idTeam": "133908",
+   "strTeam": "Portugal",
+   "strGender": "Male",
+   "strCountry": "Portugal",
+   "idLeague": "4429",
+   "strLeague": "FIFA World Cup",
+   "idLeague2": "4490",
+   "strLeague2": "UEFA Nations League",
+   "idLeague3": "4562",
+   "strLeague3": "International Friendlies",
+   "idLeague4": "5519",
+   "strLeague4": "UEFA European Championships Qualifying",
+   "strSport": "Soccer",
+   "strLocation": "Oeiras, Portugal"
+  }
+ ]
+}

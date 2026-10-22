@@ -1,0 +1,22 @@
+{
+ "events": [
+  {
+   "idEvent": "2573392",
+   "strEvent": "Al-Faisaly vs Al-Nassr",
+   "idLeague": "4668",
+   "strLeague": "Saudi-Arabian Pro League",
+   "strSeason": "2026-2027",
+   "strHomeTeam": "Al-Faisaly",
+   "strAwayTeam": "Al-Nassr",
+   "intHomeScore": null,
+   "intAwayScore": null,
+   "dateEvent": "2026-10-23",
+   "dateEventLocal": "2026-10-23",
+   "strTime": "13:30:00",
+   "idHomeTeam": "136021",
+   "idAwayTeam": "136022",
+   "strStatus": "NS",
+   "strPostponed": "no"
+  }
+ ]
+}

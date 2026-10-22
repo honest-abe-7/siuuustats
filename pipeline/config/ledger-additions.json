@@ -1,0 +1,53 @@
+{
+  "note": "Candidates a human has reviewed and decided SHOULD be added to the ledger, but which the pipeline must not write itself (data/ is changed only by its owner through data/manual + ingest). detect-matches.mjs keeps surfacing each entry in the review PR until a matching row exists in data/matches.csv. Each entry: key, action, match, reason, evidence [{publisher,title,url,published}], suggested_row (data/matches.csv columns), owner_todo.",
+  "additions": [
+    {
+      "key": "2026-09-27-portugal",
+      "action": "add_unused_squad_row",
+      "match": "2026-09-27 Norway 1-2 Portugal (UEFA Nations League)",
+      "reason": "Unused substitute: in the matchday squad, did not play. Recorded as appeared=false (CONTRACTS §3 matches: 'every cap plus any recorded unused appearances'); not a cap.",
+      "evidence": [
+        {
+          "publisher": "BBC Sport",
+          "title": "Denmark 2-4 Portugal: Is this the end for Ronaldo as sister makes 'betrayal' remark?",
+          "url": "https://www.bbc.com/sport/football/live/cvrl6660y8w3t",
+          "published": "2026-10-01",
+          "supports": "'...left the camp after being put on the bench against Norway.'"
+        },
+        {
+          "publisher": "BBC Sport",
+          "title": "Cristiano Ronaldo: Portugal boss says door open for veteran to return",
+          "url": "https://www.bbc.com/sport/football/articles/c3dxwry8vydvo",
+          "published": "2026-10-04",
+          "supports": "'...after being an unused substitute against Norway...'"
+        }
+      ],
+      "reviewed_by": "CR7 Aura (project owner)",
+      "reviewed_at": "2026-10-22",
+      "suggested_row": {
+        "match_id": "2026-09-27-portugal-norway",
+        "date": "2026-09-27",
+        "season": "2026",
+        "competition_id": "uefa-nations-league",
+        "stage": null,
+        "team_id": "portugal",
+        "opponent_id": "norway",
+        "venue": "away",
+        "city": "Oslo",
+        "country": "Norway",
+        "score_for": 2,
+        "score_against": 1,
+        "extra_time": null,
+        "shootout": null,
+        "appeared": false,
+        "started": null,
+        "minutes": null,
+        "captain": null,
+        "cap_number": null,
+        "source_ids": "martj42-results;<new BBC source id>",
+        "notes": "Unused substitute."
+      },
+      "owner_todo": "ingest:intl builds international rows only from caps (appeared=true) and regenerates them on every run, so a hand-added row would be wiped. Add an input for unused-squad appearances to data/manual + scripts/ingest/international.mjs, add a sources.csv row for the BBC evidence, then re-run ingest:intl and npm run check."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "note": "Candidates a human has checked and decided NOT to add to the ledger (Ronaldo not in the matchday squad). Each entry: key, match, reason, evidence [{publisher,title,url,published,supports}], reviewed_by, reviewed_at. detect-matches.mjs never re-flags a dismissed key. Unused-substitute matches belong in ledger-additions.json instead (appeared=false rows).",
+  "dismissed": [
+    {
+      "key": "2026-10-01-portugal",
+      "match": "2026-10-01 Denmark 2-4 Portugal (UEFA Nations League)",
+      "reason": "Left the Portugal camp before the match; not in the squad.",
+      "evidence": [
+        {
+          "publisher": "BBC Sport",
+          "title": "Denmark 2-4 Portugal: Is this the end for Ronaldo as sister makes 'betrayal' remark?",
+          "url": "https://www.bbc.com/sport/football/live/cvrl6660y8w3t",
+          "published": "2026-10-01",
+          "supports": "Match coverage: 'the first match since ... Ronaldo ... left the camp'."
+        },
+        {
+          "publisher": "Al Jazeera",
+          "title": "Why did Ronaldo leave Portugal's training camp, and will he play again?",
+          "url": "https://www.aljazeera.com/sports/2026/10/1/why-did-ronaldo-leave-portugals-training-camp-and-will-he-play-again",
+          "published": "2026-10-01",
+          "supports": "Pre-match explainer (published 09:06 UTC, before kick-off): Ronaldo left the camp on the eve of the Denmark match. Not a match report."
+        }
+      ],
+      "reviewed_by": "CR7 Aura (project owner)",
+      "reviewed_at": "2026-10-22"
+    },
+    {
+      "key": "2026-10-04-portugal",
+      "match": "2026-10-04 Portugal 2-1 Norway (UEFA Nations League)",
+      "reason": "Absent: had left the squad; did not play.",
+      "evidence": [
+        {
+          "publisher": "Al Jazeera",
+          "title": "Ronaldo-less Portugal beat Norway 2-1 to reach Nations League quarterfinals",
+          "url": "https://www.aljazeera.com/sports/2026/10/4/ronaldo-less-portugal-beat-norway-2-1-to-reach-nations-league-quarterfinals",
+          "published": "2026-10-04",
+          "supports": "Match report."
+        },
+        {
+          "publisher": "BBC Sport",
+          "title": "Cristiano Ronaldo: Portugal boss says door open for veteran to return",
+          "url": "https://www.bbc.com/sport/football/articles/c3dxwry8vydvo",
+          "published": "2026-10-04",
+          "supports": "Post-match article (22:10 UTC) on Sunday's 2-1 win over Norway: Ronaldo had left the camp after the Norway (27 Sep) and Denmark decisions; coach on his possible return."
+        }
+      ],
+      "reviewed_by": "CR7 Aura (project owner)",
+      "reviewed_at": "2026-10-22"
+    }
+  ]
+}
