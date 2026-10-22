@@ -46,11 +46,28 @@ jobs:
 
       - run: npm ci
 
-      - name: Refresh source snapshots (fail-safe; keeps old files on any error)
+      # Fetching, pinning and data/raw/MANIFEST.json belong to scripts/ingest/fetch-snapshots.mjs.
+      # The guard backs up data/raw first and, afterwards, restores anything that failed,
+      # does not parse, lowers a total, or did not change semantically.
+      - name: Back up data/raw
+        run: node pipeline/snapshot-guard.mjs save --backup "$RUNNER_TEMP/raw-backup"
+
+      - name: Refresh international snapshots
+        id: intl
+        continue-on-error: true
+        run: npm run snapshots:refresh -- --only=intl
+
+      - name: Refresh club snapshots
+        id: club
+        continue-on-error: true
+        run: npm run snapshots:refresh -- --only=club
+
+      - name: Validate refreshed snapshots (restore on failure / regression / no change)
         id: refresh
         env:
-          GITHUB_TOKEN: ${{ github.token }} # only for the martj42 commit-sha lookup (rate limits)
-        run: node pipeline/refresh-snapshots.mjs
+          INTL_OUTCOME: ${{ steps.intl.outcome }}
+          CLUB_OUTCOME: ${{ steps.club.outcome }}
+        run: node pipeline/snapshot-guard.mjs verify --backup "$RUNNER_TEMP/raw-backup" --intl "$INTL_OUTCOME" --club "$CLUB_OUTCOME"
 
       - name: Detect new Al-Nassr / Portugal matches
         id: detect
@@ -65,15 +82,23 @@ jobs:
 
       - name: Rebuild international ledger from new snapshots
         id: ingest
-        if: steps.refresh.outputs.data_raw_changed == 'true'
+        if: steps.refresh.outputs.intl_changed == 'true'
         continue-on-error: true
         run: |
           set -o pipefail
           npm run ingest:intl 2>&1 | tee reports/pipeline/ingest.log
 
+      - name: Rebuild club ledger from new snapshots
+        id: ingest_club
+        if: steps.refresh.outputs.club_changed == 'true'
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          node scripts/ingest/club.mjs 2>&1 | tee reports/pipeline/ingest-club.log
+
       - name: npm run check
         id: check
-        if: steps.refresh.outputs.data_raw_changed == 'true'
+        if: steps.refresh.outputs.decision == 'accepted'
         continue-on-error: true
         run: |
           set -o pipefail
@@ -82,6 +107,7 @@ jobs:
       - name: Compose PR body
         env:
           INGEST_OUTCOME: ${{ steps.ingest.outcome }}
+          INGEST_CLUB_OUTCOME: ${{ steps.ingest_club.outcome }}
           CHECK_OUTCOME: ${{ steps.check.outcome }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
@@ -108,7 +134,8 @@ jobs:
             data/matches.csv
             data/goals.csv
             data/teams.csv
-            pipeline/snapshots/**
+            data/reconciliation/club-ingest-resolutions.json
+            pipeline/state/**
           sign-commits: true
 
       - name: Report fetch failures in an issue (one open issue, updated)

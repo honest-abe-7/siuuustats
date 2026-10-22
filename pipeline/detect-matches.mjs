@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Detect Al-Nassr / Portugal matches that are not in the ledger yet (online: TheSportsDB free API;
 // offline: martj42 Portugal results snapshot). Maintains a persistent review queue in
-// pipeline/snapshots/new-match-candidates.json: a candidate stays until the match is in
+// pipeline/state/new-match-candidates.json: a candidate stays until the match is in
 // data/matches.csv or a human dismisses it in pipeline/config/dismissed-candidates.json.
 // Nothing here edits the ledger.
 //

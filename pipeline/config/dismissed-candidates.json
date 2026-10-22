@@ -1,4 +1,29 @@
 {
-  "note": "Candidates a human has checked and decided not to add (e.g. Ronaldo not in the squad). Each entry: {\"key\": \"YYYY-MM-DD-team_id\", \"reason\": \"...\", \"evidence\": \"URL\", \"reviewed_by\": \"...\"}.",
-  "dismissed": []
+  "note": "Candidates a human has checked and decided not to add to the ledger (e.g. Ronaldo not in the squad). Each entry: {\"key\": \"YYYY-MM-DD-team_id\", \"match\", \"reason\", \"sources\", \"reviewed_by\", \"reviewed_at\"}. detect-matches.mjs never re-flags a dismissed key.",
+  "dismissed": [
+    {
+      "key": "2026-09-27-portugal",
+      "match": "2026-09-27 Norway 1-2 Portugal (UEFA Nations League)",
+      "reason": "Unused substitute: in the squad, did not play. Not a cap.",
+      "sources": ["BBC match report", "AFP match report", "Al Jazeera match report"],
+      "reviewed_by": "CR7 Aura (project owner)",
+      "reviewed_at": "2026-10-22"
+    },
+    {
+      "key": "2026-10-01-portugal",
+      "match": "2026-10-01 Denmark 2-4 Portugal (UEFA Nations League)",
+      "reason": "Left the Portugal camp before the match; did not play.",
+      "sources": ["BBC match report", "AFP match report", "Al Jazeera match report"],
+      "reviewed_by": "CR7 Aura (project owner)",
+      "reviewed_at": "2026-10-22"
+    },
+    {
+      "key": "2026-10-04-portugal",
+      "match": "2026-10-04 Portugal 2-1 Norway (UEFA Nations League)",
+      "reason": "Absent from the squad; did not play.",
+      "sources": ["BBC match report", "AFP match report", "Al Jazeera match report"],
+      "reviewed_by": "CR7 Aura (project owner)",
+      "reviewed_at": "2026-10-22"
+    }
+  ]
 }

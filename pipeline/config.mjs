@@ -3,31 +3,16 @@
 // free API on 2026-10-22 (see pipeline/README.md, "TheSportsDB IDs").
 
 export const USER_AGENT =
-  "siuuustats-pipeline/0.1 (+https://siuuustats.pages.dev; open-source fan stats project; GitHub Actions daily refresh)";
+  "siuuustats-pipeline/0.2 (+https://siuuustats.pages.dev; open-source fan stats project; GitHub Actions daily match check)";
+
+// Snapshot fetching, pinning and data/raw/MANIFEST.json are owned by scripts/ingest/fetch-snapshots.mjs
+// (`npm run snapshots:refresh -- --only=intl|club`). The pipeline only fetches TheSportsDB (match detection).
 
 /** Minimum gap between two requests to the same host, in ms. */
 export const MIN_INTERVAL_MS = {
-  "en.wikipedia.org": 1000, // Wikimedia asks for serial requests; we never run in parallel
-  "www.rsssf.org": 2000,
-  "raw.githubusercontent.com": 1000,
-  "api.github.com": 1000,
-  "www.thesportsdb.com": 3000, // free tier: 30 requests/minute (docs); we make ~12 per run
+  "www.thesportsdb.com": 5000, // docs say 30/min for the free key, but 429s were seen at 3 s gaps; ~12 requests per run
   default: 1500,
 };
-
-export const WIKI = {
-  api: "https://en.wikipedia.org/w/api.php",
-  restHtml: (title) => `https://en.wikipedia.org/api/rest_v1/page/html/${encodeURIComponent(title)}`,
-  article: "Cristiano_Ronaldo",
-  intlList: "List_of_international_goals_scored_by_Cristiano_Ronaldo",
-};
-
-export const MARTJ42 = {
-  raw: "https://raw.githubusercontent.com/martj42/international_results/master",
-  commitApi: "https://api.github.com/repos/martj42/international_results/commits/master",
-};
-
-export const RSSSF_URL = "https://www.rsssf.org/miscellaneous/cronaldo-intlg.html";
 
 export const THESPORTSDB = {
   // v1 free key, documented at https://www.thesportsdb.com/documentation ("The current free API key is: 123").
@@ -41,7 +26,7 @@ export const THESPORTSDB = {
   teams: [
     {
       idTeam: "136022", // verified: "Al-Nassr", idLeague 4668
-      team_id: "al-nassr", // ledger slug; must match data/teams.csv once M3 adds club rows
+      team_id: "al-nassr", // ledger team_id (fixed by CONTRACTS §9)
       name: "Al-Nassr",
       // 4668 Saudi Pro League, 5649 Saudi King Cup, 5650 Saudi Super Cup, 4719 AFC Champions League Elite
       leagues: ["4668", "5649", "5650", "4719"],
@@ -58,8 +43,6 @@ export const THESPORTSDB = {
   ],
 };
 
-/** Files the daily workflow is allowed to change (also used as create-pull-request add-paths). */
-export const PIPELINE_SNAPSHOT_DIR = "pipeline/snapshots";
-export const CANDIDATES_FILE = "pipeline/snapshots/new-match-candidates.json";
+export const CANDIDATES_FILE = "pipeline/state/new-match-candidates.json";
 export const DISMISSED_FILE = "pipeline/config/dismissed-candidates.json";
 export const REPORT_DIR = "reports/pipeline"; // git-ignored (reports/ is in .gitignore)

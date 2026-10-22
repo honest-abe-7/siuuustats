@@ -1,26 +1,5 @@
-// martj42/international_results (CC0): filtering, header validation, new-match detection.
+// martj42/international_results (CC0) Portugal snapshot: row counts and new-match detection.
 import { parse } from "csv-parse/sync";
-import { stringify } from "csv-stringify/sync";
-
-export const EXPECTED_COLUMNS = {
-  "results.csv": ["date", "home_team", "away_team", "home_score", "away_score", "tournament", "city", "country", "neutral"],
-  "goalscorers.csv": ["date", "home_team", "away_team", "team", "scorer", "minute", "own_goal", "penalty"],
-  "shootouts.csv": ["date", "home_team", "away_team", "winner"],
-};
-
-/** Keep the header plus rows where Portugal is home or away (same output as scripts/ingest/fetch-snapshots.mjs). */
-export function portugalOnly(csvText, file = "results.csv", team = "Portugal") {
-  const records = parse(csvText, { bom: true });
-  if (records.length < 2) throw new Error(`martj42 ${file}: empty CSV`);
-  const [header, ...rows] = records;
-  const missing = (EXPECTED_COLUMNS[file] ?? []).filter((c) => !header.includes(c));
-  if (missing.length) throw new Error(`martj42 ${file}: missing columns ${missing.join(", ")}`);
-  const h = header.indexOf("home_team");
-  const a = header.indexOf("away_team");
-  const kept = rows.filter((r) => r[h] === team || r[a] === team);
-  if (kept.length === 0) throw new Error(`martj42 ${file}: no ${team} rows`);
-  return stringify([header, ...kept]);
-}
 
 /** Count data rows in a CSV text. */
 export const rowCount = (csvText) => Math.max(0, parse(csvText, { bom: true }).length - 1);

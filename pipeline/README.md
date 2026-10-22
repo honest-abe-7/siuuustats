@@ -9,38 +9,46 @@ The pipeline writes to `data/` only through the ingest scripts, and only inside 
 | File | Trigger | What it does | Token permissions |
 |---|---|---|---|
 | `ci.yml` | every PR, push to `main`, manual | `npm ci`, `npm run check`, then the pipeline unit tests (Node 24, npm cache) | `contents: read` |
-| `daily-refresh.yml` | daily 06:17 UTC, manual | refreshes snapshots, detects new matches, re-runs ingest and check, then opens or updates **one** review PR (`automation/daily-refresh`) | `contents: write`, `pull-requests: write`, `issues: write` (refresh job only) |
+| `daily-refresh.yml` | daily 06:17 UTC, manual | backs up `data/raw`, runs `npm run snapshots:refresh -- --only=intl` and `-- --only=club`, validates with `snapshot-guard.mjs`, detects new matches, re-runs `ingest:intl` / `scripts/ingest/club.mjs` and `check` for changed groups, then opens or updates **one** review PR (`automation/daily-refresh`) | `contents: write`, `pull-requests: write`, `issues: write` (refresh job only) |
 | | weekly, Monday 07:41 UTC | keepalive: `PUT /actions/workflows/daily-refresh.yml/enable`, which resets GitHub's 60-day inactivity timer without a commit | `actions: write` (keepalive job only) |
 | `deploy.yml` | push to `main` (merging a PR), manual | `npm run check`, `npm run build --if-present`, then `wrangler pages deploy dist --project-name=siuuustats --branch=main` | `contents: read` |
 
 Each workflow sets top-level `permissions: {}`, and each job grants only what it needs. Checkouts use `persist-credentials: false`. Third-party actions are pinned to a commit SHA: `peter-evans/create-pull-request` v8.1.1 and `cloudflare/wrangler-action` v4.1.3. First-party `actions/*` use major tags (v7).
 
-## Scripts
+## Snapshots: who does what
+
+**`scripts/ingest/fetch-snapshots.mjs` owns fetching, pinning and `data/raw/MANIFEST.json`** (`npm run snapshots:refresh -- --only=intl|club`):
+- `intl` covers the Wikipedia international list and article, RSSSF, and martj42.
+- `club` covers the eswiki club match list, the enwiki club career table at the article's pinned revision, the season-article snippets, and the Kaggle seed.
+
+The pipeline does no snapshot fetching of its own. It adds a safety net around that script:
 
 | Script | Network | Writes |
 |---|---|---|
-| `refresh-snapshots.mjs [--root DIR] [--only id,…] [--strict]` | yes | `data/raw/*` and `data/raw/MANIFEST.json` (same files and format as `scripts/ingest/fetch-snapshots.mjs`), plus `pipeline/snapshots/*.wikitext` and `pipeline/snapshots/MANIFEST.json`. Report goes to `reports/pipeline/refresh.json` |
-| `detect-matches.mjs [--root DIR] [--today YYYY-MM-DD] [--offline]` | TheSportsDB (unless `--offline`) | `pipeline/snapshots/new-match-candidates.json` (review queue). Report goes to `reports/pipeline/detect.json` |
+| `snapshot-guard.mjs save --backup DIR` | no | copies `data/raw` to DIR (the workflow uses `$RUNNER_TEMP`) |
+| `snapshot-guard.mjs verify --backup DIR --intl <outcome> --club <outcome>` | no | restores files and MANIFEST entries in `data/raw` when needed. Report goes to `reports/pipeline/refresh.json`. GitHub outputs: `decision`, `changed`, `errors`, `intl_changed`, `club_changed` |
+| `detect-matches.mjs [--root DIR] [--today YYYY-MM-DD] [--offline]` | TheSportsDB (unless `--offline`) | `pipeline/state/new-match-candidates.json` (review queue). Report goes to `reports/pipeline/detect.json` |
 | `pr-body.mjs` | no | `reports/pipeline/pr-body.md` |
 
-### Sources
+### What `verify` adds on top of `snapshots:refresh`
 
-- **Wikipedia, "List of international goals scored by Cristiano Ronaldo"**: Parsoid HTML for the M2 parser (`data/raw/…html`), plus the **raw wikitext of the same revision** from the MediaWiki Action API (`pipeline/snapshots/wikipedia-cr7-international-goals.wikitext`), which gives readable diffs.
-- **Wikipedia, "Cristiano Ronaldo"**: the raw wikitext comes from the Action API (`data/raw/wikipedia-cristiano-ronaldo.json`). The **club career statistics table** ("Appearances and goals by club, season and competition") is cut out to `pipeline/snapshots/wikipedia-cr7-career-stats.wikitext`, and its "Career total" row is checked.
-- **martj42/international_results**: `results.csv`, `goalscorers.csv` and `shootouts.csv` come from `raw.githubusercontent.com` and are filtered to Portugal. `revision` is the upstream commit SHA.
-- **RSSSF** cap list, as before.
+Each snapshot is parsed with the same parsers the ingest uses (`scripts/lib/sources-raw.mjs`; see `lib/checks.mjs`).
 
-### Fail-safe behaviour
+1. **Failed step → restore that group.** `fetch-snapshots.mjs` writes files as it goes and only writes the MANIFEST at the end, so a failure can leave a partial update. The group's files and MANIFEST entries are restored from the backup.
+2. **Doesn't parse → reject everything.** If any snapshot fails its parser, every file is restored.
+3. **Totals go down → reject everything.** The guarded totals are:
+   - Wikipedia list goals and caps, and the infobox caps and goals
+   - RSSSF caps
+   - martj42 row counts
+   - eswiki club matches and goals
+   - the enwiki club career total (apps and goals)
+   - Kaggle goals and season-article pages
 
-1. Every source is fetched and then parsed with the **same parsers the ingest uses** (`scripts/lib/sources-raw.mjs`) before anything is written. If a fetch fails (after retries), the parse fails, or the response is empty or odd, that source **keeps its old snapshot and old MANIFEST entry**. The run carries on with the other sources.
-2. **Regression guard**: an update is *rejected* if totals go down, for example fewer goals or caps on Wikipedia, a lower club career total, or fewer martj42 rows. This catches vandalism and upstream breakage.
-3. **No noise**: a snapshot is rewritten only when its *data* changes, measured by a semantic digest. A Wikipedia edit elsewhere in the article, a re-render, or a new RSSSF "Last updated" stamp alone gives no diff and no PR.
-4. Writes are atomic (temp file plus rename). MANIFEST entries are merged by file, and untouched entries stay byte-identical.
-5. Failures are listed in the PR body and the job summary, and recorded in a single "Daily refresh: source fetch errors" issue, which is reused and commented on.
+   This catches vandalism and truncated downloads. Rejecting everything keeps the article snapshot and the club career table (fetched at the article's revision) consistent with each other.
+4. **No semantic change → restore everything.** Change is measured by a semantic digest. A new `fetched_at`, a re-render, an unrelated wiki edit, a new RSSSF "Last updated" stamp, or a new season-article revision id alone leaves `data/raw` and the MANIFEST byte-identical, so no daily noise PR is opened.
+5. Problems are listed in the PR body and the job summary, and recorded in a single "Daily refresh: source fetch errors" issue, which is reused and commented on.
 
-### Politeness
-
-Requests are serial, with a per-host minimum gap: Wikipedia 1 s, RSSSF 2 s, GitHub 1 s, TheSportsDB 3 s (the free tier allows 30 per minute). Every request sends the User-Agent `siuuustats-pipeline/0.1 (+https://siuuustats.pages.dev; …)`, also sent as `Api-User-Agent` for Wikimedia. Action API calls use `maxlag=5`. Retries are bounded to 3, with exponential backoff that honours `Retry-After` (capped at 65 s). Identical URLs are fetched once per run. A normal run makes about 8 snapshot requests and about 12 TheSportsDB requests.
+Politeness for snapshot fetching (User-Agent, pauses) is part of `fetch-snapshots.mjs`. The pipeline's own HTTP client (`lib/http.mjs`) is used only for TheSportsDB. It sends requests serially, at least 5 s apart, with the User-Agent `siuuustats-pipeline/0.2 (…)`. It makes up to 3 retries with backoff that honours `Retry-After` (capped at 65 s). A run makes about 12 requests.
 
 ### New-match detection
 
@@ -48,8 +56,13 @@ Requests are serial, with a per-host minimum gap: Wikipedia 1 s, RSSSF 2 s, GitH
 - **Al-Nassr (and Portugal as a cross-check)**: the TheSportsDB v1 free API with the documented public key `123`:
   - `eventslast.php?id=` and `eventsnext.php?id=` for teams 136022 and 133908
   - `eventsday.php?d=…&l=…` for the last 2 days in Al-Nassr's competitions (4668, 5649, 5650, 4719)
-- Candidates stay in `pipeline/snapshots/new-match-candidates.json` until the match appears in the ledger, or until a human adds the key to `pipeline/config/dismissed-candidates.json` with a reason and evidence.
-- **Free-tier limits** (from TheSportsDB's docs): `eventslast` and `eventsnext` return only **1 home event**, and `eventsday` returns at most **3 events**. Away matches are only caught by the day scan and can be missed on busy days, which the PR notes. Treat TheSportsDB as a hint. The Wikipedia career-table diff is the authoritative signal for club matches.
+- Candidates stay in `pipeline/state/new-match-candidates.json` until the match appears in the ledger, or until a human adds the key to `pipeline/config/dismissed-candidates.json` with a reason and evidence.
+- **Free-tier limits** (from TheSportsDB's docs): `eventslast` and `eventsnext` return only **1 home event**, and `eventsday` returns at most **3 events**. Away matches are only caught by the day scan and can be missed on busy days, which the PR notes. Treat TheSportsDB as a hint. The club snapshots (eswiki list, enwiki career table and season articles) are the authoritative signal for club matches.
+- Ledger team ids: `al-nassr` and `portugal` (CONTRACTS §9).
+- **Dismissed so far** (owner review, 2026-10-22; BBC, AFP and Al Jazeera match reports):
+  - 2026-09-27 Norway 1-2 Portugal: unused substitute
+  - 2026-10-01 Denmark 2-4 Portugal: left the camp
+  - 2026-10-04 Portugal 2-1 Norway: absent
 
 ### TheSportsDB IDs (verified 2026-10-22)
 
@@ -82,10 +95,9 @@ Cloudflare Pages: create a **Direct Upload** project named `siuuustats` with pro
 npm ci
 npm run check                               # ledger gate (M2)
 node --test pipeline/tests/*.test.mjs       # pipeline unit tests, offline, saved fixtures
-# Dry-run the online parts against a scratch copy, never the working tree:
-mkdir -p /tmp/siuuu && cp -r data pipeline /tmp/siuuu/
-node pipeline/refresh-snapshots.mjs --root /tmp/siuuu
-node pipeline/detect-matches.mjs   --root /tmp/siuuu
+# Dry-run detection against a scratch copy, never the working tree:
+mkdir -p /tmp/siuuu/pipeline && cp -r data /tmp/siuuu/ && cp -r pipeline/config /tmp/siuuu/pipeline/
+node pipeline/detect-matches.mjs --root /tmp/siuuu
 # Lint workflows (free binaries: rhysd/actionlint + koalaman/shellcheck):
 actionlint -shellcheck shellcheck
 ```

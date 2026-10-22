@@ -1,19 +1,11 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { fixture } from "./helpers.mjs";
-import { portugalOnly, newPortugalMatches, rowCount } from "../lib/martj42.mjs";
+import { newPortugalMatches, rowCount } from "../lib/martj42.mjs";
 
-test("portugalOnly keeps the header and Portugal rows only", () => {
-  const out = portugalOnly(fixture("martj42-results-mixed.csv"), "results.csv");
-  assert.equal(rowCount(out), 2);
-  assert.ok(!out.includes("Spain"));
-  assert.ok(out.startsWith("date,home_team,away_team"));
-});
-
-test("portugalOnly fails on a changed header or an empty/unrelated file", () => {
-  assert.throws(() => portugalOnly("date,home,away\n2020-01-01,Portugal,Spain\n", "results.csv"), /missing columns/);
-  assert.throws(() => portugalOnly("date,home_team,away_team,home_score,away_score,tournament,city,country,neutral\n", "results.csv"), /empty/);
-  assert.throws(() => portugalOnly("date,home_team,away_team,home_score,away_score,tournament,city,country,neutral\n2020-01-01,Spain,Italy,1,1,F,M,S,FALSE\n", "results.csv"), /no Portugal rows/);
+test("rowCount counts data rows", () => {
+  assert.equal(rowCount(fixture("martj42-results-mixed.csv")), 3);
+  assert.equal(rowCount("date,home_team\n"), 0);
 });
 
 test("newPortugalMatches lists played matches after the latest ledger cap", () => {

@@ -33,6 +33,23 @@ test("deploy only references the two Cloudflare secrets and the siuuustats proje
   assert.match(t, /branches: \[main\]/);
 });
 
+test("daily refresh delegates fetching to npm run snapshots:refresh (flags exist in the script)", () => {
+  const t = code("daily-refresh.yml");
+  assert.match(t, /run: npm run snapshots:refresh -- --only=intl$/m);
+  assert.match(t, /run: npm run snapshots:refresh -- --only=club$/m);
+  const pkg = JSON.parse(repoFile("package.json"));
+  assert.equal(pkg.scripts["snapshots:refresh"], "node scripts/ingest/fetch-snapshots.mjs");
+  const fetcher = repoFile("scripts/ingest/fetch-snapshots.mjs");
+  assert.match(fetcher, /startsWith\("--only="\)/);
+  assert.match(fetcher, /want\("intl"\)/);
+  assert.match(fetcher, /want\("club"\)/);
+  // backup before, verify after
+  assert.ok(t.indexOf("snapshot-guard.mjs save") < t.indexOf("--only=intl"));
+  assert.ok(t.indexOf("--only=club") < t.indexOf("snapshot-guard.mjs verify"));
+  // the pipeline no longer fetches snapshots itself
+  assert.doesNotMatch(t, /refresh-snapshots\.mjs/);
+});
+
 test("daily refresh has a schedule, a weekly keepalive and opens a PR", () => {
   const t = wf("daily-refresh.yml");
   assert.match(t, /schedule:/);
