@@ -1,0 +1,4 @@
+{
+  "note": "Candidates a human has checked and decided not to add (e.g. Ronaldo not in the squad). Each entry: {\"key\": \"YYYY-MM-DD-team_id\", \"reason\": \"...\", \"evidence\": \"URL\", \"reviewed_by\": \"...\"}.",
+  "dismissed": []
+}

@@ -1,0 +1,40 @@
+# CI: validate + reconcile + test + build the static API on every PR and on pushes to main.
+# Free on GitHub-hosted runners for public repos. Read-only token.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: npm run check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: npm run check (validate, reconcile, test, build:api)
+        run: npm run check
+
+      - name: Pipeline unit tests (offline, saved fixtures)
+        run: node --test pipeline/tests/*.test.mjs

@@ -1,0 +1,20 @@
+{
+ "teams": [
+  {
+   "idTeam": "136022",
+   "strTeam": "Al-Nassr",
+   "strGender": "Male",
+   "strCountry": "Saudi Arabia",
+   "idLeague": "4668",
+   "strLeague": "Saudi-Arabian Pro League",
+   "idLeague2": "5649",
+   "strLeague2": "Saudi King Cup",
+   "idLeague3": "5650",
+   "strLeague3": "Saudi Super Cup",
+   "idLeague4": "4719",
+   "strLeague4": "AFC Champions League Elite",
+   "strSport": "Soccer",
+   "strLocation": "Riyadh, Saudi Arabia"
+  }
+ ]
+}
