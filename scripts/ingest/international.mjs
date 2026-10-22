@@ -260,3 +260,11 @@ console.log(`International ingest: ${matches.length} matches, ${goals.length} go
 console.log(`Corrections applied: ${applied.join(", ") || "none"}`);
 console.log(`${issues.length} source disagreement(s) logged to reports/ingest-international.json`);
 for (const i of issues) console.log("  -", JSON.stringify(i));
+
+// A correction that no longer applies (upstream fixed or changed) or any unexplained disagreement must be reviewed.
+const unapplied = corrections.filter((c) => !applied.includes(c.correction_id)).map((c) => c.correction_id);
+if (unapplied.length) console.error(`Corrections not applied (stale?): ${unapplied.join(", ")}`);
+if (issues.length || unapplied.length) {
+  console.error("Ingest finished with items to review; see reports/ingest-international.json. Exiting 1.");
+  process.exitCode = 1;
+}

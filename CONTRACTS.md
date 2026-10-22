@@ -116,7 +116,7 @@ import { buildApi } from "./scripts/build-api.mjs";          // (ledger, generat
 
 ## 5. Corrections and known differences
 
-- `data/manual/corrections.csv`: `correction_id, source_id, target, field, from_value, to_value, reason, evidence_source_ids`. Each row changes one upstream value at ingest time. `target` is `cap=N` (RSSSF) or `goal_no=N` (Wikipedia list). The ingest aborts if `from_value` no longer matches the source, so a fixed upstream error forces you to remove the correction.
+- `data/manual/corrections.csv`: `correction_id, source_id, target, field, from_value, to_value, reason, evidence_source_ids`. Each row changes one upstream value at ingest time. `target` is `cap=N` (RSSSF) or `goal_no=N` (Wikipedia list). The ingest exits 1 if a correction's `from_value` no longer matches the source or its target no longer exists, so a fixed upstream error forces you to remove the correction. It also exits 1 on any source disagreement it does not explain.
 - `data/manual/international-appearances-extra.csv`: appearances missing from RSSSF, each with sources and reasoning.
 - `data/reconciliation/expectations.json`: pinned headline numbers. Change these only when a real new goal or cap happens.
 - `data/reconciliation/known-differences.json`: accepted ledger-vs-source mismatches. These apply **only while expected and actual both equal the pinned values**.
