@@ -4,7 +4,7 @@
     {
       "file": "data/raw/eswiki-cr7-club-matches.html",
       "sha256": "895e66d8caa1f0ed59c8f70b103a602ca6ce87d71999f3241b0de90eafe6f6d3",
-      "fetched_at": "2026-10-22T17:02:08.265Z",
+      "fetched_at": "2026-10-31T07:00:03.284Z",
       "source_id": "eswiki-cr7-club-matches",
       "url": "https://es.wikipedia.org/wiki/Anexo:Partidos_oficiales_de_Cristiano_Ronaldo_en_clubes",
       "revision": "175883102",
@@ -14,7 +14,7 @@
     {
       "file": "data/raw/kaggle-sigmaborov-ronaldo-goals.csv",
       "sha256": "905228902c9d12324756e65ddb2bff48d0b2d553d1f1e329c7d615354433c8e7",
-      "fetched_at": "2026-10-22T17:02:43.939Z",
+      "fetched_at": "2026-10-31T07:00:31.998Z",
       "source_id": "kaggle-sigmaborov-cr7-goals",
       "url": "https://www.kaggle.com/datasets/sigmaborov/ronaldo-cr7-all-goals-goat",
       "revision": "version 1 (2026-03-09T12:06:47.147Z)",
@@ -24,7 +24,7 @@
     {
       "file": "data/raw/martj42-portugal-goalscorers.csv",
       "sha256": "92e8cc19233c6c820b88b14f10e647bfd74d110807c825a333f0b7f2d9dec77b",
-      "fetched_at": "2026-10-22T16:29:35.060Z",
+      "fetched_at": "2026-10-31T07:00:01.567Z",
       "source_id": "martj42-goalscorers",
       "url": "https://raw.githubusercontent.com/martj42/international_results/master/goalscorers.csv",
       "revision": "d5bd6de012c87e2f325de602ae77fe2f9ab61ef3",
@@ -34,7 +34,7 @@
     {
       "file": "data/raw/martj42-portugal-results.csv",
       "sha256": "0080922899c74db38af780bb9ebd5400b61f74eb17c44c35e2e88e9a35154d49",
-      "fetched_at": "2026-10-22T16:29:34.555Z",
+      "fetched_at": "2026-10-31T07:00:01.190Z",
       "source_id": "martj42-results",
       "url": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
       "revision": "d5bd6de012c87e2f325de602ae77fe2f9ab61ef3",
@@ -44,7 +44,7 @@
     {
       "file": "data/raw/martj42-portugal-shootouts.csv",
       "sha256": "a7e3e918e37290cbef0a1520aec2c5dae3fc7196ef54433f0436b3d0ace977e8",
-      "fetched_at": "2026-10-22T16:29:35.143Z",
+      "fetched_at": "2026-10-31T07:00:01.579Z",
       "source_id": "martj42-shootouts",
       "url": "https://raw.githubusercontent.com/martj42/international_results/master/shootouts.csv",
       "revision": "d5bd6de012c87e2f325de602ae77fe2f9ab61ef3",
@@ -54,7 +54,7 @@
     {
       "file": "data/raw/rsssf-cronaldo-intlg.html",
       "sha256": "13d5790942ecc388111c998d8d09219522e56476404fc4507f7ea3cb5b04eba6",
-      "fetched_at": "2026-10-22T16:29:33.711Z",
+      "fetched_at": "2026-10-31T07:00:00.668Z",
       "source_id": "rsssf-cronaldo-intlg",
       "url": "https://www.rsssf.org/miscellaneous/cronaldo-intlg.html",
       "revision": "7 Oct 2026",
@@ -62,28 +62,28 @@
     },
     {
       "file": "data/raw/wikipedia-club-season-snippets.json",
-      "sha256": "72432641df45856339f5e9b3304af676a45d0f894d56522e19804878f6d14936",
-      "fetched_at": "2026-10-22T17:02:43.443Z",
+      "sha256": "600b87139c328cdeabe44298bae352edace97b1ff4d6b500ef7f1cdd1a0b7867",
+      "fetched_at": "2026-10-31T07:00:31.389Z",
       "source_id": "wikipedia-club-season-articles",
       "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo#Club",
-      "revision": "2002–03_Sporting_CP_season@1323738848 2003–04_Manchester_United_F.C._season@1367300187 2004–05_Manchester_United_F.C._season@1366449822 2005–06_Manchester_United_F.C._season@1366449827 2006–07_Manchester_United_F.C._season@1374669330 2007–08_Manchester_United_F.C._season@1370468096 2008–09_Manchester_United_F.C._season@1368059680 2009–10_Real_Madrid_CF_season@1370209947 2010–11_Real_Madrid_CF_season@1371688591 2011–12_Real_Madrid_CF_season@1376884202 2012–13_Real_Madrid_CF_season@1378154092 2013–14_Real_Madrid_CF_season@1373547822 2014–15_Real_Madrid_CF_season@1376277368 2015–16_Real_Madrid_CF_season@1376278386 2016–17_Real_Madrid_CF_season@1376278724 2017–18_Real_Madrid_CF_season@1376278993 2018–19_Juventus_FC_season@1374510829 2019–20_Juventus_FC_season@1375307848 2020–21_Juventus_FC_season@1375778381 2021–22_Juventus_FC_season@1376270249 2021–22_Manchester_United_F.C._season@1376280507 2022–23_Manchester_United_F.C._season@1377002633 2022–23_Al-Nassr_FC_season@1354512611 2023–24_Al_Nassr_FC_season@1364378566 2024–25_Al-Nassr_FC_season@1360949595 2025–26_Al-Nassr_FC_season@1380375752 2026–27_Al-Nassr_FC_season@1381347396",
+      "revision": "2002–03_Sporting_CP_season@1323738848 2003–04_Manchester_United_F.C._season@1367300187 2004–05_Manchester_United_F.C._season@1366449822 2005–06_Manchester_United_F.C._season@1366449827 2006–07_Manchester_United_F.C._season@1374669330 2007–08_Manchester_United_F.C._season@1370468096 2008–09_Manchester_United_F.C._season@1368059680 2009–10_Real_Madrid_CF_season@1370209947 2010–11_Real_Madrid_CF_season@1371688591 2011–12_Real_Madrid_CF_season@1376884202 2012–13_Real_Madrid_CF_season@1378154092 2013–14_Real_Madrid_CF_season@1373547822 2014–15_Real_Madrid_CF_season@1376277368 2015–16_Real_Madrid_CF_season@1376278386 2016–17_Real_Madrid_CF_season@1382705375 2017–18_Real_Madrid_CF_season@1376278993 2018–19_Juventus_FC_season@1374510829 2019–20_Juventus_FC_season@1375307848 2020–21_Juventus_FC_season@1375778381 2021–22_Juventus_FC_season@1376270249 2021–22_Manchester_United_F.C._season@1376280507 2022–23_Manchester_United_F.C._season@1377002633 2022–23_Al-Nassr_FC_season@1354512611 2023–24_Al_Nassr_FC_season@1364378566 2024–25_Al-Nassr_FC_season@1360949595 2025–26_Al-Nassr_FC_season@1380375752 2026–27_Al-Nassr_FC_season@1382727754",
       "licence": "CC BY-SA 4.0",
       "note": "Date-anchored text snippets only (80 chars before, 360 after each date)."
     },
     {
       "file": "data/raw/wikipedia-cr7-club-career-table.html",
-      "sha256": "fe4315ecdab01e87f93e5a66bb0f3344c060652b29b686ecad9b7e56793ae4b1",
-      "fetched_at": "2026-10-22T17:02:09.162Z",
+      "sha256": "28bc15183c34e9f705efc473d01d2cbb874f130996767e77f3e9c2034f4a36d6",
+      "fetched_at": "2026-10-31T07:00:03.965Z",
       "source_id": "wikipedia-cristiano-ronaldo",
-      "url": "https://en.wikipedia.org/w/index.php?title=Cristiano_Ronaldo&oldid=1381391040",
-      "revision": "1381391040",
+      "url": "https://en.wikipedia.org/w/index.php?title=Cristiano_Ronaldo&oldid=1382845514",
+      "revision": "1382845514",
       "licence": "CC BY-SA 4.0",
       "note": "Only the 'Appearances and goals by club, season and competition' table is kept."
     },
     {
       "file": "data/raw/wikipedia-cr7-international-goals.html",
-      "sha256": "5fefd23372837a5d7426f1478464130971c2bb8c4daf5d65d9841120dcf7dad7",
-      "fetched_at": "2026-10-22T16:29:32.470Z",
+      "sha256": "6e7a7f502ecfbcefbdd4f70ab199352636024c829b949d461a63ad010a52bcba",
+      "fetched_at": "2026-10-31T06:59:59.658Z",
       "source_id": "wikipedia-cr7-intl-goals",
       "url": "https://en.wikipedia.org/api/rest_v1/page/html/List_of_international_goals_scored_by_Cristiano_Ronaldo",
       "revision": "1376549197",
@@ -91,11 +91,11 @@
     },
     {
       "file": "data/raw/wikipedia-cristiano-ronaldo.json",
-      "sha256": "2e17cad56465fda8b026c83635abf01e0d6c08eb4a337ea4e23e2fdcf98440d8",
-      "fetched_at": "2026-10-22T16:29:32.776Z",
+      "sha256": "5421022f89f08704e342ed750b0d699587a58c1c271a0f0e37d47d65808ce905",
+      "fetched_at": "2026-10-31T06:59:59.793Z",
       "source_id": "wikipedia-cristiano-ronaldo",
       "url": "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
-      "revision": "1381391040",
+      "revision": "1382845514",
       "licence": "CC BY-SA 4.0"
     }
   ]
